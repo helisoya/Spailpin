@@ -41,7 +41,9 @@ public class PlayerController : MonoBehaviour
     {
         // Player Movements
         float actualSpeed = running ? playerRunSpeed : playerWalkSpeed;
-        playerRigidbody.linearVelocity = currentForward * actualSpeed * moveVector.y + currentRight * actualSpeed * moveVector.x;
+        float ySpeed = playerRigidbody.linearVelocity.y;
+        playerRigidbody.linearVelocity =  currentForward * actualSpeed * moveVector.y + currentRight * actualSpeed * moveVector.x;
+        playerRigidbody.linearVelocity = new Vector3(playerRigidbody.linearVelocity.x,ySpeed,playerRigidbody.linearVelocity.z);
     }
 
     /// <summary>

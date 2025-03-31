@@ -66,4 +66,13 @@ public class Player : MonoBehaviour
     void OnSprint(InputValue value){
         controller.SetSprinting(value.isPressed);
     }
+
+    /// <summary>
+    /// OnPause callback
+    /// </summary>
+    /// <param name="value">The pause value (unused)</param>
+    void OnPause(InputValue value){
+        if(GameGUI.instance.isOpen) GameGUI.instance.ClosePause();
+        else GameGUI.instance.OpenPause();
+    }
 }
