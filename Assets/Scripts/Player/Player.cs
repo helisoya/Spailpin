@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [Header("Components")]
     [SerializeField] private PlayerController controller;
     private Room currentRoom = null;
+    public int CurrentRoom { get {return currentRoom != null ? currentRoom.GetID() : -1;}}
 
     public static Player instance  { get; private set;}
 
