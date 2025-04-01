@@ -2111,6 +2111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36093c5acfce694da779fe27b330af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDefaultSpawnpoint: 1
   linkedMap: 
   linkedRoom: {fileID: 1760301913}
 --- !u!1 &951767905

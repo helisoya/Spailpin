@@ -22,14 +22,23 @@ public class Map : MonoBehaviour
     /// Finds the current player's spawnpoint
     /// </summary>
     private void FindPlayerSpawnPoint(){
-        Spawnpoint selected = spawnpoints[0];
-        for(int i = 1; i< spawnpoints.Length;i++){
-            if(spawnpoints[i].GetLinkedMap() == GameManager.instance.mapName){
+        Spawnpoint defaultSpawn = null;
+        Spawnpoint selected = null;
+        for(int i = 0; i< spawnpoints.Length;i++){
+            if(spawnpoints[i].isDefaultSpawnpoint) defaultSpawn = spawnpoints[i];
+            else if(spawnpoints[i].linkedMap == GameManager.instance.mapName){
                 selected = spawnpoints[i];
                 break;
             }
         }
-        selected.GetRoom().Apply();
-        Player.instance.SetPosition(selected.transform.position,selected.transform.rotation);
+        if(selected == null && defaultSpawn != null) selected = defaultSpawn;
+
+        if(selected){
+            selected.linkedRoom.Apply();
+            Player.instance.SetPosition(selected.transform.position,selected.transform.rotation);
+        }else{
+            Debug.LogError("No valid spawnpoint found. Did you forget to add a default ");
+        }
+
     }
 }
