@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
         if(instance == null){
             instance = this;
             saveFile = new SaveFile();
+            Locals.Init();
             DontDestroyOnLoad(gameObject);
         }else{
             Destroy(gameObject);

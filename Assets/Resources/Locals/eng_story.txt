@@ -1,0 +1,2 @@
+Test_1 = Hello, Mr.Caribou
+Test_2 = Hello, Pinpin.
