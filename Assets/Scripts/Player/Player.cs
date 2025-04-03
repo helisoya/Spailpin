@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
     /// </summary>
     /// <param name="value">The movement value</param>
     void OnMove(InputValue value){
-        if(GameGUI.instance.isOpen || CutsceneManager.instance.inCutscene) return;
+        if(GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene) return;
         controller.SetMovementVector(value.Get<Vector2>());
     }
 
@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
     /// </summary>
     /// <param name="value">The sprinting value</param>
     void OnSprint(InputValue value){
-        if(GameGUI.instance.isOpen || CutsceneManager.instance.inCutscene){
+        if(GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene){
             controller.SetSprinting(false);
             return;
         }
@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
     /// </summary>
     /// <param name="value">The pause value (unused)</param>
     void OnPause(InputValue value){
-        if(GameGUI.instance.isOpen) GameGUI.instance.ClosePause();
+        if(GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
         else GameGUI.instance.OpenPause();
     }
 
@@ -96,7 +96,8 @@ public class Player : MonoBehaviour
     /// </summary>
     /// <param name="value">The interaction value (unused)</param>
     void OnInteract(InputValue value){
-        if(GameGUI.instance.isOpen || CutsceneManager.instance.inCutscene) return;
-        interactions.TryInterract();
+        if(GameGUI.instance.isPauseOpen) return;
+        if(CutsceneManager.instance.inCutscene) CutsceneManager.instance.UserSubmit();
+        else interactions.TryInterract();
     }
 }

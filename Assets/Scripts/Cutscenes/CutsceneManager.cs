@@ -13,6 +13,25 @@ public class CutsceneManager : MonoBehaviour
     private Coroutine processingCutscene = null;
     public bool inCutscene {get{return processingCutscene != null;}}
 
+    private bool userSubmit;
+
+    /// <summary>
+    /// Sets the user submit tag
+    /// </summary>
+    public void UserSubmit(){
+        userSubmit = true;
+    }
+
+    /// <summary>
+    /// Return and consume the user submit tag
+    /// </summary>
+    /// <returns>True if the submit tag was set</returns>
+    public bool ConsumeUserSubmit(){
+        bool value = userSubmit;
+        userSubmit = false;
+        return value;
+    }
+
     void Awake()
     {
         instance = this;   

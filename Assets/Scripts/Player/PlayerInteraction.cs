@@ -20,6 +20,8 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
+        if(GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene) return;
+        
         Collider[] colliders = Physics.OverlapSphere(transform.position,interactionRadius,interactionMask);
         if(colliders.Length >= 1){
             InteractableObject newObj = colliders[0].transform.GetComponent<InteractableObject>();
@@ -43,7 +45,11 @@ public class PlayerInteraction : MonoBehaviour
     public void TryInterract(){
         if(currentObject != null){
             Player.instance.SetMovementVector(Vector2.zero);
+
+            currentObject.SetActive(false);
             currentObject.Interract();
+            
+            currentObject = null;
         }
     }
 }

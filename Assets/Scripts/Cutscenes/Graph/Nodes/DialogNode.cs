@@ -19,7 +19,11 @@ public class DialogNode : SpailpinNode {
 
     public override IEnumerator Apply()
     {
-        Debug.Log("Dialog : "+Locals.GetLocal(dialogID));
+        GameGUI.instance.ShowDialog(dialogID);
+        while(!CutsceneManager.instance.ConsumeUserSubmit()){
+            yield return new WaitForEndOfFrame();
+        }
+        GameGUI.instance.SetDialogOpen(false);
         yield return 0;
     }
 }
