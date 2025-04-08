@@ -20,6 +20,14 @@ public class DialogNode : SpailpinNode {
     public override IEnumerator Apply()
     {
         GameGUI.instance.ShowDialog(dialogID);
+
+        // Dialog appears
+        while(GameGUI.instance.showingDialog){
+            if(CutsceneManager.instance.ConsumeUserSubmit()) GameGUI.instance.SetSkipDialogTag();
+            yield return new WaitForEndOfFrame();
+        }
+
+        // Wait for user input
         while(!CutsceneManager.instance.ConsumeUserSubmit()){
             yield return new WaitForEndOfFrame();
         }

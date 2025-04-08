@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 /// <summary>
@@ -11,7 +14,10 @@ public class GameGUI : MonoBehaviour
     [Header("Dialog")]
     [SerializeField] private GameObject dialogRoot;
     [SerializeField] private LocalizedText dialogText;
+    private Coroutine routineDialog;
+    private bool skipDialog = false;
     
+    public bool showingDialog {get{return routineDialog != null;}}
     public bool isPauseOpen {get{return root.activeInHierarchy;}}
     public static GameGUI instance;
 
@@ -19,6 +25,13 @@ public class GameGUI : MonoBehaviour
     void Awake()
     {
         instance = this;
+    }
+
+    /// <summary>
+    /// Sets the skip dialog tag to true
+    /// </summary>
+    public void SetSkipDialogTag(){
+        skipDialog = true;
     }
 
     /// <summary>
@@ -50,11 +63,66 @@ public class GameGUI : MonoBehaviour
     /// </summary>
     /// <param name="dialogID">The dialog's ID</param>
     public void ShowDialog(string dialogID){
-        SetDialogOpen(true);
-        dialogText.SetNewKey(dialogID);
+        if(routineDialog != null) StopCoroutine(routineDialog);
+        routineDialog = StartCoroutine(Routine_Dialog(dialogID));
     }
 
+    /// <summary>
+    /// Routine for showing a dialog
+    /// </summary>
+    /// <param name="dialogID">The dialog's ID</param>
+    /// <returns>IEnumerator</returns>
+    private IEnumerator Routine_Dialog(string dialogID){
 
+        int charactersPerFrame = 1;
+        float speed = 5f;
+        skipDialog = false;
+
+
+        SetDialogOpen(true);
+        dialogText.SetNewKey(dialogID);
+        TMP_Text txt = dialogText.GetText();
+        
+		int runsThisFrame = 0;
+
+		txt.ForceMeshUpdate(false);
+		TMP_TextInfo inf = txt.textInfo;
+		int vis = 0;
+		int max = inf.characterCount;
+		int cpf = charactersPerFrame;
+
+		List<char> punctuation = new List<char>(new char[] { '.', ',', ';', '!', '?' });
+
+        while (vis < max)
+        {
+            //allow skipping by increasing the characters per frame and the speed of occurance.
+            if (skipDialog)
+            {
+                speed = 1;
+                charactersPerFrame = charactersPerFrame < 5 ? 5 : charactersPerFrame + 3;
+            }
+
+            //reveal a certain number of characters per frame.
+            while (runsThisFrame < charactersPerFrame)
+            {
+                vis++;
+                txt.maxVisibleCharacters = vis;
+                runsThisFrame++;
+            }
+
+            if (!skipDialog)
+            {
+                speed = punctuation.Contains(inf.characterInfo[vis - 1].character) ? 25 : 5;
+            }
+
+            //wait for the next available revelation time.
+            runsThisFrame = 0;
+            yield return new WaitForSeconds(0.01f * speed);
+        }
+        
+        skipDialog = false;
+        routineDialog = null;
+    }
 
 
 
