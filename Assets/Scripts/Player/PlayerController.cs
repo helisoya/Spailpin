@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
     private Vector3 cachedRight;
 
 
+    public Vector3 position {get{return playerRigidbody.transform.position;}}
+    public Vector3 rotation {get{return playerTransform.eulerAngles;}}
+
+
     void Update()
     {  
         if(moveVector != Vector2.zero){

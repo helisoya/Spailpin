@@ -16,6 +16,12 @@ public class GameGUI : MonoBehaviour
     [SerializeField] private LocalizedText dialogText;
     private Coroutine routineDialog;
     private bool skipDialog = false;
+
+
+    [Header("Fading")]
+    [SerializeField] private Fade fade;
+    public bool fading {get{return fade.fading;}}
+
     
     public bool showingDialog {get{return routineDialog != null;}}
     public bool isPauseOpen {get{return root.activeInHierarchy;}}
@@ -25,6 +31,22 @@ public class GameGUI : MonoBehaviour
     void Awake()
     {
         instance = this;
+    }
+
+    void Start()
+    {
+        fade.ForceAlphaTo(1);
+        fade.FadeTo(0);
+    }
+
+
+    /// <summary>
+    /// Fades the screen
+    /// </summary>
+    /// <param name="alpha">The alpha target</param>
+    /// <param name="speed">The fading speed</param>
+    public void FadeTo(float alpha,float speed = 2f){
+        fade.FadeTo(alpha,speed);
     }
 
     /// <summary>
@@ -119,7 +141,7 @@ public class GameGUI : MonoBehaviour
             runsThisFrame = 0;
             yield return new WaitForSeconds(0.01f * speed);
         }
-        
+
         skipDialog = false;
         routineDialog = null;
     }
@@ -140,5 +162,18 @@ public class GameGUI : MonoBehaviour
         CutsceneManager.instance.UserSubmit();
     }
 
+    /// <summary>
+    /// Callback for loading a save
+    /// </summary>
+    public void Event_LoadGame(){
+        GameManager.instance.LoadGame();
+    }
+
+    /// <summary>
+    /// Callback for saving the game
+    /// </summary>
+    public void Event_SaveGame(){
+        GameManager.instance.SaveGame();
+    }
 
 }

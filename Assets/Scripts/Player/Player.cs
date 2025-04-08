@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerInteraction interactions;
     private Room currentRoom = null;
     public int CurrentRoom { get {return currentRoom != null ? currentRoom.GetID() : -1;}}
+    public Vector3 position {get{return controller.position;}}
+    public Vector3 rotation {get{return controller.rotation;}}
 
     public static Player instance  { get; private set;}
 

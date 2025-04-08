@@ -14,8 +14,21 @@ public class Map : MonoBehaviour
 
     void Start()
     {
-        FindPlayerSpawnPoint();
-        GameManager.instance.mapName = ID;
+        if(GameManager.instance.loadingSave){
+            SaveFile saveFile = GameManager.instance.saveFile;
+            Player.instance.SetPosition(saveFile.playerPosition,Quaternion.Euler(saveFile.playerRotation));
+
+            foreach(Room room in rooms){
+                if(room.GetID() == saveFile.currentRoom){
+                    room.Apply();
+                    break;
+                }
+            }
+            GameManager.instance.loadingSave = false;
+        }else{
+            FindPlayerSpawnPoint();
+            GameManager.instance.mapName = ID;
+        }
     }
 
     /// <summary>
@@ -39,6 +52,5 @@ public class Map : MonoBehaviour
         }else{
             Debug.LogError("No valid spawnpoint found. Did you forget to add a default ");
         }
-
     }
 }
