@@ -9,7 +9,7 @@ using UnityEngine;
 public class GameGUI : MonoBehaviour
 {
     [Header("Pause")]
-    [SerializeField] private GameObject root;
+    [SerializeField] private PauseMenu pauseMenu;
 
     [Header("Dialog")]
     [SerializeField] private GameObject dialogRoot;
@@ -24,7 +24,7 @@ public class GameGUI : MonoBehaviour
 
     
     public bool showingDialog {get{return routineDialog != null;}}
-    public bool isPauseOpen {get{return root.activeInHierarchy;}}
+    public bool isPauseOpen {get{return pauseMenu.isOpen;}}
     public static GameGUI instance;
 
 
@@ -61,7 +61,7 @@ public class GameGUI : MonoBehaviour
     /// </summary>
     public void OpenPause(){
         Time.timeScale = 0f;
-        root.SetActive(true);
+        pauseMenu.Open();
     }
 
     /// <summary>
@@ -69,7 +69,7 @@ public class GameGUI : MonoBehaviour
     /// </summary>
     public void ClosePause(){
         Time.timeScale = 1f;
-        root.SetActive(false);
+        pauseMenu.Close();
     }
 
     /// <summary>
@@ -161,19 +161,4 @@ public class GameGUI : MonoBehaviour
     public void Event_CutsceneSubmit(){
         CutsceneManager.instance.UserSubmit();
     }
-
-    /// <summary>
-    /// Callback for loading a save
-    /// </summary>
-    public void Event_LoadGame(){
-        GameManager.instance.LoadGame();
-    }
-
-    /// <summary>
-    /// Callback for saving the game
-    /// </summary>
-    public void Event_SaveGame(){
-        GameManager.instance.SaveGame();
-    }
-
 }

@@ -1,0 +1,33 @@
+options_general = General
+options_general_save = Sauvegarder
+options_general_load = Charger
+options_general_mainMenu = Menu principal
+options_general_quit = Quiter
+
+options_sound = Son
+options_sound_master = General
+options_sound_music = Musique
+options_sound_sfx = Effets sonores
+
+options_interface = Interface
+options_interface_resolution = Resolution
+options_interface_fullscreen = Plein ecran
+options_interface_brightness = Luminosité
+options_interface_bloom = Bloom
+options_interface_shadows = Ombres
+
+options_language = Langue
+options_language_language = Langue
+options_language_textSize = Taille texte
+options_language_textSpacing = Espacement texte
+options_language_textOpacity = Opacité fond
+
+options_controls = Controles
+
+
+options_access = Accessibilité
+
+
+options_small = Petit
+options_medium = Moyen
+options_big = Grand

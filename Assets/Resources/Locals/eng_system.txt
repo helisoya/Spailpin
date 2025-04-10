@@ -1,0 +1,33 @@
+options_general = General
+options_general_save = Save
+options_general_load = Load
+options_general_mainMenu = Main Menu
+options_general_quit = Quit
+
+options_sound = Sound
+options_sound_master = Master
+options_sound_music = Music
+options_sound_sfx = Sound effects
+
+options_interface = Interface
+options_interface_resolution = Resolution
+options_interface_fullscreen = Fullscreen
+options_interface_brightness = Brightness
+options_interface_bloom = Bloom
+options_interface_shadows = Shadows
+
+options_language = Language
+options_language_language = Language
+options_language_textSize = Text size
+options_language_textSpacing = Text spacing
+options_language_textOpacity = Background opacity
+
+options_controls = Controls
+
+
+options_access = Accessibility
+
+
+options_small = Small
+options_medium = Medium
+options_big = Big
