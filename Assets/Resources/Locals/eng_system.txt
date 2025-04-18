@@ -23,6 +23,9 @@ options_language_textSpacing = Text spacing
 options_language_textOpacity = Background opacity
 
 options_controls = Controls
+options_controls_rebind = Press a key...
+options_controls_rebind_Move = Move
+options_controls_rebind_Error = !Error!
 
 
 options_access = Accessibility

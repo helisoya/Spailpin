@@ -68,6 +68,40 @@ public class Settings
     }
 
     /// <summary>
+    /// Save the current gamepad profile's index
+    /// </summary>
+    /// <param name="newIdx">The new index</param>
+    public void SetCurrentGamePadProfileIdx(int newIdx){
+        data.currentGamepadProfileIdx = newIdx;
+        Save();
+    }
+
+    /// <summary>
+    /// Get the current gamepad's profile index
+    /// </summary>
+    /// <returns>The current index</returns>
+    public int GetCurrentGamePadProfileIdx(){
+        return data.currentGamepadProfileIdx;
+    }
+
+    /// <summary>
+    /// Save the current typo index
+    /// </summary>
+    /// <param name="newIdx">The new typo index</param>
+    public void SetCurrentTypoIndex(int newIdx){
+        data.currentTypoIndex = newIdx;
+        Save();
+    }
+
+    /// <summary>
+    /// Get the current typo index
+    /// </summary>
+    /// <returns>The current typo index</returns>
+    public int GetCurrentTypoIndex(){
+        return data.currentTypoIndex;
+    }
+
+    /// <summary>
     /// Loads the settings from disk
     /// </summary>
     private void Load(){
@@ -125,6 +159,8 @@ public class SettingsData{
     public string language;
 
     public string remaping;
+    public int currentGamepadProfileIdx;
+    public int currentTypoIndex;
 
     public SettingsData(){
     }

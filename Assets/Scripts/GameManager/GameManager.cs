@@ -1,5 +1,6 @@
 using System.Collections;
 using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private InputActionAsset inputs;
+    [SerializeField] private TMP_FontAsset[] fonts;
 
     public static GameManager instance { get; private set;}
     [HideInInspector] public SaveFile saveFile {get; private set;}
@@ -40,6 +42,14 @@ public class GameManager : MonoBehaviour
     /// <returns>The game's input</returns>
     public InputActionAsset GetInputs(){
         return inputs;
+    }
+
+    /// <summary>
+    /// Gets the game's available fonts
+    /// </summary>
+    /// <returns>The game's fonts</returns>
+    public TMP_FontAsset[] GetFonts(){
+        return fonts;
     }
 
 

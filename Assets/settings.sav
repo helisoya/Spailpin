@@ -1,1 +1,1 @@
-{"refreshRateNumerator":241500000,"refreshRateDenominator":4028320,"screenHeight":200,"screenWidth":320,"fullscreen":false,"language":"eng","remaping":""}
+{"refreshRateNumerator":241500000,"refreshRateDenominator":4028320,"screenHeight":200,"screenWidth":320,"fullscreen":false,"language":"eng","remaping":"{\"bindings\":[{\"action\":\"Player/Move\",\"id\":\"978bfe49-cc26-4a3d-ab7b-7d7a29327403\",\"path\":\"<Gamepad>/rightStick\",\"interactions\":\"null\",\"processors\":\"null\"}]}","currentGamepadProfileIdx":1}
