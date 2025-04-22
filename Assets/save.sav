@@ -1,1 +1,1 @@
-{"mapName":"IntroTest","playerPosition":{"x":1.340000033378601,"y":-1.3950004577636719,"z":-27.673803329467775},"playerRotation":{"x":0.0,"y":180.0,"z":0.0},"currentRoom":1,"items":[{"ID":"tutorialDone","value":1},{"ID":"riddle1Done","value":0}]}
+{"mapName":"IntroTest","playerPosition":{"x":1.4905827045440674,"y":-0.9126811623573303,"z":6.8571882247924809},"playerRotation":{"x":0.0,"y":180.0,"z":0.0},"currentRoom":2,"items":[{"ID":"tutorialDone","value":1},{"ID":"riddle1Done","value":0}]}

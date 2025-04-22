@@ -1,6 +1,7 @@
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 /// <summary>
 /// Represents the Spailpin player
@@ -16,12 +17,22 @@ public class Player : MonoBehaviour
     public Vector3 rotation {get{return controller.rotation;}}
 
     public static Player instance  { get; private set;}
+    private Puzzle currentPuzzle;
+    public bool inPuzzle {get{return currentPuzzle != null;}}
 
 
 
     void Awake()
     {
         instance = this;
+    }
+
+    /// <summary>
+    /// Sets the current puzzle
+    /// </summary>
+    /// <param name="puzzle">The current puzzle</param>
+    public void SetCurrentPuzzle(Puzzle puzzle){
+        currentPuzzle = puzzle;
     }
 
     /// <summary>
@@ -71,7 +82,12 @@ public class Player : MonoBehaviour
     void OnMove(InputValue value){
         if(CutsceneManager.instance.inCutscene) return;
         // GameGUI.instance.isPauseOpen || 
-        controller.SetMovementVector(value.Get<Vector2>());
+        if(inPuzzle){
+            currentPuzzle.FowardInput(Puzzle.InputType.MOVEMENT,value);
+        }else{
+            controller.SetMovementVector(value.Get<Vector2>());
+        }
+        
     }
 
     /// <summary>
@@ -79,7 +95,7 @@ public class Player : MonoBehaviour
     /// </summary>
     /// <param name="value">The sprinting value</param>
     void OnSprint(InputValue value){
-        if(GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene){
+        if(GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || inPuzzle){
             controller.SetSprinting(false);
             return;
         }
@@ -114,6 +130,7 @@ public class Player : MonoBehaviour
     void OnInteract(InputValue value){
         if(GameGUI.instance.isPauseOpen) return;
         if(CutsceneManager.instance.inCutscene) CutsceneManager.instance.UserSubmit();
+        else if(inPuzzle) currentPuzzle.FowardInput(Puzzle.InputType.ACCEPT,value);
         else interactions.TryInterract();
     }
 }

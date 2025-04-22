@@ -10,8 +10,26 @@ public class Map : MonoBehaviour
     [SerializeField] private string ID;
     [SerializeField] private Room[] rooms;
     [SerializeField] private Spawnpoint[] spawnpoints;
+    [SerializeField] private Puzzle[] puzzles;
     private bool isUpdatingCamera;
 
+    public static Map instance {get;private set;}
+
+    void Awake()
+    {
+        instance = this;   
+    }
+
+    /// <summary>
+    /// Starts a puzzle
+    /// </summary>
+    /// <param name="ID">The puzzle's ID</param>
+    public void StartPuzzle(int ID){
+        foreach(Puzzle puzzle in puzzles){
+            if(puzzle.ID == ID) puzzle.StartPuzzle();
+            return;
+        }
+    }
 
     void Start()
     {

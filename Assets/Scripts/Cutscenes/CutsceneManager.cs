@@ -37,6 +37,20 @@ public class CutsceneManager : MonoBehaviour
         instance = this;   
     }
 
+    /// <summary>
+    /// Stop processing a cutscene
+    /// </summary>
+    public void StopProcessing(){
+        if(processingCutscene != null){
+            StopCoroutine(processingCutscene);
+            processingCutscene = null;
+        }
+    }
+
+    /// <summary>
+    /// Start processing a cutscene
+    /// </summary>
+    /// <param name="graph">The cutscene's graph</param>
     public void ProcessCutscene(DialogGraph graph){
         if(processingCutscene != null){
             StopCoroutine(processingCutscene);

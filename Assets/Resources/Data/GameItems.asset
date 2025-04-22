@@ -15,5 +15,5 @@ MonoBehaviour:
   items:
   - ID: tutorialDone
     value: 0
-  - ID: riddle1Done
+  - ID: puzzle1Done
     value: 0
