@@ -8,9 +8,9 @@ using XNode;
 [CreateNodeMenu("Event/Dialog")]
 public class DialogNode : SpailpinNode {
 
-    [Input] public bool entry;
-    [Input] public string dialogID;
-    [Output] public bool exit;
+    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Override)] public string dialogID;
+    [Output(connectionType = ConnectionType.Override)] public bool exit;
 
 	// Use this for initialization
 	protected override void Init() {
