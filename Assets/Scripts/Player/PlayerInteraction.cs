@@ -45,6 +45,7 @@ public class PlayerInteraction : MonoBehaviour
     public void TryInterract(){
         if(currentObject != null){
             Player.instance.SetMovementVector(Vector2.zero);
+            Player.instance.SetSprinting(false);
 
             currentObject.SetActive(false);
             currentObject.Interract();

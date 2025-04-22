@@ -12,13 +12,12 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private InputActionAsset inputs;
     [SerializeField] private TMP_FontAsset[] fonts;
+    [SerializeField] private GameItems items;
 
     public static GameManager instance { get; private set;}
-    [HideInInspector] public SaveFile saveFile {get; private set;}
     private Coroutine routineChangeScene;
+    private SaveManager save;
 
-    private string saveFilePath = FileManager.savPath + "save.sav";
-    public bool saveFileExists {get{return File.Exists(saveFilePath);}}
     public bool changingScene {get{return routineChangeScene != null;}}
     public bool loadingSave {get; set;}
 
@@ -27,9 +26,9 @@ public class GameManager : MonoBehaviour
 
         if(instance == null){
             instance = this;
-            saveFile = new SaveFile();
             Locals.Init();
             Settings.Init();
+            save = new SaveManager(items);
             DontDestroyOnLoad(gameObject);
         }else{
             Destroy(gameObject);
@@ -55,32 +54,19 @@ public class GameManager : MonoBehaviour
 
     public string mapName {
         get{
-            return saveFile.mapName;
+            return save.saveFile.mapName;
         }
         set{
-            saveFile.mapName = value;
+            save.saveFile.mapName = value;
         }
     }
 
     /// <summary>
-    /// Saves the game
+    /// Gets the save manager
     /// </summary>
-    public void SaveGame(){
-        saveFile.currentRoom = Player.instance.CurrentRoom;
-        saveFile.playerPosition = Player.instance.position;
-        saveFile.playerRotation = Player.instance.rotation;
-        FileManager.SaveJSON(saveFilePath, saveFile);
-    }
-
-    /// <summary>
-    /// Loads the game
-    /// </summary>
-    public void LoadGame(){
-        if(saveFileExists){
-            saveFile = FileManager.LoadJSON<SaveFile>(saveFilePath);
-            loadingSave = true;
-            ChangeScene(saveFile.mapName);
-        }
+    /// <returns>The save manager</returns>
+    public SaveManager GetSaveManager(){
+        return save;
     }
 
     /// <summary>

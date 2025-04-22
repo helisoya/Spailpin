@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
 
     public static Player instance  { get; private set;}
 
+
+
     void Awake()
     {
         instance = this;
@@ -67,7 +69,8 @@ public class Player : MonoBehaviour
     /// </summary>
     /// <param name="value">The movement value</param>
     void OnMove(InputValue value){
-        if(GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene) return;
+        if(CutsceneManager.instance.inCutscene) return;
+        // GameGUI.instance.isPauseOpen || 
         controller.SetMovementVector(value.Get<Vector2>());
     }
 
@@ -85,12 +88,23 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
+    /// Changes if the player is sprinting or not
+    /// </summary>
+    /// <param name="sprinting">True if the player is sprinting</param>
+    public void SetSprinting(bool sprinting){
+        controller.SetSprinting(sprinting);
+    }
+
+    /// <summary>
     /// OnPause callback
     /// </summary>
     /// <param name="value">The pause value (unused)</param>
     void OnPause(InputValue value){
         if(GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
-        else GameGUI.instance.OpenPause();
+        else{
+            //controller.SetMovementVector(Vector2.zero);
+            GameGUI.instance.OpenPause();
+        } 
     }
 
     /// <summary>

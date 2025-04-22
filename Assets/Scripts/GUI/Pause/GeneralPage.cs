@@ -21,14 +21,14 @@ public class GeneralPage : PausePage
     /// Callback for loading a save
     /// </summary>
     public void Event_LoadGame(){
-        GameManager.instance.LoadGame();
+        GameManager.instance.GetSaveManager().LoadGame();
     }
 
     /// <summary>
     /// Callback for saving the game
     /// </summary>
     public void Event_SaveGame(){
-        GameManager.instance.SaveGame();
+        GameManager.instance.GetSaveManager().SaveGame();
     }
 
     /// <summary>

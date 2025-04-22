@@ -9,7 +9,7 @@ using XNode;
 public class DialogNode : SpailpinNode {
 
     [Input(connectionType = ConnectionType.Override)] public bool entry;
-    [Input(connectionType = ConnectionType.Override)] public string dialogID;
+    [SerializeField] private string dialogID;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 
 	// Use this for initialization

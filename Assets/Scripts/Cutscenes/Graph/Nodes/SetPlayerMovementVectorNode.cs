@@ -2,13 +2,13 @@ using System.Collections;
 using UnityEngine;
 
 /// <summary>
-/// Represents a node that waits for X seconds
+/// Node to set the player's movement vector
 /// </summary>
-[CreateNodeMenu("Control/Wait")]
-public class WaitNode : SpailpinNode
+[CreateNodeMenu("Event/Player's movement vector")]
+public class SetPlayerMovementVectorNode : SpailpinNode
 {
     [Input(connectionType = ConnectionType.Override)] public bool entry;
-    [SerializeField] private float waitTime;
+    [SerializeField] private Vector2 moveVector;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 
 	// Use this for initialization
@@ -18,7 +18,7 @@ public class WaitNode : SpailpinNode
 
     public override IEnumerator Apply()
     {
-        yield return new WaitForSeconds(waitTime);
+        Player.instance.SetMovementVector(moveVector);
         yield return 0;
     }
 }

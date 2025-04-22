@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -7,6 +8,7 @@ public class SaveFile
     public Vector3 playerPosition;
     public Vector3 playerRotation;
     public int currentRoom;
+    public List<GameItems.Item> items;
 
     public SaveFile(){
         mapName = "Test";

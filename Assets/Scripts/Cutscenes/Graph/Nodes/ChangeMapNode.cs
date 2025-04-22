@@ -8,7 +8,7 @@ using UnityEngine;
 public class ChangeMapNode : SpailpinNode
 {
     [Input(connectionType = ConnectionType.Override)] public bool entry;
-    [Input(connectionType = ConnectionType.Override)] public string mapID;
+    [SerializeField] private string mapID;
 
 	// Use this for initialization
 	protected override void Init() {
