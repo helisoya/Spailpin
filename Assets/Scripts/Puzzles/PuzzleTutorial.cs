@@ -54,6 +54,8 @@ public class PuzzleTutorial : Puzzle
     public override void OnEnd(bool cancelled)
     {
         miniGameCamera.Priority = 0;
+        currentObjIdx = -1;
+        RefreshVisualSelection();
         if(!cancelled) CutsceneManager.instance.ProcessCutscene(endGraph);
     }
 
