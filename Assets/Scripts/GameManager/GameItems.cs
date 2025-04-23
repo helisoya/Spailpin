@@ -16,5 +16,17 @@ public class GameItems : ScriptableObject
     public class Item{
         public string ID;
         public int value;
+
+
+        public override bool Equals(object obj)
+        {
+            if(obj.GetType() != typeof(Item)) return false;
+            return this.ID.Equals(((Item)obj).ID);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

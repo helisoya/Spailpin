@@ -24,10 +24,11 @@ public abstract class Puzzle : MonoBehaviour
     /// <summary>
     /// Ends the puzzle
     /// </summary>
-    public void EndPuzzle(){
+    /// <param name="cancelled">True if the minigame was cancelled before it's end</param>
+    public void EndPuzzle(bool cancelled){
         active = false;
         Player.instance.SetCurrentPuzzle(null);
-        OnEnd();
+        OnEnd(cancelled);
     }
 
     void Update()
@@ -55,5 +56,6 @@ public abstract class Puzzle : MonoBehaviour
     /// <summary>
     /// On End Event
     /// </summary>
-    public abstract void OnEnd();
+    /// <param name="cancelled">True if the minigame was cancelled before it's end</param>
+    public abstract void OnEnd(bool cancelled);
 }

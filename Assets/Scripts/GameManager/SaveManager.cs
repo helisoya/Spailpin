@@ -10,8 +10,10 @@ public class SaveManager
     public SaveFile saveFile {get; private set;}
     private string saveFilePath = FileManager.savPath + "save.sav";
     public bool saveFileExists {get{return File.Exists(saveFilePath);}}
+    private GameItems items;
 
     public SaveManager(GameItems items){
+        this.items = items;
         saveFile = new SaveFile();
         saveFile.items = new List<GameItems.Item>();
         foreach(GameItems.Item item in items.items){
@@ -64,9 +66,22 @@ public class SaveManager
     public void LoadGame(){
         if(saveFileExists){
             saveFile = FileManager.LoadJSON<SaveFile>(saveFilePath);
+
+            /// Add Missing variables
+            foreach(GameItems.Item item in items.items){
+                if(!saveFile.items.Contains(item)) saveFile.items.Add(new(){ID = item.ID, value = item.value});
+            }
+
+            // Remove excess variables
+
+            int i = 0;
+            while(i < saveFile.items.Count){
+                if(!items.items.Contains(saveFile.items[i])) saveFile.items.RemoveAt(i);
+                else i++;
+            }
+
             GameManager.instance.loadingSave = true;
             GameManager.instance.ChangeScene(saveFile.mapName);
         }
     }
-
 }

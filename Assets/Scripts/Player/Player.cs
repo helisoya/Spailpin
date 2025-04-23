@@ -116,7 +116,8 @@ public class Player : MonoBehaviour
     /// </summary>
     /// <param name="value">The pause value (unused)</param>
     void OnPause(InputValue value){
-        if(GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
+        if(inPuzzle) currentPuzzle.FowardInput(Puzzle.InputType.CANCEL,value);
+        else if(GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
         else{
             //controller.SetMovementVector(Vector2.zero);
             GameGUI.instance.OpenPause();

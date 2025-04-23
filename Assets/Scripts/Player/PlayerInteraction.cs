@@ -20,7 +20,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        if(GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene) return;
+        if(GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || Player.instance.inPuzzle) return;
         
         Collider[] colliders = Physics.OverlapSphere(transform.position,interactionRadius,interactionMask);
         if(colliders.Length >= 1){
