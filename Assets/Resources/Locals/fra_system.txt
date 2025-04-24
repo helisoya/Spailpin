@@ -25,6 +25,8 @@ options_language_textOpacity = Opacité fond
 options_controls = Controles
 options_controls_rebind = Appuyez sur une touche...
 options_controls_rebind_Move = Mouvements
+options_controls_rebind_Interact = Intéragir
+options_controls_rebind_Pause = Pause
 options_controls_rebind_Error = !Erreur!
 
 options_access = Accessibilité

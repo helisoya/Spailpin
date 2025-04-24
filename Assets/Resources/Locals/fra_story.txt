@@ -3,4 +3,6 @@ Test_2 = Bonjour, Pinpin.
 
 Exterior_Door_NotDone_1 = La porte est fermée.
 Exterior_Door_NotDone_2 = Peut-être que le carnet peut m'aider à l'ouvrir.
+
+Exterior_Puzzle_Finished_1 = La porte est ouverte.
 Exterior_Puzzle_Done_1 = Je n'ai plus besoin d'y toucher.

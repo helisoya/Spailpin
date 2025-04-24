@@ -25,6 +25,8 @@ options_language_textOpacity = Background opacity
 options_controls = Controls
 options_controls_rebind = Press a key...
 options_controls_rebind_Move = Move
+options_controls_rebind_Interact = Interact
+options_controls_rebind_Pause = Pause
 options_controls_rebind_Error = !Error!
 
 

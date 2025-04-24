@@ -1,4 +1,5 @@
 using Unity.Cinemachine;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,6 +13,9 @@ public class PuzzleTutorial : Puzzle
     [SerializeField] private DialogGraph endGraph;
     [SerializeField] private int[] sequence;
     [SerializeField] private GameObject[] selectionObjs;
+    [SerializeField] private float actionCooldown = 0.1f;
+    private float lastAction;
+    private int moveDirection = 0;
 
     private int currentSequenceIdx;
     private int currentObjIdx;
@@ -43,8 +47,9 @@ public class PuzzleTutorial : Puzzle
         else if(type == InputType.MOVEMENT)
         {
             float value = inputValue.Get<Vector2>().x;
-            currentObjIdx = (currentObjIdx + (value < 0 ? -1 : (value > 0 ? 1 : 0)) + 3) % 3;
-            RefreshVisualSelection();
+            moveDirection = value < -0.75f ? -1 : (value > 0.75f ? 1 : 0);
+            print(value+" -> "+moveDirection);
+            if(moveDirection == 0) lastAction = 0;
         }
         else if(type == InputType.CANCEL && inputValue.isPressed){
             EndPuzzle(true);
@@ -70,6 +75,11 @@ public class PuzzleTutorial : Puzzle
 
     public override void OnUpdate()
     {
+        if(moveDirection != 0  && Time.time - lastAction >= actionCooldown){
+            lastAction = Time.time;
 
+            currentObjIdx = (currentObjIdx + moveDirection + 3) % 3;
+            RefreshVisualSelection();
+        }
     }
 }

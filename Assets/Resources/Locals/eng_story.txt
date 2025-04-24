@@ -3,4 +3,6 @@ Test_2 = Hello, Pinpin.
 
 Exterior_Door_NotDone_1 = The door is locked.
 Exterior_Door_NotDone_2 = Maybe the notebook can help me open it.
+
+Exterior_Puzzle_Finished_1 = The door is unlocked.
 Exterior_Puzzle_Done_1 = I don't need to do this anymore.
