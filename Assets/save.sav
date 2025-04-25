@@ -1,1 +1,1 @@
-{"mapName":"IntroTest","playerPosition":{"x":1.4905827045440674,"y":-0.8950004577636719,"z":7.263836860656738},"playerRotation":{"x":0.0,"y":180.0,"z":0.0},"currentRoom":2,"items":[{"ID":"tutorialDone","value":1},{"ID":"puzzle1Done","value":0}]}
+{"mapName":"IntroTest","playerPosition":{"x":0.8475325107574463,"y":-0.8950004577636719,"z":8.308520317077637},"playerRotation":{"x":0.0,"y":270.0,"z":0.0},"currentRoom":2,"items":[{"ID":"tutorialDone","value":1},{"ID":"puzzle1Done","value":0}]}
