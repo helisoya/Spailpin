@@ -1,5 +1,48 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8958035828990168413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd153dfe16758c74d9a9ec610befbb9d, type: 3}
+  m_Name: Cutscene Bar
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 824, y: -24}
+  ports:
+    keys:
+    - entry
+    - exit
+    values:
+    - _fieldName: entry
+      _node: {fileID: -8958035828990168413}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit
+        node: {fileID: -4640834540578943108}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: -8958035828990168413}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  entry: 0
+  cutsceneBarActive: 0
+  exit: 0
 --- !u!114 &-8561461019618702743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +124,10 @@ MonoBehaviour:
       _node: {fileID: -4640834540578943108}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: entry
+        node: {fileID: -8958035828990168413}
+        reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
@@ -181,7 +227,7 @@ MonoBehaviour:
   m_Name: Start
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -696, y: 88}
+  position: {x: -968, y: 136}
   ports:
     keys:
     - exit
@@ -192,7 +238,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 6753046004308498555}
+        node: {fileID: 7784287795793582880}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -219,6 +265,8 @@ MonoBehaviour:
   - {fileID: 6753046004308498555}
   - {fileID: -3251298726805313397}
   - {fileID: -4640834540578943108}
+  - {fileID: 7784287795793582880}
+  - {fileID: -8958035828990168413}
 --- !u!114 &6753046004308498555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,7 +293,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: exit
-        node: {fileID: -165025555650158891}
+        node: {fileID: 7784287795793582880}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -283,6 +331,52 @@ MonoBehaviour:
     value: 0
   checkTrue: 0
   checkFalse: 0
+--- !u!114 &7784287795793582880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd153dfe16758c74d9a9ec610befbb9d, type: 3}
+  m_Name: Cutscene Bar
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -696, y: 136}
+  ports:
+    keys:
+    - entry
+    - exit
+    values:
+    - _fieldName: entry
+      _node: {fileID: 7784287795793582880}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit
+        node: {fileID: -165025555650158891}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 7784287795793582880}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: 6753046004308498555}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  entry: 0
+  cutsceneBarActive: 1
+  exit: 0
 --- !u!114 &8395616272247061207
 MonoBehaviour:
   m_ObjectHideFlags: 0
