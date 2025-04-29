@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_TooShader_ExteriorHouse_Transparent
+  m_Name: ExteriorHouse_Material_HouseFullTextureTransparent
   m_Shader: {fileID: -6465566751694194690, guid: 7afc61eb888ecc74d93a902040ac875c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -58,6 +58,6 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _ShadowColor: {r: 0.33168927, g: 0, b: 0.5283019, a: 0}
+    - _ShadowColor: {r: 0.5764706, g: 0, b: 0.16078432, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

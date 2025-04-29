@@ -1332,10 +1332,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1089.9998779296875,
-            "y": -70.66661834716797,
-            "width": 209.3331298828125,
-            "height": 327.9999084472656
+            "x": -947.9998779296875,
+            "y": -574.0,
+            "width": 207.9998779296875,
+            "height": 326.00006103515627
         }
     },
     "m_Slots": [
@@ -1378,10 +1378,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1894.6669921875,
-            "y": -653.3333740234375,
-            "width": 209.3333740234375,
-            "height": 436.00006103515627
+            "x": -1966.0,
+            "y": -709.0001220703125,
+            "width": 208.0,
+            "height": 433.0000915527344
         }
     },
     "m_Slots": [
@@ -1532,10 +1532,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1302.0001220703125,
-            "y": -703.3333740234375,
-            "width": 209.333251953125,
-            "height": 362.6666564941406
+            "x": -1335.9998779296875,
+            "y": -773.9999389648438,
+            "width": 208.0,
+            "height": 360.0
         }
     },
     "m_Slots": [
@@ -1596,10 +1596,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2200.66650390625,
-            "y": -635.3331909179688,
-            "width": 124.66650390625,
-            "height": 36.0
+            "x": -2191.0,
+            "y": -756.0,
+            "width": 124.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -2005,10 +2005,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1634.068359375,
-            "y": -874.2725219726563,
-            "width": 0.0,
-            "height": 0.0
+            "x": -2188.0,
+            "y": -792.0,
+            "width": 147.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -2290,8 +2290,8 @@
     "m_ZTestMode": 4,
     "m_ZWriteControl": 0,
     "m_AlphaMode": 0,
-    "m_RenderFace": 0,
-    "m_AlphaClip": false,
+    "m_RenderFace": 2,
+    "m_AlphaClip": true,
     "m_CastShadows": true,
     "m_ReceiveShadows": true,
     "m_DisableTint": false,
