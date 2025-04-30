@@ -14,6 +14,7 @@ public class GameGUI : MonoBehaviour
     [Header("Dialog")]
     [SerializeField] private GameObject dialogRoot;
     [SerializeField] private LocalizedText dialogText;
+    [SerializeField] private Animator cutsceneBar;
     private Coroutine routineDialog;
     private bool skipDialog = false;
 
@@ -87,6 +88,14 @@ public class GameGUI : MonoBehaviour
     public void ShowDialog(string dialogID){
         if(routineDialog != null) StopCoroutine(routineDialog);
         routineDialog = StartCoroutine(Routine_Dialog(dialogID));
+    }
+
+    /// <summary>
+    /// Sets if the cutscene's bar are active or not
+    /// </summary>
+    /// <param name="active">True if the bars are visible</param>
+    public void SetCutsceneBarActive(bool active){
+        cutsceneBar.SetBool("Show",active);
     }
 
     /// <summary>
