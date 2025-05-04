@@ -14,9 +14,10 @@ public class PlayerController : MonoBehaviour
     [Header("Components")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Rigidbody playerRigidbody;
+    [SerializeField] private Animator playerAnimator;
     private bool running = false;
     private Vector2 moveVector;
-    
+
     private Vector3 currentForward;
     private Vector3 currentRight;
 
@@ -25,20 +26,23 @@ public class PlayerController : MonoBehaviour
     private Vector3 cachedRight;
 
 
-    public Vector3 position {get{return playerRigidbody.transform.position;}}
-    public Vector3 rotation {get{return playerTransform.eulerAngles;}}
+    public Vector3 position { get { return playerRigidbody.transform.position; } }
+    public Vector3 rotation { get { return playerTransform.eulerAngles; } }
 
 
     void Update()
-    {  
-        if(moveVector != Vector2.zero){
+    {
+        if (moveVector != Vector2.zero)
+        {
             Vector3 rotVector = moveVector.y * currentForward + moveVector.x * currentRight;
             rotVector.y = 0;
             rotVector.Normalize();
 
-            Quaternion toQuat = Quaternion.LookRotation(rotVector,Vector3.up);
-            playerTransform.rotation = Quaternion.RotateTowards(playerTransform.rotation,toQuat,rotationSpeed * Time.deltaTime);
+            Quaternion toQuat = Quaternion.LookRotation(rotVector, Vector3.up);
+            playerTransform.rotation = Quaternion.RotateTowards(playerTransform.rotation, toQuat, rotationSpeed * Time.deltaTime);
         }
+
+        playerAnimator.SetBool("Moving", moveVector != Vector2.zero);
     }
 
     void FixedUpdate()
@@ -46,8 +50,8 @@ public class PlayerController : MonoBehaviour
         // Player Movements
         float actualSpeed = running ? playerRunSpeed : playerWalkSpeed;
         float ySpeed = playerRigidbody.linearVelocity.y;
-        playerRigidbody.linearVelocity =  currentForward * actualSpeed * moveVector.y + currentRight * actualSpeed * moveVector.x;
-        playerRigidbody.linearVelocity = new Vector3(playerRigidbody.linearVelocity.x,ySpeed,playerRigidbody.linearVelocity.z);
+        playerRigidbody.linearVelocity = currentForward * actualSpeed * moveVector.y + currentRight * actualSpeed * moveVector.x;
+        playerRigidbody.linearVelocity = new Vector3(playerRigidbody.linearVelocity.x, ySpeed, playerRigidbody.linearVelocity.z);
     }
 
     /// <summary>
@@ -56,12 +60,16 @@ public class PlayerController : MonoBehaviour
     /// <param name="forward">The new forward vector</param>
     /// <param name="right">The new right vector</param>
     /// <param name="force">Should the change be forced ?</param>
-    public void ChangeDirectionVectors(Vector3 forward,Vector3 right, bool force){
-        if(force || moveVector == Vector2.zero){
+    public void ChangeDirectionVectors(Vector3 forward, Vector3 right, bool force)
+    {
+        if (force || moveVector == Vector2.zero)
+        {
             cachedDirections = false;
             currentForward = forward;
             currentRight = right;
-        }else{
+        }
+        else
+        {
             cachedDirections = true;
             cachedForward = forward;
             cachedRight = right;
@@ -74,7 +82,8 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     /// <param name="position">The new rotation</param>
     /// <param name="rotation">The new rotation</param>
-    public void SetPosition(Vector3 position, Quaternion rotation){
+    public void SetPosition(Vector3 position, Quaternion rotation)
+    {
         playerRigidbody.position = position;
         playerRigidbody.rotation = rotation;
     }
@@ -84,10 +93,12 @@ public class PlayerController : MonoBehaviour
     /// Sets the controller's move vector
     /// </summary>
     /// <param name="moveVector">The new move vector</param>
-    public void SetMovementVector(Vector2 moveVector){
+    public void SetMovementVector(Vector2 moveVector)
+    {
         this.moveVector = moveVector;
 
-        if(moveVector == Vector2.zero && cachedDirections){
+        if (moveVector == Vector2.zero && cachedDirections)
+        {
             cachedDirections = false;
             currentForward = cachedForward;
             currentRight = cachedRight;
@@ -98,7 +109,8 @@ public class PlayerController : MonoBehaviour
     /// Sets if the player is running or not
     /// </summary>
     /// <param name="running">True if the player is running</param>
-    public void SetSprinting(bool running){
+    public void SetSprinting(bool running)
+    {
         this.running = running;
     }
 }
