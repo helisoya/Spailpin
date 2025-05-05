@@ -9,19 +9,24 @@ public class Settings
     private SettingsData data;
     public static Settings instance;
 
-    public string filePath {
-        get{
-            return FileManager.savPath+"settings.sav";
-            }
+    public string filePath
+    {
+        get
+        {
+            return FileManager.savPath + "settings.sav";
+        }
     }
 
-    public bool fileExistsOnDisk {
-        get{
+    public bool fileExistsOnDisk
+    {
+        get
+        {
             return System.IO.File.Exists(filePath);
         }
     }
 
-    public static void Init(){
+    public static void Init()
+    {
         instance = new Settings();
     }
 
@@ -29,7 +34,8 @@ public class Settings
     /// Changes the current language
     /// </summary>
     /// <param name="newLanguage">The new language</param>
-    public void ChangeLanguage(string newLanguage){
+    public void ChangeLanguage(string newLanguage)
+    {
         data.language = newLanguage;
         Locals.ChangeLanguage(newLanguage);
         Save();
@@ -39,7 +45,8 @@ public class Settings
     /// Changes if the game is in fullscreen or not
     /// </summary>
     /// <param name="isFullScreen">True if the game is in fullscreen</param>
-    public void SetFullScreen(bool isFullScreen){
+    public void SetFullScreen(bool isFullScreen)
+    {
         data.fullscreen = isFullScreen;
         Screen.fullScreen = isFullScreen;
         Save();
@@ -49,20 +56,79 @@ public class Settings
     /// Changes the game's resolution
     /// </summary>
     /// <param name="newResolution">The new resolution</param>
-    public void SetResolution(Resolution newResolution){
+    public void SetResolution(Resolution newResolution)
+    {
         data.refreshRateNumerator = newResolution.refreshRateRatio.numerator;
         data.refreshRateDenominator = newResolution.refreshRateRatio.denominator;
         data.screenWidth = newResolution.width;
         data.screenHeight = newResolution.height;
-        Screen.SetResolution(newResolution.width,newResolution.height,Screen.fullScreenMode,newResolution.refreshRateRatio);
+        Screen.SetResolution(newResolution.width, newResolution.height, Screen.fullScreenMode, newResolution.refreshRateRatio);
         Save();
+    }
+
+    /// <summary>
+    /// Sets the master's volume
+    /// </summary>
+    /// <param name="value">The new volume</param>
+    public void SetVolumeMaster(float value)
+    {
+        data.volumeMaster = value;
+        Save();
+    }
+
+    /// <summary>
+    /// Gets the master's volume
+    /// </summary>
+    /// <returns>The master's volume</returns>
+    public float GetVolumeMaster()
+    {
+        return data.volumeMaster;
+    }
+
+    /// <summary>
+    /// Sets the music's volume
+    /// </summary>
+    /// <param name="value">The new volume</param>
+    public void SetVolumeMusic(float value)
+    {
+        data.volumeMusic = value;
+        Save();
+    }
+
+    /// <summary>
+    /// Gets the music's volume
+    /// </summary>
+    /// <returns>The music's volume</returns>
+    public float GetVolumeMusic()
+    {
+        return data.volumeMusic;
+    }
+
+    /// <summary>
+    /// Sets the SFX's volume
+    /// </summary>
+    /// <param name="value">The new volume</param>
+    public void SetVolumeSFX(float value)
+    {
+        data.volumeSfx = value;
+        Save();
+    }
+
+    /// <summary>
+    /// Gets the SFX's volume
+    /// </summary>
+    /// <returns>The SFX's volume</returns>
+    public float GetVolumeSFX()
+    {
+        return data.volumeSfx;
     }
 
     /// <summary>
     /// Save the game's bindings
     /// </summary>
     /// <param name="bindings">The new bindings (JSON)</param>
-    public void SetBindings(string bindings){
+    public void SetBindings(string bindings)
+    {
         data.remaping = bindings;
         Save();
     }
@@ -71,7 +137,8 @@ public class Settings
     /// Save the current gamepad profile's index
     /// </summary>
     /// <param name="newIdx">The new index</param>
-    public void SetCurrentGamePadProfileIdx(int newIdx){
+    public void SetCurrentGamePadProfileIdx(int newIdx)
+    {
         data.currentGamepadProfileIdx = newIdx;
         Save();
     }
@@ -80,7 +147,8 @@ public class Settings
     /// Get the current gamepad's profile index
     /// </summary>
     /// <returns>The current index</returns>
-    public int GetCurrentGamePadProfileIdx(){
+    public int GetCurrentGamePadProfileIdx()
+    {
         return data.currentGamepadProfileIdx;
     }
 
@@ -88,7 +156,8 @@ public class Settings
     /// Save the current typo index
     /// </summary>
     /// <param name="newIdx">The new typo index</param>
-    public void SetCurrentTypoIndex(int newIdx){
+    public void SetCurrentTypoIndex(int newIdx)
+    {
         data.currentTypoIndex = newIdx;
         Save();
     }
@@ -97,14 +166,16 @@ public class Settings
     /// Get the current typo index
     /// </summary>
     /// <returns>The current typo index</returns>
-    public int GetCurrentTypoIndex(){
+    public int GetCurrentTypoIndex()
+    {
         return data.currentTypoIndex;
     }
 
     /// <summary>
     /// Loads the settings from disk
     /// </summary>
-    private void Load(){
+    private void Load()
+    {
         data = FileManager.LoadJSON<SettingsData>(filePath);
 
         RefreshRate refreshRate = new RefreshRate
@@ -113,7 +184,7 @@ public class Settings
             numerator = data.refreshRateNumerator
         };
 
-        Screen.SetResolution(data.screenWidth,data.screenHeight,Screen.fullScreenMode,refreshRate);
+        Screen.SetResolution(data.screenWidth, data.screenHeight, Screen.fullScreenMode, refreshRate);
         Locals.ChangeLanguage(data.language);
         Screen.fullScreen = data.fullscreen;
         GameManager.instance.GetInputs().LoadBindingOverridesFromJson(data.remaping);
@@ -122,15 +193,20 @@ public class Settings
     /// <summary>
     /// Saves the settings to disk
     /// </summary>
-    private void Save(){
-        FileManager.SaveJSON(filePath,data);
+    private void Save()
+    {
+        FileManager.SaveJSON(filePath, data);
     }
 
-    private Settings(){
+    private Settings()
+    {
         instance = this;
-        if(fileExistsOnDisk){
+        if (fileExistsOnDisk)
+        {
             Load();
-        }else{
+        }
+        else
+        {
             data = new SettingsData
             {
                 refreshRateNumerator = Screen.currentResolution.refreshRateRatio.numerator,
@@ -139,7 +215,10 @@ public class Settings
                 screenWidth = Screen.currentResolution.width,
                 fullscreen = Screen.fullScreen,
                 language = Locals.current,
-                remaping = GameManager.instance.GetInputs().SaveBindingOverridesAsJson()
+                remaping = GameManager.instance.GetInputs().SaveBindingOverridesAsJson(),
+                volumeMaster = 0,
+                volumeMusic = 0,
+                volumeSfx = 0
             };
             Save();
         }
@@ -149,7 +228,8 @@ public class Settings
 
 
 [System.Serializable]
-public class SettingsData{
+public class SettingsData
+{
     public uint refreshRateNumerator;
     public uint refreshRateDenominator;
     public int screenHeight;
@@ -161,7 +241,11 @@ public class SettingsData{
     public string remaping;
     public int currentGamepadProfileIdx;
     public int currentTypoIndex;
+    public float volumeMaster;
+    public float volumeSfx;
+    public float volumeMusic;
 
-    public SettingsData(){
+    public SettingsData()
+    {
     }
 }

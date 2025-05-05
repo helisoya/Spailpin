@@ -1,5 +1,6 @@
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 /// <summary>
@@ -14,6 +15,12 @@ public class PuzzleTutorial : Puzzle
     [SerializeField] private int[] sequence;
     [SerializeField] private GameObject[] selectionObjs;
     [SerializeField] private float actionCooldown = 0.1f;
+    [Header("Audio Events")]
+    [SerializeField] private UnityEvent onMoveSelection;
+    [SerializeField] private UnityEvent<int> onSelect;
+    [SerializeField] private UnityEvent onWin;
+    [SerializeField] private UnityEvent onWrongNote;
+    [SerializeField] private UnityEvent onQuitPuzzle;
     private float lastAction;
     private int moveDirection = 0;
 
@@ -23,35 +30,48 @@ public class PuzzleTutorial : Puzzle
     /// <summary>
     /// Refreshs the visual section for the puzzle
     /// </summary>
-    private void RefreshVisualSelection(){
-        for(int i = 0; i < selectionObjs.Length;i++){
+    private void RefreshVisualSelection()
+    {
+        for (int i = 0; i < selectionObjs.Length; i++)
+        {
             selectionObjs[i].SetActive(i == currentObjIdx);
         }
     }
 
     public override void FowardInput(InputType type, InputValue inputValue)
     {
-        if(type == InputType.ACCEPT && inputValue.isPressed){
-            if(sequence[currentSequenceIdx] == currentObjIdx){
+        if (type == InputType.ACCEPT && inputValue.isPressed)
+        {
+            onSelect.Invoke(currentObjIdx);
+            if (sequence[currentSequenceIdx] == currentObjIdx)
+            {
                 // Good
                 currentSequenceIdx++;
-                if(currentSequenceIdx == sequence.Length){
+                if (currentSequenceIdx == sequence.Length)
+                {
                     // End
+                    onWin.Invoke();
                     EndPuzzle(false);
                 }
-            }else{
+            }
+            else
+            {
                 // Wrong
+                onWrongNote.Invoke();
                 currentSequenceIdx = 0;
             }
         }
-        else if(type == InputType.MOVEMENT)
+        else if (type == InputType.MOVEMENT)
         {
             float value = inputValue.Get<Vector2>().x;
             moveDirection = value < -0.75f ? -1 : (value > 0.75f ? 1 : 0);
-            print(value+" -> "+moveDirection);
-            if(moveDirection == 0) lastAction = 0;
+            print(value + " -> " + moveDirection);
+            if (moveDirection == 0) lastAction = 0;
+            onMoveSelection.Invoke();
         }
-        else if(type == InputType.CANCEL && inputValue.isPressed){
+        else if (type == InputType.CANCEL && inputValue.isPressed)
+        {
+            onQuitPuzzle.Invoke();
             EndPuzzle(true);
         }
     }
@@ -61,7 +81,7 @@ public class PuzzleTutorial : Puzzle
         miniGameCamera.Priority = 0;
         currentObjIdx = -1;
         RefreshVisualSelection();
-        if(!cancelled) CutsceneManager.instance.ProcessCutscene(endGraph);
+        if (!cancelled) CutsceneManager.instance.ProcessCutscene(endGraph);
     }
 
     public override void OnStart()
@@ -76,7 +96,8 @@ public class PuzzleTutorial : Puzzle
 
     public override void OnUpdate()
     {
-        if(moveDirection != 0  && Time.time - lastAction >= actionCooldown){
+        if (moveDirection != 0 && Time.time - lastAction >= actionCooldown)
+        {
             lastAction = Time.time;
 
             currentObjIdx = (currentObjIdx + moveDirection + 3) % 3;
