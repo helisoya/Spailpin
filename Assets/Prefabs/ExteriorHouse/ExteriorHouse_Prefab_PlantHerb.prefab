@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1922333858593000620
+--- !u!1 &8708800469872690339
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6058536634058335190}
-  - component: {fileID: 7918567278719407808}
-  - component: {fileID: 2813625539474154721}
+  - component: {fileID: 1614724245190689929}
+  - component: {fileID: 8236983925064746635}
+  - component: {fileID: 6454952820289529812}
   m_Layer: 0
-  m_Name: 0
+  m_Name: ExteriorHouse_Prefab_PlantHerb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6058536634058335190
+--- !u!4 &1614724245190689929
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922333858593000620}
+  m_GameObject: {fileID: 8708800469872690339}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -33,21 +33,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7918567278719407808
+--- !u!33 &8236983925064746635
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922333858593000620}
-  m_Mesh: {fileID: 8539469486807544094, guid: 65b18cf6d3ac3dc438557bd75a8473cd, type: 3}
---- !u!23 &2813625539474154721
+  m_GameObject: {fileID: 8708800469872690339}
+  m_Mesh: {fileID: -8825469722712573271, guid: 0967281c3f114c34598d5227674b3818, type: 3}
+--- !u!23 &6454952820289529812
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922333858593000620}
+  m_GameObject: {fileID: 8708800469872690339}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
