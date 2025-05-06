@@ -10,14 +10,9 @@ public class VcaController : MonoBehaviour
     private FMOD.Studio.VCA VcaControl;
     public string VcaName;
 
-    private Slider slider;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
         VcaControl = FMODUnity.RuntimeManager.GetVCA("vca:/" + VcaName);
-        slider = GetComponent<Slider>();
-        VcaControl.getVolume(out vcaVolume);
     }
 
     public void SetVolume(float volume)
