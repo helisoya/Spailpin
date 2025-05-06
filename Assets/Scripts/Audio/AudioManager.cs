@@ -52,6 +52,11 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
     }  
+
+    public void SetAmbienceParameter(string parameterName, float parameterValue)
+    {
+        ambienceEventInstance.setParameterByName(parameterName, parameterValue);
+    }
     
     private void InitializeMusic(EventReference musicEventReference)
     {
