@@ -10747,6 +10747,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   root: {fileID: 3377685213922761828}
   firstObject: {fileID: 5920362577915750409}
+  sliderMaster: {fileID: 5920362577915750409}
+  sliderMusic: {fileID: 8689113247899914348}
+  sliderSFX: {fileID: 3284393119600742527}
+  onVolumeMasterChange:
+    m_PersistentCalls:
+      m_Calls: []
+  onVolumeMusicChange:
+    m_PersistentCalls:
+      m_Calls: []
+  onVolumeSFXChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6108615500111512220
 GameObject:
   m_ObjectHideFlags: 0

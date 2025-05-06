@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Represents the game's GUI
@@ -21,11 +22,14 @@ public class GameGUI : MonoBehaviour
 
     [Header("Fading")]
     [SerializeField] private Fade fade;
-    public bool fading {get{return fade.fading;}}
+    public bool fading { get { return fade.fading; } }
 
-    
-    public bool showingDialog {get{return routineDialog != null;}}
-    public bool isPauseOpen {get{return pauseMenu.isOpen;}}
+    [Header("Audio Events")]
+    [SerializeField] private UnityEvent onPauseOpen;
+    [SerializeField] private UnityEvent onPauseClose;
+
+    public bool showingDialog { get { return routineDialog != null; } }
+    public bool isPauseOpen { get { return pauseMenu.isOpen; } }
     public static GameGUI instance;
 
 
@@ -46,38 +50,45 @@ public class GameGUI : MonoBehaviour
     /// </summary>
     /// <param name="alpha">The alpha target</param>
     /// <param name="speed">The fading speed</param>
-    public void FadeTo(float alpha,float speed = 2f){
-        fade.FadeTo(alpha,speed);
+    public void FadeTo(float alpha, float speed = 2f)
+    {
+        fade.FadeTo(alpha, speed);
     }
 
     /// <summary>
     /// Sets the skip dialog tag to true
     /// </summary>
-    public void SetSkipDialogTag(){
+    public void SetSkipDialogTag()
+    {
         skipDialog = true;
     }
 
     /// <summary>
     /// Opens the pause menu
     /// </summary>
-    public void OpenPause(){
+    public void OpenPause()
+    {
         Time.timeScale = 0f;
         pauseMenu.Open();
+        onPauseOpen.Invoke();
     }
 
     /// <summary>
     /// Closes the pause menu
     /// </summary>
-    public void ClosePause(){
+    public void ClosePause()
+    {
         Time.timeScale = 1f;
         pauseMenu.Close();
+        onPauseClose.Invoke();
     }
 
     /// <summary>
     /// Sets if the dialog panel is active or not
     /// </summary>
     /// <param name="value">True if it is active</param>
-    public void SetDialogOpen(bool value){
+    public void SetDialogOpen(bool value)
+    {
         dialogRoot.SetActive(value);
     }
 
@@ -85,8 +96,9 @@ public class GameGUI : MonoBehaviour
     /// Shows a dialog on screen
     /// </summary>
     /// <param name="dialogID">The dialog's ID</param>
-    public void ShowDialog(string dialogID){
-        if(routineDialog != null) StopCoroutine(routineDialog);
+    public void ShowDialog(string dialogID)
+    {
+        if (routineDialog != null) StopCoroutine(routineDialog);
         routineDialog = StartCoroutine(Routine_Dialog(dialogID));
     }
 
@@ -94,8 +106,9 @@ public class GameGUI : MonoBehaviour
     /// Sets if the cutscene's bar are active or not
     /// </summary>
     /// <param name="active">True if the bars are visible</param>
-    public void SetCutsceneBarActive(bool active){
-        cutsceneBar.SetBool("Show",active);
+    public void SetCutsceneBarActive(bool active)
+    {
+        cutsceneBar.SetBool("Show", active);
     }
 
     /// <summary>
@@ -103,7 +116,8 @@ public class GameGUI : MonoBehaviour
     /// </summary>
     /// <param name="dialogID">The dialog's ID</param>
     /// <returns>IEnumerator</returns>
-    private IEnumerator Routine_Dialog(string dialogID){
+    private IEnumerator Routine_Dialog(string dialogID)
+    {
 
         int charactersPerFrame = 1;
         float speed = 5f;
@@ -113,16 +127,16 @@ public class GameGUI : MonoBehaviour
         SetDialogOpen(true);
         dialogText.SetNewKey(dialogID);
         TMP_Text txt = dialogText.GetText();
-        
-		int runsThisFrame = 0;
 
-		txt.ForceMeshUpdate(false);
-		TMP_TextInfo inf = txt.textInfo;
-		int vis = 0;
-		int max = inf.characterCount;
-		int cpf = charactersPerFrame;
+        int runsThisFrame = 0;
 
-		List<char> punctuation = new List<char>(new char[] { '.', ',', ';', '!', '?' });
+        txt.ForceMeshUpdate(false);
+        TMP_TextInfo inf = txt.textInfo;
+        int vis = 0;
+        int max = inf.characterCount;
+        int cpf = charactersPerFrame;
+
+        List<char> punctuation = new List<char>(new char[] { '.', ',', ';', '!', '?' });
 
         while (vis < max)
         {
@@ -167,7 +181,8 @@ public class GameGUI : MonoBehaviour
     /// <summary>
     /// Callback for setting the submit tag in a cutscene
     /// </summary>
-    public void Event_CutsceneSubmit(){
+    public void Event_CutsceneSubmit()
+    {
         CutsceneManager.instance.UserSubmit();
     }
 }
