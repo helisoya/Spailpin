@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Rigidbody playerRigidbody;
     [SerializeField] private Animator playerAnimator;
+    [SerializeField] private Transform soundListenerTransform;
     private bool running = false;
     private Vector2 moveVector;
 
@@ -43,6 +44,8 @@ public class PlayerController : MonoBehaviour
         }
 
         playerAnimator.SetBool("Moving", moveVector != Vector2.zero);
+        soundListenerTransform.position = playerTransform.position;
+        soundListenerTransform.rotation = Camera.main.transform.rotation;
     }
 
     void FixedUpdate()

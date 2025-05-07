@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Represents an interactable object in Spailpin
@@ -8,13 +9,15 @@ public class InteractableObject : MonoBehaviour
     [Header("Interaction")]
     [SerializeField] private GameObject interactionObject;
     [SerializeField] private DialogGraph linkedGraph;
-    private bool playerNear; 
+    [SerializeField] private UnityEvent onInterract;
+    private bool playerNear;
 
     /// <summary>
     /// Changes if the interaction is "active" or not
     /// </summary>
     /// <param name="value">True if active</param>
-    public void SetActive(bool value){
+    public void SetActive(bool value)
+    {
         playerNear = value;
         interactionObject.SetActive(value);
     }
@@ -22,15 +25,18 @@ public class InteractableObject : MonoBehaviour
     /// <summary>
     /// Interacts with the object
     /// </summary>
-    public void Interract(){
-        print("Interaction with : "+this.name);
+    public void Interract()
+    {
+        print("Interaction with : " + this.name);
+        onInterract.Invoke();
         OnInterract();
     }
 
     /// <summary>
     /// Callback on interraction
     /// </summary>
-    protected virtual void OnInterract(){
+    protected virtual void OnInterract()
+    {
         // Do thing with the graph
         CutsceneManager.instance.ProcessCutscene(linkedGraph);
     }
@@ -38,9 +44,10 @@ public class InteractableObject : MonoBehaviour
 
     void Update()
     {
-        if(playerNear){
+        if (playerNear)
+        {
             interactionObject.transform.LookAt(Camera.main.transform);
-        }   
+        }
     }
 
 }
