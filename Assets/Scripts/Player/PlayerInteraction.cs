@@ -15,25 +15,29 @@ public class PlayerInteraction : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position,interactionRadius);
+        Gizmos.DrawWireSphere(transform.position, interactionRadius);
     }
 
     void Update()
     {
-        if(GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || Player.instance.inPuzzle) return;
-        
-        Collider[] colliders = Physics.OverlapSphere(transform.position,interactionRadius,interactionMask);
-        if(colliders.Length >= 1){
+        if (GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || Player.instance.inPuzzle) return;
+
+        Collider[] colliders = Physics.OverlapSphere(transform.position, interactionRadius, interactionMask);
+        if (colliders.Length >= 1)
+        {
             InteractableObject newObj = colliders[0].transform.GetComponent<InteractableObject>();
-            if(newObj == currentObject){
+            if (newObj == currentObject)
+            {
                 return;
             }
 
-            if(currentObject) currentObject.SetActive(false);
+            if (currentObject) currentObject.SetActive(false);
             currentObject = newObj;
-            if(currentObject) currentObject.SetActive(true);
+            if (currentObject) currentObject.SetActive(true);
 
-        }else if(currentObject){
+        }
+        else if (currentObject)
+        {
             currentObject.SetActive(false);
             currentObject = null;
         }
@@ -42,14 +46,17 @@ public class PlayerInteraction : MonoBehaviour
     /// <summary>
     /// Starts an interaction with the currently selected interractable object
     /// </summary>
-    public void TryInterract(){
-        if(currentObject != null){
+    public void TryInterract()
+    {
+        if (currentObject != null)
+        {
             Player.instance.SetMovementVector(Vector2.zero);
             Player.instance.SetSprinting(false);
+            Player.instance.ResetHints();
 
             currentObject.SetActive(false);
             currentObject.Interract();
-            
+
             currentObject = null;
         }
     }

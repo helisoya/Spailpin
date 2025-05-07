@@ -10,6 +10,7 @@ public class PuzzleTutorial : Puzzle
 {
     [Header("Tutorial MiniGame")]
     [SerializeField] private CinemachineCamera miniGameCamera;
+    [SerializeField] private GameObject puzzleCanvas;
     [SerializeField] private CinemachineBlendDefinition cameraBlend;
     [SerializeField] private DialogGraph endGraph;
     [SerializeField] private int[] sequence;
@@ -78,6 +79,7 @@ public class PuzzleTutorial : Puzzle
 
     public override void OnEnd(bool cancelled)
     {
+        puzzleCanvas.SetActive(false);
         miniGameCamera.Priority = 0;
         currentObjIdx = -1;
         RefreshVisualSelection();
@@ -86,6 +88,7 @@ public class PuzzleTutorial : Puzzle
 
     public override void OnStart()
     {
+        puzzleCanvas.SetActive(true);
         CinemachineBrain.GetActiveBrain(0).DefaultBlend = cameraBlend;
         miniGameCamera.Priority = 5;
 

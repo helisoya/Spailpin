@@ -35,3 +35,10 @@ options_access = Accessibilité
 options_small = Petit
 options_medium = Moyen
 options_big = Grand
+
+
+hint_move = Marcher
+
+hint_puzzle1_move = Changer la sélection
+hint_puzzle1_select = Sélectioner
+hint_puzzle1_quit = Quiter

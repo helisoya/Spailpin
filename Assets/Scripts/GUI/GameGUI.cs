@@ -28,6 +28,11 @@ public class GameGUI : MonoBehaviour
     [SerializeField] private UnityEvent onPauseOpen;
     [SerializeField] private UnityEvent onPauseClose;
 
+    [Header("Hints")]
+    [SerializeField] private CanvasGroup hintMovement;
+    [SerializeField] private float hintSpeed = 5;
+    private float hintMovementAlphaTarget;
+
     public bool showingDialog { get { return routineDialog != null; } }
     public bool isPauseOpen { get { return pauseMenu.isOpen; } }
     public static GameGUI instance;
@@ -42,6 +47,28 @@ public class GameGUI : MonoBehaviour
     {
         fade.ForceAlphaTo(1);
         fade.FadeTo(0);
+        SetMovementHintAlpha(0);
+    }
+
+    void Update()
+    {
+        if (hintMovement.alpha != hintMovementAlphaTarget)
+        {
+            int side = hintMovement.alpha < hintMovementAlphaTarget ? 1 : -1;
+            print(side + " " + (side < 0 ? hintMovementAlphaTarget : 0.0f) + " " + (side > 0 ? hintMovementAlphaTarget : 1.0f));
+            hintMovement.alpha = Mathf.Clamp(hintMovement.alpha + side * hintSpeed * Time.deltaTime,
+            side < 0 ? hintMovementAlphaTarget : 0.0f,
+            side > 0 ? hintMovementAlphaTarget : 1.0f);
+        }
+    }
+
+    /// <summary>
+    /// Changes the movement's hint alpha
+    /// </summary>
+    /// <param name="alpha">The new alpha</param>
+    public void SetMovementHintAlpha(float alpha)
+    {
+        hintMovementAlphaTarget = alpha;
     }
 
 

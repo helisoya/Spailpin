@@ -36,3 +36,10 @@ options_access = Accessibility
 options_small = Small
 options_medium = Medium
 options_big = Big
+
+
+hint_move = Move
+
+hint_puzzle1_move = Change selection
+hint_puzzle1_select = Select
+hint_puzzle1_quit = Quit
