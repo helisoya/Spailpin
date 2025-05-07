@@ -216,9 +216,9 @@ public class Settings
                 fullscreen = Screen.fullScreen,
                 language = Locals.current,
                 remaping = GameManager.instance.GetInputs().SaveBindingOverridesAsJson(),
-                volumeMaster = 0,
-                volumeMusic = 0,
-                volumeSfx = 0
+                volumeMaster = 1,
+                volumeMusic = 1,
+                volumeSfx = 1
             };
             Save();
         }
