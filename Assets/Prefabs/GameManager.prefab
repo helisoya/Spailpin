@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9069157341015909150}
   - component: {fileID: 567641002656574353}
+  - component: {fileID: 3631097704039385165}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -49,3 +50,55 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   - {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   items: {fileID: 11400000, guid: feba4cb2a21a6704ea551cdf8d3ebb41, type: 2}
+--- !u!114 &3631097704039385165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3631553975667613630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96171c2cd9d1db4ab74561126fd3a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xbox:
+    buttonSouth: {fileID: 21300000, guid: 42aa2b3a70591504b8951538ec59fa70, type: 3}
+    buttonNorth: {fileID: 21300000, guid: 51185c7a29f79ff44a773169b9d79289, type: 3}
+    buttonEast: {fileID: 21300000, guid: 126affd32c8ed68488d37472cd67580b, type: 3}
+    buttonWest: {fileID: 21300000, guid: 5174f5f1f04ea554b9e43b8bb5bdd143, type: 3}
+    startButton: {fileID: 21300000, guid: a48fade05d727724aa4be835bca7b94f, type: 3}
+    selectButton: {fileID: 21300000, guid: 2ae721c61901e2540801fdeabbbe22c5, type: 3}
+    leftTrigger: {fileID: 21300000, guid: e7ebc398bd900374e8ed5c9317563167, type: 3}
+    rightTrigger: {fileID: 21300000, guid: 1b2348c63fbb6034cbf08f205174b0b2, type: 3}
+    leftShoulder: {fileID: 21300000, guid: 3aa55595bfca0594e98bb9bec72e765a, type: 3}
+    rightShoulder: {fileID: 21300000, guid: 6228a27c4d124014c9c23910bf327d93, type: 3}
+    dpad: {fileID: 21300000, guid: a3bca76115fde914fa3be83affcf8dcd, type: 3}
+    dpadUp: {fileID: 21300000, guid: 61534db44294fd64cb238a71bd2ac881, type: 3}
+    dpadDown: {fileID: 21300000, guid: 7da20c0065e0119469fb1497d9a6dd73, type: 3}
+    dpadLeft: {fileID: 21300000, guid: 5d422518261c26741ba47a85e2375851, type: 3}
+    dpadRight: {fileID: 21300000, guid: 8686a27f363403e4d8191dd1bc73edbb, type: 3}
+    leftStick: {fileID: 21300000, guid: 3968cd7002a0ec04cb1b0dd0b44ef4f7, type: 3}
+    rightStick: {fileID: 21300000, guid: f261f110b82113f448b51cc525cc74ca, type: 3}
+    leftStickPress: {fileID: 21300000, guid: 3968cd7002a0ec04cb1b0dd0b44ef4f7, type: 3}
+    rightStickPress: {fileID: 21300000, guid: f261f110b82113f448b51cc525cc74ca, type: 3}
+  ps4:
+    buttonSouth: {fileID: 21300000, guid: 1df3b9f52b302934dbfb0f9083e50e8d, type: 3}
+    buttonNorth: {fileID: 21300000, guid: 520427bef17a3d94cb5541209246168d, type: 3}
+    buttonEast: {fileID: 21300000, guid: e83225741e95c3b429abe295e0ef4818, type: 3}
+    buttonWest: {fileID: 21300000, guid: 29b5d90ad6035e54fb6b007e56ccd515, type: 3}
+    startButton: {fileID: 21300000, guid: 7c48ce7dd9eaa3547980256f3a924cc5, type: 3}
+    selectButton: {fileID: 21300000, guid: 393fb9cf6b392474d8088ce848127d49, type: 3}
+    leftTrigger: {fileID: 21300000, guid: 055f50905056d0f478c5c64d61a1b3ea, type: 3}
+    rightTrigger: {fileID: 21300000, guid: 6171b7af6b36ca44580d21f1807e3838, type: 3}
+    leftShoulder: {fileID: 21300000, guid: 3a9b0b718aa69ec4fa31c18db55561a2, type: 3}
+    rightShoulder: {fileID: 21300000, guid: ebeff5edc0c24814ab327ddc4d9c080d, type: 3}
+    dpad: {fileID: 21300000, guid: 5fc5557d1ca04834d9f0968f74da13a1, type: 3}
+    dpadUp: {fileID: 21300000, guid: 93c8ae35e7181d94dbf16e0295f84d1a, type: 3}
+    dpadDown: {fileID: 21300000, guid: 7cf021c726dc69548bdf63e88a251b80, type: 3}
+    dpadLeft: {fileID: 21300000, guid: a3bfe8c16547c6042870a64889cda006, type: 3}
+    dpadRight: {fileID: 21300000, guid: 96dc887db6122a74bb69eba3adfc7c7f, type: 3}
+    leftStick: {fileID: 21300000, guid: 0a7c7b5266ac998499752538938e3169, type: 3}
+    rightStick: {fileID: 21300000, guid: b6cb840d7d72b1849b34226de479e4a7, type: 3}
+    leftStickPress: {fileID: 21300000, guid: 0a7c7b5266ac998499752538938e3169, type: 3}
+    rightStickPress: {fileID: 21300000, guid: b6cb840d7d72b1849b34226de479e4a7, type: 3}
