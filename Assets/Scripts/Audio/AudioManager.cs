@@ -52,6 +52,11 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
     }  
+
+    public void SetAmbienceParameter(string parameterName, float parameterValue)
+    {
+        ambienceEventInstance.setParameterByName(parameterName, parameterValue);
+    }
     
     private void InitializeMusic(EventReference musicEventReference)
     {
@@ -83,13 +88,6 @@ public class AudioManager : MonoBehaviour
 
     /*AudioManager.instance.PlayCarillon(); Exemple de comment appeler une fonction dans le code, il faut instancier l'AudioManager puis lui renseigner
       une position, un comportement etc, si il en a besoin
-    */
-     
-    /*
-    public void SetNomParameter(string parameterName, float parameterValue)
-    {
-        TrucQuiJoue.setParameterByName(parameterName, parameterValue);
-    }
     */
     
     public EventInstance CreateInstance(EventReference eventReference)

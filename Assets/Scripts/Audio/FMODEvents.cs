@@ -14,8 +14,8 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("MUSIC")]
     [field: SerializeField] public EventReference Music { get; private set; }
-    
 
+    [field: SerializeField] public EventReference Magic { get; private set; }
 
     public static FMODEvents instance {  get; private set; }
 
