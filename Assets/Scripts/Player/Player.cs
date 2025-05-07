@@ -1,5 +1,6 @@
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
@@ -19,6 +20,9 @@ public class Player : MonoBehaviour
     public static Player instance  { get; private set;}
     private Puzzle currentPuzzle;
     public bool inPuzzle {get{return currentPuzzle != null;}}
+
+    [Header("Events")]
+    public UnityEvent<string> onDeviceChange;
 
 
 
@@ -101,6 +105,15 @@ public class Player : MonoBehaviour
         }
 
         controller.SetSprinting(value.isPressed);
+    }
+
+    /// <summary>
+    /// On Controls changed callback
+    /// </summary>
+    /// <param name="input">The player input</param>
+    void OnControlsChanged(PlayerInput input){
+        print(input.currentControlScheme);
+        onDeviceChange.Invoke(input.currentControlScheme);
     }
 
     /// <summary>
