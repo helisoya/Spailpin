@@ -55,7 +55,6 @@ public class GameGUI : MonoBehaviour
         if (hintMovement.alpha != hintMovementAlphaTarget)
         {
             int side = hintMovement.alpha < hintMovementAlphaTarget ? 1 : -1;
-            print(side + " " + (side < 0 ? hintMovementAlphaTarget : 0.0f) + " " + (side > 0 ? hintMovementAlphaTarget : 1.0f));
             hintMovement.alpha = Mathf.Clamp(hintMovement.alpha + side * hintSpeed * Time.deltaTime,
             side < 0 ? hintMovementAlphaTarget : 0.0f,
             side > 0 ? hintMovementAlphaTarget : 1.0f);

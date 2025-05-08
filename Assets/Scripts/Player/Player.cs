@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
 
     [Header("Events")]
     public UnityEvent<string> onDeviceChange;
+    public UnityEvent onCollision;
 
 
 
@@ -172,5 +173,17 @@ public class Player : MonoBehaviour
     public void ResetHints()
     {
         controller.ResetHints();
+    }
+
+    /// <summary>
+    /// OnCollisionEnter Callback
+    /// </summary>
+    /// <param name="collision">The collision</param>
+    void OnCollisionEnter(Collision collision)
+    {
+        if (Vector3.Dot(Vector3.up, collision.GetContact(0).normal) <= 0.5f)
+        {
+            onCollision.Invoke();
+        }
     }
 }
