@@ -91,3 +91,5 @@ crashlytics-build.properties
 # Log files can be ignored.
 fmod_editor.log
 
+#GD Proofing Probuilder
+/[Pp]roject[Ss]ettings/[Pp]ackages/com.unity.probuilder/Settings.json
