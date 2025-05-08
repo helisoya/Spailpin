@@ -55,11 +55,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _LightPartSize: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SizeNoise: 92
-    - _SpeedMove: 0.001
-    - _Transparency: 0.856
+    - _SizeNoise: 101
+    - _SpeedMove: 0.01
+    - _Transparency: 1
+    - _TransparentPartSize: 1
     m_Colors:
     - _ColorHue: {r: 1, g: 0.9593638, b: 0.5990566, a: 1}
   m_BuildTextureStacks: []
