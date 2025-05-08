@@ -11,6 +11,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerRunSpeed = 4f;
     [SerializeField] private float rotationSpeed = 360f;
 
+    [Header("Hints")]
+    [SerializeField] private bool canShowMovementHint = true;
+    [SerializeField] private float waitTimeForShowingMovementHint = 3;
+    private float currentWaitTimeForShowingMovementHint;
+
     [Header("Components")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Rigidbody playerRigidbody;
@@ -30,6 +35,11 @@ public class PlayerController : MonoBehaviour
     public Vector3 position { get { return playerRigidbody.transform.position; } }
     public Vector3 rotation { get { return playerTransform.eulerAngles; } }
 
+    void Start()
+    {
+        currentWaitTimeForShowingMovementHint = waitTimeForShowingMovementHint;
+    }
+
 
     void Update()
     {
@@ -46,6 +56,40 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetBool("Moving", moveVector != Vector2.zero);
         soundListenerTransform.position = playerTransform.position;
         soundListenerTransform.rotation = Camera.main.transform.rotation;
+
+
+        if (canShowMovementHint && !GameGUI.instance.isPauseOpen && !CutsceneManager.instance.inCutscene && !Player.instance.inPuzzle)
+        {
+
+            if (moveVector != Vector2.zero)
+            {
+                // Shown
+                currentWaitTimeForShowingMovementHint = waitTimeForShowingMovementHint;
+                GameGUI.instance.SetMovementHintAlpha(0);
+            }
+
+            if (currentWaitTimeForShowingMovementHint > 0)
+            {
+                // Not shown
+                if (moveVector != Vector2.zero) return;
+
+                currentWaitTimeForShowingMovementHint -= Time.deltaTime;
+                if (currentWaitTimeForShowingMovementHint <= 0)
+                {
+                    // Show
+                    GameGUI.instance.SetMovementHintAlpha(1);
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Resets hints for the controller
+    /// </summary>
+    public void ResetHints()
+    {
+        currentWaitTimeForShowingMovementHint = waitTimeForShowingMovementHint;
+        GameGUI.instance.SetMovementHintAlpha(0);
     }
 
     void FixedUpdate()
@@ -99,6 +143,8 @@ public class PlayerController : MonoBehaviour
     public void SetMovementVector(Vector2 moveVector)
     {
         this.moveVector = moveVector;
+
+        currentWaitTimeForShowingMovementHint = waitTimeForShowingMovementHint;
 
         if (moveVector == Vector2.zero && cachedDirections)
         {
