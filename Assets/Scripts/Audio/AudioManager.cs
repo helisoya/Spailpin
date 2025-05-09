@@ -16,7 +16,7 @@ public class AudioManager : MonoBehaviour
     private EventReference eventReferences;
 
     private EventInstance ambienceEventInstance;
-    private EventInstance musicEventInstance;
+    private EventInstance musicEventInstance;  
 
 
 
@@ -53,7 +53,7 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }  
 
-    public void SetAmbienceParameter(string parameterName, float parameterValue)
+    public void SetCarillon(string parameterName, float parameterValue)
     {
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);
     }
