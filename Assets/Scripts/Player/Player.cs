@@ -53,6 +53,15 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
+    /// Stops the current puzzle
+    /// </summary>
+    public void StopCurrentPuzzle(){
+        if(currentPuzzle != null){
+            currentPuzzle.EndPuzzle(true);
+        }
+    }
+
+    /// <summary>
     /// Changes the current room the player is in
     /// </summary>
     /// <param name="room">The new room</param>
@@ -104,7 +113,7 @@ public class Player : MonoBehaviour
     {
         if (CutsceneManager.instance.inCutscene) return;
         // GameGUI.instance.isPauseOpen || 
-        if (inPuzzle)
+        if (inPuzzle && currentPuzzle.absorbMovements)
         {
             currentPuzzle.FowardInput(Puzzle.InputType.MOVEMENT, value);
         }
@@ -155,7 +164,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The pause value (unused)</param>
     void OnPause(InputValue value)
     {
-        if (inPuzzle) currentPuzzle.FowardInput(Puzzle.InputType.CANCEL, value);
+        if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.CANCEL, value);
         else if (GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
         else
         {
@@ -172,7 +181,7 @@ public class Player : MonoBehaviour
     {
         if (GameGUI.instance.isPauseOpen) return;
         if (CutsceneManager.instance.inCutscene) CutsceneManager.instance.UserSubmit();
-        else if (inPuzzle) currentPuzzle.FowardInput(Puzzle.InputType.ACCEPT, value);
+        else if (inPuzzle && currentPuzzle.absorbInteract) currentPuzzle.FowardInput(Puzzle.InputType.ACCEPT, value);
         else interactions.TryInterract();
     }
 

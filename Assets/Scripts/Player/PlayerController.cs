@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
             controller.Move(moveDirection * Time.deltaTime);
         }
-
+        
         controller.Move(Vector3.up * GRAVITY * Time.deltaTime);
 
         playerAnimator.SetBool("Moving", moveVector != Vector2.zero);
@@ -164,8 +164,10 @@ public class PlayerController : MonoBehaviour
     /// <param name="rotation">The new rotation</param>
     public void SetPosition(Vector3 position, Quaternion rotation)
     {
+        controller.enabled = false;
         playerTransform.position = position;
         playerTransform.rotation = rotation;
+        controller.enabled = true;
     }
 
 

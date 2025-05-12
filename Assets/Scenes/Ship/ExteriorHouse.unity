@@ -128,6 +128,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -138,6 +142,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -210,6 +218,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -256,6 +268,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -380,12 +396,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -575,12 +599,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3586352276242270819, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586352276242270819, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8466800951380062067, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_FlowerPotNoFlowers_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466800951380062067, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -653,12 +685,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -731,12 +771,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1130,12 +1178,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9142630338701395713, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_LocalScale.y
@@ -1256,12 +1312,20 @@ PrefabInstance:
       value: 97.694
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1334,12 +1398,20 @@ PrefabInstance:
       value: 167.047
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1359,6 +1431,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -1407,6 +1483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1425,6 +1505,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -1472,6 +1556,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1712,6 +1800,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -1758,6 +1850,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1830,12 +1926,20 @@ PrefabInstance:
       value: 176.967
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1892,6 +1996,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -1939,6 +2047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1958,12 +2070,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -2088,12 +2208,20 @@ PrefabInstance:
       value: 136.631
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2171,12 +2299,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2197,6 +2333,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -2207,6 +2347,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -2362,12 +2506,20 @@ PrefabInstance:
       value: 184.727
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2552,12 +2704,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2630,12 +2790,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2655,6 +2823,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -2703,6 +2875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2722,12 +2898,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -2857,12 +3041,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -2935,12 +3127,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -3230,12 +3430,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3288,6 +3496,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 88334452540018747, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 88334452540018747, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -3334,6 +3546,10 @@ PrefabInstance:
     - target: {fileID: 4060505137934904629, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_OutsideWall_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4060505137934904629, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3406,12 +3622,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3472,12 +3696,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3497,6 +3729,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -3544,6 +3780,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3924,12 +4164,20 @@ PrefabInstance:
       value: -15.366
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4069,6 +4317,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -4079,6 +4331,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -4203,12 +4459,20 @@ PrefabInstance:
       value: 139.434
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4228,6 +4492,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -4275,6 +4543,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4347,12 +4619,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4372,6 +4652,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -4419,6 +4703,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4491,12 +4779,20 @@ PrefabInstance:
       value: 184.477
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4544,6 +4840,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -4590,6 +4890,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4648,6 +4952,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 490871300742035868, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 490871300742035868, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157032764059815363, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7157032764059815363, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
@@ -4753,12 +5065,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4944,6 +5264,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -4990,6 +5314,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5062,12 +5390,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5140,12 +5476,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5168,6 +5512,14 @@ PrefabInstance:
     - target: {fileID: 99013435948473911, guid: eb9506bbe931b2e4190e83ecbac8f9ae, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseMainDoorSurround_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 99013435948473911, guid: eb9506bbe931b2e4190e83ecbac8f9ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 994135368289162183, guid: eb9506bbe931b2e4190e83ecbac8f9ae, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 994135368289162183, guid: eb9506bbe931b2e4190e83ecbac8f9ae, type: 3}
       propertyPath: m_StaticShadowCaster
@@ -5415,6 +5767,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 88334452540018747, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 88334452540018747, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -5462,6 +5818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_OutsideWall_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4060505137934904629, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5480,6 +5840,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -5527,6 +5891,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5863,6 +6231,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 996619686009471505, guid: 86476c13d78c6ee4a9191cc9ff1c85ad, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 996619686009471505, guid: 86476c13d78c6ee4a9191cc9ff1c85ad, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -5909,6 +6281,10 @@ PrefabInstance:
     - target: {fileID: 6661267470339975029, guid: 86476c13d78c6ee4a9191cc9ff1c85ad, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseMainDoor_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6661267470339975029, guid: 86476c13d78c6ee4a9191cc9ff1c85ad, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5981,12 +6357,20 @@ PrefabInstance:
       value: 176.967
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6079,12 +6463,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6157,12 +6549,20 @@ PrefabInstance:
       value: -20.727
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6223,12 +6623,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6301,12 +6709,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6367,12 +6783,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6395,6 +6819,14 @@ PrefabInstance:
     - target: {fileID: 1922333858593000620, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWindow_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922333858593000620, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813625539474154721, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2813625539474154721, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
       propertyPath: m_StaticShadowCaster
@@ -6511,12 +6943,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6670,12 +7110,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6695,6 +7143,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 88334452540018747, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 88334452540018747, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -6742,6 +7194,10 @@ PrefabInstance:
     - target: {fileID: 4060505137934904629, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_OutsideWall_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4060505137934904629, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6918,12 +7374,20 @@ PrefabInstance:
       value: 121.044
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6984,12 +7448,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7010,12 +7482,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9142630338701395713, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7128,12 +7608,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7310,12 +7798,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7445,12 +7941,20 @@ PrefabInstance:
       value: 251.78299
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7523,12 +8027,20 @@ PrefabInstance:
       value: 176.967
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7601,12 +8113,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7754,12 +8274,20 @@ PrefabInstance:
       value: -8.052
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9351,12 +9879,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9574,12 +10110,20 @@ PrefabInstance:
       value: -8.052
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9605,6 +10149,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 490871300742035868, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 490871300742035868, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157032764059815363, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7157032764059815363, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
@@ -9670,12 +10222,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9142630338701395713, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9776,12 +10336,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9854,12 +10422,20 @@ PrefabInstance:
       value: 165.215
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9966,12 +10542,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10044,12 +10628,20 @@ PrefabInstance:
       value: 184.376
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10070,12 +10662,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -10148,12 +10748,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9142630338701395713, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_LocalScale.y
@@ -10274,12 +10882,20 @@ PrefabInstance:
       value: -41.996
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10340,12 +10956,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4469892021274035200, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469892021274035200, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HousePillar_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10368,6 +10992,14 @@ PrefabInstance:
     - target: {fileID: 1922333858593000620, guid: 4a8726d646d3e7545b827990919eff17, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWindow_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922333858593000620, guid: 4a8726d646d3e7545b827990919eff17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813625539474154721, guid: 4a8726d646d3e7545b827990919eff17, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2813625539474154721, guid: 4a8726d646d3e7545b827990919eff17, type: 3}
       propertyPath: m_StaticShadowCaster
@@ -10805,12 +11437,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9142630338701395713, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_LocalScale.y
@@ -11038,12 +11678,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11063,6 +11711,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -11111,6 +11763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11130,12 +11786,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -11208,6 +11872,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -11218,6 +11886,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -11342,12 +12014,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11420,12 +12100,20 @@ PrefabInstance:
       value: 154.949
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11486,12 +12174,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1872788101527205605, guid: 6923876d19599cd4cbeea46134a4c6e0, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872788101527205605, guid: 6923876d19599cd4cbeea46134a4c6e0, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3129798344931296219, guid: 6923876d19599cd4cbeea46134a4c6e0, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWindowBroken_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129798344931296219, guid: 6923876d19599cd4cbeea46134a4c6e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11676,12 +12372,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11898,12 +12602,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11964,12 +12676,20 @@ PrefabInstance:
       value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12226,6 +12946,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWindow_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1922333858593000620, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813625539474154721, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2813625539474154721, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -12289,6 +13017,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -12336,6 +13068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12355,6 +13091,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -12365,6 +13105,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -12437,6 +13181,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -12483,6 +13231,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12803,12 +13555,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4469892021274035200, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469892021274035200, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HousePillar_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12931,12 +13691,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -13009,12 +13777,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9142630338701395713, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_LocalScale.y
@@ -13140,12 +13916,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -13273,6 +14057,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -13319,6 +14107,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13413,12 +14205,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13439,6 +14239,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -13449,6 +14253,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -13743,12 +14551,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13771,6 +14587,14 @@ PrefabInstance:
     - target: {fileID: 5291181105749007629, guid: 59f5783a8610df1469272b445f9cf9e3, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Chimney_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291181105749007629, guid: 59f5783a8610df1469272b445f9cf9e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561220395726097961, guid: 59f5783a8610df1469272b445f9cf9e3, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7561220395726097961, guid: 59f5783a8610df1469272b445f9cf9e3, type: 3}
       propertyPath: m_StaticShadowCaster
@@ -13875,12 +14699,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4469892021274035200, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469892021274035200, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HousePillar_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14087,12 +14919,20 @@ PrefabInstance:
       value: 177.264
       objectReference: {fileID: 0}
     - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14165,12 +15005,20 @@ PrefabInstance:
       value: -149.033
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14243,12 +15091,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3586352276242270819, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586352276242270819, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8466800951380062067, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_FlowerPotNoFlowers_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466800951380062067, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14618,12 +15474,20 @@ PrefabInstance:
       value: 15.671
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14811,12 +15675,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14889,12 +15761,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14914,6 +15794,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
@@ -14961,6 +15845,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWall_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15033,12 +15921,20 @@ PrefabInstance:
       value: 36.343
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15111,12 +16007,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15177,12 +16081,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

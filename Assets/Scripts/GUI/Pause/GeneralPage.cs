@@ -28,7 +28,7 @@ public class GeneralPage : PausePage
     /// Callback for saving the game
     /// </summary>
     public void Event_SaveGame(){
-        GameManager.instance.GetSaveManager().SaveGame();
+        if(!Player.instance.inPuzzle) GameManager.instance.GetSaveManager().SaveGame();
     }
 
     /// <summary>

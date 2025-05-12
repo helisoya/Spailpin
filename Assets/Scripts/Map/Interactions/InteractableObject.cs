@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class InteractableObject : MonoBehaviour
 {
     [Header("Interaction")]
+    public bool stopPlayerOnInterract = true;
     [SerializeField] private GameObject interactionObject;
     [SerializeField] private DialogGraph linkedGraph;
     [SerializeField] private UnityEvent onInterract;

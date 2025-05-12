@@ -20,7 +20,13 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        if (GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || Player.instance.inPuzzle) return;
+        if (GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || Player.instance.inPuzzle){
+            if(currentObject != null && (CutsceneManager.instance.inCutscene || Player.instance.inPuzzle)){
+                currentObject.SetActive(false);
+                currentObject = null;
+            }
+            return;
+        }
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, interactionRadius, interactionMask);
         if (colliders.Length >= 1)
@@ -61,8 +67,11 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (currentObject != null)
         {
-            Player.instance.SetMovementVector(Vector2.zero);
-            Player.instance.SetSprinting(false);
+            if(currentObject.stopPlayerOnInterract){
+                Player.instance.SetMovementVector(Vector2.zero);
+                Player.instance.SetSprinting(false);
+            }
+
             Player.instance.ResetHints();
 
             currentObject.SetActive(false);

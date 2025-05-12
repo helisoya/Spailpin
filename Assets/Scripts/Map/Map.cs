@@ -57,7 +57,7 @@ public class Map : MonoBehaviour
     /// <summary>
     /// Finds the current player's spawnpoint
     /// </summary>
-    private void FindPlayerSpawnPoint(){
+    public void FindPlayerSpawnPoint(){
         Spawnpoint defaultSpawn = null;
         Spawnpoint selected = null;
         for(int i = 0; i< spawnpoints.Length;i++){
