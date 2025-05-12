@@ -87,7 +87,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
-  waitTime: 23.5
+  waitTime: 2.5
   exit: 0
 --- !u!114 &-4640834540578943108
 MonoBehaviour:
@@ -238,7 +238,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 7784287795793582880}
+        node: {fileID: 6753046004308498555}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: If
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -408, y: 120}
+  position: {x: -696, y: 104}
   ports:
     keys:
     - entry
@@ -293,7 +293,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: exit
-        node: {fileID: 7784287795793582880}
+        node: {fileID: -165025555650158891}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -305,7 +305,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 8395616272247061207}
+        node: {fileID: 7784287795793582880}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Name: Cutscene Bar
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -696, y: 136}
+  position: {x: -392, y: -24}
   ports:
     keys:
     - entry
@@ -355,8 +355,8 @@ MonoBehaviour:
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: exit
-        node: {fileID: -165025555650158891}
+      - fieldName: checkTrue
+        node: {fileID: 6753046004308498555}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -368,7 +368,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 6753046004308498555}
+        node: {fileID: 8395616272247061207}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -401,8 +401,8 @@ MonoBehaviour:
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: checkTrue
-        node: {fileID: 6753046004308498555}
+      - fieldName: exit
+        node: {fileID: 7784287795793582880}
         reroutePoints: []
       _direction: 0
       _connectionType: 1

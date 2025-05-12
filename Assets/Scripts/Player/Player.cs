@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     [Header("Components")]
     [SerializeField] private PlayerController controller;
     [SerializeField] private PlayerInteraction interactions;
+    [SerializeField] private GameObject playerModelRoot;
     private Room currentRoom = null;
     public int CurrentRoom { get { return currentRoom != null ? currentRoom.GetID() : -1; } }
     public Vector3 position { get { return controller.position; } }
@@ -31,6 +32,15 @@ public class Player : MonoBehaviour
     void Awake()
     {
         instance = this;
+        SetPlayerModelActive(true);
+    }
+
+    /// <summary>
+    /// Changes if the player model is active or not
+    /// </summary>
+    /// <param name="value">True if the player model is active</param>
+    public void SetPlayerModelActive(bool value){
+        playerModelRoot.SetActive(value);
     }
 
     /// <summary>

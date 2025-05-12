@@ -15,6 +15,7 @@ public class PuzzleTutorial : Puzzle
     [SerializeField] private DialogGraph endGraph;
     [SerializeField] private int[] sequence;
     [SerializeField] private GameObject[] selectionObjs;
+    [SerializeField] private Animator[] animators;
     [SerializeField] private float actionCooldown = 0.1f;
     [Header("Audio Events")]
     [SerializeField] private UnityEvent onMoveSelection;
@@ -43,6 +44,7 @@ public class PuzzleTutorial : Puzzle
     {
         if (type == InputType.ACCEPT && inputValue.isPressed)
         {
+            animators[currentObjIdx].SetTrigger("Use");
             onSelect.Invoke(currentObjIdx);
             if (sequence[currentSequenceIdx] == currentObjIdx)
             {
@@ -80,6 +82,7 @@ public class PuzzleTutorial : Puzzle
     public override void OnEnd(bool cancelled)
     {
         puzzleCanvas.SetActive(false);
+        Player.instance.SetPlayerModelActive(true);
         miniGameCamera.Priority = 0;
         currentObjIdx = -1;
         RefreshVisualSelection();
@@ -89,6 +92,7 @@ public class PuzzleTutorial : Puzzle
     public override void OnStart()
     {
         puzzleCanvas.SetActive(true);
+        Player.instance.SetPlayerModelActive(false);
         CinemachineBrain.GetActiveBrain(0).DefaultBlend = cameraBlend;
         miniGameCamera.Priority = 5;
 

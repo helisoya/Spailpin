@@ -25,7 +25,18 @@ public class PlayerInteraction : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, interactionRadius, interactionMask);
         if (colliders.Length >= 1)
         {
-            InteractableObject newObj = colliders[0].transform.GetComponent<InteractableObject>();
+            float minDist = float.MaxValue;
+            float currentDist;
+            InteractableObject newObj = null;
+
+            foreach(Collider collider in colliders){
+                currentDist = Vector3.Distance(transform.position,collider.bounds.center);
+                if(currentDist < minDist){
+                    minDist = currentDist;
+                    newObj = collider.transform.GetComponent<InteractableObject>();
+                }
+            }
+
             if (newObj == currentObject)
             {
                 return;

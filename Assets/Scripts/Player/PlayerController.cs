@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -56,7 +57,15 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetBool("Moving", moveVector != Vector2.zero);
         soundListenerTransform.position = playerTransform.position;
         soundListenerTransform.rotation = Camera.main.transform.rotation;
-
+        
+        /*
+        float actualSpeed = running ? playerRunSpeed : playerWalkSpeed;
+        Vector3 flatVel = new Vector3(playerRigidbody.linearVelocity.x,0f,playerRigidbody.linearVelocity.z);
+        if(flatVel.magnitude > actualSpeed){
+            Vector3 limitedVel = flatVel.normalized * actualSpeed;
+            playerRigidbody.linearVelocity = new Vector3(limitedVel.x,playerRigidbody.linearVelocity.y,limitedVel.z);
+        }
+        */
 
         if (canShowMovementHint && !GameGUI.instance.isPauseOpen && !CutsceneManager.instance.inCutscene && !Player.instance.inPuzzle)
         {
@@ -96,9 +105,20 @@ public class PlayerController : MonoBehaviour
     {
         // Player Movements
         float actualSpeed = running ? playerRunSpeed : playerWalkSpeed;
+        
+
+        /*
+        Vector3 moveDirection = currentForward * moveVector.y + currentRight * moveVector.x;
+        moveDirection.y = 0;
+        
+        playerRigidbody.AddForce(moveDirection.normalized * actualSpeed * 10f,ForceMode.Force);
+        */
+
+        
         float ySpeed = playerRigidbody.linearVelocity.y;
         playerRigidbody.linearVelocity = currentForward * actualSpeed * moveVector.y + currentRight * actualSpeed * moveVector.x;
         playerRigidbody.linearVelocity = new Vector3(playerRigidbody.linearVelocity.x, ySpeed, playerRigidbody.linearVelocity.z);
+        
     }
 
     /// <summary>
