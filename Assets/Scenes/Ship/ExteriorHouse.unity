@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 3cad4e918f453af4d9d27726584ec8d5, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: d2b7f6b9c98b0344996969c55e1a9a08, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -205,6 +209,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17500237
@@ -371,6 +379,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (14)
@@ -562,6 +574,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3586352276242270819, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8466800951380062067, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_FlowerPotNoFlowers_1
@@ -636,6 +652,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (11)
@@ -709,6 +729,10 @@ PrefabInstance:
     - target: {fileID: 1614724245190689929, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
@@ -1105,6 +1129,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (6)
@@ -1227,6 +1255,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 97.694
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1
@@ -1301,6 +1333,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 167.047
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (9)
@@ -1323,6 +1359,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -1385,6 +1425,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1749873
@@ -1667,6 +1711,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -1781,6 +1829,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 176.967
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (8)
@@ -1839,6 +1891,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -1901,6 +1957,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (8)
@@ -2027,6 +2087,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 136.631
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (14)
@@ -2106,6 +2170,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (2)
@@ -2128,6 +2196,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2288,6 +2360,10 @@ PrefabInstance:
     - target: {fileID: 724136167270018197, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 184.727
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
@@ -2475,6 +2551,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (16)
@@ -2549,6 +2629,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (10)
@@ -2571,6 +2655,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1749976
@@ -2633,6 +2721,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit
@@ -2764,6 +2856,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (7)
@@ -2838,6 +2934,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (12)
@@ -3129,6 +3229,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (1)
@@ -3183,6 +3287,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 88334452540018747, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2574733799595674034, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.085
@@ -3297,6 +3405,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (15)
@@ -3359,6 +3471,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (11)
@@ -3381,6 +3497,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -3526,7 +3646,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3803,6 +3923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -15.366
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (28)
@@ -3945,6 +4069,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 6af7a6f6ca42f584980dd1db3277cd8b, type: 2}
@@ -4074,6 +4202,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 139.434
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (10)
@@ -4096,6 +4228,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17500237
@@ -4210,6 +4346,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (25)
@@ -4232,6 +4372,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -4346,6 +4490,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 184.477
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (2)
@@ -4395,6 +4543,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1750042
@@ -4498,6 +4650,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157032764059815363, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.6250677
@@ -4595,6 +4751,10 @@ PrefabInstance:
     - target: {fileID: 881388888035053798, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
@@ -4783,6 +4943,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -4897,6 +5061,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (27)
@@ -4971,6 +5139,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (7)
@@ -4996,6 +5168,10 @@ PrefabInstance:
     - target: {fileID: 99013435948473911, guid: eb9506bbe931b2e4190e83ecbac8f9ae, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseMainDoorSurround_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 994135368289162183, guid: eb9506bbe931b2e4190e83ecbac8f9ae, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3941471545173329449, guid: eb9506bbe931b2e4190e83ecbac8f9ae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5238,6 +5414,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 88334452540018747, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2574733799595674034, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.085
@@ -5300,6 +5480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -5678,6 +5862,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 996619686009471505, guid: 86476c13d78c6ee4a9191cc9ff1c85ad, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5678668863548274622, guid: 86476c13d78c6ee4a9191cc9ff1c85ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5792,6 +5980,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 176.967
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (13)
@@ -5886,6 +6078,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (15)
@@ -5960,6 +6156,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -20.727
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (26)
@@ -6021,6 +6221,10 @@ PrefabInstance:
     - target: {fileID: 881388888035053798, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
@@ -6096,6 +6300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (3)
@@ -6158,6 +6366,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (5)
@@ -6183,6 +6395,10 @@ PrefabInstance:
     - target: {fileID: 1922333858593000620, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWindow_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813625539474154721, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6058536634058335190, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6293,6 +6509,10 @@ PrefabInstance:
     - target: {fileID: 1614724245190689929, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
@@ -6449,6 +6669,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (12)
@@ -6471,6 +6695,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 88334452540018747, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2574733799595674034, guid: 45914239c5e5f0d4f89811862c31b993, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.265
@@ -6689,6 +6917,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 121.044
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (11)
@@ -6751,6 +6983,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (10)
@@ -6773,6 +7009,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (2)
@@ -6886,6 +7126,10 @@ PrefabInstance:
     - target: {fileID: 1614724245190689929, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
@@ -7065,6 +7309,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (9)
@@ -7196,6 +7444,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 251.78299
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (7)
@@ -7270,6 +7522,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 176.967
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (6)
@@ -7343,6 +7599,10 @@ PrefabInstance:
     - target: {fileID: 1614724245190689929, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
@@ -7492,6 +7752,10 @@ PrefabInstance:
     - target: {fileID: 1614724245190689929, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -8.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
@@ -9086,6 +9350,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (2)
@@ -9305,6 +9573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -8.052
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (20)
@@ -9333,6 +9605,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 490871300742035868, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157032764059815363, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
@@ -9393,6 +9669,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (3)
@@ -9495,6 +9775,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (8)
@@ -9568,6 +9852,10 @@ PrefabInstance:
     - target: {fileID: 724136167270018197, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 165.215
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
@@ -9677,6 +9965,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (17)
@@ -9751,6 +10043,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 184.376
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (12)
@@ -9773,6 +10069,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (4)
@@ -9847,6 +10147,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (5)
@@ -9969,6 +10273,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -41.996
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (22)
@@ -10031,6 +10339,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4469892021274035200, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HousePillar_1 (2)
@@ -10056,6 +10368,10 @@ PrefabInstance:
     - target: {fileID: 1922333858593000620, guid: 4a8726d646d3e7545b827990919eff17, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWindow_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813625539474154721, guid: 4a8726d646d3e7545b827990919eff17, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6058536634058335190, guid: 4a8726d646d3e7545b827990919eff17, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10488,6 +10804,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (1)
@@ -10717,6 +11037,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (9)
@@ -10739,6 +11063,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -10801,6 +11129,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (13)
@@ -10875,6 +11207,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -11005,6 +11341,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (18)
@@ -11079,6 +11419,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 154.949
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (5)
@@ -11140,6 +11484,10 @@ PrefabInstance:
     - target: {fileID: 1245675828234927082, guid: 6923876d19599cd4cbeea46134a4c6e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872788101527205605, guid: 6923876d19599cd4cbeea46134a4c6e0, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3129798344931296219, guid: 6923876d19599cd4cbeea46134a4c6e0, type: 3}
       propertyPath: m_Name
@@ -11326,6 +11674,10 @@ PrefabInstance:
     - target: {fileID: 881388888035053798, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
@@ -11545,6 +11897,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (1)
@@ -11606,6 +11962,10 @@ PrefabInstance:
     - target: {fileID: 881388888035053798, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
@@ -11866,6 +12226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseWindow_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2813625539474154721, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6058536634058335190, guid: aed61ae8f4c3a0946b560a78bba89f0a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005000457
@@ -11924,6 +12288,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.174987
@@ -11986,6 +12354,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12064,6 +12436,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -12166,9 +12542,121 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1563742552104185932, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817819897098629358, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817819897098629358, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817819897098629358, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817819897098629358, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916981257017974196, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916981257017974196, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916981257017974196, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916981257017974196, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924121303036411708, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_MaxValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924121303036411708, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_MinValue
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528057041030092633, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528057041030092633, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528057041030092633, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528057041030092633, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803413541180447190, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854363074226820203, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854363074226820203, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854363074226820203, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854363074226820203, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001819196763494085, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001819196763494085, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001819196763494085, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001819196763494085, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7464128560998027558, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -12.814789
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994217380124276865, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994217380124276865, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994217380124276865, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994217380124276865, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8664600812062654764, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_Name
@@ -12314,6 +12802,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4469892021274035200, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HousePillar_1 (3)
@@ -12438,6 +12930,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (5)
@@ -12512,6 +13008,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 805744916178674512, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoofEnds_1 (4)
@@ -12639,6 +13139,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_DirtBit (2)
@@ -12768,6 +13272,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17499998
@@ -12904,6 +13412,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (3)
@@ -12926,6 +13438,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3081879106156222719, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -13226,6 +13742,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_HouseRoof_1 (12)
@@ -13251,6 +13771,10 @@ PrefabInstance:
     - target: {fileID: 5291181105749007629, guid: 59f5783a8610df1469272b445f9cf9e3, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Chimney_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561220395726097961, guid: 59f5783a8610df1469272b445f9cf9e3, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7749674250042846961, guid: 59f5783a8610df1469272b445f9cf9e3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13349,6 +13873,10 @@ PrefabInstance:
     - target: {fileID: 1639522993162077699, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469892021274035200, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
       propertyPath: m_Name
@@ -13558,6 +14086,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 177.264
       objectReference: {fileID: 0}
+    - target: {fileID: 5736982619922712302, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389946174026914550, guid: 2bf81482c82f99c40af1c911808c5612, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Ivy_1 (1)
@@ -13632,6 +14164,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -149.033
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (24)
@@ -13705,6 +14241,10 @@ PrefabInstance:
     - target: {fileID: 572098995591130370, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586352276242270819, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8466800951380062067, guid: 7e0fb1b2ffde3b44cb8f50a6c86f1423, type: 3}
       propertyPath: m_Name
@@ -14077,6 +14617,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 15.671
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (29)
@@ -14266,6 +14810,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (13)
@@ -14340,6 +14888,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (14)
@@ -14362,6 +14914,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 281797815}
     m_Modifications:
+    - target: {fileID: 2285177302824819116, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6565427901964216500, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1750042
@@ -14476,6 +15032,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 36.343
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (19)
@@ -14550,6 +15110,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb
@@ -14611,6 +15175,10 @@ PrefabInstance:
     - target: {fileID: 881388888035053798, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986332609402594319, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
