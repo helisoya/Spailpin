@@ -172,6 +172,38 @@ public class Settings
     }
 
     /// <summary>
+    /// Gets the current gamma
+    /// </summary>
+    /// <returns>The current gama</returns>
+    public float GetCurrentGamma(){
+        return data.gamma;
+    }
+
+    /// <summary>
+    /// Sets the current gamma
+    /// </summary>
+    /// <param name="gamma">The new gamma</param>
+    public void SetGamma(float gamma){
+        data.gamma = gamma;
+        GameManager.instance.UpdateVolume();
+        Save();
+    }
+
+    /// <summary>
+    /// Gets if the bloom is enabled
+    /// </summary>
+    /// <returns>True if the bloom is enabled</returns>
+    public bool IsBloomEnabled(){
+        return data.bloom;
+    }
+
+    public void SetBloomEnabled(bool value){
+        data.bloom = value;
+        GameManager.instance.UpdateVolume();
+        Save();
+    }
+
+    /// <summary>
     /// Loads the settings from disk
     /// </summary>
     private void Load()
@@ -188,6 +220,7 @@ public class Settings
         Locals.ChangeLanguage(data.language);
         Screen.fullScreen = data.fullscreen;
         GameManager.instance.GetInputs().LoadBindingOverridesFromJson(data.remaping);
+        GameManager.instance.UpdateVolume();
     }
 
     /// <summary>
@@ -218,7 +251,9 @@ public class Settings
                 remaping = GameManager.instance.GetInputs().SaveBindingOverridesAsJson(),
                 volumeMaster = 1,
                 volumeMusic = 1,
-                volumeSfx = 1
+                volumeSfx = 1,
+                gamma = 0,
+                bloom = true,
             };
             Save();
         }
@@ -244,6 +279,9 @@ public class SettingsData
     public float volumeMaster;
     public float volumeSfx;
     public float volumeMusic;
+
+    public float gamma;
+    public bool bloom;
 
     public SettingsData()
     {

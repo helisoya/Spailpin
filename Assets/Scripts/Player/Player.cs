@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     [Header("Components")]
     [SerializeField] private PlayerController controller;
     [SerializeField] private PlayerInteraction interactions;
+    [SerializeField] private GameObject playerModelRoot;
     private Room currentRoom = null;
     public int CurrentRoom { get { return currentRoom != null ? currentRoom.GetID() : -1; } }
     public Vector3 position { get { return controller.position; } }
@@ -31,6 +32,15 @@ public class Player : MonoBehaviour
     void Awake()
     {
         instance = this;
+        SetPlayerModelActive(true);
+    }
+
+    /// <summary>
+    /// Changes if the player model is active or not
+    /// </summary>
+    /// <param name="value">True if the player model is active</param>
+    public void SetPlayerModelActive(bool value){
+        playerModelRoot.SetActive(value);
     }
 
     /// <summary>
@@ -40,6 +50,15 @@ public class Player : MonoBehaviour
     public void SetCurrentPuzzle(Puzzle puzzle)
     {
         currentPuzzle = puzzle;
+    }
+
+    /// <summary>
+    /// Stops the current puzzle
+    /// </summary>
+    public void StopCurrentPuzzle(){
+        if(currentPuzzle != null){
+            currentPuzzle.EndPuzzle(true);
+        }
     }
 
     /// <summary>
@@ -94,7 +113,7 @@ public class Player : MonoBehaviour
     {
         if (CutsceneManager.instance.inCutscene) return;
         // GameGUI.instance.isPauseOpen || 
-        if (inPuzzle)
+        if (inPuzzle && currentPuzzle.absorbMovements)
         {
             currentPuzzle.FowardInput(Puzzle.InputType.MOVEMENT, value);
         }
@@ -145,7 +164,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The pause value (unused)</param>
     void OnPause(InputValue value)
     {
-        if (inPuzzle) currentPuzzle.FowardInput(Puzzle.InputType.CANCEL, value);
+        if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.CANCEL, value);
         else if (GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
         else
         {
@@ -162,7 +181,7 @@ public class Player : MonoBehaviour
     {
         if (GameGUI.instance.isPauseOpen) return;
         if (CutsceneManager.instance.inCutscene) CutsceneManager.instance.UserSubmit();
-        else if (inPuzzle) currentPuzzle.FowardInput(Puzzle.InputType.ACCEPT, value);
+        else if (inPuzzle && currentPuzzle.absorbInteract) currentPuzzle.FowardInput(Puzzle.InputType.ACCEPT, value);
         else interactions.TryInterract();
     }
 

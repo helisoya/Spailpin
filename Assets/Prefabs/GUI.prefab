@@ -6872,8 +6872,8 @@ RectTransform:
   m_Children:
   - {fileID: 8258394952466749115}
   - {fileID: 3628683431957460333}
-  - {fileID: 7719229702102417300}
   - {fileID: 4078544725699810639}
+  - {fileID: 7719229702102417300}
   - {fileID: 8687895779641954936}
   - {fileID: 2242806475503220382}
   m_Father: {fileID: 637018562320393997}
@@ -10759,6 +10759,8 @@ MonoBehaviour:
   firstObject: {fileID: 4447458202999755950}
   fullscreenToggle: {fileID: 8095056021892797320}
   resolutionDropdown: {fileID: 4447458202999755950}
+  gammaSlider: {fileID: 4924121303036411708}
+  bloomToggle: {fileID: 5388589517985075836}
 --- !u!1 &5990056671123845399
 GameObject:
   m_ObjectHideFlags: 0
@@ -16182,7 +16184,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5803413541180447190}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 2
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
