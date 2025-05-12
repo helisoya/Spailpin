@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerRunSpeed = 4f;
     [SerializeField] private float rotationSpeed = 360f;
 
+    private const float GRAVITY = -9.81f;
+
     [Header("Hints")]
     [SerializeField] private bool canShowMovementHint = true;
     [SerializeField] private float waitTimeForShowingMovementHint = 3;
@@ -19,9 +21,10 @@ public class PlayerController : MonoBehaviour
 
     [Header("Components")]
     [SerializeField] private Transform playerTransform;
-    [SerializeField] private Rigidbody playerRigidbody;
+    //[SerializeField] private Rigidbody playerRigidbody;
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private Transform soundListenerTransform;
+    [SerializeField] private CharacterController controller;
     private bool running = false;
     private Vector2 moveVector;
 
@@ -33,7 +36,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 cachedRight;
 
 
-    public Vector3 position { get { return playerRigidbody.transform.position; } }
+    public Vector3 position { get { return playerTransform.transform.position; } }
     public Vector3 rotation { get { return playerTransform.eulerAngles; } }
 
     void Start()
@@ -46,13 +49,23 @@ public class PlayerController : MonoBehaviour
     {
         if (moveVector != Vector2.zero)
         {
+            // Rotation
             Vector3 rotVector = moveVector.y * currentForward + moveVector.x * currentRight;
             rotVector.y = 0;
             rotVector.Normalize();
 
             Quaternion toQuat = Quaternion.LookRotation(rotVector, Vector3.up);
             playerTransform.rotation = Quaternion.RotateTowards(playerTransform.rotation, toQuat, rotationSpeed * Time.deltaTime);
+
+
+            // Movement
+            float actualSpeed = running ? playerRunSpeed : playerWalkSpeed;
+            Vector3 moveDirection = currentForward * actualSpeed * moveVector.y + currentRight * actualSpeed * moveVector.x;
+
+            controller.Move(moveDirection * Time.deltaTime);
         }
+
+        controller.Move(Vector3.up * GRAVITY * Time.deltaTime);
 
         playerAnimator.SetBool("Moving", moveVector != Vector2.zero);
         soundListenerTransform.position = playerTransform.position;
@@ -114,11 +127,11 @@ public class PlayerController : MonoBehaviour
         playerRigidbody.AddForce(moveDirection.normalized * actualSpeed * 10f,ForceMode.Force);
         */
 
-        
+        /*
         float ySpeed = playerRigidbody.linearVelocity.y;
         playerRigidbody.linearVelocity = currentForward * actualSpeed * moveVector.y + currentRight * actualSpeed * moveVector.x;
         playerRigidbody.linearVelocity = new Vector3(playerRigidbody.linearVelocity.x, ySpeed, playerRigidbody.linearVelocity.z);
-        
+        */
     }
 
     /// <summary>
@@ -151,8 +164,8 @@ public class PlayerController : MonoBehaviour
     /// <param name="rotation">The new rotation</param>
     public void SetPosition(Vector3 position, Quaternion rotation)
     {
-        playerRigidbody.position = position;
-        playerRigidbody.rotation = rotation;
+        playerTransform.position = position;
+        playerTransform.rotation = rotation;
     }
 
 

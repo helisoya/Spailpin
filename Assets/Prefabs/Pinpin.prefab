@@ -106,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7564006058483218173}
   - component: {fileID: 410034155051296717}
+  - component: {fileID: 8456502819043668255}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Player
@@ -148,9 +149,36 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2.0924633
+  m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 0.5462316, z: 0}
+  m_Center: {x: 0, y: 0.1767044, z: 0}
+--- !u!54 &8456502819043668255
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447614788110917767}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &691638382045268032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,11 +1799,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 72508452835727340}
-  - component: {fileID: 3481702667674898723}
   - component: {fileID: 3249055580036257644}
   - component: {fileID: 5518070396854803634}
   - component: {fileID: 2349723958475383477}
   - component: {fileID: 5017100232745685662}
+  - component: {fileID: 8502470061715360839}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1802,33 +1830,6 @@ Transform:
   - {fileID: 3691085004276598400}
   m_Father: {fileID: 1701226419885134092}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &3481702667674898723
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4866602703676961450}
-  serializedVersion: 4
-  m_Mass: 10
-  m_Drag: 0.8
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 1
 --- !u!114 &3249055580036257644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,15 +1842,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49aa80c8bc5e73f43b66bf31d2a86018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerWalkSpeed: 10
-  playerRunSpeed: 10
+  playerWalkSpeed: 2
+  playerRunSpeed: 4
   rotationSpeed: 360
   canShowMovementHint: 1
   waitTimeForShowingMovementHint: 3
   playerTransform: {fileID: 72508452835727340}
-  playerRigidbody: {fileID: 3481702667674898723}
   playerAnimator: {fileID: 7383363499831115184}
   soundListenerTransform: {fileID: 8775545248609082707}
+  controller: {fileID: 8502470061715360839}
 --- !u!114 &5518070396854803634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1985,6 +1986,31 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!143 &8502470061715360839
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866602703676961450}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.09, z: 0}
 --- !u!1 &4972762256334985874
 GameObject:
   m_ObjectHideFlags: 0
