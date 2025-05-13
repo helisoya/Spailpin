@@ -46,6 +46,7 @@ MonoBehaviour:
   nodes:
   - {fileID: -165025555650158891}
   - {fileID: 3027444701508755061}
+  parrallelCutscene: 1
 --- !u!114 &3027444701508755061
 MonoBehaviour:
   m_ObjectHideFlags: 0

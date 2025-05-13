@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 /// <summary>
 /// Represents the Spailpin player
@@ -77,6 +78,12 @@ public class Player : MonoBehaviour
         currentRoom = room;
         room.GetCamera().Priority = 1;
 
+        float targetFOV = room.GetCamera().Lens.FieldOfView;
+
+        foreach(Camera camera in Camera.main.GetUniversalAdditionalCameraData().cameraStack){
+            camera.fieldOfView = targetFOV;
+        }
+
         // Do things with player controller
         controller.ChangeDirectionVectors(
             room.GetRoomForward(),
@@ -111,7 +118,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The movement value</param>
     void OnMove(InputValue value)
     {
-        if (CutsceneManager.instance.inCutscene) return;
+        if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
         // GameGUI.instance.isPauseOpen || 
         if (inPuzzle && currentPuzzle.absorbMovements)
         {
@@ -130,7 +137,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The sprinting value</param>
     void OnSprint(InputValue value)
     {
-        if (GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || inPuzzle)
+        if (GameGUI.instance.isPauseOpen || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || inPuzzle)
         {
             controller.SetSprinting(false);
             return;

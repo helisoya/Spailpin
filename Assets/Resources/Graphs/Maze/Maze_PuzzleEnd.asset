@@ -88,3 +88,4 @@ MonoBehaviour:
   nodes:
   - {fileID: -165025555650158891}
   - {fileID: -3226712795077436724}
+  parrallelCutscene: 1
