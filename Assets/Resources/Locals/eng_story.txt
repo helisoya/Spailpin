@@ -1,8 +1,16 @@
 Test_1 = Hello, Mr.Caribou
 Test_2 = Hello, Pinpin.
 
-Exterior_Door_NotDone_1 = The door is locked.
-Exterior_Door_NotDone_2 = Maybe the notebook can help me open it.
+Intro_Cinematic_Start_1 = Welcome to the Spailpin demo.
+Intro_Cinematic_Start_2 = I finally found it. Her house is still intact.
+Intro_Cinematic_Start_3 = Her journal might make more sens now that I'm here.
+
+Exterior_Door_PuzzleNoDone_1 = The door is locked.
+Exterior_Door_PuzzleNoDone_2 = There must be a way in.
+
+Exterior_Windows_Dust_1 = I can't see anything with all this dust...
 
 Exterior_Puzzle_Finished_1 = The door is unlocked.
 Exterior_Puzzle_Done_1 = I don't need to do this anymore.
+
+Outro_Cinematic_Start_1 = Thank you for playing Spailpin's demo. Don't hesitate to give feedbacks.

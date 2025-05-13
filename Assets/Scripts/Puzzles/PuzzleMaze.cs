@@ -8,12 +8,13 @@ public class PuzzleMaze : Puzzle
 {
     [Header("Maze Puzzle")]
     [SerializeField] private GameObject puzzleCanvas;
+    [SerializeField] private Transform repawnPoint;
 
     public override void FowardInput(InputType type, InputValue inputValue)
     {
         if (type == InputType.CANCEL && inputValue.isPressed)
         {
-            Map.instance.FindPlayerSpawnPoint();
+            Player.instance.SetPosition(repawnPoint.position,repawnPoint.rotation);
             EndPuzzle(true);
         }
     }
