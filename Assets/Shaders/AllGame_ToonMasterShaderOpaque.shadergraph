@@ -128,6 +128,20 @@
                 "m_Node": {
                     "m_Id": "6135c2b35bb745c28aa15630911e3189"
                 },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "b164afd734884304b87fe261d8847df1"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "6135c2b35bb745c28aa15630911e3189"
+                },
                 "m_SlotId": 1
             },
             "m_InputSlot": {
@@ -322,20 +336,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "fae68837641441f08411d9f957155d84"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "b164afd734884304b87fe261d8847df1"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "fbc59fc669954a119a501bb037b5804a"
                 },
                 "m_SlotId": 0
@@ -424,8 +424,8 @@
     "m_ObjectId": "0dd80dab37a94b80acb880188b887e5c",
     "m_Title": "MAINLIGHT",
     "m_Position": {
-        "x": -4053.0,
-        "y": 611.0
+        "x": -4053.333740234375,
+        "y": 611.3333129882813
     }
 }
 
