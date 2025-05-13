@@ -32,7 +32,7 @@ public class Locals
     {
         self = this;
         locals = new Dictionary<string, string>();
-        ChangeLanguage("eng");
+        ChangeLanguage("fra");
     }
 
     /// <summary>

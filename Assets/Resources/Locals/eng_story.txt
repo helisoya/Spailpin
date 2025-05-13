@@ -3,7 +3,7 @@ Test_2 = Hello, Pinpin.
 
 Intro_Cinematic_Start_1 = Welcome to the Spailpin demo.
 Intro_Cinematic_Start_2 = I finally found it. Her house is still intact.
-Intro_Cinematic_Start_3 = Her journal might make more sens now that I'm here.
+Intro_Cinematic_Start_3 = Her journal might make more sense now that I'm here.
 
 Exterior_Door_PuzzleNoDone_1 = The door is locked.
 Exterior_Door_PuzzleNoDone_2 = There must be a way in.
