@@ -197,11 +197,70 @@ public class Settings
         return data.bloom;
     }
 
+    /// <summary>
+    /// Changes if the bloom is enabled or not
+    /// </summary>
+    /// <param name="value">True if enabled</param>
     public void SetBloomEnabled(bool value){
         data.bloom = value;
         GameManager.instance.UpdateVolume();
         Save();
     }
+
+    /// <summary>
+    /// Sets the game's text size
+    /// </summary>
+    /// <param name="size">The size index</param>
+    public void SetTextSize(int size){
+        data.textSize = size;
+        GameGUI.instance.SetDialogSize(size);
+        Save();
+    }
+
+    /// <summary>
+    /// Gets the game's text size index
+    /// </summary>
+    /// <returns>The size index</returns>
+    public int GetTextSize(){
+        return data.textSize;
+    }
+
+    /// <summary>
+    /// Sets the game's text spacing
+    /// </summary>
+    /// <param name="spacing">The spacing index</param>
+    public void SetTextSpacing(int spacing){
+        data.textSpacing = spacing;
+        GameGUI.instance.SetDialogSpacing(spacing);
+        Save();
+    }
+
+    /// <summary>
+    /// Gets the game's text spacing index
+    /// </summary>
+    /// <returns>The spacing index</returns>
+    public int GetTextSpacing(){
+        return data.textSpacing;
+    } 
+
+    /// <summary>
+    /// Sets the game's test opacity index
+    /// </summary>
+    /// <param name="opacity">The opacity index</param>
+    public void SetTextOpacity(float opacity){
+        data.textOpacity = opacity;
+        GameGUI.instance.SetDialogBackgroundAlpha(opacity);
+        Save();
+    }
+
+    /// <summary>
+    /// Gets the game's text opacity index
+    /// </summary>
+    /// <returns>The opacity index</returns>
+    public float GetTextOpacity(){
+        return data.textOpacity;
+    }
+
 
     /// <summary>
     /// Loads the settings from disk
@@ -221,6 +280,7 @@ public class Settings
         Screen.fullScreen = data.fullscreen;
         GameManager.instance.GetInputs().LoadBindingOverridesFromJson(data.remaping);
         GameManager.instance.UpdateVolume();
+        Locals.ChangeFont(data.currentTypoIndex);
     }
 
     /// <summary>
@@ -254,6 +314,10 @@ public class Settings
                 volumeSfx = 1,
                 gamma = 0,
                 bloom = true,
+                currentTypoIndex = 0,
+                textSize = 1,
+                textSpacing = 0,
+                textOpacity = 0.8f,
             };
             Save();
         }
@@ -282,6 +346,10 @@ public class SettingsData
 
     public float gamma;
     public bool bloom;
+
+    public int textSize;
+    public int textSpacing;
+    public float textOpacity;
 
     public SettingsData()
     {

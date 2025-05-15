@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 /// <summary>
 /// Represents the game's GUI
@@ -14,6 +15,7 @@ public class GameGUI : MonoBehaviour
 
     [Header("Dialog")]
     [SerializeField] private GameObject dialogRoot;
+    [SerializeField] private Image dialogBg;
     [SerializeField] private LocalizedText dialogText;
     [SerializeField] private Animator cutsceneBar;
     private Coroutine routineDialog;
@@ -48,6 +50,9 @@ public class GameGUI : MonoBehaviour
         fade.ForceAlphaTo(1);
         fade.FadeTo(0);
         SetMovementHintAlpha(0);
+        SetDialogBackgroundAlpha(Settings.instance.GetTextOpacity());
+        SetDialogSize(Settings.instance.GetTextSize());
+        SetDialogSpacing(Settings.instance.GetTextSpacing());
     }
 
     void Update()
@@ -59,6 +64,58 @@ public class GameGUI : MonoBehaviour
             side < 0 ? hintMovementAlphaTarget : 0.0f,
             side > 0 ? hintMovementAlphaTarget : 1.0f);
         }
+    }
+
+    /// <summary>
+    /// Sets the dialog background's alpha
+    /// </summary>
+    /// <param name="alpha">The alpha</param>
+    public void SetDialogBackgroundAlpha(float alpha){
+        Color newColor = dialogBg.color;
+        newColor.a = alpha;
+        dialogBg.color = newColor;
+    }
+
+    /// <summary>
+    /// Sets the dialog's font size
+    /// </summary>
+    /// <param name="sizeIndex">The font size index</param>
+    public void SetDialogSize(int sizeIndex){
+        int correctSize = 0;
+        switch (sizeIndex){
+            case 0:
+                correctSize = 18;
+                break;
+            case 1:
+                correctSize = 28;
+                break;
+            case 2:
+                correctSize = 30;
+                break;
+        }
+
+        dialogText.GetText().fontSize = correctSize;
+    }
+
+    /// <summary>
+    /// Sets the dialog's spacing
+    /// </summary>
+    /// <param name="sizeIndex">The spacing index</param>
+    public void SetDialogSpacing(int sizeIndex){
+        int correctSize = 0;
+        switch (sizeIndex){
+            case 0:
+                correctSize = 0;
+                break;
+            case 1:
+                correctSize = 5;
+                break;
+            case 2:
+                correctSize = 10;
+                break;
+        }
+
+        dialogText.GetText().characterSpacing = correctSize;
     }
 
     /// <summary>

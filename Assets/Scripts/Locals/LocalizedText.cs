@@ -29,11 +29,27 @@ public class LocalizedText : MonoBehaviour
         text.text = Locals.GetLocal(localKey);
     }
 
-
-    protected void Start()
+    void Awake()
     {
         ReloadText();
+        SetFont(GameManager.instance.GetFonts()[Locals.fontIndex]);
+        Locals.onChangeLocal.AddListener(ReloadText);
+        Locals.onChangeFont.AddListener(SetFont);
     }
+
+    protected void OnDestroy()
+    {
+        Locals.onChangeLocal.RemoveListener(ReloadText);
+        Locals.onChangeFont.RemoveListener(SetFont);
+    }
+
+    /// <summary>
+    /// Sets the current font for the text
+    /// </summary>
+    /// <param name="font">The new font</param>
+    public void SetFont(TMP_FontAsset font){
+        text.font = font;
+    } 
 
     /// <summary>
     /// Returns the text field
