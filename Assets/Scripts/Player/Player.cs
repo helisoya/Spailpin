@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     private Puzzle currentPuzzle;
     public bool inPuzzle { get { return currentPuzzle != null; } }
 
+    private string currentScheme;
+
     [Header("Events")]
     public UnityEvent<string> onDeviceChange;
     public UnityEvent onCollision;
@@ -42,6 +44,14 @@ public class Player : MonoBehaviour
     /// <param name="value">True if the player model is active</param>
     public void SetPlayerModelActive(bool value){
         playerModelRoot.SetActive(value);
+    }
+
+    /// <summary>
+    /// Refreshs the game's bindings (calls onDeviceChange to the current device)
+    /// </summary>
+    public void RefreshBindings()
+    {
+        onDeviceChange.Invoke(currentScheme);
     }
 
     /// <summary>
@@ -153,7 +163,8 @@ public class Player : MonoBehaviour
     void OnControlsChanged(PlayerInput input)
     {
         print(input.currentControlScheme);
-        onDeviceChange.Invoke(input.currentControlScheme);
+        currentScheme = input.currentControlScheme;
+        onDeviceChange.Invoke(currentScheme);
     }
 
     /// <summary>

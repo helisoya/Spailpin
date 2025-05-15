@@ -130,6 +130,7 @@ public class Settings
     public void SetBindings(string bindings)
     {
         data.remaping = bindings;
+        Player.instance.RefreshBindings();
         Save();
     }
 
@@ -140,6 +141,7 @@ public class Settings
     public void SetCurrentGamePadProfileIdx(int newIdx)
     {
         data.currentGamepadProfileIdx = newIdx;
+        Player.instance.RefreshBindings();
         Save();
     }
 
