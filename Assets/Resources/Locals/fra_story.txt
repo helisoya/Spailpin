@@ -1,8 +1,16 @@
 Test_1 = Bonjour, Mr.Caribou
 Test_2 = Bonjour, Pinpin.
 
-Exterior_Door_NotDone_1 = La porte est fermée.
-Exterior_Door_NotDone_2 = Peut-être que le carnet peut m'aider à l'ouvrir.
+Intro_Cinematic_Start_1 = Bienvenue dans la démo de Spailpin.
+Intro_Cinematic_Start_2 = Je l'ai enfin trouvé, sa maison est bel et bien toujours debout
+Intro_Cinematic_Start_3 = Son journal fera peut être un peu plus de sens maintenant que je suis chez elle.
+
+Exterior_Door_PuzzleNoDone_1 = La porte est fermée.
+Exterior_Door_PuzzleNoDone_2 = Il doit bien avoir un moyen de rentrer dans la maison.
+
+Exterior_Windows_Dust_1 = Je n'y vois rien avec toute cette poussière...
 
 Exterior_Puzzle_Finished_1 = La porte est ouverte.
 Exterior_Puzzle_Done_1 = Je n'ai plus besoin d'y toucher.
+
+Outro_Cinematic_Start_1 = Merci d'avoir joué la démo de Spailpin. N'hésitez pas à nous donner des retours.

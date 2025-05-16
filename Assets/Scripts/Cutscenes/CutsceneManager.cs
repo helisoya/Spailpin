@@ -12,8 +12,10 @@ public class CutsceneManager : MonoBehaviour
     public static CutsceneManager instance;
     private Coroutine processingCutscene = null;
     public bool inCutscene {get{return processingCutscene != null;}}
+    public bool inParrallelCutscene {get{return currentCutsceneIsParrallel;}}
 
     private bool userSubmit;
+    private bool currentCutsceneIsParrallel = false;
 
     /// <summary>
     /// Sets the user submit tag
@@ -65,7 +67,7 @@ public class CutsceneManager : MonoBehaviour
     /// <param name="graph">The graph</param>
     /// <returns>IEnumerator</returns>
     private IEnumerator Routine_ProcessingCutscene(DialogGraph graph){
-
+        currentCutsceneIsParrallel = graph.parrallelCutscene;
         SpailpinNode currentNode = graph.GetStartNode();
         int result = 0;
         NodePort port;

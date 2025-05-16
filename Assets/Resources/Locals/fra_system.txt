@@ -42,3 +42,5 @@ hint_move = Marcher
 hint_puzzle1_move = Changer la sélection
 hint_puzzle1_select = Sélectioner
 hint_puzzle1_quit = Quiter
+
+hint_puzzle2_restart = Recommencer

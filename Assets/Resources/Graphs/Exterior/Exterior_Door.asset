@@ -31,7 +31,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
-  mapID: PlayerTest
+  mapID: Hall
 --- !u!114 &-3270163613472632805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
-  dialogID: Exterior_Door_NotDone_2
+  dialogID: Exterior_Door_PuzzleNoDone_2
   exit: 0
 --- !u!114 &-165025555650158891
 MonoBehaviour:
@@ -168,7 +168,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
-  dialogID: Exterior_Door_NotDone_1
+  dialogID: Exterior_Door_PuzzleNoDone_1
   exit: 0
 --- !u!114 &6753046004308498555
 MonoBehaviour:

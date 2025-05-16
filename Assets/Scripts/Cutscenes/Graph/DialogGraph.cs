@@ -8,6 +8,7 @@ using XNode;
 /// </summary>
 [CreateAssetMenu(menuName ="Spailpin/DialogGraph")]
 public class DialogGraph : NodeGraph { 
+    public bool parrallelCutscene = false;
 
     /// <summary>
     /// Gets the starting node from the graph
