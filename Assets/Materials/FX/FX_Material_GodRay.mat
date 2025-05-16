@@ -61,7 +61,7 @@ Material:
     - _SizeNoise: 101
     - _SpeedMove: 0.01
     - _Transparency: 1
-    - _TransparentPartSize: 1
+    - _TransparentPartSize: 0.21
     m_Colors:
     - _ColorHue: {r: 1, g: 0.9593638, b: 0.5990566, a: 1}
   m_BuildTextureStacks: []

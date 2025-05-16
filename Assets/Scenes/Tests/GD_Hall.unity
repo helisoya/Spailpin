@@ -460,6 +460,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7711303536779820866, guid: 36d9238c1007a564cb23deefffbfcfdb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f2752296683ff994896a5ffa4654c005, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1400,6 +1404,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6384014238129346956, guid: 2e9a7f84e465dc746bce338498908083, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1461,7 +1469,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 0.6894522, b: 0.6367924, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1524,13 +1532,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203844586}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.4626618, y: -0.19019838, z: 0.22922237, w: -0.8350005}
+  m_LocalRotation: {x: 0.28371912, y: -0.9443483, z: 0.15111364, w: -0.06981737}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 59.299, y: 11.928, z: 336.105}
+  m_LocalEulerAnglesHint: {x: 14.229, y: 167.027, z: 324.92902}
 --- !u!1001 &220658721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1539,6 +1547,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2072377859}
     m_Modifications:
+    - target: {fileID: 555890390729671407, guid: 59933b9dbcf86df45a5bce2ce57b3a92, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f2752296683ff994896a5ffa4654c005, type: 2}
     - target: {fileID: 5129739620381411734, guid: 59933b9dbcf86df45a5bce2ce57b3a92, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Architecture_HallWall_1 (8)
@@ -1969,6 +1981,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2072377859}
     m_Modifications:
+    - target: {fileID: 555890390729671407, guid: 59933b9dbcf86df45a5bce2ce57b3a92, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f2752296683ff994896a5ffa4654c005, type: 2}
     - target: {fileID: 5129739620381411734, guid: 59933b9dbcf86df45a5bce2ce57b3a92, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Architecture_HallWall_1 (10)
@@ -2371,6 +2387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseMainDoorSurround_1
       objectReference: {fileID: 0}
+    - target: {fileID: 994135368289162183, guid: eb9506bbe931b2e4190e83ecbac8f9ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 3941471545173329449, guid: eb9506bbe931b2e4190e83ecbac8f9ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6203263
@@ -2753,6 +2773,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3846081915307520964, guid: 4d53ef5877546d940b9b06944a02c256, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 6347160191483521512, guid: 4d53ef5877546d940b9b06944a02c256, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Architecture_WoodenBeam_1
@@ -3539,6 +3563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hall_Prefab_Architecture_Interior_Door_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9108979784090202183, guid: 59113e2aaafd19c4c8d2a05debc4dfdf, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4196,7 +4224,7 @@ PrefabInstance:
     - target: {fileID: 2981260649307806029, guid: 18dcec0fbc95acf42b94c166e5b9b20d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: dacaadefc06b25b42b85809c3f30a01b, type: 2}
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 6819041036914382320, guid: 18dcec0fbc95acf42b94c166e5b9b20d, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Clutter_Carpet_1
@@ -4655,6 +4683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hall_Prefab_Architecture_Interior_Door_1
       objectReference: {fileID: 0}
+    - target: {fileID: 9108979784090202183, guid: 59113e2aaafd19c4c8d2a05debc4dfdf, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4882,6 +4914,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7946827589746443844, guid: b86ac7b5b234c7243b98bd8de58c6f68, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4942,7 +4978,7 @@ PrefabInstance:
     - target: {fileID: 7327595208704216272, guid: 1b293befe4f740b46b9fda21a207cc3e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: dacaadefc06b25b42b85809c3f30a01b, type: 2}
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5244,6 +5280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hall_Prefab_Clutter_PorcelainVase_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7907980914773912206, guid: 04f20b77694949f48a2463f0e141c341, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5422,6 +5462,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2072377859}
     m_Modifications:
+    - target: {fileID: 1204968661779077739, guid: 231f0148420a1394b9d2e05a87df40e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 1828723530190342896, guid: 231f0148420a1394b9d2e05a87df40e6, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Furniture_FormicaChair_1
@@ -6068,6 +6112,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 184.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb
@@ -7129,6 +7177,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 184.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6454952820289529812, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (1)
@@ -7190,6 +7242,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8345429779859456484, guid: 37df42f63494921459fe4aa8c7df1752, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7562,7 +7618,7 @@ PrefabInstance:
     - target: {fileID: 5917608932696273423, guid: 3017a794d40af9848a95ea542a026501, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ffeb1ca6eb9408b438734f2d733f262e, type: 2}
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7621,6 +7677,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3846081915307520964, guid: 4d53ef5877546d940b9b06944a02c256, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 6347160191483521512, guid: 4d53ef5877546d940b9b06944a02c256, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Architecture_WoodenBeam_1 (1)
@@ -7690,7 +7750,7 @@ PrefabInstance:
     - target: {fileID: 5771963265125049260, guid: b2c4f492d23423141975452a509d3899, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: dacaadefc06b25b42b85809c3f30a01b, type: 2}
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8451,7 +8511,7 @@ PrefabInstance:
     - target: {fileID: 1815678784186710968, guid: 9210b5f6fa8c2854d812435575b2d150, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: dacaadefc06b25b42b85809c3f30a01b, type: 2}
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 3505431742799552932, guid: 9210b5f6fa8c2854d812435575b2d150, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2827995
@@ -8769,7 +8829,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b55f2f6554fd1b24c9e44b146d1f2f27, type: 2}
+  - {fileID: 2100000, guid: ce381153cd5c1d6409be5e8f8ee42846, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11703,7 +11763,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b55f2f6554fd1b24c9e44b146d1f2f27, type: 2}
+  - {fileID: 2100000, guid: ce381153cd5c1d6409be5e8f8ee42846, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11938,6 +11998,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hall_Prefab_Plant_PlantPotDead_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4794164200435421207, guid: 1780953f4ad256d4585a6824c4743302, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 5731454221593997558, guid: 1780953f4ad256d4585a6824c4743302, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.092
@@ -11996,6 +12060,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2072377859}
     m_Modifications:
+    - target: {fileID: 642092895772572067, guid: 00cc2bc51af4be54abe59e413401db3c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 5205844736951978875, guid: 00cc2bc51af4be54abe59e413401db3c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.732
@@ -12098,6 +12166,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5435730444765276049, guid: 70d3c711fe3a62843a63aa1838dbc60f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8da4c0010a0d7014bb690cc10e00514f, type: 2}
     - target: {fileID: 6386748950168745300, guid: 70d3c711fe3a62843a63aa1838dbc60f, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Clutter_Doormat_1
