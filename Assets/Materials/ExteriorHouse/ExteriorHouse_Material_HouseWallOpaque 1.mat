@@ -21,8 +21,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ExteriorHouse_Material_HouseWallOpaque 1
-  m_Shader: {fileID: -6465566751694194690, guid: d4acdb29e52c89943be1ad14e57300ca, type: 3}
-  m_Parent: {fileID: 2100000, guid: 9775523e35324224ba5dd6ed520bcfd9, type: 2}
+  m_Shader: {fileID: -6465566751694194690, guid: c82cb36a02b517b43bf7c5fed7a43151, type: 3}
+  m_Parent: {fileID: 2100000, guid: a525819338f141548b48e14b1640861c, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
