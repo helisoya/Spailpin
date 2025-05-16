@@ -20,12 +20,29 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        if (GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || Player.instance.inPuzzle) return;
+        if (GameGUI.instance.isPauseOpen || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle){
+            if(currentObject != null && ((CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle)){
+                currentObject.SetActive(false);
+                currentObject = null;
+            }
+            return;
+        }
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, interactionRadius, interactionMask);
         if (colliders.Length >= 1)
         {
-            InteractableObject newObj = colliders[0].transform.GetComponent<InteractableObject>();
+            float minDist = float.MaxValue;
+            float currentDist;
+            InteractableObject newObj = null;
+
+            foreach(Collider collider in colliders){
+                currentDist = Vector3.Distance(transform.position,collider.bounds.center);
+                if(currentDist < minDist){
+                    minDist = currentDist;
+                    newObj = collider.transform.GetComponent<InteractableObject>();
+                }
+            }
+
             if (newObj == currentObject)
             {
                 return;
@@ -50,8 +67,11 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (currentObject != null)
         {
-            Player.instance.SetMovementVector(Vector2.zero);
-            Player.instance.SetSprinting(false);
+            if(currentObject.stopPlayerOnInterract){
+                Player.instance.SetMovementVector(Vector2.zero);
+                Player.instance.SetSprinting(false);
+            }
+
             Player.instance.ResetHints();
 
             currentObject.SetActive(false);

@@ -17,3 +17,5 @@ MonoBehaviour:
     value: 0
   - ID: puzzle1Done
     value: 0
+  - ID: puzzle2Done
+    value: 0

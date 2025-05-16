@@ -34,10 +34,8 @@ public class AccessPage : PausePage
     /// </summary>
     /// <param name="value">The new typo's index</param>
     public void Event_ChangeCurrentTypo(Int32 value){
-        TMP_FontAsset selectedFont = GameManager.instance.GetFonts()[value];
-
-        // Do something with typos
-
+        //TMP_FontAsset selectedFont = GameManager.instance.GetFonts()[value];
+        Locals.ChangeFont(value);
         Settings.instance.SetCurrentTypoIndex(value);
     }
 }

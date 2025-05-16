@@ -7,6 +7,9 @@ using UnityEngine.InputSystem;
 public abstract class Puzzle : MonoBehaviour
 {
     public int ID;
+    public bool absorbMovements = true;
+    public bool absorbPause = true;
+    public bool absorbInteract = true;
     public enum InputType {MOVEMENT,ACCEPT,CANCEL};
 
     private  bool active = false;

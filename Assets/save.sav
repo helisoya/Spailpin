@@ -1,1 +1,1 @@
-{"mapName":"IntroTest","playerPosition":{"x":0.8475325107574463,"y":-0.8950004577636719,"z":8.308520317077637},"playerRotation":{"x":0.0,"y":270.0,"z":0.0},"currentRoom":2,"items":[{"ID":"tutorialDone","value":1},{"ID":"puzzle1Done","value":0}]}
+{"mapName":"ExteriorHouse","playerPosition":{"x":0.6661462187767029,"y":0.05999755859375,"z":2.1666319370269777},"playerRotation":{"x":0.0,"y":0.7609775066375732,"z":0.0},"currentRoom":1,"items":[{"ID":"tutorialDone","value":0},{"ID":"puzzle1Done","value":1},{"ID":"puzzle2Done","value":0}]}

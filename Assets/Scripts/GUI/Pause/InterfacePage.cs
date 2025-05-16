@@ -12,6 +12,8 @@ public class InterfacePage : PausePage
     [Header("Interface")]
     [SerializeField] private Toggle fullscreenToggle;
     [SerializeField] private TMP_Dropdown resolutionDropdown; 
+    [SerializeField] private Slider gammaSlider;
+    [SerializeField] private Toggle bloomToggle;
     private Resolution[] resolutions;
 
     protected override void OnClose()
@@ -36,6 +38,8 @@ public class InterfacePage : PausePage
         resolutionDropdown.SetValueWithoutNotify(currentResIdx);
 
         fullscreenToggle.SetIsOnWithoutNotify(Screen.fullScreen);
+        gammaSlider.SetValueWithoutNotify(Settings.instance.GetCurrentGamma());
+        bloomToggle.SetIsOnWithoutNotify(Settings.instance.IsBloomEnabled());
     }
 
 
@@ -48,7 +52,7 @@ public class InterfacePage : PausePage
     }
 
     public void Event_ChangeBrightness(float value){
-
+        Settings.instance.SetGamma(value);
     }
 
     public void Event_ChangeShadows(bool shadows){
@@ -56,6 +60,6 @@ public class InterfacePage : PausePage
     }
 
     public void Event_ChangeBloom(bool bloom){
-
+        Settings.instance.SetBloomEnabled(bloom);
     }
 }

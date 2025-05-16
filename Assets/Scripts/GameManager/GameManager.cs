@@ -3,6 +3,8 @@ using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 /// <summary>
@@ -13,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private InputActionAsset inputs;
     [SerializeField] private TMP_FontAsset[] fonts;
     [SerializeField] private GameItems items;
+    [SerializeField] private Volume volume;
 
     public static GameManager instance { get; private set;}
     private Coroutine routineChangeScene;
@@ -33,6 +36,20 @@ public class GameManager : MonoBehaviour
         }else{
             Destroy(gameObject);
         }
+    }
+
+    /// <summary>
+    /// Updates the game's volume
+    /// </summary>
+    public void UpdateVolume(){
+        LiftGammaGain gamma;
+        float gammaValue = Settings.instance.GetCurrentGamma();
+        volume.profile.TryGet<LiftGammaGain>(out gamma);
+        gamma.gamma.SetValue(new Vector4Parameter(new Vector4(1.0f,1.0f,1.0f,gammaValue)));
+
+        Bloom bloom;
+        volume.profile.TryGet<Bloom>(out bloom);
+        if(bloom) bloom.active = Settings.instance.IsBloomEnabled();
     }
 
     /// <summary>
