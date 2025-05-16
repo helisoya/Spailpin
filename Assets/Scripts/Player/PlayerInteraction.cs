@@ -20,8 +20,8 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        if (GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || Player.instance.inPuzzle){
-            if(currentObject != null && (CutsceneManager.instance.inCutscene || Player.instance.inPuzzle)){
+        if (GameGUI.instance.isPauseOpen || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle){
+            if(currentObject != null && ((CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle)){
                 currentObject.SetActive(false);
                 currentObject = null;
             }

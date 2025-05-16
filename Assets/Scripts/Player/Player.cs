@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 /// <summary>
 /// Represents the Spailpin player
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     private Puzzle currentPuzzle;
     public bool inPuzzle { get { return currentPuzzle != null; } }
 
+    private string currentScheme;
+
     [Header("Events")]
     public UnityEvent<string> onDeviceChange;
     public UnityEvent onCollision;
@@ -41,6 +44,14 @@ public class Player : MonoBehaviour
     /// <param name="value">True if the player model is active</param>
     public void SetPlayerModelActive(bool value){
         playerModelRoot.SetActive(value);
+    }
+
+    /// <summary>
+    /// Refreshs the game's bindings (calls onDeviceChange to the current device)
+    /// </summary>
+    public void RefreshBindings()
+    {
+        onDeviceChange.Invoke(currentScheme);
     }
 
     /// <summary>
@@ -77,6 +88,12 @@ public class Player : MonoBehaviour
         currentRoom = room;
         room.GetCamera().Priority = 1;
 
+        float targetFOV = room.GetCamera().Lens.FieldOfView;
+
+        foreach(Camera camera in Camera.main.GetUniversalAdditionalCameraData().cameraStack){
+            camera.fieldOfView = targetFOV;
+        }
+
         // Do things with player controller
         controller.ChangeDirectionVectors(
             room.GetRoomForward(),
@@ -111,7 +128,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The movement value</param>
     void OnMove(InputValue value)
     {
-        if (CutsceneManager.instance.inCutscene) return;
+        if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
         // GameGUI.instance.isPauseOpen || 
         if (inPuzzle && currentPuzzle.absorbMovements)
         {
@@ -130,7 +147,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The sprinting value</param>
     void OnSprint(InputValue value)
     {
-        if (GameGUI.instance.isPauseOpen || CutsceneManager.instance.inCutscene || inPuzzle)
+        if (GameGUI.instance.isPauseOpen || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || inPuzzle)
         {
             controller.SetSprinting(false);
             return;
@@ -146,7 +163,8 @@ public class Player : MonoBehaviour
     void OnControlsChanged(PlayerInput input)
     {
         print(input.currentControlScheme);
-        onDeviceChange.Invoke(input.currentControlScheme);
+        currentScheme = input.currentControlScheme;
+        onDeviceChange.Invoke(currentScheme);
     }
 
     /// <summary>

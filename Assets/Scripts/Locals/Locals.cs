@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Handles the languages
@@ -9,6 +11,7 @@ public class Locals
 {
     private static Locals self;
     private string currentLanguage;
+    private int currentFontIdx;
 
     public static string current
     {
@@ -18,7 +21,16 @@ public class Locals
         }
     }
 
+    public static int fontIndex {
+        get{
+            return self.currentFontIdx;
+        }
+    }
+
     private Dictionary<string, string> locals;
+
+    public static UnityEvent onChangeLocal = new UnityEvent();
+    public static UnityEvent<TMP_FontAsset> onChangeFont = new UnityEvent<TMP_FontAsset>();
 
     /// <summary>
     /// Initiliazes the Locals
@@ -32,7 +44,9 @@ public class Locals
     {
         self = this;
         locals = new Dictionary<string, string>();
+        currentFontIdx = 0;
         ChangeLanguage("fra");
+
     }
 
     /// <summary>
@@ -48,6 +62,17 @@ public class Locals
         self.locals.Clear();
         self.LoadContent(newOne + "_system");
         self.LoadContent(newOne + "_story");
+    }
+    
+    /// <summary>
+    /// Changes the current font
+    /// </summary>
+    /// <param name="fontIndex">The new font</param>
+    public static void ChangeFont(int fontIndex){
+        if(Locals.self == null) Init();
+
+        self.currentFontIdx = fontIndex;
+        onChangeFont.Invoke(GameManager.instance.GetFonts()[self.currentFontIdx]);
     }
 
     /// <summary>

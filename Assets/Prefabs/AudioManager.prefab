@@ -95,25 +95,81 @@ MonoBehaviour:
       Data2: 1165597445
       Data3: -1359897958
       Data4: 1216791100
-    Path: event:/FS_System
+    Path: event:/SFX/FS_System
   <Carillon>k__BackingField:
     Guid:
       Data1: 1907986965
       Data2: 1228295684
       Data3: -585935184
       Data4: -1660932196
-    Path: event:/Carillon
+    Path: event:/SFX/Carillon
+  <Bike>k__BackingField:
+    Guid:
+      Data1: 2055545129
+      Data2: 1295764905
+      Data3: -47913326
+      Data4: 1569682319
+    Path: event:/SFX/Bike
+  <Character>k__BackingField:
+    Guid:
+      Data1: -1988176635
+      Data2: 1194120318
+      Data3: -672572797
+      Data4: 847490904
+    Path: event:/SFX/Character
+  <DoorLocked>k__BackingField:
+    Guid:
+      Data1: -322677915
+      Data2: 1267147205
+      Data3: 919144089
+      Data4: -4485271
+    Path: event:/SFX/DoorLocked
+  <DoorOpening>k__BackingField:
+    Guid:
+      Data1: 1109923570
+      Data2: 1183364924
+      Data3: -675940723
+      Data4: -660168426
+    Path: event:/SFX/DoorOpening
   <AmbOut>k__BackingField:
     Guid:
       Data1: -345494625
       Data2: 1156232166
       Data3: 1776613538
       Data4: -904923050
-    Path: event:/AMB_outside
-  <Music>k__BackingField:
+    Path: event:/AMB/AMB_outside
+  <MusicMenu>k__BackingField:
     Guid:
       Data1: 1822820387
       Data2: 1263733531
       Data3: 834900670
       Data4: -264362871
-    Path: event:/MUSIC_Main_Menu
+    Path: event:/MUSIC/MUSIC_Main_Menu
+  <MenuOpen>k__BackingField:
+    Guid:
+      Data1: -257896857
+      Data2: 1188241328
+      Data3: 1591497397
+      Data4: -1605655691
+    Path: event:/UI/Menu_Open
+  <MenuClosed>k__BackingField:
+    Guid:
+      Data1: 1982005593
+      Data2: 1150860744
+      Data3: -2108875350
+      Data4: 974064814
+    Path: event:/UI/Menu_Close
+  <Button>k__BackingField:
+    Guid:
+      Data1: -527211870
+      Data2: 1208753929
+      Data3: 1158487688
+      Data4: 611124196
+    Path: event:/UI/Button
+  <Magic>k__BackingField:
+    Guid:
+      Data1: 1886907563
+      Data2: 1244174128
+      Data3: -721978955
+      Data4: -912449660
+    Path: event:/Magic

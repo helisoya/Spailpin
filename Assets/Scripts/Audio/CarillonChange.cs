@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AmbienceChange : MonoBehaviour
+public class CarillonChange : MonoBehaviour
 {
     [Header("Parameter Change")]
 
@@ -10,6 +10,6 @@ public class AmbienceChange : MonoBehaviour
 
     private void SetParameterCarillon()
     {
-        AudioManager.instance.SetCarillon(parameterName, parameterValue);
+        
     }
 }
