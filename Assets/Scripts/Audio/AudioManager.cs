@@ -16,7 +16,7 @@ public class AudioManager : MonoBehaviour
     private EventReference eventReferences;
 
     private EventInstance ambienceEventInstance;
-    private EventInstance musicEventInstance;
+    private EventInstance musicEventInstance;  
 
 
 
@@ -31,7 +31,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Found more than one Audio Manager in the scene");
+            //Debug.LogError("Found more than one Audio Manager in the scene");
             Destroy(gameObject);
         }
         
@@ -44,7 +44,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         InitializeAmbience(FMODEvents.instance.AmbOut);
-        InitializeMusic(FMODEvents.instance.Music);
+        InitializeMusic(FMODEvents.instance.MusicMenu);
     }
 
     private void InitializeAmbience(EventReference ambienceEventReference)
@@ -53,7 +53,7 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }  
 
-    public void SetAmbienceParameter(string parameterName, float parameterValue)
+    public void SetCarillon(string parameterName, float parameterValue)
     {
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);
     }
@@ -89,7 +89,26 @@ public class AudioManager : MonoBehaviour
     /*AudioManager.instance.PlayCarillon(); Exemple de comment appeler une fonction dans le code, il faut instancier l'AudioManager puis lui renseigner
       une position, un comportement etc, si il en a besoin
     */
+
+    #region UI
+    public void PlayMenuOpen()
+    {
+        PlayOneShot(FMODEvents.instance.MenuOpen, this.transform.position);
+    }
     
+    public void PlayMenuClosed()
+    {
+        PlayOneShot(FMODEvents.instance.MenuClosed, this.transform.position);
+    }
+    public void PlayButton()
+    {
+        PlayOneShot(FMODEvents.instance.Button, this.transform.position);
+    }
+    #endregion UI
+
+
+ 
+
     public EventInstance CreateInstance(EventReference eventReference)
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);

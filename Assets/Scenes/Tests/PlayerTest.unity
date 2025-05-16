@@ -1636,6 +1636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abded98bb892ef04ab5f234fe0c8c6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopPlayerOnInterract: 1
   interactionObject: {fileID: 55250077}
   linkedGraph: {fileID: 11400000, guid: dc9f2d6f12881b34d94cf40cdadc8f9f, type: 2}
   onInterract:
@@ -5889,6 +5890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abded98bb892ef04ab5f234fe0c8c6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopPlayerOnInterract: 1
   interactionObject: {fileID: 1538426977}
   linkedGraph: {fileID: 11400000, guid: 6187304dc14490e458152ec23355052b, type: 2}
   onInterract:
