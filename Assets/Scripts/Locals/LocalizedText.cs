@@ -29,7 +29,7 @@ public class LocalizedText : MonoBehaviour
         text.text = Locals.GetLocal(localKey);
     }
 
-    void Awake()
+    void Start()
     {
         ReloadText();
         SetFont(GameManager.instance.GetFonts()[Locals.fontIndex]);

@@ -841,7 +841,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   endGraph: {fileID: 11400000, guid: 4f18f17377893584ebf3e7018a814bd4, type: 2}
-  sequence: 00000000000000000200000001000000
+  sequence: 02000000010000000000000002000000
   selectionObjs:
   - {fileID: 1901689281}
   - {fileID: 1701459987}
@@ -12517,7 +12517,7 @@ Transform:
   m_GameObject: {fileID: 1436220699}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75063515, y: 2, z: 1.0412562}
+  m_LocalPosition: {x: -0.768, y: 2, z: 1.0412562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
