@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Ship/Maze.unity
     guid: 1103d3a0aa86cb54f925ea7f3566f95e
   - enabled: 1
+    path: Assets/Scenes/Ship/LivingRoom.unity
+    guid: 444737b299772004091d0e582964568e
+  - enabled: 1
     path: Assets/Scenes/Tests/PlayerTest.unity
     guid: 85fc0100d62e3d442b1925ed62d76ce0
   m_configObjects:
