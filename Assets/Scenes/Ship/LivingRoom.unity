@@ -6471,7 +6471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a3d339cf846c64b9c6258d94762a61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: Hall
+  ID: LivingRoom
   rooms:
   - {fileID: 2123106903}
   spawnpoints:

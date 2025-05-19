@@ -6267,7 +6267,7 @@ GameObject:
   - component: {fileID: 1482268550}
   - component: {fileID: 1482268549}
   m_Layer: 0
-  m_Name: Hall
+  m_Name: LivingRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6286,7 +6286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDefaultSpawnpoint: 0
-  linkedMap: Hall
+  linkedMap: LivingRoom
   linkedRoom: {fileID: 2123106903}
 --- !u!4 &1482268550
 Transform:
