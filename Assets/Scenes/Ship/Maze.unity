@@ -2026,7 +2026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImg: {fileID: 168808791}
-  action: {fileID: -5764157982278191350, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  action: {fileID: 2411907206095950430, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 0
   indexGamepad: 1
 --- !u!114 &168808791
@@ -10665,8 +10665,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 1
   absorbMovements: 0
-  absorbPause: 1
+  absorbPause: 0
   absorbInteract: 0
+  absorbPrevious: 1
   puzzleCanvas: {fileID: 1715510897}
   repawnPoint: {fileID: 1232494431}
 --- !u!1 &1789354830

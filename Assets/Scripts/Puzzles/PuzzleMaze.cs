@@ -12,7 +12,7 @@ public class PuzzleMaze : Puzzle
 
     public override void FowardInput(InputType type, InputValue inputValue)
     {
-        if (type == InputType.CANCEL && inputValue.isPressed)
+        if (type == InputType.PREVIOUS && inputValue.isPressed)
         {
             Player.instance.SetPosition(repawnPoint.position,repawnPoint.rotation);
             EndPuzzle(true);

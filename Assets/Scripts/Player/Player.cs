@@ -138,7 +138,20 @@ public class Player : MonoBehaviour
         {
             controller.SetMovementVector(value.Get<Vector2>());
         }
+    }
 
+    /// <summary>
+    /// OnPrevious callback
+    /// </summary>
+    /// <param name="value">The movement value</param>
+    void OnPrevious(InputValue value)
+    {
+        if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
+        // GameGUI.instance.isPauseOpen || 
+        if (inPuzzle && currentPuzzle.absorbPrevious)
+        {
+            currentPuzzle.FowardInput(Puzzle.InputType.PREVIOUS, value);
+        }
     }
 
     /// <summary>
@@ -182,7 +195,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The pause value (unused)</param>
     void OnPause(InputValue value)
     {
-        if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.CANCEL, value);
+        if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.PAUSE, value);
         else if (GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
         else
         {

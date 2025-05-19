@@ -72,7 +72,7 @@ public class PuzzleTutorial : Puzzle
             if (moveDirection == 0) lastAction = 0;
             onMoveSelection.Invoke();
         }
-        else if (type == InputType.CANCEL && inputValue.isPressed)
+        else if (type == InputType.PREVIOUS && inputValue.isPressed)
         {
             onQuitPuzzle.Invoke();
             EndPuzzle(true);
