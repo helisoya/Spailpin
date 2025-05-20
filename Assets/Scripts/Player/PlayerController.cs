@@ -12,9 +12,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerRunSpeed = 4f;
     [SerializeField] private float rotationSpeed = 360f;
     [SerializeField] private float accelerationSpeed = 5f;
-
-
-    private const float GRAVITY = -9.81f;
+    [SerializeField] private float maxSlopeAngle = 45f;
+    [SerializeField] private float dragNormal = 0.9f;
+    [SerializeField] private float dragSlope = 2.5f;
 
     [Header("Hints")]
     [SerializeField] private bool canShowMovementHint = true;
@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private Transform soundListenerTransform;
     [SerializeField] private Rigidbody controller;
+    [SerializeField] private Transform slopeRaycast;
     private bool running = false;
     private Vector2 moveVector;
 
@@ -36,6 +37,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 cachedForward;
     private Vector3 cachedRight;
 
+    private RaycastHit slopeHit;
+
 
     public Vector3 position { get { return playerTransform.transform.position; } }
     public Vector3 rotation { get { return playerTransform.eulerAngles; } }
@@ -44,7 +47,6 @@ public class PlayerController : MonoBehaviour
     {
         currentWaitTimeForShowingMovementHint = waitTimeForShowingMovementHint;
     }
-
 
     void Update()
     {
@@ -94,11 +96,35 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Checks if the player is on a slop or not
+    /// </summary>
+    /// <returns>True if on a slope</returns>
+    private bool OnSlope()
+    {
+        if (Physics.Raycast(slopeRaycast.position, Vector3.down, out slopeHit, 0.15f))
+        {
+            float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
+            return angle < maxSlopeAngle && angle != 0;
+        }
+        return false;
+    }
+
     void FixedUpdate()
     {
         float maxSpeed = running ? playerRunSpeed : playerWalkSpeed;
-        controller.AddForce(currentForward * maxSpeed * accelerationSpeed * moveVector.y + currentRight * maxSpeed * accelerationSpeed * moveVector.x, ForceMode.Acceleration);
+        Vector3 force = currentForward * maxSpeed * accelerationSpeed * moveVector.y + currentRight * maxSpeed * accelerationSpeed * moveVector.x;
 
+
+        bool onSlope = OnSlope();
+        controller.useGravity = !onSlope;
+        if (onSlope)
+        {
+            force = Vector3.ProjectOnPlane(force, slopeHit.normal);
+        }
+
+        controller.AddForce(force, ForceMode.Acceleration);
+        controller.linearDamping = onSlope ? dragSlope : dragNormal;
         controller.maxLinearVelocity = maxSpeed;
     }
 
@@ -110,7 +136,7 @@ public class PlayerController : MonoBehaviour
         currentWaitTimeForShowingMovementHint = waitTimeForShowingMovementHint;
         GameGUI.instance.SetMovementHintAlpha(0);
     }
-    
+
     /// <summary>
     /// Change the direction vectors
     /// </summary>

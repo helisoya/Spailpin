@@ -1845,12 +1845,14 @@ MonoBehaviour:
   playerRunSpeed: 4
   rotationSpeed: 720
   accelerationSpeed: 5
+  maxSlopeAngle: 45
   canShowMovementHint: 1
   waitTimeForShowingMovementHint: 3
   playerTransform: {fileID: 72508452835727340}
   playerAnimator: {fileID: 7383363499831115184}
   soundListenerTransform: {fileID: 8775545248609082707}
   controller: {fileID: 763727550022496821}
+  slopeRaycast: {fileID: 6853912234646281407}
 --- !u!114 &5518070396854803634
 MonoBehaviour:
   m_ObjectHideFlags: 0
