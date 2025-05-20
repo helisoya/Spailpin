@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerWalkSpeed = 2f;
     [SerializeField] private float playerRunSpeed = 4f;
     [SerializeField] private float rotationSpeed = 360f;
+    [SerializeField] private float accelerationSpeed = 5f;
+
 
     private const float GRAVITY = -9.81f;
 
@@ -23,7 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private Transform soundListenerTransform;
-    [SerializeField] private CharacterController controller;
+    [SerializeField] private Rigidbody controller;
     private bool running = false;
     private Vector2 moveVector;
 
@@ -46,6 +48,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+
         if (moveVector != Vector2.zero)
         {
             // Rotation
@@ -58,13 +61,9 @@ public class PlayerController : MonoBehaviour
 
 
             // Movement
-            float actualSpeed = running ? playerRunSpeed : playerWalkSpeed;
-            Vector3 moveDirection = currentForward * actualSpeed * moveVector.y + currentRight * actualSpeed * moveVector.x;
-
-            controller.Move(moveDirection * Time.deltaTime);
+            //float maxSpeed = running ? playerRunSpeed : playerWalkSpeed;
+            //controller.AddForce(currentForward * maxSpeed * moveVector.y + currentRight * maxSpeed * moveVector.x, ForceMode.Acceleration);
         }
-        
-        controller.Move(Vector3.up * GRAVITY * Time.deltaTime);
 
         playerAnimator.SetBool("Moving", moveVector != Vector2.zero);
         soundListenerTransform.position = playerTransform.position;
@@ -93,6 +92,14 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+
+    void FixedUpdate()
+    {
+        float maxSpeed = running ? playerRunSpeed : playerWalkSpeed;
+        controller.AddForce(currentForward * maxSpeed * accelerationSpeed * moveVector.y + currentRight * maxSpeed * accelerationSpeed * moveVector.x, ForceMode.Acceleration);
+
+        controller.maxLinearVelocity = maxSpeed;
     }
 
     /// <summary>
@@ -134,10 +141,8 @@ public class PlayerController : MonoBehaviour
     /// <param name="rotation">The new rotation</param>
     public void SetPosition(Vector3 position, Quaternion rotation)
     {
-        controller.enabled = false;
-        playerTransform.position = position;
-        playerTransform.rotation = rotation;
-        controller.enabled = true;
+        controller.position = position;
+        controller.rotation = rotation;
     }
 
 

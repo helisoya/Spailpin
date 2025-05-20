@@ -27,6 +27,7 @@ public class GameGUI : MonoBehaviour
     public bool fading { get { return fade.fading; } }
 
     [Header("Audio Events")]
+    [SerializeField] private UnityEvent onDialogStart;
     [SerializeField] private UnityEvent onPauseOpen;
     [SerializeField] private UnityEvent onPauseClose;
 
@@ -201,7 +202,7 @@ public class GameGUI : MonoBehaviour
     /// <returns>IEnumerator</returns>
     private IEnumerator Routine_Dialog(string dialogID)
     {
-
+        onDialogStart.Invoke();
         int charactersPerFrame = 1;
         float speed = 5f;
         skipDialog = false;
