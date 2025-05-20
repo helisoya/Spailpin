@@ -1843,7 +1843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerWalkSpeed: 2
   playerRunSpeed: 4
-  rotationSpeed: 360
+  rotationSpeed: 720
   accelerationSpeed: 5
   canShowMovementHint: 1
   waitTimeForShowingMovementHint: 3
@@ -1995,7 +1995,7 @@ Rigidbody:
   m_GameObject: {fileID: 4866602703676961450}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0.2
+  m_Drag: 0.9
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
