@@ -8,10 +8,10 @@ public class InteractableObject : MonoBehaviour
 {
     [Header("Interaction")]
     public bool stopPlayerOnInterract = true;
-    [SerializeField] private GameObject interactionObject;
-    [SerializeField] private DialogGraph linkedGraph;
-    [SerializeField] private UnityEvent onInterract;
-    private bool playerNear;
+    [SerializeField] protected GameObject interactionObject;
+    [SerializeField] protected DialogGraph linkedGraph;
+    [SerializeField] protected UnityEvent onInterract;
+    protected bool playerNear;
 
     /// <summary>
     /// Changes if the interaction is "active" or not
@@ -49,6 +49,16 @@ public class InteractableObject : MonoBehaviour
         {
             interactionObject.transform.LookAt(Camera.main.transform);
         }
+
+        OnUpdate();
+    }
+
+    /// <summary>
+    /// Called on Update
+    /// </summary>
+    public virtual void OnUpdate()
+    {
+
     }
 
 }

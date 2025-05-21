@@ -1844,8 +1844,10 @@ MonoBehaviour:
   playerWalkSpeed: 2
   playerRunSpeed: 4
   rotationSpeed: 720
-  accelerationSpeed: 5
+  accelerationSpeed: 10
   maxSlopeAngle: 45
+  dragNormal: 3
+  dragSlope: 5
   canShowMovementHint: 1
   waitTimeForShowingMovementHint: 3
   playerTransform: {fileID: 72508452835727340}
@@ -1890,6 +1892,7 @@ MonoBehaviour:
   onCollision:
     m_PersistentCalls:
       m_Calls: []
+  ourGloriousSaviour: {fileID: 5426164765405836341, guid: 5382872b30b462b469c1112a7b735201, type: 3}
 --- !u!114 &5017100232745685662
 MonoBehaviour:
   m_ObjectHideFlags: 0
