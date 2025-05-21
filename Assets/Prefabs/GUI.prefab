@@ -16721,6 +16721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637018562320393997}
   - component: {fileID: 7789988549578535646}
+  - component: {fileID: 8472276798203187571}
   m_Layer: 0
   m_Name: GUI
   m_TagString: Untagged
@@ -16763,11 +16764,14 @@ MonoBehaviour:
   dialogText: {fileID: 682931158648581891}
   cutsceneBar: {fileID: 3312883127084164770}
   fade: {fileID: 1696614628359169663}
+  onDialogStart:
+    m_PersistentCalls:
+      m_Calls: []
   onPauseOpen:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3100287952432983736, guid: c0cb23b26447d7e4c8c8f0b475b1c2f7, type: 3}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 8472276798203187571}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
         m_MethodName: PlayMenuOpen
         m_Mode: 1
         m_Arguments:
@@ -16781,8 +16785,8 @@ MonoBehaviour:
   onPauseClose:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3100287952432983736, guid: c0cb23b26447d7e4c8c8f0b475b1c2f7, type: 3}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 8472276798203187571}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
         m_MethodName: PlayMenuClosed
         m_Mode: 1
         m_Arguments:
@@ -16795,6 +16799,18 @@ MonoBehaviour:
         m_CallState: 2
   hintMovement: {fileID: 5555665513384672913}
   hintSpeed: 2
+--- !u!114 &8472276798203187571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8664600812062654764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c64105cf9456934bbcf1f2cbc9b5519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8668343982671104455
 GameObject:
   m_ObjectHideFlags: 0

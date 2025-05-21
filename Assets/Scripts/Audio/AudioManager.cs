@@ -6,6 +6,7 @@ using FMOD.Studio;
 using JetBrains.Annotations;
 using System.Configuration.Assemblies;
 using System.Runtime.CompilerServices;
+using UnityEngine.UIElements;
 
 public class AudioManager : MonoBehaviour
 {
@@ -37,6 +38,7 @@ public class AudioManager : MonoBehaviour
         
 
         eventInstances = new List<EventInstance>();
+        print(eventInstances);
 
         eventEmitters = new List<StudioEventEmitter>();
     }
@@ -51,13 +53,13 @@ public class AudioManager : MonoBehaviour
     {
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
-    }  
-
-    public void SetCarillon(string parameterName, float parameterValue)
+    }
+    
+    public void SetAmbience(float parameterValue, string parameterName = "AmbianceChange")
     {
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);
     }
-    
+
     private void InitializeMusic(EventReference musicEventReference)
     {
         ambienceEventInstance = CreateInstance(musicEventReference);
@@ -72,6 +74,15 @@ public class AudioManager : MonoBehaviour
         eventEmitters.Add(emitter);
         return emitter;
     }
+    // Création de la fonction permettant de jouer un son avec des paramètres
+    public void PlayOneShotParameter(EventReference sound, Vector3 worldPosition,string parameterName, int parameter)
+    {
+        EventInstance instance = CreateInstance(sound);
+        instance.set3DAttributes(RuntimeUtils.To3DAttributes(worldPosition));
+        instance.setParameterByName(parameterName, parameter);
+        instance.start();
+        instance.release();
+    }
 
     // Création de la fonction permettant de jouer un son
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
@@ -79,35 +90,20 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(sound, worldPos);  
     }
 
-    // Création de la fonction permettant de jouer un event en particulier
-    public void PlayCarillon()
+
+ //FonctionDictionnaire RoomTheme
+
+    public void PlayRoomTheme(string ID)
     {
-        //FMODEvents(script attaché à AudioManager).instance(créer une instance).NomEvent, Position))
-        PlayOneShot(FMODEvents.instance.Carillon, this.transform.position);
+        PlayOneShot(FMODEvents.instance.RoomTheme[ID], this.transform.position);
     }
 
-    /*AudioManager.instance.PlayCarillon(); Exemple de comment appeler une fonction dans le code, il faut instancier l'AudioManager puis lui renseigner
-      une position, un comportement etc, si il en a besoin
-    */
 
-    #region UI
-    public void PlayMenuOpen()
+    public void PlaySFX(string ID)
     {
-        PlayOneShot(FMODEvents.instance.MenuOpen, this.transform.position);
+        PlayOneShot(FMODEvents.instance.SFX[ID], this.transform.position);
     }
-    
-    public void PlayMenuClosed()
-    {
-        PlayOneShot(FMODEvents.instance.MenuClosed, this.transform.position);
-    }
-    public void PlayButton()
-    {
-        PlayOneShot(FMODEvents.instance.Button, this.transform.position);
-    }
-    #endregion UI
 
-
- 
 
     public EventInstance CreateInstance(EventReference eventReference)
     {

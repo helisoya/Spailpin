@@ -11,7 +11,8 @@ public class Floor : MonoBehaviour
     public enum Type{
         NONE,
         WOOD,
-        GRASS
+        GRASS,
+        GRAVEL
     }
 
     public Type type;
