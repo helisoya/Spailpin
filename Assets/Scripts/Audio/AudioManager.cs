@@ -38,6 +38,7 @@ public class AudioManager : MonoBehaviour
         
 
         eventInstances = new List<EventInstance>();
+        print(eventInstances);
 
         eventEmitters = new List<StudioEventEmitter>();
     }
@@ -59,9 +60,6 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);
     }
 
-    
-    
-
     private void InitializeMusic(EventReference musicEventReference)
     {
         ambienceEventInstance = CreateInstance(musicEventReference);
@@ -76,7 +74,7 @@ public class AudioManager : MonoBehaviour
         eventEmitters.Add(emitter);
         return emitter;
     }
-
+    // Création de la fonction permettant de jouer un son avec des paramètres
     public void PlayOneShotParameter(EventReference sound, Vector3 worldPosition,string parameterName, int parameter)
     {
         EventInstance instance = CreateInstance(sound);
@@ -91,33 +89,6 @@ public class AudioManager : MonoBehaviour
     {
         RuntimeManager.PlayOneShot(sound, worldPos);  
     }
-
-    // Création de la fonction permettant de jouer un event en particulier
-    public void PlayCarillon(int Bell)
-    {
-        //FMODEvents(script attaché à AudioManager).instance(créer une instance).NomEvent, Position))
-        PlayOneShotParameter(FMODEvents.instance.Carillon, this.transform.position, "Carillon" , Bell);
-    }
-
-    /*AudioManager.instance.PlayCarillon(); Exemple de comment appeler une fonction dans le code, il faut instancier l'AudioManager puis lui renseigner
-      une position, un comportement etc, si il en a besoin
-    */
-
-    #region UI
-    public void PlayMenuOpen()
-    {
-        PlayOneShot(FMODEvents.instance.MenuOpen, this.transform.position);
-    }
-    
-    public void PlayMenuClosed()
-    {
-        PlayOneShot(FMODEvents.instance.MenuClosed, this.transform.position);
-    }
-    public void PlayButton()
-    {
-        PlayOneShot(FMODEvents.instance.Button, this.transform.position);
-    }
-    #endregion UI
 
 
  //FonctionDictionnaire RoomTheme
