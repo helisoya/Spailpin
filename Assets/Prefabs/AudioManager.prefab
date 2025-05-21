@@ -137,11 +137,11 @@ MonoBehaviour:
         Path: event:/SFX/DoorOpening
   <AmbOut>k__BackingField:
     Guid:
-      Data1: -345494625
-      Data2: 1156232166
-      Data3: 1776613538
-      Data4: -904923050
-    Path: event:/AMB/AMB_outside
+      Data1: 1051383464
+      Data2: 1236044767
+      Data3: -880655228
+      Data4: -68966615
+    Path: event:/AMB/AMBience
   <MusicMenu>k__BackingField:
     Guid:
       Data1: 1822820387
