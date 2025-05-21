@@ -14,7 +14,7 @@ public class FMODEvents : MonoBehaviour
     [SerializeField] public SerializedDictionary<string, EventReference> SFX;
 
     [field: Header("AMB")]
-    [field: SerializeField] public EventReference AmbOut { get; private set; }
+    [field: SerializeField] public EventReference Ambience { get; private set; }
 
     [field: Header("MUSIC")]
     [field: SerializeField] public EventReference MusicMenu { get; private set; }
