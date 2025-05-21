@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateNodeMenu("Event/Start Puzzle")]
 public class StartPuzzleNode : SpailpinNode
 {
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
     [SerializeField] private int ID;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 

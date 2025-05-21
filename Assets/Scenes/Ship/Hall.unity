@@ -7900,6 +7900,7 @@ MonoBehaviour:
   - {fileID: 714651124}
   - {fileID: 1482268549}
   puzzles: []
+  startupGraph: {fileID: 11400000, guid: cd5501072d7bf28429615a40783d8c83, type: 2}
 --- !u!4 &1758051590
 Transform:
   m_ObjectHideFlags: 0

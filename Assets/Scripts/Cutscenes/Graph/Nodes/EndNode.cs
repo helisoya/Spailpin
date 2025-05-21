@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateNodeMenu("Control/End")]
 public class EndNode : SpailpinNode
 {
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
 
 	// Use this for initialization
 	protected override void Init() {

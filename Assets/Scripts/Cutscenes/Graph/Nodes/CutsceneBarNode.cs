@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateNodeMenu("Event/Cutscene bar")]
 public class CutsceneBarNode : SpailpinNode
 {
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
     [SerializeField] private bool cutsceneBarActive;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 

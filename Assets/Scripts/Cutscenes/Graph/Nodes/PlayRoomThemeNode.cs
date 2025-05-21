@@ -2,12 +2,13 @@ using System.Collections;
 using UnityEngine;
 
 /// <summary>
-/// Represents a node that cancels the current puzzle
+/// Node to play a room theme
 /// </summary>
-[CreateNodeMenu("Event/Cancel Current Puzzle")]
-public class CancelPuzzleNode : SpailpinNode
+[CreateNodeMenu("Event/Play Room Theme")]
+public class PlayRoomThemeNode : SpailpinNode
 {
     [Input(connectionType = ConnectionType.Multiple)] public bool entry;
+    [SerializeField] private string roomID;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 
 	// Use this for initialization
@@ -17,7 +18,7 @@ public class CancelPuzzleNode : SpailpinNode
 
     public override IEnumerator Apply()
     {
-        Player.instance.StopCurrentPuzzle();
+        AudioManager.instance.PlayRoomTheme(roomID);
         yield return 0;
     }
 }

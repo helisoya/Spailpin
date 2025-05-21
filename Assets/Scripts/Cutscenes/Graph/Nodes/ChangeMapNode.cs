@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateNodeMenu("Event/Change Map")]
 public class ChangeMapNode : SpailpinNode
 {
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
     [SerializeField] private string mapID;
 
 	// Use this for initialization

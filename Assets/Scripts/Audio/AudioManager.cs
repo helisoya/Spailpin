@@ -46,7 +46,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         InitializeAmbience(FMODEvents.instance.AmbOut);
-        InitializeMusic(FMODEvents.instance.MusicMenu);
+        //InitializeMusic(FMODEvents.instance.MusicMenu);
     }
 
     private void InitializeAmbience(EventReference ambienceEventReference)
@@ -54,8 +54,7 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
     }
-    
-    public void SetAmbience(float parameterValue, string parameterName = "AmbianceChange")
+    public void SetAmbience(float parameterValue, string parameterName = "AmbienceChange")
     {
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);
     }
@@ -74,7 +73,7 @@ public class AudioManager : MonoBehaviour
         eventEmitters.Add(emitter);
         return emitter;
     }
-    // Création de la fonction permettant de jouer un son avec des paramètres
+    // Crï¿½ation de la fonction permettant de jouer un son avec des paramï¿½tres
     public void PlayOneShotParameter(EventReference sound, Vector3 worldPosition,string parameterName, int parameter)
     {
         EventInstance instance = CreateInstance(sound);
@@ -84,7 +83,7 @@ public class AudioManager : MonoBehaviour
         instance.release();
     }
 
-    // Création de la fonction permettant de jouer un son
+    // Crï¿½ation de la fonction permettant de jouer un son
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);  

@@ -8,7 +8,7 @@ using UnityEngine;
 [CreateNodeMenu("Control/If")]
 public class IfNode : SpailpinNode
 {
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
     [SerializeField] private IfType type;
     [SerializeField] private List<Check> checks;
     [Output(connectionType = ConnectionType.Override)] public bool checkTrue;

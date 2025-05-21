@@ -8,7 +8,7 @@ using XNode;
 [CreateNodeMenu("Event/Dialog")]
 public class DialogNode : SpailpinNode {
 
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
     [SerializeField] private string dialogID;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 

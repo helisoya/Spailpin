@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cutscene Bar
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 824, y: -24}
+  position: {x: 1048, y: 8}
   ports:
     keys:
     - entry
@@ -28,7 +28,7 @@ MonoBehaviour:
         node: {fileID: -4640834540578943108}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: Wait
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 72, y: -24}
+  position: {x: 296, y: 8}
   ports:
     keys:
     - entry
@@ -74,7 +74,7 @@ MonoBehaviour:
         node: {fileID: 8395616272247061207}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
@@ -92,6 +92,52 @@ MonoBehaviour:
   entry: 0
   waitTime: 0.5
   exit: 0
+--- !u!114 &-4862909114866741351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad5fc910f1040646b4730a38744d637, type: 3}
+  m_Name: Set Ambiance
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -392, y: 8}
+  ports:
+    keys:
+    - entry
+    - exit
+    values:
+    - _fieldName: entry
+      _node: {fileID: -4862909114866741351}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: checkTrue
+        node: {fileID: 6753046004308498555}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: -4862909114866741351}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: 7784287795793582880}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  entry: 0
+  ambianceID: 0
+  exit: 0
 --- !u!114 &-4640834540578943108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +151,7 @@ MonoBehaviour:
   m_Name: Variable Set
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 568, y: -24}
+  position: {x: 792, y: 8}
   ports:
     keys:
     - entry
@@ -120,7 +166,7 @@ MonoBehaviour:
         node: {fileID: -4445327824042617172}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
@@ -136,7 +182,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
-  variableID: tutorialDone
+  variableID: introCutscene
   type: 0
   value: 1
   exit: 0
@@ -153,7 +199,7 @@ MonoBehaviour:
   m_Name: Set Player Movement Vector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 312, y: -24}
+  position: {x: 536, y: 8}
   ports:
     keys:
     - entry
@@ -168,7 +214,7 @@ MonoBehaviour:
         node: {fileID: -8561461019618702743}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
@@ -199,7 +245,7 @@ MonoBehaviour:
   m_Name: Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1512, y: -24}
+  position: {x: 1736, y: 8}
   ports:
     keys:
     - entry
@@ -214,7 +260,7 @@ MonoBehaviour:
         node: {fileID: 1498758228165823446}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
@@ -242,7 +288,7 @@ MonoBehaviour:
   m_Name: End
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -104, y: 328}
+  position: {x: -280, y: 296}
   ports:
     keys:
     - entry
@@ -256,10 +302,56 @@ MonoBehaviour:
         node: {fileID: 6753046004308498555}
         reroutePoints: []
       _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  entry: 0
+--- !u!114 &-402140990885268750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47513423c4e5df4ba94f5aff4b1f6a7, type: 3}
+  m_Name: Play Room Theme
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -936, y: -24}
+  ports:
+    keys:
+    - entry
+    - exit
+    values:
+    - _fieldName: entry
+      _node: {fileID: -402140990885268750}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit
+        node: {fileID: 9042668224628114615}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: -402140990885268750}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: 6753046004308498555}
+        reroutePoints: []
+      _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
+  roomID: Garden
+  exit: 0
 --- !u!114 &-165025555650158891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,7 +365,7 @@ MonoBehaviour:
   m_Name: Start
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -968, y: 136}
+  position: {x: -1704, y: -56}
   ports:
     keys:
     - exit
@@ -284,7 +376,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 6753046004308498555}
+        node: {fileID: 5522908606574431888}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -301,7 +393,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cab69574fb0bf19408772b469095a1ca, type: 3}
-  m_Name: Exterior_IntroCutscene
+  m_Name: Exterior_StartUp
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -165025555650158891}
@@ -316,6 +408,11 @@ MonoBehaviour:
   - {fileID: 4177896653861710762}
   - {fileID: 1498758228165823446}
   - {fileID: -4147536187871297662}
+  - {fileID: 5522908606574431888}
+  - {fileID: 9042668224628114615}
+  - {fileID: -402140990885268750}
+  - {fileID: -4862909114866741351}
+  parrallelCutscene: 0
 --- !u!114 &1498758228165823446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,7 +426,7 @@ MonoBehaviour:
   m_Name: Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1288, y: -24}
+  position: {x: 1512, y: 8}
   ports:
     keys:
     - entry
@@ -344,7 +441,7 @@ MonoBehaviour:
         node: {fileID: 4177896653861710762}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
@@ -375,7 +472,7 @@ MonoBehaviour:
   m_Name: Dialog
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1048, y: -24}
+  position: {x: 1272, y: 8}
   ports:
     keys:
     - entry
@@ -390,7 +487,7 @@ MonoBehaviour:
         node: {fileID: -8958035828990168413}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
@@ -408,6 +505,70 @@ MonoBehaviour:
   entry: 0
   dialogID: Intro_Cinematic_Start_1
   exit: 0
+--- !u!114 &5522908606574431888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479120ff8be917546bd7d17780fe89cf, type: 3}
+  m_Name: If
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1432, y: -56}
+  ports:
+    keys:
+    - entry
+    - checkTrue
+    - checkFalse
+    values:
+    - _fieldName: entry
+      _node: {fileID: 5522908606574431888}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit
+        node: {fileID: -165025555650158891}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: checkTrue
+      _node: {fileID: 5522908606574431888}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: 9042668224628114615}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: checkFalse
+      _node: {fileID: 5522908606574431888}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: 6753046004308498555}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  entry: 0
+  type: 0
+  checks:
+  - variableID: discoveredExteriorHouse
+    check: 0
+    value: 0
+  checkTrue: 0
+  checkFalse: 0
 --- !u!114 &6753046004308498555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,11 +594,14 @@ MonoBehaviour:
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
+      - fieldName: checkFalse
+        node: {fileID: 5522908606574431888}
+        reroutePoints: []
       - fieldName: exit
-        node: {fileID: -165025555650158891}
+        node: {fileID: -402140990885268750}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: checkTrue
@@ -446,7 +610,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 7784287795793582880}
+        node: {fileID: -4862909114866741351}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -467,7 +631,7 @@ MonoBehaviour:
   entry: 0
   type: 0
   checks:
-  - variableID: tutorialDone
+  - variableID: introCutscene
     check: 0
     value: 0
   checkTrue: 0
@@ -485,7 +649,7 @@ MonoBehaviour:
   m_Name: Cutscene Bar
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -392, y: -24}
+  position: {x: -168, y: 8}
   ports:
     keys:
     - entry
@@ -496,11 +660,11 @@ MonoBehaviour:
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: checkTrue
-        node: {fileID: 6753046004308498555}
+      - fieldName: exit
+        node: {fileID: -4862909114866741351}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
@@ -531,7 +695,7 @@ MonoBehaviour:
   m_Name: Set Player Movement Vector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -168, y: -40}
+  position: {x: 56, y: -8}
   ports:
     keys:
     - entry
@@ -546,7 +710,7 @@ MonoBehaviour:
         node: {fileID: 7784287795793582880}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
@@ -563,4 +727,52 @@ MonoBehaviour:
       _dynamic: 0
   entry: 0
   moveVector: {x: 1, y: 1}
+  exit: 0
+--- !u!114 &9042668224628114615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639914823d24f5b488d069252dc5d708, type: 3}
+  m_Name: Variable Set
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1160, y: -72}
+  ports:
+    keys:
+    - entry
+    - exit
+    values:
+    - _fieldName: entry
+      _node: {fileID: 9042668224628114615}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: checkTrue
+        node: {fileID: 5522908606574431888}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 9042668224628114615}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: -402140990885268750}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  entry: 0
+  variableID: discoveredExteriorHouse
+  type: 0
+  value: 1
   exit: 0
