@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 
 /// <see>https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-messagebox</see>
@@ -26,6 +27,9 @@ public static class NativeWinAlert
         {
             MessageBox(GetWindowHandle(), text, caption, (uint)(0x00000000L | 0x00000010L));
         }
-        catch (Exception ex) { }
+        catch (Exception ex)
+        {
+            Debug.Print(ex.ToString());
+        }
     }
 }
