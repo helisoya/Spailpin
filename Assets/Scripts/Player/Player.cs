@@ -30,6 +30,9 @@ public class Player : MonoBehaviour
     public UnityEvent<string> onDeviceChange;
     public UnityEvent onCollision;
 
+    [Header("Very Important Stuff (DO NOT TOUCH)")]
+    [SerializeField] private OurLordAndSaviourTheGreatCaribou ourGloriousSaviour;
+    private bool ourGloriousSaviourHasArrived = false; 
 
 
     void Awake()
@@ -151,6 +154,19 @@ public class Player : MonoBehaviour
         if (inPuzzle && currentPuzzle.absorbPrevious)
         {
             currentPuzzle.FowardInput(Puzzle.InputType.PREVIOUS, value);
+        }
+    }
+
+    /// <summary>
+    /// OnEasterEgg callback
+    /// </summary>
+    /// <param name="value">The movement value</param>
+    void OnEasterEgg(InputValue value)
+    {
+        if (!ourGloriousSaviourHasArrived)
+        {
+            ourGloriousSaviourHasArrived = true;
+            Instantiate(ourGloriousSaviour, controller.position + Vector3.up * 30f, Quaternion.identity).PrayThatOurLordLandsHere(controller.position.y+1.5f);
         }
     }
 

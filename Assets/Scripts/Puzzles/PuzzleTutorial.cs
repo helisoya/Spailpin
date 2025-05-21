@@ -68,7 +68,6 @@ public class PuzzleTutorial : Puzzle
         {
             float value = inputValue.Get<Vector2>().x;
             moveDirection = value < -0.75f ? -1 : (value > 0.75f ? 1 : 0);
-            print(value + " -> " + moveDirection);
             if (moveDirection == 0) lastAction = 0;
             onMoveSelection.Invoke();
         }

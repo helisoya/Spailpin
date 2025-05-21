@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// Checks if the player is on a slop or not
+    /// Checks if the player is on a slope or not
     /// </summary>
     /// <returns>True if on a slope</returns>
     private bool OnSlope()
