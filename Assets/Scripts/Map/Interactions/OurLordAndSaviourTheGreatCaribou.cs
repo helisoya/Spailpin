@@ -14,6 +14,8 @@ public class OurLordAndSaviourTheGreatCaribou : InteractableObject
     [SerializeField] private DialogGraph angryCaribouNoises;
     [SerializeField] private UnityEvent onStart;
     [SerializeField] private UnityEvent onLand;
+    [SerializeField] private UnityEvent onDeathStart;
+    [SerializeField] private UnityEvent onDeath;
     [SerializeField] private float hisImpressiveSpeed = 2.0f;
     [SerializeField] private float andTheWorldWillBePurgedIn = 10f;
     float whereShouldOurLeaderLand = 0;
@@ -83,6 +85,7 @@ public class OurLordAndSaviourTheGreatCaribou : InteractableObject
 
         if (angerStateOfOurLord == 1 && !CutsceneManager.instance.inCutscene)
         {
+            onDeathStart.Invoke();
             angerStateOfOurLord = 2;
         }
         else if (angerStateOfOurLord == 2)
@@ -90,6 +93,7 @@ public class OurLordAndSaviourTheGreatCaribou : InteractableObject
             andTheWorldWillBePurgedIn -= Time.deltaTime;
             if (andTheWorldWillBePurgedIn <= 0.0f)
             {
+                onDeath.Invoke();
                 angerStateOfOurLord = 3;
                 NativeWinAlert.Error("Too many caribous detected. Aborting...","Critical Caribou Error");
                 Application.Quit();
