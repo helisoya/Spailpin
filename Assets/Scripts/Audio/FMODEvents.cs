@@ -12,6 +12,9 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference Character { get; private set; }
     [field: SerializeField] public EventReference CaribouFall { get; private set; }
     [field: SerializeField] public EventReference CaribouLand { get; private set; }
+    [field: SerializeField] public EventReference CaribouBomb { get; private set; }
+    [field: SerializeField] public EventReference CaribouClock { get; private set; }
+    [field: SerializeField] public EventReference CaribouInteract { get; private set; }
 
     [SerializeField] public SerializedDictionary<string, EventReference> SFX;
 

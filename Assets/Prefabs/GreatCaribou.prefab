@@ -233,7 +233,19 @@ MonoBehaviour:
   linkedGraph: {fileID: 11400000, guid: 6ed22eeb3674c9c429229015d0e5d95a, type: 2}
   onInterract:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2222129930651174541}
+        m_TargetAssemblyTypeName: JohnCaribou, Assembly-CSharp
+        m_MethodName: PlayCaribouInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   angryCaribouNoises: {fileID: 11400000, guid: 17a4cf8ae77db7d41a5bffb747fcaf48, type: 2}
   onStart:
     m_PersistentCalls:
@@ -256,6 +268,36 @@ MonoBehaviour:
       - m_Target: {fileID: 2222129930651174541}
         m_TargetAssemblyTypeName: JohnCaribou, Assembly-CSharp
         m_MethodName: PlayCaribouLand
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeathStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2222129930651174541}
+        m_TargetAssemblyTypeName: JohnCaribou, Assembly-CSharp
+        m_MethodName: PlayCaribouClock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2222129930651174541}
+        m_TargetAssemblyTypeName: JohnCaribou, Assembly-CSharp
+        m_MethodName: PlayCaribouBomb
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

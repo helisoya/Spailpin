@@ -131,6 +131,27 @@ MonoBehaviour:
       Data3: 1334603649
       Data4: 2104860660
     Path: event:/SFX/CaribouLand
+  <CaribouBomb>k__BackingField:
+    Guid:
+      Data1: -2015051053
+      Data2: 1093496948
+      Data3: 1087269816
+      Data4: 1064308322
+    Path: event:/SFX/CaribouBomb
+  <CaribouClock>k__BackingField:
+    Guid:
+      Data1: -302798486
+      Data2: 1265376250
+      Data3: -251128169
+      Data4: 1064882618
+    Path: event:/SFX/CaribouClock
+  <CaribouInteract>k__BackingField:
+    Guid:
+      Data1: 560545988
+      Data2: 1201018050
+      Data3: 2007430845
+      Data4: -1673200052
+    Path: event:/SFX/CaribouInteract
   SFX:
     _serializedList:
     - Key: DoorLocked
