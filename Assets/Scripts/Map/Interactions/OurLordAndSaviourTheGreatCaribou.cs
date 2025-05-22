@@ -18,13 +18,16 @@ public class OurLordAndSaviourTheGreatCaribou : InteractableObject
     [SerializeField] private UnityEvent onDeath;
     [SerializeField] private float hisImpressiveSpeed = 2.0f;
     [SerializeField] private float andTheWorldWillBePurgedIn = 10f;
+    [SerializeField] private float andTheBattleAgainstLordElkRagedFor = 1.0f;
+    [SerializeField] private GameObject hisFlock; 
     float whereShouldOurLeaderLand = 0;
     private bool hasOurSaviourLanded = false;
     private int angerStateOfOurLord;
     // 0 = Our Lord is happy
     // 1 = Our lord reprimands you
     // 2 = Thou shall die soon, Pinpin
-    // 3 = Thou are cleansed, Pinpin
+    // 3 = Our flock has arrived to clean this land
+    // 4 = Thou are cleansed, Pinpin
 
 
     /// <summary>
@@ -93,9 +96,19 @@ public class OurLordAndSaviourTheGreatCaribou : InteractableObject
             andTheWorldWillBePurgedIn -= Time.deltaTime;
             if (andTheWorldWillBePurgedIn <= 0.0f)
             {
+                Player.instance.gameObject.SetActive(false);
+                hisFlock.SetActive(true);
                 onDeath.Invoke();
                 angerStateOfOurLord = 3;
-                NativeWinAlert.Error("Too many caribous detected. Aborting...","Critical Caribou Error");
+            }
+        }
+        else if (angerStateOfOurLord == 3)
+        {
+            andTheBattleAgainstLordElkRagedFor -= Time.deltaTime;
+            if (andTheBattleAgainstLordElkRagedFor <= 0.0f)
+            {
+                angerStateOfOurLord = 4;
+                NativeWinAlert.Error("Too many caribous detected. Aborting...", "Critical Caribou Error");
                 Application.Quit();
             }
         }
