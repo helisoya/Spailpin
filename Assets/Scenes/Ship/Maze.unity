@@ -10117,6 +10117,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1563742552104185932, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563742552104185932, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -10177,7 +10181,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5803413541180447190, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803413541180447190, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803413541180447190, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5854363074226820203, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
@@ -10602,6 +10614,7 @@ MonoBehaviour:
   - {fileID: 1632474939}
   puzzles:
   - {fileID: 1779857531}
+  startupGraph: {fileID: 0}
 --- !u!4 &1758051590
 Transform:
   m_ObjectHideFlags: 0
