@@ -1856,10 +1856,10 @@ MonoBehaviour:
   playerWalkSpeed: 2
   playerRunSpeed: 4
   rotationSpeed: 720
-  accelerationSpeed: 5
+  accelerationSpeed: 10
   maxSlopeAngle: 45
-  dragNormal: 0.9
-  dragSlope: 2.5
+  dragNormal: 3
+  dragSlope: 5
   canShowMovementHint: 1
   waitTimeForShowingMovementHint: 3
   playerTransform: {fileID: 72508452835727340}

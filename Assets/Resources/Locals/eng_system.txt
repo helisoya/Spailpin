@@ -27,6 +27,7 @@ options_controls_rebind = Press a key...
 options_controls_rebind_Move = Move
 options_controls_rebind_Interact = Interact
 options_controls_rebind_Pause = Pause
+options_controls_rebind_Previous = Previous
 options_controls_rebind_Error = !Error!
 
 
