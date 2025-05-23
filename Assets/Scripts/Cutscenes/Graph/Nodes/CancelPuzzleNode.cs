@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateNodeMenu("Event/Cancel Current Puzzle")]
 public class CancelPuzzleNode : SpailpinNode
 {
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 
 	// Use this for initialization

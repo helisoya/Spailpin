@@ -117,27 +117,66 @@ MonoBehaviour:
       Data3: -672572797
       Data4: 847490904
     Path: event:/SFX/Character
-  <DoorLocked>k__BackingField:
+  <CaribouFall>k__BackingField:
     Guid:
-      Data1: -322677915
-      Data2: 1267147205
-      Data3: 919144089
-      Data4: -4485271
-    Path: event:/SFX/DoorLocked
-  <DoorOpening>k__BackingField:
+      Data1: -57205145
+      Data2: 1201192825
+      Data3: -641573480
+      Data4: 412101232
+    Path: event:/SFX/CaribouFall
+  <CaribouLand>k__BackingField:
     Guid:
-      Data1: 1109923570
-      Data2: 1183364924
-      Data3: -675940723
-      Data4: -660168426
-    Path: event:/SFX/DoorOpening
-  <AmbOut>k__BackingField:
+      Data1: -1741101268
+      Data2: 1239193159
+      Data3: 1334603649
+      Data4: 2104860660
+    Path: event:/SFX/CaribouLand
+  <CaribouBomb>k__BackingField:
     Guid:
-      Data1: -345494625
-      Data2: 1156232166
-      Data3: 1776613538
-      Data4: -904923050
-    Path: event:/AMB/AMB_outside
+      Data1: -2015051053
+      Data2: 1093496948
+      Data3: 1087269816
+      Data4: 1064308322
+    Path: event:/SFX/CaribouBomb
+  <CaribouClock>k__BackingField:
+    Guid:
+      Data1: -302798486
+      Data2: 1265376250
+      Data3: -251128169
+      Data4: 1064882618
+    Path: event:/SFX/CaribouClock
+  <CaribouInteract>k__BackingField:
+    Guid:
+      Data1: 560545988
+      Data2: 1201018050
+      Data3: 2007430845
+      Data4: -1673200052
+    Path: event:/SFX/CaribouInteract
+  SFX:
+    _serializedList:
+    - Key: DoorLocked
+      Value:
+        Guid:
+          Data1: -322677915
+          Data2: 1267147205
+          Data3: 919144089
+          Data4: -4485271
+        Path: event:/SFX/DoorLocked
+    - Key: DoorOpening
+      Value:
+        Guid:
+          Data1: 1109923570
+          Data2: 1183364924
+          Data3: -675940723
+          Data4: -660168426
+        Path: event:/SFX/DoorOpening
+  <Ambience>k__BackingField:
+    Guid:
+      Data1: 1051383464
+      Data2: 1236044767
+      Data3: -880655228
+      Data4: -68966615
+    Path: event:/AMB/AMBience
   <MusicMenu>k__BackingField:
     Guid:
       Data1: 1822820387
@@ -145,6 +184,72 @@ MonoBehaviour:
       Data3: 834900670
       Data4: -264362871
     Path: event:/MUSIC/MUSIC_Main_Menu
+  RoomTheme:
+    _serializedList:
+    - Key: Audrey
+      Value:
+        Guid:
+          Data1: -636227077
+          Data2: 1324478489
+          Data3: 1540894364
+          Data4: 1056269784
+        Path: event:/MUSIC/AudreyTheme
+    - Key: Bathroom
+      Value:
+        Guid:
+          Data1: 1480611695
+          Data2: 1170120324
+          Data3: 1763067052
+          Data4: 132516238
+        Path: event:/MUSIC/BathroomTheme
+    - Key: Cave
+      Value:
+        Guid:
+          Data1: -982175719
+          Data2: 1256533395
+          Data3: 896695199
+          Data4: 687165710
+        Path: event:/MUSIC/CaveTheme
+    - Key: Entry
+      Value:
+        Guid:
+          Data1: 734386546
+          Data2: 1265002323
+          Data3: 412510643
+          Data4: 134794787
+        Path: event:/MUSIC/EntryTheme
+    - Key: Garden
+      Value:
+        Guid:
+          Data1: 1356596382
+          Data2: 1111932595
+          Data3: 957522589
+          Data4: -1802632661
+        Path: event:/MUSIC/GardenTheme
+    - Key: GreenHouse
+      Value:
+        Guid:
+          Data1: -1918512584
+          Data2: 1219693663
+          Data3: 746397353
+          Data4: 1525585260
+        Path: event:/MUSIC/GreenHouseTheme
+    - Key: Kitchen
+      Value:
+        Guid:
+          Data1: 1720911101
+          Data2: 1247669325
+          Data3: 2017481891
+          Data4: -358937108
+        Path: event:/MUSIC/KitchenTheme
+    - Key: LivingRoom
+      Value:
+        Guid:
+          Data1: -972992689
+          Data2: 1342080424
+          Data3: 1043213961
+          Data4: -489696504
+        Path: event:/MUSIC/LivingRoomTheme
   <MenuOpen>k__BackingField:
     Guid:
       Data1: -257896857

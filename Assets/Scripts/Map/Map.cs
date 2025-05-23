@@ -11,6 +11,7 @@ public class Map : MonoBehaviour
     [SerializeField] private Room[] rooms;
     [SerializeField] private Spawnpoint[] spawnpoints;
     [SerializeField] private Puzzle[] puzzles;
+    [SerializeField] private DialogGraph startupGraph;
     private bool isUpdatingCamera;
 
     public static Map instance {get;private set;}
@@ -34,24 +35,31 @@ public class Map : MonoBehaviour
     void Start()
     {
 
-        if(GameManager.instance.loadingSave){
+        if (GameManager.instance.loadingSave)
+        {
             SaveFile saveFile = GameManager.instance.GetSaveManager().saveFile;
-            Player.instance.SetPosition(saveFile.playerPosition,Quaternion.Euler(saveFile.playerRotation));
+            Player.instance.SetPosition(saveFile.playerPosition, Quaternion.Euler(saveFile.playerRotation));
 
-            foreach(Room room in rooms){
-                if(room.GetID() == saveFile.currentRoom){
+            foreach (Room room in rooms)
+            {
+                if (room.GetID() == saveFile.currentRoom)
+                {
                     room.Apply();
                     break;
                 }
             }
             GameManager.instance.loadingSave = false;
-        }else{
+        }
+        else
+        {
             FindPlayerSpawnPoint();
             GameManager.instance.mapName = ID;
         }
 
         isUpdatingCamera = true;
         CinemachineCore.UniformDeltaTimeOverride = 500;
+
+        if (startupGraph != null) CutsceneManager.instance.ProcessCutscene(startupGraph);
     }
 
     /// <summary>

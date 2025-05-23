@@ -14,3 +14,17 @@ Exterior_Puzzle_Finished_1 = The door is unlocked.
 Exterior_Puzzle_Done_1 = I don't need to do this anymore.
 
 Outro_Cinematic_Start_1 = Thank you for playing Spailpin's demo. Don't hesitate to give feedbacks.
+
+
+
+
+Caribou_Start_1 = Hello Pinpin.
+Caribou_Start_2 = It is I, the Great Caribou. God of everything.
+Caribou_Start_3 = Thou has summoned me to this realm. I thank you, mortal.
+Caribou_Start_4 = However, I hate it here.
+Caribou_Start_5 = I saw an Elk outside. Thou know I hate Lord Elk, God of Chaos.
+Caribou_Start_6 = Thou shall die for your insolence.
+Caribou_Start_7 = This world will end in <color=red>10 seconds</color>.
+
+
+Caribou_During_1 = Enjoy your death, Pinpin.

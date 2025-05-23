@@ -1,5 +1,6 @@
 using UnityEngine;
 using FMODUnity;
+using AYellowpaper.SerializedCollections;
 
 public class FMODEvents : MonoBehaviour
 {
@@ -9,14 +10,24 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference Carillon { get; private set; }
     [field: SerializeField] public EventReference Bike { get; private set; }
     [field: SerializeField] public EventReference Character { get; private set; }
-    [field: SerializeField] public EventReference DoorLocked { get; private set; }
-    [field: SerializeField] public EventReference DoorOpening { get; private set; }
+    [field: SerializeField] public EventReference CaribouFall { get; private set; }
+    [field: SerializeField] public EventReference CaribouLand { get; private set; }
+    [field: SerializeField] public EventReference CaribouBomb { get; private set; }
+    [field: SerializeField] public EventReference CaribouClock { get; private set; }
+    [field: SerializeField] public EventReference CaribouInteract { get; private set; }
+
+    [SerializeField] public SerializedDictionary<string, EventReference> SFX;
 
     [field: Header("AMB")]
-    [field: SerializeField] public EventReference AmbOut { get; private set; }
+    [field: SerializeField] public EventReference Ambience { get; private set; }
 
     [field: Header("MUSIC")]
     [field: SerializeField] public EventReference MusicMenu { get; private set; }
+   
+    [SerializeField] public SerializedDictionary<string, EventReference> RoomTheme;
+    
+   
+
 
     [field: Header("UI")]
     [field: SerializeField] public EventReference MenuOpen { get; private set; }

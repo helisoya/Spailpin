@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateNodeMenu("Event/Set Variable")]
 public class VariableSetNode : SpailpinNode
 {
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
     [SerializeField] private string variableID;
     [SerializeField] private SetType type;
     [SerializeField] private int value;

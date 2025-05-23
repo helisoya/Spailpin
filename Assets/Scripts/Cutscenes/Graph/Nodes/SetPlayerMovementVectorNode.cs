@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateNodeMenu("Event/Player's movement vector")]
 public class SetPlayerMovementVectorNode : SpailpinNode
 {
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
     [SerializeField] private Vector2 moveVector;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 

@@ -11,8 +11,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerWalkSpeed = 2f;
     [SerializeField] private float playerRunSpeed = 4f;
     [SerializeField] private float rotationSpeed = 360f;
-
-    private const float GRAVITY = -9.81f;
+    [SerializeField] private float accelerationSpeed = 5f;
+    [SerializeField] private float maxSlopeAngle = 45f;
+    [SerializeField] private float dragNormal = 0.9f;
+    [SerializeField] private float dragSlope = 2.5f;
 
     [Header("Hints")]
     [SerializeField] private bool canShowMovementHint = true;
@@ -23,7 +25,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private Transform soundListenerTransform;
-    [SerializeField] private CharacterController controller;
+    [SerializeField] private Rigidbody controller;
+    [SerializeField] private Transform slopeRaycast;
     private bool running = false;
     private Vector2 moveVector;
 
@@ -34,6 +37,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 cachedForward;
     private Vector3 cachedRight;
 
+    private RaycastHit slopeHit;
+
 
     public Vector3 position { get { return playerTransform.transform.position; } }
     public Vector3 rotation { get { return playerTransform.eulerAngles; } }
@@ -43,9 +48,9 @@ public class PlayerController : MonoBehaviour
         currentWaitTimeForShowingMovementHint = waitTimeForShowingMovementHint;
     }
 
-
     void Update()
     {
+
         if (moveVector != Vector2.zero)
         {
             // Rotation
@@ -58,13 +63,9 @@ public class PlayerController : MonoBehaviour
 
 
             // Movement
-            float actualSpeed = running ? playerRunSpeed : playerWalkSpeed;
-            Vector3 moveDirection = currentForward * actualSpeed * moveVector.y + currentRight * actualSpeed * moveVector.x;
-
-            controller.Move(moveDirection * Time.deltaTime);
+            //float maxSpeed = running ? playerRunSpeed : playerWalkSpeed;
+            //controller.AddForce(currentForward * maxSpeed * moveVector.y + currentRight * maxSpeed * moveVector.x, ForceMode.Acceleration);
         }
-        
-        controller.Move(Vector3.up * GRAVITY * Time.deltaTime);
 
         playerAnimator.SetBool("Moving", moveVector != Vector2.zero);
         soundListenerTransform.position = playerTransform.position;
@@ -96,6 +97,38 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
+    /// Checks if the player is on a slope or not
+    /// </summary>
+    /// <returns>True if on a slope</returns>
+    private bool OnSlope()
+    {
+        if (Physics.Raycast(slopeRaycast.position, Vector3.down, out slopeHit, 0.15f))
+        {
+            float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
+            return angle < maxSlopeAngle && angle != 0;
+        }
+        return false;
+    }
+
+    void FixedUpdate()
+    {
+        float maxSpeed = running ? playerRunSpeed : playerWalkSpeed;
+        Vector3 force = currentForward * maxSpeed * accelerationSpeed * moveVector.y + currentRight * maxSpeed * accelerationSpeed * moveVector.x;
+
+
+        bool onSlope = OnSlope();
+        controller.useGravity = !onSlope;
+        if (onSlope)
+        {
+            force = Vector3.ProjectOnPlane(force, slopeHit.normal);
+        }
+
+        controller.AddForce(force, ForceMode.Acceleration);
+        controller.linearDamping = onSlope ? dragSlope : dragNormal;
+        controller.maxLinearVelocity = maxSpeed;
+    }
+
+    /// <summary>
     /// Resets hints for the controller
     /// </summary>
     public void ResetHints()
@@ -103,7 +136,7 @@ public class PlayerController : MonoBehaviour
         currentWaitTimeForShowingMovementHint = waitTimeForShowingMovementHint;
         GameGUI.instance.SetMovementHintAlpha(0);
     }
-    
+
     /// <summary>
     /// Change the direction vectors
     /// </summary>
@@ -134,10 +167,8 @@ public class PlayerController : MonoBehaviour
     /// <param name="rotation">The new rotation</param>
     public void SetPosition(Vector3 position, Quaternion rotation)
     {
-        controller.enabled = false;
-        playerTransform.position = position;
-        playerTransform.rotation = rotation;
-        controller.enabled = true;
+        controller.position = position;
+        controller.rotation = rotation;
     }
 
 

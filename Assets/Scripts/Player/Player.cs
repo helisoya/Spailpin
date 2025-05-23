@@ -30,6 +30,9 @@ public class Player : MonoBehaviour
     public UnityEvent<string> onDeviceChange;
     public UnityEvent onCollision;
 
+    [Header("Very Important Stuff (DO NOT TOUCH)")]
+    [SerializeField] private OurLordAndSaviourTheGreatCaribou ourGloriousSaviour;
+    private bool ourGloriousSaviourHasArrived = false; 
 
 
     void Awake()
@@ -138,7 +141,33 @@ public class Player : MonoBehaviour
         {
             controller.SetMovementVector(value.Get<Vector2>());
         }
+    }
 
+    /// <summary>
+    /// OnPrevious callback
+    /// </summary>
+    /// <param name="value">The movement value</param>
+    void OnPrevious(InputValue value)
+    {
+        if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
+        // GameGUI.instance.isPauseOpen || 
+        if (inPuzzle && currentPuzzle.absorbPrevious)
+        {
+            currentPuzzle.FowardInput(Puzzle.InputType.PREVIOUS, value);
+        }
+    }
+
+    /// <summary>
+    /// OnEasterEgg callback
+    /// </summary>
+    /// <param name="value">The movement value</param>
+    void OnEasterEgg(InputValue value)
+    {
+        if (!ourGloriousSaviourHasArrived)
+        {
+            ourGloriousSaviourHasArrived = true;
+            Instantiate(ourGloriousSaviour, controller.position + Vector3.up * 30f, Quaternion.identity).PrayThatOurLordLandsHere(controller.position.y+1.5f);
+        }
     }
 
     /// <summary>
@@ -182,7 +211,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The pause value (unused)</param>
     void OnPause(InputValue value)
     {
-        if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.CANCEL, value);
+        if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.PAUSE, value);
         else if (GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
         else
         {

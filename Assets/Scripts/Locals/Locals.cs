@@ -45,7 +45,7 @@ public class Locals
         self = this;
         locals = new Dictionary<string, string>();
         currentFontIdx = 0;
-        ChangeLanguage("fra");
+        ChangeLanguage("eng");
 
     }
 

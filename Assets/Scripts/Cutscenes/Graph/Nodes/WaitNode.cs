@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateNodeMenu("Control/Wait")]
 public class WaitNode : SpailpinNode
 {
-    [Input(connectionType = ConnectionType.Override)] public bool entry;
+    [Input(connectionType = ConnectionType.Multiple)] public bool entry;
     [SerializeField] private float waitTime;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 

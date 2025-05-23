@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: GameItems
   m_EditorClassIdentifier: 
   items:
-  - ID: tutorialDone
+  - ID: introCutscene
     value: 0
   - ID: puzzle1Done
     value: 0
   - ID: puzzle2Done
+    value: 0
+  - ID: discoveredExteriorHouse
+    value: 0
+  - ID: discoveredHall
+    value: 0
+  - ID: discoveredMaze
+    value: 0
+  - ID: discoveredLivingRoom
     value: 0

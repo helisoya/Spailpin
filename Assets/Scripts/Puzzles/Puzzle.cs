@@ -10,7 +10,8 @@ public abstract class Puzzle : MonoBehaviour
     public bool absorbMovements = true;
     public bool absorbPause = true;
     public bool absorbInteract = true;
-    public enum InputType {MOVEMENT,ACCEPT,CANCEL};
+    public bool absorbPrevious;
+    public enum InputType { MOVEMENT, ACCEPT, PAUSE, PREVIOUS };
 
     private  bool active = false;
 
