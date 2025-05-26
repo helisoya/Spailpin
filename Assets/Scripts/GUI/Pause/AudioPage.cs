@@ -41,6 +41,7 @@ public class AudioPage : PausePage
     /// <param name="newValue">The new volume</param>
     public void Event_ChangeMaster(float newValue)
     {
+        menu.InvokeOnSliderChange();
         Settings.instance.SetVolumeMaster(newValue);
         onVolumeMasterChange.Invoke(newValue);
     }
@@ -51,6 +52,7 @@ public class AudioPage : PausePage
     /// <param name="newValue">The new volume</param>
     public void Event_ChangeMusic(float newValue)
     {
+        menu.InvokeOnSliderChange();
         Settings.instance.SetVolumeMusic(newValue);
         onVolumeMusicChange.Invoke(newValue);
     }
@@ -61,6 +63,7 @@ public class AudioPage : PausePage
     /// <param name="newValue">The new volume</param>
     public void Event_ChangeSFX(float newValue)
     {
+        menu.InvokeOnSliderChange();
         Settings.instance.SetVolumeSFX(newValue);
         onVolumeSFXChange.Invoke(newValue);
     }

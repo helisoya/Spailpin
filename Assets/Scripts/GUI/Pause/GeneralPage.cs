@@ -21,6 +21,7 @@ public class GeneralPage : PausePage
     /// Callback for loading a save
     /// </summary>
     public void Event_LoadGame(){
+        menu.InvokeOnButtonPress();
         GameManager.instance.GetSaveManager().LoadGame();
     }
 
@@ -28,13 +29,15 @@ public class GeneralPage : PausePage
     /// Callback for saving the game
     /// </summary>
     public void Event_SaveGame(){
-        if(!Player.instance.inPuzzle) GameManager.instance.GetSaveManager().SaveGame();
+        menu.InvokeOnButtonPress();
+        if (!Player.instance.inPuzzle) GameManager.instance.GetSaveManager().SaveGame();
     }
 
     /// <summary>
     /// Callback for returning to the main menu
     /// </summary>
     public void Event_ToMainMenu(){
+        menu.InvokeOnButtonPress();
         GameManager.instance.ChangeScene("MainMenu");
     }
 
@@ -42,6 +45,7 @@ public class GeneralPage : PausePage
     /// Callback for quitting the game
     /// </summary>
     public void Event_QuitGame(){
+        menu.InvokeOnButtonPress();
         Application.Quit();
     }
 

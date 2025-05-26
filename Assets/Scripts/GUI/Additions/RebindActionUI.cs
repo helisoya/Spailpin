@@ -143,35 +143,37 @@ using TMPro;
         /// </summary>
         public InputActionRebindingExtensions.RebindingOperation ongoingRebind => m_RebindOperation;
 
+        [HideInInspector] public PauseMenu menu;
+
         /// <summary>
-        /// Return the action and binding index for the binding that is targeted by the component
-        /// according to
-        /// </summary>
-        /// <param name="action"></param>
-        /// <param name="bindingIndex"></param>
-        /// <returns></returns>
-        public bool ResolveActionAndBinding(out InputAction action, out int bindingIndex)
+    /// Return the action and binding index for the binding that is targeted by the component
+    /// according to
+    /// </summary>
+    /// <param name="action"></param>
+    /// <param name="bindingIndex"></param>
+    /// <returns></returns>
+    public bool ResolveActionAndBinding(out InputAction action, out int bindingIndex)
+    {
+        bindingIndex = -1;
+
+        action = m_Action?.action;
+        if (action == null)
+            return false;
+
+        if (string.IsNullOrEmpty(m_BindingId))
+            return false;
+
+        // Look up binding index.
+        var bindingId = new Guid(m_BindingId);
+        bindingIndex = action.bindings.IndexOf(x => x.id == bindingId);
+        if (bindingIndex == -1)
         {
-            bindingIndex = -1;
-
-            action = m_Action?.action;
-            if (action == null)
-                return false;
-
-            if (string.IsNullOrEmpty(m_BindingId))
-                return false;
-
-            // Look up binding index.
-            var bindingId = new Guid(m_BindingId);
-            bindingIndex = action.bindings.IndexOf(x => x.id == bindingId);
-            if (bindingIndex == -1)
-            {
-                Debug.LogError($"Cannot find binding with ID '{bindingId}' on '{action}'", this);
-                return false;
-            }
-
-            return true;
+            Debug.LogError($"Cannot find binding with ID '{bindingId}' on '{action}'", this);
+            return false;
         }
+
+        return true;
+    }
 
         /// <summary>
         /// Trigger a refresh of the currently displayed binding.
@@ -244,6 +246,7 @@ using TMPro;
 
         private void PerformInteractiveRebind(InputAction action, int bindingIndex, bool allCompositeParts = false)
         {
+            menu.InvokeOnButtonPress();
             m_RebindOperation?.Cancel(); // Will null out m_RebindOperation.
 
             void CleanUp()
@@ -270,6 +273,7 @@ using TMPro;
                 .OnComplete(
                     operation =>
                     {
+                        menu.InvokeOnButtonPress();
                         if (m_RebindOverlay != null)
                             m_RebindOverlay.SetActive(false);
                         m_RebindStopEvent?.Invoke(this, operation);

@@ -12,10 +12,17 @@ public class ControlsPage : PausePage
     [SerializeField] private GamepadProfile[] gamepadProfiles;
     [SerializeField] private Toggle[] togglesGamepadProfiles;
 
+    void Start()
+    {
+        foreach (RebindActionUI actionUI in keyboardRebinds)
+        {
+            actionUI.menu = menu;
+        }
+    }
 
     protected override void OnClose()
     {
-    
+
     }
 
     protected override void OnOpen()
@@ -29,9 +36,12 @@ public class ControlsPage : PausePage
     /// </summary>
     public void Event_ChangeGamepadProfile(bool value){
         if(!value) return;
+        menu.InvokeOnButtonPress();
         
-        for(int i = 0; i < togglesGamepadProfiles.Length;i++){
-            if(togglesGamepadProfiles[i].isOn){
+        for (int i = 0; i < togglesGamepadProfiles.Length; i++)
+        {
+            if (togglesGamepadProfiles[i].isOn)
+            {
                 Settings.instance.SetCurrentGamePadProfileIdx(i);
                 gamepadProfiles[i].Apply();
                 break;
@@ -43,7 +53,9 @@ public class ControlsPage : PausePage
     /// Resets all keyboard rebinds
     /// </summary>
     public void Event_ResetAllRebinds(){
-        foreach(RebindActionUI rebindActionUI in keyboardRebinds){
+        menu.InvokeOnButtonPress();
+        foreach (RebindActionUI rebindActionUI in keyboardRebinds)
+        {
             rebindActionUI.ResetToDefault();
         }
         Settings.instance.SetBindings(GameManager.instance.GetInputs().SaveBindingOverridesAsJson());
