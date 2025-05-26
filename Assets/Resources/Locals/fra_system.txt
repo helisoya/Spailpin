@@ -39,6 +39,7 @@ options_big = Grand
 
 
 hint_move = Marcher
+hint_general = Enfoncez pour un indice
 
 hint_puzzle1_move = Changer la sélection
 hint_puzzle1_select = Sélectioner

@@ -7,10 +7,9 @@ using UnityEngine.InputSystem;
 public class PuzzleMaze : Puzzle
 {
     [Header("Maze Puzzle")]
-    [SerializeField] private GameObject puzzleCanvas;
     [SerializeField] private Transform repawnPoint;
 
-    public override void FowardInput(InputType type, InputValue inputValue)
+    public override void OnFowardInput(InputType type, InputValue inputValue)
     {
         if (type == InputType.PREVIOUS && inputValue.isPressed)
         {
@@ -21,12 +20,10 @@ public class PuzzleMaze : Puzzle
 
     public override void OnEnd(bool cancelled)
     {
-        puzzleCanvas.SetActive(false);
     }
 
     public override void OnStart()
     {
-        puzzleCanvas.SetActive(true);
     }
 
     public override void OnUpdate()

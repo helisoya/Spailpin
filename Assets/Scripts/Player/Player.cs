@@ -174,16 +174,33 @@ public class Player : MonoBehaviour
     void OnMove(InputValue value)
     {
         if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
-        // GameGUI.instance.isPauseOpen || 
+        if (GameGUI.instance.isPauseOpen) return;
+
         if (inPuzzle && currentPuzzle.absorbMovements)
         {
             currentPuzzle.FowardInput(Puzzle.InputType.MOVEMENT, value);
         }
-        else
+        else if(!inPuzzle || !currentPuzzle.inHintMenu)
         {
             controller.SetMovementVector(value.Get<Vector2>());
         }
     }
+
+    /// <summary>
+    /// OnHint callback
+    /// </summary>
+    /// <param name="value">The hint value</param>
+    void OnHint(InputValue value)
+    {
+        if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
+        if (GameGUI.instance.isPauseOpen) return;
+
+        if (inPuzzle && currentPuzzle.absorbHint)
+        {
+            currentPuzzle.FowardInput(Puzzle.InputType.HINT, value);
+        }
+    }
+
 
     /// <summary>
     /// OnPrevious callback
@@ -192,7 +209,8 @@ public class Player : MonoBehaviour
     void OnPrevious(InputValue value)
     {
         if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
-        // GameGUI.instance.isPauseOpen || 
+        if (GameGUI.instance.isPauseOpen) return;
+
         if (inPuzzle && currentPuzzle.absorbPrevious)
         {
             currentPuzzle.FowardInput(Puzzle.InputType.PREVIOUS, value);
@@ -205,6 +223,9 @@ public class Player : MonoBehaviour
     /// <param name="value">The movement value</param>
     void OnEasterEgg(InputValue value)
     {
+        if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
+        if (GameGUI.instance.isPauseOpen) return;
+
         if (!ourGloriousSaviourHasArrived)
         {
             ourGloriousSaviourHasArrived = true;
@@ -255,6 +276,7 @@ public class Player : MonoBehaviour
     void OnPause(InputValue value)
     {
         if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.PAUSE, value);
+        else if (inPuzzle && currentPuzzle.inHintMenu) return;
         else if (GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
         else
         {
@@ -272,6 +294,7 @@ public class Player : MonoBehaviour
         if (GameGUI.instance.isPauseOpen) return;
         if (CutsceneManager.instance.inCutscene) CutsceneManager.instance.UserSubmit();
         else if (inPuzzle && currentPuzzle.absorbInteract) currentPuzzle.FowardInput(Puzzle.InputType.ACCEPT, value);
+        else if (inPuzzle && currentPuzzle.inHintMenu) return;
         else interactions.TryInterract();
     }
 
