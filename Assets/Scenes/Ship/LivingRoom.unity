@@ -132,6 +132,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_Wall_1 (10)
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -397,6 +401,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_Wall_1 (6)
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -540,6 +548,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Furniture_Bench_1
       objectReference: {fileID: 0}
     - target: {fileID: 9124158551192005416, guid: 06d8e3e03bc68e24bbf22fdc0e2b2931, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124158551192005416, guid: 06d8e3e03bc68e24bbf22fdc0e2b2931, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -667,6 +679,10 @@ PrefabInstance:
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Architecture_Wall_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1346,6 +1362,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Furniture_Couch_1
       objectReference: {fileID: 0}
     - target: {fileID: 2085917289026331192, guid: b1910eaf4f6e95344a2cd57db77366a1, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085917289026331192, guid: b1910eaf4f6e95344a2cd57db77366a1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1576,6 +1596,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_WallWindow_1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6947033101415159883, guid: 39df7d3a32e503e44a475fef5c80b914, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947033101415159883, guid: 39df7d3a32e503e44a475fef5c80b914, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1702,6 +1726,10 @@ PrefabInstance:
     - target: {fileID: 9203201215691180951, guid: d3f702b4fcce5a14fb6046ed1b1dedac, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Clutter_CardboardBox_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203201215691180951, guid: d3f702b4fcce5a14fb6046ed1b1dedac, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 9203201215691180951, guid: d3f702b4fcce5a14fb6046ed1b1dedac, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2293,6 +2321,10 @@ PrefabInstance:
     - target: {fileID: 7601803743916273026, guid: a404b4d8f71fa6d45b4ba14112b1586f, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Furniture_FormicaChair_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601803743916273026, guid: a404b4d8f71fa6d45b4ba14112b1586f, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 7601803743916273026, guid: a404b4d8f71fa6d45b4ba14112b1586f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2887,6 +2919,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_Wall_1 (03)
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3169,6 +3205,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Clutter_CardboardBox_1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8960559075761305147, guid: 8dc27cd3a49d13d4d96d1710d4760093, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960559075761305147, guid: 8dc27cd3a49d13d4d96d1710d4760093, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3222,6 +3262,10 @@ PrefabInstance:
     - target: {fileID: 5770712557739030806, guid: d7ce36913df1c334a90ba3f4edf41c85, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Clutter_WoodDrawer_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770712557739030806, guid: d7ce36913df1c334a90ba3f4edf41c85, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 5770712557739030806, guid: d7ce36913df1c334a90ba3f4edf41c85, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3317,6 +3361,10 @@ PrefabInstance:
     - target: {fileID: 79015244553685050, guid: 4507f883e8bfece4c828ebaebd1f03c3, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Furniture_Kallax
+      objectReference: {fileID: 0}
+    - target: {fileID: 79015244553685050, guid: 4507f883e8bfece4c828ebaebd1f03c3, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 79015244553685050, guid: 4507f883e8bfece4c828ebaebd1f03c3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3516,6 +3564,10 @@ PrefabInstance:
     - target: {fileID: 1217347206943638759, guid: fc22a58188210d14b83b509047bb1332, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Furniture_LowTable_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217347206943638759, guid: fc22a58188210d14b83b509047bb1332, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 1217347206943638759, guid: fc22a58188210d14b83b509047bb1332, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4336,6 +4388,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_Wall_1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4667,6 +4723,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_Wall_1 (07)
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4826,6 +4886,10 @@ PrefabInstance:
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Architecture_Wall_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5238,6 +5302,10 @@ PrefabInstance:
     - target: {fileID: 4615551975444491128, guid: c7c225c4b3afc2545bb59b3f51891823, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Architecture_WallDoor_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615551975444491128, guid: c7c225c4b3afc2545bb59b3f51891823, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4615551975444491128, guid: c7c225c4b3afc2545bb59b3f51891823, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5746,6 +5814,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Clutter_WoodDrawer_1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5770712557739030806, guid: d7ce36913df1c334a90ba3f4edf41c85, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770712557739030806, guid: d7ce36913df1c334a90ba3f4edf41c85, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -6162,6 +6234,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_Wall_1
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -6445,6 +6521,10 @@ PrefabInstance:
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Architecture_Wall_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7047,6 +7127,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_WallWindow_1
       objectReference: {fileID: 0}
     - target: {fileID: 6947033101415159883, guid: 39df7d3a32e503e44a475fef5c80b914, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947033101415159883, guid: 39df7d3a32e503e44a475fef5c80b914, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -7149,6 +7233,10 @@ PrefabInstance:
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Architecture_Wall_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3017998266797070154, guid: 951e0e8f5148d1247821f6ddeb4290d4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7310,6 +7398,10 @@ PrefabInstance:
     - target: {fileID: 348270983963986332, guid: b86ac7b5b234c7243b98bd8de58c6f68, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Furniture_WoodChair_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 348270983963986332, guid: b86ac7b5b234c7243b98bd8de58c6f68, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 348270983963986332, guid: b86ac7b5b234c7243b98bd8de58c6f68, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7690,6 +7782,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_HearthChimney
       objectReference: {fileID: 0}
     - target: {fileID: 2617782572350328378, guid: b328562c78060ee45993ecc1224d79d0, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617782572350328378, guid: b328562c78060ee45993ecc1224d79d0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -7925,6 +8021,10 @@ PrefabInstance:
       value: LivingRoom_Prefab_Architecture_WallDoor_1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4615551975444491128, guid: c7c225c4b3afc2545bb59b3f51891823, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615551975444491128, guid: c7c225c4b3afc2545bb59b3f51891823, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -8058,6 +8158,10 @@ PrefabInstance:
     - target: {fileID: 6355880920785315088, guid: 0f84e31e3bd2d3247910352547be87fd, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Clutter_CardboardBox_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355880920785315088, guid: 0f84e31e3bd2d3247910352547be87fd, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6355880920785315088, guid: 0f84e31e3bd2d3247910352547be87fd, type: 3}
       propertyPath: m_StaticEditorFlags

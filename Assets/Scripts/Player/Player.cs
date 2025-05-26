@@ -15,6 +15,11 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerController controller;
     [SerializeField] private PlayerInteraction interactions;
     [SerializeField] private GameObject playerModelRoot;
+
+    [Header("Shaking")]
+    [SerializeField] private bool activateShaking = false;
+    [SerializeField] private float shakingStrength = 0.1f;
+    [SerializeField] private float shakingLength = 0.5f;
     private Room currentRoom = null;
     public int CurrentRoom { get { return currentRoom != null ? currentRoom.GetID() : -1; } }
     public Vector3 position { get { return controller.position; } }
@@ -25,27 +30,61 @@ public class Player : MonoBehaviour
     public bool inPuzzle { get { return currentPuzzle != null; } }
 
     private string currentScheme;
+    private float currentShakingLength;
+    private float currentShakingStrength;
+    private bool colliding;
 
     [Header("Events")]
     public UnityEvent<string> onDeviceChange;
-    public UnityEvent onCollision;
+    public UnityEvent<bool> onCollision;
 
     [Header("Very Important Stuff (DO NOT TOUCH)")]
     [SerializeField] private OurLordAndSaviourTheGreatCaribou ourGloriousSaviour;
-    private bool ourGloriousSaviourHasArrived = false; 
+    private bool ourGloriousSaviourHasArrived = false;
 
 
     void Awake()
     {
         instance = this;
         SetPlayerModelActive(true);
+        if(activateShaking) onCollision.AddListener(OnCollision);
+        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
+        currentShakingLength = 0;
+    }
+
+    void Oestroy()
+    {
+        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);    
+    }
+
+    void Update()
+    {
+        if (colliding)
+        {
+            if (controller.moving)
+            {
+                currentShakingStrength = Mathf.Clamp(currentShakingStrength + Time.deltaTime * 0.05f, 0.0f, shakingStrength);
+            }
+            else
+            {
+                currentShakingStrength = 0;
+            }
+            Gamepad.current.SetMotorSpeeds(currentShakingStrength, currentShakingStrength);
+        }
+
+        if (currentShakingLength > 0)
+        {
+            currentShakingLength -= Time.deltaTime;
+            if (currentShakingLength <= 0 && Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
+        }
     }
 
     /// <summary>
     /// Changes if the player model is active or not
     /// </summary>
     /// <param name="value">True if the player model is active</param>
-    public void SetPlayerModelActive(bool value){
+    public void SetPlayerModelActive(bool value)
+    {
         playerModelRoot.SetActive(value);
     }
 
@@ -69,8 +108,10 @@ public class Player : MonoBehaviour
     /// <summary>
     /// Stops the current puzzle
     /// </summary>
-    public void StopCurrentPuzzle(){
-        if(currentPuzzle != null){
+    public void StopCurrentPuzzle()
+    {
+        if (currentPuzzle != null)
+        {
             currentPuzzle.EndPuzzle(true);
         }
     }
@@ -93,7 +134,8 @@ public class Player : MonoBehaviour
 
         float targetFOV = room.GetCamera().Lens.FieldOfView;
 
-        foreach(Camera camera in Camera.main.GetUniversalAdditionalCameraData().cameraStack){
+        foreach (Camera camera in Camera.main.GetUniversalAdditionalCameraData().cameraStack)
+        {
             camera.fieldOfView = targetFOV;
         }
 
@@ -166,7 +208,7 @@ public class Player : MonoBehaviour
         if (!ourGloriousSaviourHasArrived)
         {
             ourGloriousSaviourHasArrived = true;
-            Instantiate(ourGloriousSaviour, controller.position + Vector3.up * 30f, Quaternion.identity).PrayThatOurLordLandsHere(controller.position.y+1.5f);
+            Instantiate(ourGloriousSaviour, controller.position + Vector3.up * 30f, Quaternion.identity).PrayThatOurLordLandsHere(controller.position.y + 1.5f);
         }
     }
 
@@ -192,6 +234,7 @@ public class Player : MonoBehaviour
     void OnControlsChanged(PlayerInput input)
     {
         print(input.currentControlScheme);
+        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);    
         currentScheme = input.currentControlScheme;
         onDeviceChange.Invoke(currentScheme);
     }
@@ -247,9 +290,39 @@ public class Player : MonoBehaviour
     /// <param name="collision">The collision</param>
     void OnCollisionEnter(Collision collision)
     {
-        if (Vector3.Dot(Vector3.up, collision.GetContact(0).normal) <= 0.5f)
+        if (collision.gameObject.tag == "Wall")
         {
-            onCollision.Invoke();
+            onCollision.Invoke(true);
+        }
+    }
+
+    /// <summary>
+    /// OnCollisionExit Callback
+    /// </summary>
+    /// <param name="collision">The collision</param>
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            onCollision.Invoke(false);
+        }
+    }
+
+    /// <summary>
+    /// OnCollision Callback
+    /// </summary>
+    /// <param name="value">True if the collision has started, False if it has ended</param>
+    private void OnCollision(bool value)
+    {
+        if (value && Gamepad.current != null)
+        {
+            colliding = true;
+            currentShakingStrength = 0;
+        }
+        else if (!value)
+        {
+            colliding = false;
+            currentShakingLength = shakingLength;
         }
     }
 }
