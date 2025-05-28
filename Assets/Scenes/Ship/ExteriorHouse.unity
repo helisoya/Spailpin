@@ -4451,6 +4451,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3249055580036257644, guid: e816238ba534c184eb58bc60c0a60adc, type: 3}
+      propertyPath: accelerationSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4113991592952873925, guid: e816238ba534c184eb58bc60c0a60adc, type: 3}
       propertyPath: m_Name
       value: Pinpin

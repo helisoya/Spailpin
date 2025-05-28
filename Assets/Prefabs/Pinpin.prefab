@@ -1853,7 +1853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49aa80c8bc5e73f43b66bf31d2a86018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerWalkSpeed: 2
+  playerWalkSpeed: 2.6
   playerRunSpeed: 4
   rotationSpeed: 720
   accelerationSpeed: 10
@@ -1898,6 +1898,9 @@ MonoBehaviour:
   controller: {fileID: 3249055580036257644}
   interactions: {fileID: 5518070396854803634}
   playerModelRoot: {fileID: 5429146737840740227}
+  activateShaking: 0
+  shakingStrength: 0.1
+  shakingLength: 0.5
   onDeviceChange:
     m_PersistentCalls:
       m_Calls: []
