@@ -2514,7 +2514,7 @@ GameObject:
   - component: {fileID: 569082524}
   - component: {fileID: 569082523}
   m_Layer: 3
-  m_Name: Door_To???
+  m_Name: Door_ToGreenHouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7038,7 +7038,7 @@ GameObject:
   - component: {fileID: 1920985996}
   - component: {fileID: 1920985995}
   m_Layer: 0
-  m_Name: ???
+  m_Name: GreenHouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7057,7 +7057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDefaultSpawnpoint: 0
-  linkedMap: ???
+  linkedMap: GreenHouse
   linkedRoom: {fileID: 2123106903}
 --- !u!4 &1920985996
 Transform:

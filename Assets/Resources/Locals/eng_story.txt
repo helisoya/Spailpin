@@ -15,6 +15,7 @@ Exterior_Puzzle_Done_1 = I don't need to do this anymore.
 
 Outro_Cinematic_Start_1 = Thank you for playing Spailpin's demo. Don't hesitate to give feedbacks.
 
+StoreRoom_Door_Skip_1 = I'm sure I can make my way back to the hall.
 
 
 

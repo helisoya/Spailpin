@@ -18,6 +18,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Ship/LivingRoom.unity
     guid: 444737b299772004091d0e582964568e
   - enabled: 1
+    path: Assets/Scenes/Ship/StoreRoom.unity
+    guid: a83f85ee7c2184c4a9f3e83be55d14b8
+  - enabled: 1
+    path: Assets/Scenes/Ship/GreenHouse.unity
+    guid: 4795e0e8f3ded7942a991a245dbee136
+  - enabled: 1
+    path: Assets/Scenes/Ship/Garden.unity
+    guid: 9f856c31354955c4fa20c9ef67b8fa09
+  - enabled: 1
+    path: Assets/Scenes/Ship/Landing.unity
+    guid: f94d3dc75baf94c4fb76425dfe124163
+  - enabled: 1
+    path: Assets/Scenes/Ship/BedRoom.unity
+    guid: 3713f83561fde754197cebfb4ddf0200
+  - enabled: 1
     path: Assets/Scenes/Tests/PlayerTest.unity
     guid: 85fc0100d62e3d442b1925ed62d76ce0
   m_configObjects:

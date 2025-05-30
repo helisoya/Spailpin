@@ -27,3 +27,11 @@ MonoBehaviour:
     value: 0
   - ID: discoveredLivingRoom
     value: 0
+  - ID: discoveredStoreRoom
+    value: 0
+  - ID: discoveredGreenHouse
+    value: 0
+  - ID: discoveredGarden
+    value: 0
+  - ID: discoveredBedRoom
+    value: 0
