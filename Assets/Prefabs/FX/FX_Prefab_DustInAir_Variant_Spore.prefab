@@ -49,6 +49,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4363916099869190252, guid: d03c5d75dd4e74e45b96bbb3c07bf17a, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363916099869190252, guid: d03c5d75dd4e74e45b96bbb3c07bf17a, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.17254902
       objectReference: {fileID: 0}
@@ -62,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6619196626196340592, guid: d03c5d75dd4e74e45b96bbb3c07bf17a, type: 3}
       propertyPath: m_Name
-      value: FX_Prefab_DustInAir Variant
+      value: FX_Prefab_DustInAir_Variant_Spore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
