@@ -27,6 +27,7 @@ options_controls_rebind = Appuyez sur une touche...
 options_controls_rebind_Move = Mouvements
 options_controls_rebind_Interact = Intéragir
 options_controls_rebind_Pause = Pause
+options_controls_rebind_Previous = Retour
 options_controls_rebind_Error = !Erreur!
 
 options_access = Accessibilité
@@ -38,6 +39,7 @@ options_big = Grand
 
 
 hint_move = Marcher
+hint_general = Enfoncez pour un indice
 
 hint_puzzle1_move = Changer la sélection
 hint_puzzle1_select = Sélectioner

@@ -25,6 +25,7 @@ public class LanguagePage : PausePage
     }
 
     public void Event_ChangeLanguage(string newLocal){
+        menu.InvokeOnButtonPress();
         Locals.ChangeLanguage(newLocal);
         Locals.onChangeLocal.Invoke();
 
@@ -33,8 +34,11 @@ public class LanguagePage : PausePage
     }
 
     public void Event_ChangeTextSize(bool value){
-        for(int i = 0; i < textSizeToggles.Length;i++){
-            if(textSizeToggles[i].isOn){
+        menu.InvokeOnButtonPress();
+        for (int i = 0; i < textSizeToggles.Length; i++)
+        {
+            if (textSizeToggles[i].isOn)
+            {
                 Settings.instance.SetTextSize(i);
                 break;
             }
@@ -42,8 +46,11 @@ public class LanguagePage : PausePage
     }
 
     public void Event_ChangeTextSpacing(bool value){
-        for(int i = 0; i < textSpacingToggles.Length;i++){
-            if(textSpacingToggles[i].isOn){
+        menu.InvokeOnButtonPress();
+        for (int i = 0; i < textSpacingToggles.Length; i++)
+        {
+            if (textSpacingToggles[i].isOn)
+            {
                 Settings.instance.SetTextSpacing(i);
                 break;
             }
@@ -51,6 +58,7 @@ public class LanguagePage : PausePage
     }
 
     public void Event_ChangeTextOpacity(float opacity){
+        menu.InvokeOnSliderChange();
         Settings.instance.SetTextOpacity(opacity);
     }
 

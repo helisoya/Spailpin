@@ -44,22 +44,26 @@ public class InterfacePage : PausePage
 
 
     public void Event_ChangeFullscreen(bool fullscreen){
+        menu.InvokeOnButtonPress();
         Settings.instance.SetFullScreen(fullscreen);
     }
 
     public void Event_ChangeResolution(Int32 index){
+        menu.InvokeOnButtonPress();
         Settings.instance.SetResolution(resolutions[index]);
     }
 
     public void Event_ChangeBrightness(float value){
+        menu.InvokeOnSliderChange();
         Settings.instance.SetGamma(value);
     }
 
     public void Event_ChangeShadows(bool shadows){
-
+        menu.InvokeOnButtonPress();
     }
 
     public void Event_ChangeBloom(bool bloom){
+        menu.InvokeOnButtonPress();
         Settings.instance.SetBloomEnabled(bloom);
     }
 }

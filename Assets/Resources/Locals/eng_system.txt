@@ -27,6 +27,7 @@ options_controls_rebind = Press a key...
 options_controls_rebind_Move = Move
 options_controls_rebind_Interact = Interact
 options_controls_rebind_Pause = Pause
+options_controls_rebind_Previous = Previous
 options_controls_rebind_Error = !Error!
 
 
@@ -39,9 +40,24 @@ options_big = Big
 
 
 hint_move = Move
+hint_hintSystem = Hold for a hint
+
+hint_hintSystem_0 = Light hint
+hint_hintSystem_1 = Medium hint
+hint_hintSystem_2 = Strong hint
+
+hint_hintSystem_confirm = Confirm
+hint_hintSystem_back = Go back
+
 
 hint_puzzle1_move = Change selection
 hint_puzzle1_select = Select
 hint_puzzle1_quit = Quit
+hint_puzzle1_0 = Hint 1
+hint_puzzle1_1 = Hint 2
+hint_puzzle1_2 = Hint 3
 
 hint_puzzle2_restart = Restart
+hint_puzzle2_0 = Hint 1
+hint_puzzle2_1 = Hint 2
+hint_puzzle2_2 = Hint 3

@@ -16,7 +16,7 @@ PlayerSettings:
   productName: Spailpin
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.34269315, g: 0.45344427, b: 0.4811321, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 0
   m_SplashScreenOverlayOpacity: 1
@@ -40,6 +40,18 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
+  - logo: {fileID: 21300000, guid: 99f5e29e5c072814a90d7f549f42ab27, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 4c86d300bca5a4546b8fd31b8a794036, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 11fbeb917c69129409d515e2422851b6, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: f5e76c1686f5b3d41b5203e2a4d995fc, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 6b1a6f70d47427d4d85e6027324aaf02, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: d7a53586cdbd5684b81983ded8e40856, type: 3}
+    duration: 2
   - logo: {fileID: 21300000, guid: 8656da29e3cde9449aef2677f526d025, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}

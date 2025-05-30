@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
     private RaycastHit slopeHit;
 
-
+    public bool moving{get{ return moveVector != Vector2.zero; }}
     public Vector3 position { get { return playerTransform.transform.position; } }
     public Vector3 rotation { get { return playerTransform.eulerAngles; } }
 

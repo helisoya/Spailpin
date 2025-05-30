@@ -9,12 +9,14 @@ public abstract class PausePage : MonoBehaviour
     [Header("General")]
     [SerializeField] protected GameObject root;
     [SerializeField] private Selectable firstObject;
+    [HideInInspector] public PauseMenu menu;
 
     /// <summary>
     /// Gets the page's first object
     /// </summary>
     /// <returns>The first object</returns>
-    public Selectable GetFirstObject(){
+    public Selectable GetFirstObject()
+    {
         return firstObject;
     }
     

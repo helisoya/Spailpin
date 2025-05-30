@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.Assertions.Must;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -11,14 +13,28 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject root;
     [SerializeField] private PausePage[] pages;
     [SerializeField] private Button[] buttons;
+
+    [Header("Audio Events")]
+    [SerializeField] private UnityEvent onButtonPress;
+    [SerializeField] private UnityEvent onPageChange;
+    [SerializeField] private UnityEvent onSliderChange;
     private int currentPage = 0;
 
     public bool isOpen {get{return root.activeInHierarchy;}}
 
+    void Awake()
+    {
+        foreach (PausePage page in pages)
+        {
+            page.menu = this;
+        }
+    }
+
     /// <summary>
     /// Opens the pause menu
     /// </summary>
-    public void Open(){
+    public void Open()
+    {
         root.SetActive(true);
         OpenNewPage(0);
     }
@@ -31,20 +47,49 @@ public class PauseMenu : MonoBehaviour
     }
 
     /// <summary>
+    /// Invokes the onButtonPress event
+    /// </summary>
+    public void InvokeOnButtonPress()
+    {
+        onButtonPress.Invoke();
+    }
+
+    /// <summary>
+    /// Invokes the onPageChange event
+    /// </summary>
+    public void InvokeOnPageChange()
+    {
+        onPageChange.Invoke();
+    }
+
+    /// <summary>
+    /// Invokes the onSliderChange event
+    /// </summary>
+    public void InvokeOnSliderChange()
+    {
+        onSliderChange.Invoke();
+    }
+
+    /// <summary>
     /// Opens a new page
     /// </summary>
     /// <param name="page"></param>
-    public void OpenNewPage(int page){
+    public void OpenNewPage(int page)
+    {
+        InvokeOnPageChange();
+
         pages[currentPage].Close();
         currentPage = page;
         pages[page].Open();
 
-        foreach(Button button in buttons){
+        foreach (Button button in buttons)
+        {
             Navigation navigation = button.navigation;
             navigation.selectOnDown = pages[page].GetFirstObject();
             button.navigation = navigation;
         }
-        if(!EventSystem.current.alreadySelecting){
+        if (!EventSystem.current.alreadySelecting)
+        {
             EventSystem.current.SetSelectedGameObject(buttons[page].gameObject);
         }
     }
