@@ -15,11 +15,14 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference CaribouBomb { get; private set; }
     [field: SerializeField] public EventReference CaribouClock { get; private set; }
     [field: SerializeField] public EventReference CaribouInteract { get; private set; }
+    [field: SerializeField] public EventReference PuzzleSuccess { get; private set; }
+    [field: SerializeField] public EventReference PuzzleFailed { get; private set; }
 
     [SerializeField] public SerializedDictionary<string, EventReference> SFX;
 
     [field: Header("AMB")]
     [field: SerializeField] public EventReference Ambience { get; private set; }
+    [field: SerializeField] public EventReference HouseWind { get; private set; }
 
     [field: Header("MUSIC")]
     [field: SerializeField] public EventReference MusicMenu { get; private set; }
@@ -32,9 +35,11 @@ public class FMODEvents : MonoBehaviour
     [field: Header("UI")]
     [field: SerializeField] public EventReference MenuOpen { get; private set; }
     [field: SerializeField] public EventReference MenuClosed { get; private set; }
+    [field: SerializeField] public EventReference Menu { get; private set; }
     [field: SerializeField] public EventReference Button { get; private set; }
+    [field: SerializeField] public EventReference PageTurn { get; private set; }
+    [field: SerializeField] public EventReference JunoDiary { get; private set; }
 
-    [field: SerializeField] public EventReference Magic { get; private set; }
 
     public static FMODEvents instance {  get; private set; }
 

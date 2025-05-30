@@ -152,6 +152,20 @@ MonoBehaviour:
       Data3: 2007430845
       Data4: -1673200052
     Path: event:/SFX/CaribouInteract
+  <PuzzleSuccess>k__BackingField:
+    Guid:
+      Data1: -51555657
+      Data2: 1103049949
+      Data3: 694299834
+      Data4: 1586720357
+    Path: event:/SFX/PuzzleSuccess
+  <PuzzleFailed>k__BackingField:
+    Guid:
+      Data1: -2052409563
+      Data2: 1290838242
+      Data3: 1883546793
+      Data4: -1060449996
+    Path: event:/SFX/PuzzleFailed
   SFX:
     _serializedList:
     - Key: DoorLocked
@@ -177,6 +191,13 @@ MonoBehaviour:
       Data3: -880655228
       Data4: -68966615
     Path: event:/AMB/AMBience
+  <HouseWind>k__BackingField:
+    Guid:
+      Data1: -1831918671
+      Data2: 1099189262
+      Data3: -1645473382
+      Data4: -1770792305
+    Path: event:/AMB/HouseWind
   <MusicMenu>k__BackingField:
     Guid:
       Data1: 1822820387
@@ -264,6 +285,13 @@ MonoBehaviour:
       Data3: -2108875350
       Data4: 974064814
     Path: event:/UI/Menu_Close
+  <Menu>k__BackingField:
+    Guid:
+      Data1: -465393649
+      Data2: 1216645219
+      Data3: 838646422
+      Data4: -1870497331
+    Path: event:/UI/Menu
   <Button>k__BackingField:
     Guid:
       Data1: -527211870
@@ -271,10 +299,17 @@ MonoBehaviour:
       Data3: 1158487688
       Data4: 611124196
     Path: event:/UI/Button
-  <Magic>k__BackingField:
+  <PageTurn>k__BackingField:
     Guid:
-      Data1: 1886907563
-      Data2: 1244174128
-      Data3: -721978955
-      Data4: -912449660
-    Path: event:/Magic
+      Data1: -698205647
+      Data2: 1097049862
+      Data3: 365936264
+      Data4: 148711773
+    Path: event:/UI/PageTurn
+  <JunoDiary>k__BackingField:
+    Guid:
+      Data1: 224483608
+      Data2: 1295007816
+      Data3: 1138096292
+      Data4: 802828334
+    Path: event:/UI/Juno_Book

@@ -11,8 +11,24 @@ public class InterfaceSFX : MonoBehaviour
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.MenuClosed, this.transform.position);
     }
+
+    public void PlayMenu(int PauseMenu)
+    {
+        //FMODEvents(script attaché à AudioManager).instance(créer une instance).NomEvent, Position))
+        AudioManager.instance.PlayOneShotParameter(FMODEvents.instance.Menu, this.transform.position, "PauseMenu", PauseMenu);
+    }
     public void PlayButton()
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.Button, this.transform.position);
+    }
+
+    public void PlayPageTurn()
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.PageTurn, this.transform.position);
+    } 
+    
+    public void PlayJunoDiary()
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.JunoDiary, this.transform.position);
     }
 }
