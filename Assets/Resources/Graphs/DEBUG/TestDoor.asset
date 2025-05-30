@@ -15,21 +15,8 @@ MonoBehaviour:
   graph: {fileID: 11400000}
   position: {x: -88, y: -104}
   ports:
-    keys:
-    - entry
-    values:
-    - _fieldName: entry
-      _node: {fileID: -3608248453532646268}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: exit
-        node: {fileID: 9040157939177857948}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
+    keys: []
+    values: []
   entry: 0
   mapID: PlayerTest
 --- !u!114 &11400000
@@ -47,6 +34,7 @@ MonoBehaviour:
   nodes:
   - {fileID: 9040157939177857948}
   - {fileID: -3608248453532646268}
+  parrallelCutscene: 0
 --- !u!114 &9040157939177857948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,10 +57,7 @@ MonoBehaviour:
       _node: {fileID: 9040157939177857948}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: entry
-        node: {fileID: -3608248453532646268}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
