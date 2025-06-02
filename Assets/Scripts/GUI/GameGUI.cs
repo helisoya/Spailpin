@@ -15,6 +15,9 @@ public class GameGUI : MonoBehaviour
 
     [Header("Interaction Icon")]
     [SerializeField] private RectTransform interactionIcon;
+    [SerializeField] private RectTransform canvasRoot;
+    [SerializeField] private float sizeMax = 40f;
+    [SerializeField] private float sizeMin = 20f;
 
 
     [Header("Dialog")]
@@ -78,7 +81,18 @@ public class GameGUI : MonoBehaviour
     public void ShowInteractionIcon(Vector3 worldPosition)
     {
         interactionIcon.gameObject.SetActive(true);
-        interactionIcon.anchoredPosition = Camera.main.WorldToScreenPoint(worldPosition, Camera.main.stereoActiveEye);
+
+        Vector2 ViewportPosition = Camera.main.WorldToViewportPoint(worldPosition);
+        Vector2 WorldObjectScreenPosition = new Vector2(
+        ((ViewportPosition.x * canvasRoot.sizeDelta.x) - (canvasRoot.sizeDelta.x * 0.5f)),
+        ((ViewportPosition.y * canvasRoot.sizeDelta.y) - (canvasRoot.sizeDelta.y * 0.5f)));
+
+        interactionIcon.anchoredPosition = WorldObjectScreenPosition;
+
+
+        float distanceToCamera = Mathf.Clamp(Vector3.Distance(worldPosition, Camera.main.transform.position),5f,20f);
+        float size = sizeMax - (sizeMax - sizeMin) * ((distanceToCamera - 5f) / 15f) ;
+        interactionIcon.sizeDelta = new Vector2(size, size);
     }
 
     /// <summary>
