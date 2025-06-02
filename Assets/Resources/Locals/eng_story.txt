@@ -19,6 +19,16 @@ StoreRoom_Door_Skip_1 = I'm sure I can make my way back to the hall.
 
 
 
+choice_drop = Drop the journal
+choice_keep = Keep the journal
+choice_back = Keep exploring the house
+
+end_drop_1 = Drop the journal ending
+end_keep_1 = Keep the journal ending
+
+
+
+
 Caribou_Start_1 = Hello Pinpin.
 Caribou_Start_2 = It is I, the Great Caribou. God of everything.
 Caribou_Start_3 = Thou has summoned me to this realm. I thank you, mortal.

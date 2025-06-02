@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputs: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   fonts:
-  - {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 11400000, guid: 53e1437a2e83ff34ca9a96960f62635c, type: 2}
   - {fileID: 11400000, guid: 7e35ce825b2e0c9408fd8fa5c75b56c2, type: 2}
   items: {fileID: 11400000, guid: feba4cb2a21a6704ea551cdf8d3ebb41, type: 2}
   volume: {fileID: 4472380729052812897}

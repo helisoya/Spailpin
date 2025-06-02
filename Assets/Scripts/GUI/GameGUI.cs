@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 /// <summary>
@@ -43,6 +44,13 @@ public class GameGUI : MonoBehaviour
     [SerializeField] private float hintSpeed = 5;
     private float hintMovementAlphaTarget;
 
+    [Header("Choice")]
+    [SerializeField] private GameObject choiceRoot;
+    [SerializeField] private Transform choiceButtonsRoot;
+    [SerializeField] private ChoiceButton choiceButtonPrefab;
+    public int selectedChoiceIndex { get; private set; }
+
+
     public bool showingDialog { get { return routineDialog != null; } }
     public bool isPauseOpen { get { return pauseMenu.isOpen; } }
     public static GameGUI instance;
@@ -75,6 +83,36 @@ public class GameGUI : MonoBehaviour
     }
 
     /// <summary>
+    /// Opens the choice menu
+    /// </summary>
+    /// <param name="keys">The choice menu</param>
+    public void OpenChoiceMenu(string[] keys)
+    {
+        selectedChoiceIndex = -1;
+
+        foreach (Transform child in choiceButtonsRoot) Destroy(child.gameObject);
+        for (int i = 0; i < keys.Length; i++)
+        {
+            ChoiceButton button = Instantiate(choiceButtonPrefab, choiceButtonsRoot);
+            button.Init(i, keys[i]);
+            if(i == 0) EventSystem.current.SetSelectedGameObject(button.gameObject);
+        }
+
+        choiceRoot.SetActive(true);
+    }
+
+    /// <summary>
+    /// Selects a choice
+    /// </summary>
+    /// <param name="index">The choice's index</param>
+    public void SelectChoice(int index)
+    {
+        selectedChoiceIndex = index;
+        choiceRoot.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    /// <summary>
     /// Shows the interaction icon
     /// </summary>
     /// <param name="worldPosition">The target's world position</param>
@@ -90,8 +128,8 @@ public class GameGUI : MonoBehaviour
         interactionIcon.anchoredPosition = WorldObjectScreenPosition;
 
 
-        float distanceToCamera = Mathf.Clamp(Vector3.Distance(worldPosition, Camera.main.transform.position),5f,20f);
-        float size = sizeMax - (sizeMax - sizeMin) * ((distanceToCamera - 5f) / 15f) ;
+        float distanceToCamera = Mathf.Clamp(Vector3.Distance(worldPosition, Camera.main.transform.position), 5f, 20f);
+        float size = sizeMax - (sizeMax - sizeMin) * ((distanceToCamera - 5f) / 15f);
         interactionIcon.sizeDelta = new Vector2(size, size);
     }
 

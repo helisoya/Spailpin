@@ -38,6 +38,8 @@ options_small = Small
 options_medium = Medium
 options_big = Big
 
+choice_title = What do you do ?
+
 
 hint_move = Move
 hint_hintSystem = Hold for a hint
