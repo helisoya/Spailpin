@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
     [Header("Events")]
     public UnityEvent<string> onDeviceChange;
     public UnityEvent<bool> onCollision;
+    public UnityEvent<Transform> onChangeTransform;
 
     [Header("Very Important Stuff (DO NOT TOUCH)")]
     [SerializeField] private OurLordAndSaviourTheGreatCaribou ourGloriousSaviour;
@@ -50,6 +51,11 @@ public class Player : MonoBehaviour
         if(activateShaking) onCollision.AddListener(OnCollision);
         if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
         currentShakingLength = 0;
+    }
+
+    private void Start()
+    {
+        onChangeTransform.Invoke(controller.transform);
     }
 
     void Oestroy()

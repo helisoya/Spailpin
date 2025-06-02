@@ -21,4 +21,10 @@ public class FoleyCharacter : MonoBehaviour
         if (currentParameter == -1) currentParameter = 0;
         
     }
+
+
+    public void ChangeTransform(Transform transform)
+    {
+        AudioManager.instance.ChangeTransform(transform);
+    }
 }
