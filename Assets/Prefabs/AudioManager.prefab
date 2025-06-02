@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a328460dd2a264599f7614eddac72c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FMODEvents: {fileID: 3637679836933878499}
 --- !u!1 &6844287207061862447
 GameObject:
   m_ObjectHideFlags: 0

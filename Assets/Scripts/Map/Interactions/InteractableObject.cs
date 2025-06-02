@@ -20,6 +20,7 @@ public class InteractableObject : MonoBehaviour
     public void SetActive(bool value)
     {
         playerNear = value;
+
         interactionObject.SetActive(value);
     }
 

@@ -10,7 +10,7 @@ using UnityEngine.UIElements;
 
 public class AudioManager : MonoBehaviour
 {
-
+    [SerializeField] private FMODEvents FMODEvents;
     private List<EventInstance> eventInstances;
 
     private List<StudioEventEmitter> eventEmitters;
@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
 
         eventEmitters = new List<StudioEventEmitter>();
 
-        InitializeAmbience(FMODEvents.instance.Ambience);
+        InitializeAmbience(FMODEvents.Ambience);
     }
 
     private void Start()
