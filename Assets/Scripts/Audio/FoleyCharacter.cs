@@ -5,6 +5,7 @@ public class FoleyCharacter : MonoBehaviour
 {
     [SerializeField] private EventReference FS_System;
     [SerializeField] private EventReference Character;
+    [SerializeField] private EventReference Bonk;
     private int currentParameter = 0;
 
     private void JunoFoley()
@@ -12,6 +13,11 @@ public class FoleyCharacter : MonoBehaviour
         AudioManager.instance.PlayOneShotParameter(FS_System, this.transform.position, "Footstep", currentParameter);
         AudioManager.instance.PlayOneShot(Character, this.transform.position);
 
+    }
+
+    public void LeMur()
+    {
+        AudioManager.instance.PlayOneShot(Bonk, this.transform.position);
     }
 
 

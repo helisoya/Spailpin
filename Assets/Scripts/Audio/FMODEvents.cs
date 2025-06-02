@@ -17,6 +17,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference CaribouInteract { get; private set; }
     [field: SerializeField] public EventReference PuzzleSuccess { get; private set; }
     [field: SerializeField] public EventReference PuzzleFailed { get; private set; }
+    [field: SerializeField] public EventReference Bonk { get; private set; }
 
     [SerializeField] public SerializedDictionary<string, EventReference> SFX;
 
