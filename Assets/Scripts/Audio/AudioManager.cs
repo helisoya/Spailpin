@@ -10,7 +10,7 @@ using UnityEngine.UIElements;
 
 public class AudioManager : MonoBehaviour
 {
-
+    [SerializeField] private FMODEvents FMODEvents;
     private List<EventInstance> eventInstances;
 
     private List<StudioEventEmitter> eventEmitters;
@@ -41,22 +41,30 @@ public class AudioManager : MonoBehaviour
         print(eventInstances);
 
         eventEmitters = new List<StudioEventEmitter>();
+
+        InitializeAmbience(FMODEvents.Ambience);
     }
 
     private void Start()
     {
-        InitializeAmbience(FMODEvents.instance.Ambience);
+        
         //InitializeMusic(FMODEvents.instance.MusicMenu);
     }
 
-    private void InitializeAmbience(EventReference ambienceEventReference)
+    public void InitializeAmbience(EventReference ambienceEventReference)
     {
         ambienceEventInstance = CreateInstance(ambienceEventReference);
+        ambienceEventInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform));
         ambienceEventInstance.start();
     }
     public void SetAmbience(float parameterValue, string parameterName = "AmbienceChange")
     {
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);
+    }
+
+    public void ChangeTransform(Transform transform)
+    {
+        ambienceEventInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform));
     }
 
     private void InitializeMusic(EventReference musicEventReference)

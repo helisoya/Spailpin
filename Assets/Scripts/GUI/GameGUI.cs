@@ -13,6 +13,10 @@ public class GameGUI : MonoBehaviour
     [Header("Pause")]
     [SerializeField] private PauseMenu pauseMenu;
 
+    [Header("Interaction Icon")]
+    [SerializeField] private RectTransform interactionIcon;
+
+
     [Header("Dialog")]
     [SerializeField] private GameObject dialogRoot;
     [SerializeField] private Image dialogBg;
@@ -68,10 +72,29 @@ public class GameGUI : MonoBehaviour
     }
 
     /// <summary>
+    /// Shows the interaction icon
+    /// </summary>
+    /// <param name="worldPosition">The target's world position</param>
+    public void ShowInteractionIcon(Vector3 worldPosition)
+    {
+        interactionIcon.gameObject.SetActive(true);
+        interactionIcon.anchoredPosition = Camera.main.WorldToScreenPoint(worldPosition, Camera.main.stereoActiveEye);
+    }
+
+    /// <summary>
+    /// Hides the interaction icon
+    /// </summary>
+    public void HideInteractionIcon()
+    {
+        interactionIcon.gameObject.SetActive(false);
+    }
+
+    /// <summary>
     /// Sets the dialog background's alpha
     /// </summary>
     /// <param name="alpha">The alpha</param>
-    public void SetDialogBackgroundAlpha(float alpha){
+    public void SetDialogBackgroundAlpha(float alpha)
+    {
         Color newColor = dialogBg.color;
         newColor.a = alpha;
         dialogBg.color = newColor;
