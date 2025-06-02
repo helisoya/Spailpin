@@ -103,7 +103,7 @@ public class PuzzleTutorial : Puzzle
         {
             lastAction = Time.time;
 
-            currentObjIdx = (currentObjIdx + moveDirection + 3) % 3;
+            currentObjIdx = (currentObjIdx + moveDirection + selectionObjs.Length) % selectionObjs.Length;
             RefreshVisualSelection();
         }
     }

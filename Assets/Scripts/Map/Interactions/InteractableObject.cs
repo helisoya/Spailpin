@@ -11,6 +11,7 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] protected Transform interactionObject;
     [SerializeField] protected DialogGraph linkedGraph;
     [SerializeField] protected UnityEvent onInterract;
+    private bool playerIsInside = false;
 
     /// <summary>
     /// Changes if the interaction is "active" or not
@@ -18,6 +19,7 @@ public class InteractableObject : MonoBehaviour
     /// <param name="value">True if active</param>
     public void SetActive(bool value)
     {
+        playerIsInside = value;
         if (value) GameGUI.instance.ShowInteractionIcon(interactionObject.position);
         else GameGUI.instance.HideInteractionIcon();
     }
@@ -44,6 +46,7 @@ public class InteractableObject : MonoBehaviour
 
     void Update()
     {
+        if(playerIsInside) GameGUI.instance.ShowInteractionIcon(interactionObject.position);
         OnUpdate();
     }
 
