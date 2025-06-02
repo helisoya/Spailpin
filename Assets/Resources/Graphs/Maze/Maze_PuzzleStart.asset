@@ -22,10 +22,7 @@ MonoBehaviour:
       _node: {fileID: -165025555650158891}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: entry
-        node: {fileID: 3027444701508755061}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
@@ -63,21 +60,8 @@ MonoBehaviour:
   position: {x: -424, y: 120}
   ports:
     keys:
-    - entry
     - exit
     values:
-    - _fieldName: entry
-      _node: {fileID: 3027444701508755061}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: exit
-        node: {fileID: -165025555650158891}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: exit
       _node: {fileID: 3027444701508755061}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
