@@ -283,6 +283,65 @@ public class Settings
         return data.textOpacity;
     }
 
+    /// <summary>
+    /// Changes the outline color
+    /// </summary>
+    /// <param name="color">The outline color</param>
+    public void SetOutlineColor(Color color)
+    {
+        data.outlineColor = color;
+        Save();
+    }
+
+    /// <summary>
+    /// Gets the outline's color
+    /// </summary>
+    /// <returns>The outline's color</returns>
+    public Color GetOutlineColor()
+    {
+        return data.outlineColor;
+    }
+
+    /// <summary>
+    /// Changes if the player outline is active or not
+    /// </summary>
+    /// <param name="active">True if active</param>
+    public void SetPlayerOutlineActive(bool active)
+    {
+        data.outlinePlayer = active;
+        Save();
+    }
+
+    /// <summary>
+    /// Gets if the player outline is active or not
+    /// </summary>
+    /// <returns>True if the player outline is active</returns>
+    public bool GetPlayerOutlineActive()
+    {
+        return data.outlinePlayer;
+    }
+
+    /// <summary>
+    /// Changes if the objects outline is active or not
+    /// </summary>
+    /// <param name="active">True if active</param>
+    public void SetObjectOutlineActive(bool active)
+    {
+        data.outlineObjects = active;
+        Save();
+    }
+
+    /// <summary>
+    /// Gets if the objects outline is active or not
+    /// </summary>
+    /// <returns>True if the objects outline is active</returns>
+    public bool GetObjectOutlineActive()
+    {
+        return data.outlineObjects;
+    }
+
+
+
 
     /// <summary>
     /// Loads the settings from disk
@@ -342,6 +401,8 @@ public class Settings
                 textSize = 1,
                 textSpacing = 0,
                 textOpacity = 0.8f,
+                outlinePlayer = false,
+                outlineColor = Color.white
             };
             Save();
         }
@@ -375,6 +436,10 @@ public class SettingsData
     public int textSize;
     public int textSpacing;
     public float textOpacity;
+
+    public bool outlinePlayer;
+    public bool outlineObjects;
+    public Color outlineColor;
 
     public SettingsData()
     {

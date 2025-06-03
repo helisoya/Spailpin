@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopPlayerOnInterract: 1
-  interactionObject: {fileID: 775285010009032960}
+  interactionObject: {fileID: 4777462679440801886}
   linkedGraph: {fileID: 11400000, guid: 6ed22eeb3674c9c429229015d0e5d95a, type: 2}
   onInterract:
     m_PersistentCalls:
