@@ -56,6 +56,7 @@ public class AccessPage : PausePage
     /// <param name="value">True if the outline is active</param>
     public void Event_TogglePlayerOutline(bool value)
     {
+        menu.InvokeOnButtonPress();
         Settings.instance.SetPlayerOutlineActive(value);
     }
 
@@ -65,6 +66,7 @@ public class AccessPage : PausePage
     /// <param name="value">True if the outline is active</param>
     public void Event_ToggleObjectOutline(bool value)
     {
+        menu.InvokeOnButtonPress();
         Settings.instance.SetObjectOutlineActive(value);
     }
 
@@ -74,6 +76,7 @@ public class AccessPage : PausePage
     /// <param name="value">The color value</param>
     public void Event_SetRedSlider(float value)
     {
+        menu.InvokeOnSliderChange();
         outlineColor.r = value;
         Settings.instance.SetOutlineColor(outlineColor);
     }
@@ -84,6 +87,7 @@ public class AccessPage : PausePage
     /// <param name="value">The color value</param>
     public void Event_SetGreenSlider(float value)
     {
+        menu.InvokeOnSliderChange();
         outlineColor.g = value;
         Settings.instance.SetOutlineColor(outlineColor);
     }
@@ -94,6 +98,7 @@ public class AccessPage : PausePage
     /// <param name="value">The color value</param>
     public void Event_SetBlueSlider(float value)
     {
+        menu.InvokeOnSliderChange();
         outlineColor.b = value;
         Settings.instance.SetOutlineColor(outlineColor);
     }
