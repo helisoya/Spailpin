@@ -4694,6 +4694,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 616722207570795646, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 637018562320393997, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4735,6 +4739,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1563742552104185932, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563742552104185932, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -4752,6 +4760,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1817819897098629358, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877403863752932432, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3916981257017974196, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
@@ -4795,7 +4807,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5803413541180447190, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803413541180447190, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803413541180447190, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5854363074226820203, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
@@ -7619,17 +7639,9 @@ PrefabInstance:
       propertyPath: 'texts.Array.data[3]'
       value: 
       objectReference: {fileID: 177862700}
-    - target: {fileID: 3103864446212449477, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4285126301532180733, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
       propertyPath: m_Name
       value: BedRoomPuzzleData
-      objectReference: {fileID: 0}
-    - target: {fileID: 4584760982075925955, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8533522814445332132, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7670,10 +7682,6 @@ PrefabInstance:
     - target: {fileID: 8533522814445332132, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8937433225475995505, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

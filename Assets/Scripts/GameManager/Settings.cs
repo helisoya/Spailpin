@@ -155,29 +155,49 @@ public class Settings
     }
 
     /// <summary>
-    /// Save the current typo index
+    /// Save the current primary typo index
     /// </summary>
     /// <param name="newIdx">The new typo index</param>
-    public void SetCurrentTypoIndex(int newIdx)
+    public void SetCurrentTypoIndexPrimary(int newIdx)
     {
-        data.currentTypoIndex = newIdx;
+        data.currentTypoIndexPrimary = newIdx;
         Save();
     }
 
     /// <summary>
-    /// Get the current typo index
+    /// Get the current primary typo index
     /// </summary>
     /// <returns>The current typo index</returns>
-    public int GetCurrentTypoIndex()
+    public int GetCurrentTypoIndexPrimary()
     {
-        return data.currentTypoIndex;
+        return data.currentTypoIndexPrimary;
+    }
+    
+    /// <summary>
+    /// Save the current secondary typo index
+    /// </summary>
+    /// <param name="newIdx">The new typo index</param>
+    public void SetCurrentTypoIndexSecondary(int newIdx)
+    {
+        data.currentTypoIndexSecondary = newIdx;
+        Save();
+    }
+
+    /// <summary>
+    /// Get the current secondary typo index
+    /// </summary>
+    /// <returns>The current typo index</returns>
+    public int GetCurrentTypoIndexSecondary()
+    {
+        return data.currentTypoIndexSecondary;
     }
 
     /// <summary>
     /// Gets the current gamma
     /// </summary>
     /// <returns>The current gama</returns>
-    public float GetCurrentGamma(){
+    public float GetCurrentGamma()
+    {
         return data.gamma;
     }
 
@@ -282,7 +302,8 @@ public class Settings
         Screen.fullScreen = data.fullscreen;
         GameManager.instance.GetInputs().LoadBindingOverridesFromJson(data.remaping);
         GameManager.instance.UpdateVolume();
-        Locals.ChangeFont(data.currentTypoIndex);
+        Locals.ChangeFontPrimary(data.currentTypoIndexPrimary);
+        Locals.ChangeFontPrimary(data.currentTypoIndexSecondary);
     }
 
     /// <summary>
@@ -316,7 +337,8 @@ public class Settings
                 volumeSfx = 1,
                 gamma = 0,
                 bloom = true,
-                currentTypoIndex = 0,
+                currentTypoIndexPrimary = 0,
+                currentTypoIndexSecondary = 1,
                 textSize = 1,
                 textSpacing = 0,
                 textOpacity = 0.8f,
@@ -341,7 +363,8 @@ public class SettingsData
 
     public string remaping;
     public int currentGamepadProfileIdx;
-    public int currentTypoIndex;
+    public int currentTypoIndexPrimary;
+    public int currentTypoIndexSecondary;
     public float volumeMaster;
     public float volumeSfx;
     public float volumeMusic;

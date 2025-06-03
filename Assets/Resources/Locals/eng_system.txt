@@ -28,10 +28,13 @@ options_controls_rebind_Move = Move
 options_controls_rebind_Interact = Interact
 options_controls_rebind_Pause = Pause
 options_controls_rebind_Previous = Previous
+options_controls_rebind_Hint = Hints
 options_controls_rebind_Error = !Error!
 
 
 options_access = Accessibility
+options_access_typo_primary = Menus font
+options_access_typo_secondary = Dialogs font
 
 
 options_small = Small

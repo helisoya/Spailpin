@@ -11,7 +11,8 @@ public class Locals
 {
     private static Locals self;
     private string currentLanguage;
-    private int currentFontIdx;
+    private int currentFontIdxPrimary;
+    private int currentFontIdxSecondary;
 
     public static string current
     {
@@ -21,16 +22,23 @@ public class Locals
         }
     }
 
-    public static int fontIndex {
+    public static int fontIndexPrimary {
         get{
-            return self.currentFontIdx;
+            return self.currentFontIdxPrimary;
+        }
+    }
+
+    public static int fontIndexSecondary {
+        get{
+            return self.currentFontIdxSecondary;
         }
     }
 
     private Dictionary<string, string> locals;
 
     public static UnityEvent onChangeLocal = new UnityEvent();
-    public static UnityEvent<TMP_FontAsset> onChangeFont = new UnityEvent<TMP_FontAsset>();
+    public static UnityEvent<TMP_FontAsset> onChangeFontPrimary = new UnityEvent<TMP_FontAsset>();
+    public static UnityEvent<TMP_FontAsset> onChangeFontSecondary = new UnityEvent<TMP_FontAsset>();
 
     /// <summary>
     /// Initiliazes the Locals
@@ -44,7 +52,8 @@ public class Locals
     {
         self = this;
         locals = new Dictionary<string, string>();
-        currentFontIdx = 0;
+        currentFontIdxPrimary = 0;
+        currentFontIdxSecondary = 1;
         ChangeLanguage("eng");
 
     }
@@ -65,14 +74,25 @@ public class Locals
     }
     
     /// <summary>
-    /// Changes the current font
+    /// Changes the current primary font
     /// </summary>
     /// <param name="fontIndex">The new font</param>
-    public static void ChangeFont(int fontIndex){
+    public static void ChangeFontPrimary(int fontIndex){
         if(Locals.self == null) Init();
 
-        self.currentFontIdx = fontIndex;
-        onChangeFont.Invoke(GameManager.instance.GetFonts()[self.currentFontIdx]);
+        self.currentFontIdxPrimary = fontIndex;
+        onChangeFontPrimary.Invoke(GameManager.instance.GetFonts()[fontIndex]);
+    }
+    
+    /// <summary>
+    /// Changes the current secondary font
+    /// </summary>
+    /// <param name="fontIndex">The new font</param>
+    public static void ChangeFontSecondary(int fontIndex){
+        if(Locals.self == null) Init();
+
+        self.currentFontIdxSecondary = fontIndex;
+        onChangeFontSecondary.Invoke(GameManager.instance.GetFonts()[fontIndex]);
     }
 
     /// <summary>
@@ -82,7 +102,7 @@ public class Locals
     /// <returns>The localized string</returns>
     public static string GetLocal(string key)
     {
-        if(Locals.self == null) Init();
+        if (Locals.self == null) Init();
         if (key != null && self.locals.ContainsKey(key)) return self.locals[key];
         return key;
     }

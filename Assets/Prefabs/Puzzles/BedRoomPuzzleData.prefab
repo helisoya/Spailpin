@@ -189,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 5102386875355568978}
   localKey: hint_puzzle1_move
+  usePrimaryFont: 1
 --- !u!1 &759987361042568147
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 5189567594349742135}
   localKey: hint_puzzle1_quit
+  usePrimaryFont: 1
 --- !u!1 &1178141990500512941
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 3059798109270368955}
   localKey: hint_hintSystem_1
+  usePrimaryFont: 1
 --- !u!1 &1982485083216542516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 2225930237365710513}
   localKey: hint_hintSystem
+  usePrimaryFont: 1
 --- !u!1 &2745740435033019226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,6 +1673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 2994776453180839002}
   localKey: hint_puzzle1_select
+  usePrimaryFont: 1
 --- !u!1 &3967604605444566376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,6 +1902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 5753847043993644013}
   localKey: hint_hintSystem_confirm
+  usePrimaryFont: 1
 --- !u!1 &4261246695680975929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,7 +2068,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   endGraph: {fileID: 11400000, guid: 198f28bed95755745987464e01629c23, type: 2}
-  sequence: 4a00410044004500
+  sequence: 4d004d004c005600
   possibilities: 4100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a00
   selectionObjs:
   - {fileID: 4261246695680975929}
@@ -2429,6 +2435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 6398918261227004352}
   localKey: hint_hintSystem_2
+  usePrimaryFont: 1
 --- !u!1 &6014057975759410083
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,6 +2674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 52744044855728969}
   localKey: hint_hintSystem_back
+  usePrimaryFont: 1
 --- !u!1 &6232999820610391471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,6 +2940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 6018702723602931453}
   localKey: hint_hintSystem_0
+  usePrimaryFont: 1
 --- !u!1 &7091881315009436122
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,7 +3137,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 25859669501178485}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: OpenHintVisual
         m_Mode: 3
@@ -3383,6 +3392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 620581997852679697}
   localKey: 
+  usePrimaryFont: 1
 --- !u!1 &7848154698628368071
 GameObject:
   m_ObjectHideFlags: 0
@@ -3541,7 +3551,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 25859669501178485}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: OpenHintVisual
         m_Mode: 3
@@ -3711,7 +3721,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 25859669501178485}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: OpenHintVisual
         m_Mode: 3
@@ -4003,3 +4013,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 5267103757758192631}
   localKey: hint_hintSystem_back
+  usePrimaryFont: 1
