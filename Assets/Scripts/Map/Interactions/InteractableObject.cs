@@ -8,10 +8,10 @@ public class InteractableObject : MonoBehaviour
 {
     [Header("Interaction")]
     public bool stopPlayerOnInterract = true;
-    [SerializeField] protected GameObject interactionObject;
+    [SerializeField] protected Transform interactionObject;
     [SerializeField] protected DialogGraph linkedGraph;
     [SerializeField] protected UnityEvent onInterract;
-    protected bool playerNear;
+    private bool playerIsInside = false;
 
     /// <summary>
     /// Changes if the interaction is "active" or not
@@ -19,9 +19,9 @@ public class InteractableObject : MonoBehaviour
     /// <param name="value">True if active</param>
     public void SetActive(bool value)
     {
-        playerNear = value;
-
-        interactionObject.SetActive(value);
+        playerIsInside = value;
+        if (value) GameGUI.instance.ShowInteractionIcon(interactionObject.position);
+        else GameGUI.instance.HideInteractionIcon();
     }
 
     /// <summary>
@@ -46,11 +46,7 @@ public class InteractableObject : MonoBehaviour
 
     void Update()
     {
-        if (playerNear)
-        {
-            interactionObject.transform.LookAt(Camera.main.transform);
-        }
-
+        if(playerIsInside) GameGUI.instance.ShowInteractionIcon(interactionObject.position);
         OnUpdate();
     }
 

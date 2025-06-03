@@ -11,9 +11,12 @@ public class AutomaticIcon : MonoBehaviour
     [SerializeField] private InputActionReference action;
     [SerializeField] private int indexKeyboard;
     [SerializeField] private int indexGamepad;
+    [SerializeField] private bool isOnMainMenu = false;
+
     void Start()
     {
-        Player.instance.onDeviceChange.AddListener(OnDeviceChange);
+        if (isOnMainMenu) MainMenuGUI.instance.onDeviceChange.AddListener(OnDeviceChange);
+        else Player.instance.onDeviceChange.AddListener(OnDeviceChange);
         OnDeviceChange("Gamepad");
     }
 

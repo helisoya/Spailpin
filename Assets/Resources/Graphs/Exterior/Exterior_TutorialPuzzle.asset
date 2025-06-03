@@ -17,6 +17,7 @@ MonoBehaviour:
   ports:
     keys:
     - exit
+    - entry
     values:
     - _fieldName: exit
       _node: {fileID: -371579036983730318}
@@ -25,6 +26,18 @@ MonoBehaviour:
       connections: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: entry
+      _node: {fileID: -371579036983730318}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: checkTrue
+        node: {fileID: 6753046004308498555}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
@@ -52,7 +65,10 @@ MonoBehaviour:
       _node: {fileID: -165025555650158891}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: entry
+        node: {fileID: 6753046004308498555}
+        reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
@@ -105,7 +121,7 @@ MonoBehaviour:
         node: {fileID: -165025555650158891}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: checkTrue
@@ -124,7 +140,10 @@ MonoBehaviour:
       _node: {fileID: 6753046004308498555}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: entry
+        node: {fileID: 7482283495531822251}
+        reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
@@ -154,6 +173,7 @@ MonoBehaviour:
   ports:
     keys:
     - exit
+    - entry
     values:
     - _fieldName: exit
       _node: {fileID: 7482283495531822251}
@@ -162,6 +182,18 @@ MonoBehaviour:
       connections: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: entry
+      _node: {fileID: 7482283495531822251}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: checkFalse
+        node: {fileID: 6753046004308498555}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   entry: 0

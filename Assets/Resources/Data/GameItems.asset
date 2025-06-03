@@ -19,6 +19,10 @@ MonoBehaviour:
     value: 0
   - ID: puzzle2Done
     value: 0
+  - ID: puzzle3Done
+    value: 0
+  - ID: puzzle4Done
+    value: 0
   - ID: discoveredExteriorHouse
     value: 0
   - ID: discoveredHall

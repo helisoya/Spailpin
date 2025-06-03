@@ -85,24 +85,38 @@ public class GameManager : MonoBehaviour
     public SaveManager GetSaveManager(){
         return save;
     }
-
+    
     /// <summary>
-    /// Change the current scene
+    /// Resets the current save
     /// </summary>
-    /// <param name="newScene">The new scene</param>
-    public void ChangeScene(string newScene){
-        if(routineChangeScene != null) return;
-        routineChangeScene = StartCoroutine(Routine_ChangeScene(newScene));
+    public void ResetSave()
+    {
+        save = new SaveManager(items);
     }
 
     /// <summary>
     /// Change the current scene
     /// </summary>
     /// <param name="newScene">The new scene</param>
-    private IEnumerator Routine_ChangeScene(string newScene){
-        GameGUI.instance.FadeTo(1);
+    /// <param name="inMainMenu">True if in the main menu</param>
+    public void ChangeScene(string newScene, bool inMainMenu = false)
+    {
+        if (routineChangeScene != null) return;
+        routineChangeScene = StartCoroutine(Routine_ChangeScene(newScene,inMainMenu));
+    }
+
+    /// <summary>
+    /// Change the current scene
+    /// </summary>
+    /// <param name="newScene">The new scene</param>
+    /// <param name="inMainMenu">True if in the main menu</param>
+    private IEnumerator Routine_ChangeScene(string newScene, bool inMainMenu = false){
+        
+        if (inMainMenu) MainMenuGUI.instance.FadeTo(1);
+        else GameGUI.instance.FadeTo(1);
+
         yield return new WaitForEndOfFrame();
-        while(GameGUI.instance.fading){
+        while((!inMainMenu && GameGUI.instance.fading) || (inMainMenu && MainMenuGUI.instance.fading)){
             yield return new WaitForEndOfFrame();
         }
         

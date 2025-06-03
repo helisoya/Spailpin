@@ -319,7 +319,7 @@ public class Player : MonoBehaviour
     /// <param name="collision">The collision</param>
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall" && activateShaking)
         {
             onCollision.Invoke(true);
         }
@@ -331,7 +331,7 @@ public class Player : MonoBehaviour
     /// <param name="collision">The collision</param>
     void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall" && activateShaking)
         {
             onCollision.Invoke(false);
         }
