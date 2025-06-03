@@ -66,3 +66,10 @@ hint_puzzle2_restart = Restart
 hint_puzzle2_0 = Hint 1
 hint_puzzle2_1 = Hint 2
 hint_puzzle2_2 = Hint 3
+
+
+menu_newGame = New Game
+menu_continue = Continue
+menu_options = Options
+menu_quitGame = Quit Game
+menu_back = Back

@@ -63,7 +63,8 @@ public class SaveManager
     /// <summary>
     /// Loads the game
     /// </summary>
-    public void LoadGame(){
+    /// <param name="inMainMenu">True if in the main menu</param>
+    public void LoadGame(bool inMainMenu = false){
         if(saveFileExists){
             saveFile = FileManager.LoadJSON<SaveFile>(saveFilePath);
 
@@ -81,7 +82,7 @@ public class SaveManager
             }
 
             GameManager.instance.loadingSave = true;
-            GameManager.instance.ChangeScene(saveFile.mapName);
+            GameManager.instance.ChangeScene(saveFile.mapName, inMainMenu);
         }
     }
 }
