@@ -248,7 +248,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9059
+  m_VersionIndex: 9089
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9062
+  m_VersionIndex: 9092
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1186,6 +1186,43 @@ Transform:
   - {fileID: 6560653986515885954}
   m_Father: {fileID: 2194643641062729533}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5119945319260834562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021749394782567635}
+  m_Layer: 0
+  m_Name: -----Puzzle-----
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1021749394782567635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5119945319260834562}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.65, y: 0, z: -4.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 534208931446720054}
+  - {fileID: 9134731086350698023}
+  - {fileID: 5957383565937820997}
+  - {fileID: 8647881029624902076}
+  - {fileID: 6037204650439074682}
+  - {fileID: 972877244019698262}
+  m_Father: {fileID: 2194643641062729533}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5260543391616482191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,7 +1471,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9059
+  m_VersionIndex: 9089
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1631,6 +1668,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1021749394782567635}
   - {fileID: 780988610686049192}
   - {fileID: 810958822706221679}
   - {fileID: 6889867300189242387}
@@ -1885,7 +1923,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9062
+  m_VersionIndex: 9092
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1988,6 +2026,68 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.1698027, y: 0.0816011, z: 13.342576}
   m_Center: {x: 0.39301014, y: 0, z: 1.7233157}
+--- !u!1001 &25455487752799173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1021749394782567635}
+    m_Modifications:
+    - target: {fileID: 2661381604437883968, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_Name
+      value: GreenHouse_Prefab_Puzzle_Wall_Door_Button_Yellow_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710707
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+--- !u!4 &5957383565937820997 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5978123248316860032, guid: 140cd41e73677a848b605c1c8e8ab9af, type: 3}
+  m_PrefabInstance: {fileID: 25455487752799173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &49447851584445905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3031,6 +3131,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
   m_PrefabInstance: {fileID: 775720047821022472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &776027449560783087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1021749394782567635}
+    m_Modifications:
+    - target: {fileID: 3282694743472881971, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_Name
+      value: GreenHouse_Prefab_Puzzle_Wall_Door_Locker_Closed_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710707
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+--- !u!4 &9134731086350698023 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8358704397099933384, guid: ddeaefa6d596c6945bbb4360296cca31, type: 3}
+  m_PrefabInstance: {fileID: 776027449560783087}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &920228506328709936
 PrefabInstance:
@@ -5265,6 +5427,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2479270297068027976, guid: bc68767369808294b8c0dc7d24927243, type: 3}
   m_PrefabInstance: {fileID: 2608022243777548661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2636339680119001275
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1021749394782567635}
+    m_Modifications:
+    - target: {fileID: 1742055049687848057, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_Name
+      value: GreenHouse_Prefab_Puzzle_Wall_Door_Button_Red_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710707
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+--- !u!4 &8647881029624902076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6671336291405340935, guid: bfbfa53de7612e946817bc0c0c3cc715, type: 3}
+  m_PrefabInstance: {fileID: 2636339680119001275}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2643591645764679839
 PrefabInstance:
@@ -7558,6 +7782,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3425858806808095457, guid: 18751f9126072de44b722eda92c781ef, type: 3}
   m_PrefabInstance: {fileID: 4492952078640415512}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4509191319972628117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1021749394782567635}
+    m_Modifications:
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710707
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553357528924011764, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+      propertyPath: m_Name
+      value: GreenHouse_Prefab_Puzzle_Wall_Door_Locker_Open_1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+--- !u!4 &534208931446720054 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4177715016201879715, guid: 509e9e6c09cf61f4a99b4bbf4b03e986, type: 3}
+  m_PrefabInstance: {fileID: 4509191319972628117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4670310545310028343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8491,6 +8777,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
   m_PrefabInstance: {fileID: 5643729816921171167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5707964967901128941
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1021749394782567635}
+    m_Modifications:
+    - target: {fileID: 3951520963136954320, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_Name
+      value: GreenHouse_Prefab_Puzzle_Wall_Door_Button_Blue_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710707
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+--- !u!4 &972877244019698262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4807198253450003131, guid: 34c6b7f0b31611c4f89d20f413839580, type: 3}
+  m_PrefabInstance: {fileID: 5707964967901128941}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5747454918217249844
 PrefabInstance:
@@ -12119,6 +12467,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3425858806808095457, guid: 18751f9126072de44b722eda92c781ef, type: 3}
   m_PrefabInstance: {fileID: 8924143385878847849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8924687774512438454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1021749394782567635}
+    m_Modifications:
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710707
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295470451194796370, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+      propertyPath: m_Name
+      value: GreenHouse_Prefab_Puzzle_Wall_Door_Button_Purple_1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+--- !u!4 &6037204650439074682 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2887556791377608652, guid: 1d69cd1cde45c1b488b358830ae82df3, type: 3}
+  m_PrefabInstance: {fileID: 8924687774512438454}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9044297704570335121
 PrefabInstance:
