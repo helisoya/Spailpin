@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using XNode;
@@ -17,10 +18,13 @@ public class CutsceneManager : MonoBehaviour
     private bool userSubmit;
     private bool currentCutsceneIsParrallel = false;
 
+    private Dictionary<string, GameObject> objects;
+
     /// <summary>
     /// Sets the user submit tag
     /// </summary>
-    public void UserSubmit(){
+    public void UserSubmit()
+    {
         userSubmit = true;
     }
 
@@ -34,9 +38,33 @@ public class CutsceneManager : MonoBehaviour
         return value;
     }
 
+    /// <summary>
+    /// Registers an object
+    /// </summary>
+    /// <param name="id">Its id</param>
+    /// <param name="obj">The object</param>
+    public void RegisterObject(string id, GameObject obj)
+    {
+        objects.TryAdd(id, obj);
+    }
+
+    /// <summary>
+    /// Changes if an object is active or not
+    /// </summary>
+    /// <param name="id">Its id</param>
+    /// <param name="value">True if it should be active</param>
+    public void SetObjectActive(string id, bool value)
+    {
+        if (objects.TryGetValue(id, out GameObject obj))
+        {
+            obj.SetActive(value);
+        }
+    }
+
     void Awake()
     {
-        instance = this;   
+        instance = this;
+        objects = new Dictionary<string, GameObject>();
     }
 
     /// <summary>
@@ -67,6 +95,7 @@ public class CutsceneManager : MonoBehaviour
     /// <param name="graph">The graph</param>
     /// <returns>IEnumerator</returns>
     private IEnumerator Routine_ProcessingCutscene(DialogGraph graph){
+        yield return new WaitForEndOfFrame();
         currentCutsceneIsParrallel = graph.parrallelCutscene;
         SpailpinNode currentNode = graph.GetStartNode();
         int result = 0;

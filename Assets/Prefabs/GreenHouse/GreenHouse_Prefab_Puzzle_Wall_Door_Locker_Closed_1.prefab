@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8358704397099933384}
   - component: {fileID: 4411537998831126306}
   - component: {fileID: 3578602645310922118}
+  - component: {fileID: 4881100182474759069}
   m_Layer: 0
   m_Name: GreenHouse_Prefab_Puzzle_Wall_Door_Locker_Closed_1
   m_TagString: Untagged
@@ -86,3 +87,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4881100182474759069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3282694743472881971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d5811568944524ca214e72dc3dddf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
