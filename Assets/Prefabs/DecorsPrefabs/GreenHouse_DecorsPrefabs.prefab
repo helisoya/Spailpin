@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1145197832239799347
 Transform:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9092
+  m_VersionIndex: 9098
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -371,7 +371,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6528292279231384824
 Transform:
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9095
+  m_VersionIndex: 9101
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -717,7 +717,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &810958822706221679
 Transform:
@@ -1244,7 +1244,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &845976850762386396
 Transform:
@@ -1473,7 +1473,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9092
+  m_VersionIndex: 9098
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1696,7 +1696,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2478521450485297851
 Transform:
@@ -1925,7 +1925,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9095
+  m_VersionIndex: 9101
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2102,6 +2102,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (01)
       objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.81671304
@@ -2204,9 +2212,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2269,6 +2285,10 @@ PrefabInstance:
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoof_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2344,6 +2364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2402,9 +2426,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2472,6 +2504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2534,6 +2570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HousePillar_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6963602987531171341, guid: 1912cadb23b6e7c41834753c62b76b0b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2555,6 +2595,10 @@ PrefabInstance:
     - target: {fileID: 2064266089912340383, guid: 5b60314809452944f9d02d515cf313c2, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Clutter_Book_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064266089912340383, guid: 5b60314809452944f9d02d515cf313c2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2373211622906788807, guid: 5b60314809452944f9d02d515cf313c2, type: 3}
       propertyPath: m_LocalScale.x
@@ -2666,9 +2710,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2732,6 +2784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Furniture_WorkshopTable
       objectReference: {fileID: 0}
+    - target: {fileID: 5585725105901677363, guid: 63d853b1701e6a74cb2784d29abe58ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2793,6 +2849,10 @@ PrefabInstance:
     - target: {fileID: 3874509717349856864, guid: c2ea5c6e62445b3449ff2ed845fe1a22, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Ashrollas_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3874509717349856864, guid: c2ea5c6e62445b3449ff2ed845fe1a22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2856,6 +2916,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoof_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2918,6 +2982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoof_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2979,6 +3047,10 @@ PrefabInstance:
     - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3046,6 +3118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3071,6 +3147,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Terrain_DirtBit (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -3252,6 +3332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Furniture_Shelf_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7498703728172402720, guid: cbbffd9504c42c646a312370db059291, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3314,6 +3398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_ExteriorDoor_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5600085781563400976, guid: 3410a71b314d73c4180f77b63da26f06, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3335,6 +3423,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Terrain_DirtBit (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -3527,6 +3619,10 @@ PrefabInstance:
     - target: {fileID: 7512351726460218357, guid: ff37fccb8ddf7f04fbed40651b90f0c2, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Furniture_Shelf_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7512351726460218357, guid: ff37fccb8ddf7f04fbed40651b90f0c2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3750,6 +3846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3811,6 +3911,10 @@ PrefabInstance:
     - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3886,6 +3990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BedRoom_Prefab_Anomaly_AudreyRoot_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7293709693326736909, guid: 40b9dfe59f1adf44fbd1ff7e1e1337e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3948,6 +4056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3969,6 +4081,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -4084,6 +4204,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4158,6 +4282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4179,6 +4307,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Terrain_DirtBit (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -4290,6 +4422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4360,6 +4496,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4418,9 +4558,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4483,6 +4631,10 @@ PrefabInstance:
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoof_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4554,6 +4706,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4616,6 +4772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4674,9 +4834,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4699,6 +4867,10 @@ PrefabInstance:
     - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_LeavesPile
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6795862544554827514, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4806,6 +4978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4827,6 +5003,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (08)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -4942,6 +5126,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5004,6 +5192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Furniture_Shelf_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6457002670416895859, guid: df16b1cb18682e647a25930c644d4a0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5065,6 +5257,10 @@ PrefabInstance:
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoof_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5132,6 +5328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Peonies_Dead_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9205749131138374850, guid: 3904c4946eda4fa468c2ee1744c4e473, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5157,6 +5357,10 @@ PrefabInstance:
     - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Bush_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8485651943042295078, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -5284,6 +5488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5345,6 +5553,10 @@ PrefabInstance:
     - target: {fileID: 9092975417852924060, guid: 522fcf34b0bfae745b0d784289bbabfa, type: 3}
       propertyPath: m_Name
       value: LivingRoom_Prefab_Clutter_JustaBowl_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092975417852924060, guid: 522fcf34b0bfae745b0d784289bbabfa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5419,6 +5631,10 @@ PrefabInstance:
     - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5540,9 +5756,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5640,6 +5864,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (09)
       objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5705,6 +5937,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -5808,9 +6048,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5882,6 +6130,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5903,6 +6155,10 @@ PrefabInstance:
     - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_LeavesPile (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6795862544554827514, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5965,6 +6221,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -6076,6 +6340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6097,6 +6365,10 @@ PrefabInstance:
     - target: {fileID: 3727106356041314564, guid: 220d1c0eda1a9fd4e85bcdfeb1b30e99, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_Bucket (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727106356041314564, guid: 220d1c0eda1a9fd4e85bcdfeb1b30e99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4196025546423497914, guid: 220d1c0eda1a9fd4e85bcdfeb1b30e99, type: 3}
       propertyPath: m_LocalScale.x
@@ -6212,6 +6484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_WateringCan
       objectReference: {fileID: 0}
+    - target: {fileID: 4809923652056962578, guid: a76bc2a061a106347a82d7565011cc20, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6286,6 +6562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BedRoom_Prefab_Anomaly_Dirt_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8951683207700174949, guid: 38248cfc36cb98d458416857da40f2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6351,6 +6631,10 @@ PrefabInstance:
     - target: {fileID: 6457002670416895859, guid: df16b1cb18682e647a25930c644d4a0a, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Furniture_Shelf_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457002670416895859, guid: df16b1cb18682e647a25930c644d4a0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6422,6 +6706,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6443,6 +6731,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -6558,6 +6854,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6632,6 +6932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6653,6 +6957,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (06)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -6802,6 +7114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SpiderWeb
       objectReference: {fileID: 0}
+    - target: {fileID: 3130817848548144058, guid: d5ff77089245346468af1239028c974a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6549267151184837283, guid: d5ff77089245346468af1239028c974a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2652
@@ -6916,6 +7232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb
       objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6981,6 +7301,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7052,6 +7376,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7114,6 +7442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7135,6 +7467,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (02)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -7254,6 +7594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Zelies
       objectReference: {fileID: 0}
+    - target: {fileID: 5585583252293855425, guid: a1a82faadf1514c4b857b2a106961c62, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7316,6 +7660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoof_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7377,6 +7725,10 @@ PrefabInstance:
     - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoof_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7444,6 +7796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Vine_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8278803739357419662, guid: 597b01956b66ad9409cc8088b70f0c40, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7469,6 +7825,10 @@ PrefabInstance:
     - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Bush_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8485651943042295078, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -7584,6 +7944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_Cutter
       objectReference: {fileID: 0}
+    - target: {fileID: 2460247518051742914, guid: ccdf16d7f083fc548b1eb0c2f9ec934d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7646,6 +8010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoof_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7090356536675213057, guid: f7205563e9ab63f4a9b7778dc69199db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7667,6 +8035,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Terrain_DirtBit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.y
@@ -7774,6 +8146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_BranchTree
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7861,6 +8237,10 @@ PrefabInstance:
     - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Bush_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8485651943042295078, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -7976,6 +8356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8037,6 +8421,10 @@ PrefabInstance:
     - target: {fileID: 6457002670416895859, guid: df16b1cb18682e647a25930c644d4a0a, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Furniture_Shelf_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457002670416895859, guid: df16b1cb18682e647a25930c644d4a0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8218,6 +8606,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8276,9 +8668,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8350,6 +8750,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8371,6 +8775,10 @@ PrefabInstance:
     - target: {fileID: 1828723530190342896, guid: 231f0148420a1394b9d2e05a87df40e6, type: 3}
       propertyPath: m_Name
       value: Hall_Prefab_Furniture_FormicaChair_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828723530190342896, guid: 231f0148420a1394b9d2e05a87df40e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7666514102155396018, guid: 231f0148420a1394b9d2e05a87df40e6, type: 3}
       propertyPath: m_LocalScale.x
@@ -8441,6 +8849,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -8630,6 +9046,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8651,6 +9071,10 @@ PrefabInstance:
     - target: {fileID: 875103502860557333, guid: 12a5bac27024f7f40aa9a3622b47ab45, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SmallShovel
+      objectReference: {fileID: 0}
+    - target: {fileID: 875103502860557333, guid: 12a5bac27024f7f40aa9a3622b47ab45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6966573243240345436, guid: 12a5bac27024f7f40aa9a3622b47ab45, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8766,6 +9190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Vine_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2845349677850308196, guid: 65a3a8bd18eb04a4b95d7e6f410c92b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8787,6 +9215,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -8916,6 +9352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_LeavesPile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6795862544554827514, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.492
@@ -9018,6 +9458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Vine_2
       objectReference: {fileID: 0}
+    - target: {fileID: 8278803739357419662, guid: 597b01956b66ad9409cc8088b70f0c40, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9039,6 +9483,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -9180,6 +9632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_Rake
       objectReference: {fileID: 0}
+    - target: {fileID: 233687435805672491, guid: d5e71bf383d670a46a154663162f2d8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 353782507680470967, guid: d5e71bf383d670a46a154663162f2d8b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.9531593
@@ -9278,9 +9734,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9304,21 +9768,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_EndRoof_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3392606019009920190, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.208
+      value: 11.208043
       objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.103
+      value: -0.103000164
       objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.1000853
+      value: 5.700085
       objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071036
+      value: 0.7070355
       objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9326,7 +9798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.70711
+      value: -0.70717806
       objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -9338,11 +9810,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 269.999
+      value: 629.988
       objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557056058563776214, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9365,6 +9841,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (05)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -9484,6 +9968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9509,6 +9997,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Terrain_DirtBit (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -9583,6 +10075,10 @@ PrefabInstance:
     - target: {fileID: 1284374274496239955, guid: 23f8930c84fe2a247ba534d17ebf2663, type: 3}
       propertyPath: m_Name
       value: BedRoom_Prefab_Anomaly_Anemone_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284374274496239955, guid: 23f8930c84fe2a247ba534d17ebf2663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1415976088340771554, guid: 23f8930c84fe2a247ba534d17ebf2663, type: 3}
       propertyPath: m_LocalScale.x
@@ -9702,6 +10198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Vine_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8278803739357419662, guid: 597b01956b66ad9409cc8088b70f0c40, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9798,6 +10298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWindow_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1922333858593000620, guid: 4a8726d646d3e7545b827990919eff17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6058536634058335190, guid: 4a8726d646d3e7545b827990919eff17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.207
@@ -9863,6 +10367,10 @@ PrefabInstance:
     - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Bush_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8485651943042295078, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -9986,6 +10494,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10007,6 +10519,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (07)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -10074,6 +10594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_Bucket
       objectReference: {fileID: 0}
+    - target: {fileID: 3727106356041314564, guid: 220d1c0eda1a9fd4e85bcdfeb1b30e99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4196025546423497914, guid: 220d1c0eda1a9fd4e85bcdfeb1b30e99, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.7497716
@@ -10135,6 +10659,10 @@ PrefabInstance:
     - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_LeavesPile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6795862544554827514, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10242,6 +10770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10316,6 +10848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10386,6 +10922,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10447,6 +10987,10 @@ PrefabInstance:
     - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10522,6 +11066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_PlantHerb (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708800469872690339, guid: 5d5192b98369973489e14a5fb22f5454, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10588,6 +11136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Vine_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8278803739357419662, guid: 597b01956b66ad9409cc8088b70f0c40, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10609,6 +11161,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Terrain_DirtBit (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -10728,6 +11284,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10790,6 +11350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10811,6 +11375,10 @@ PrefabInstance:
     - target: {fileID: 1375536412026810875, guid: 9e758423f56912b459731f03377830c1, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Zacharies_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375536412026810875, guid: 9e758423f56912b459731f03377830c1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8930879041206979040, guid: 9e758423f56912b459731f03377830c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10878,6 +11446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_BigTree
       objectReference: {fileID: 0}
+    - target: {fileID: 7349361639218014585, guid: 518e471abaa60e545b907bdf6e715f05, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7989162423265339052, guid: 518e471abaa60e545b907bdf6e715f05, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.5757265
@@ -10943,6 +11515,10 @@ PrefabInstance:
     - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Bush_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8485651943042295078, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -11054,9 +11630,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11190,9 +11774,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11256,6 +11848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_Fork
       objectReference: {fileID: 0}
+    - target: {fileID: 8856724551639390465, guid: 855ed9285e91821428f431bb26166020, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11277,6 +11873,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -11344,6 +11948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_PlantPot_1
       objectReference: {fileID: 0}
+    - target: {fileID: 720228771942917292, guid: 29d6f156f4860c24fbf20a19ec5adb5b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2234645632313319951, guid: 29d6f156f4860c24fbf20a19ec5adb5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.793315
@@ -11405,6 +12013,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (04)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -11550,6 +12166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Bush_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8157709150030622995, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8485651943042295078, guid: cd938a4a8d9afd4408414dba210f45ae, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.6235639
@@ -11663,6 +12283,10 @@ PrefabInstance:
     - target: {fileID: 9205749131138374850, guid: 3904c4946eda4fa468c2ee1744c4e473, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_Peonies_Dead_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205749131138374850, guid: 3904c4946eda4fa468c2ee1744c4e473, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11804,6 +12428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseWall_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6732232220847494769, guid: 72ec9a9ba37e34942a56b7b11659d60c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11825,6 +12453,10 @@ PrefabInstance:
     - target: {fileID: 3392606019009920190, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_EndRoof_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392606019009920190, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11865,6 +12497,10 @@ PrefabInstance:
     - target: {fileID: 4658959385800731346, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557056058563776214, guid: 548e1585224d2334da22bca2f93503d0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11932,6 +12568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Clutter_SimplePot_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6927751302666544251, guid: bc68767369808294b8c0dc7d24927243, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11990,9 +12630,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12164,6 +12812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_LeavesPile (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6795862544554827514, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.106
@@ -12225,6 +12877,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (03)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -12340,6 +13000,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12361,6 +13025,10 @@ PrefabInstance:
     - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Plant_LeavesPile
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514971909888363965, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6795862544554827514, guid: d8b8775fb7d32944fac16d971a89697e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12460,6 +13128,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7239459035524120652, guid: b1f7195ec2291c84a80f95096d18eb97, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8791524513319975036, guid: b1f7195ec2291c84a80f95096d18eb97, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -12475,6 +13147,10 @@ PrefabInstance:
     - target: {fileID: 9030749100886627574, guid: b1f7195ec2291c84a80f95096d18eb97, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_Door_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030749100886627574, guid: b1f7195ec2291c84a80f95096d18eb97, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12534,9 +13210,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12607,6 +13291,10 @@ PrefabInstance:
     - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12692,6 +13380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Terrain_DirtBit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.3525
@@ -12761,6 +13453,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
@@ -12864,9 +13564,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7860254328829918101, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Roof_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536740300296135996, guid: 1d6d0c3886d105345a056768c9bd9e89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12889,6 +13597,10 @@ PrefabInstance:
     - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Terrain_DirtBit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247839873873414809, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7746500146706000490, guid: 00b97b2b372207a419f04b7cf358cee8, type: 3}
       propertyPath: m_LocalScale.x
@@ -12959,6 +13671,10 @@ PrefabInstance:
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoofEnds_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9142630338701395713, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13070,6 +13786,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7157058934639353912, guid: 18751f9126072de44b722eda92c781ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13091,6 +13811,10 @@ PrefabInstance:
     - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_Name
       value: ExteriorHouse_Prefab_Architecture_HouseRoofEnds_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498658995286138253, guid: 2e5d5269971833340b2012522e38d365, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9142630338701395713, guid: 2e5d5269971833340b2012522e38d365, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13206,6 +13930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hall_Prefab_Architecture_WoodenBeam_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6347160191483521512, guid: 4d53ef5877546d940b9b06944a02c256, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13227,6 +13955,14 @@ PrefabInstance:
     - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_Name
       value: GreenHouse_Prefab_Architecture_Wall_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295923255041221442, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663617839274998459, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5261166068453321559, guid: d721af0c6a1cdee49919fdda51188bf0, type: 3}
       propertyPath: m_LocalScale.x
