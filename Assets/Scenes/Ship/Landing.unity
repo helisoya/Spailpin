@@ -4050,10 +4050,6 @@ PrefabInstance:
       value: Hall_Prefab_Architecture_Stairs_1
       objectReference: {fileID: 0}
     - target: {fileID: 6320872604886262002, guid: 774b830e537f69a4ca75185f38b10cbe, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3255774
-      objectReference: {fileID: 0}
-    - target: {fileID: 6320872604886262002, guid: 774b830e537f69a4ca75185f38b10cbe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.002
       objectReference: {fileID: 0}
