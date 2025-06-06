@@ -11,13 +11,15 @@ public class SetAmbianceNode : SpailpinNode
     [SerializeField] private int ambianceID;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 
-	// Use this for initialization
-	protected override void Init() {
-		base.Init();
-	}
+    // Use this for initialization
+    protected override void Init()
+    {
+        base.Init();
+    }
 
     public override IEnumerator Apply()
     {
+        GameManager.instance.ambianceID = ambianceID;
         AudioManager.instance.SetAmbience(ambianceID);
         yield return 0;
     }

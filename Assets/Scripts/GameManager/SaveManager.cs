@@ -7,16 +7,18 @@ using UnityEngine;
 /// </summary>
 public class SaveManager
 {
-    public SaveFile saveFile {get; private set;}
+    public SaveFile saveFile { get; private set; }
     private string saveFilePath = FileManager.savPath + "save.sav";
-    public bool saveFileExists {get{return File.Exists(saveFilePath);}}
+    public bool saveFileExists { get { return File.Exists(saveFilePath); } }
     private GameItems items;
 
-    public SaveManager(GameItems items){
+    public SaveManager(GameItems items)
+    {
         this.items = items;
         saveFile = new SaveFile();
         saveFile.items = new List<GameItems.Item>();
-        foreach(GameItems.Item item in items.items){
+        foreach (GameItems.Item item in items.items)
+        {
             saveFile.items.Add(new()
             {
                 ID = item.ID,
@@ -30,9 +32,11 @@ public class SaveManager
     /// </summary>
     /// <param name="ID">The variable's ID</param>
     /// <returns>The variable's value. -1 if not found</returns>
-    public int GetVariable(string ID){
-        foreach(GameItems.Item item in saveFile.items){
-            if(item.ID == ID){return item.value;}
+    public int GetVariable(string ID)
+    {
+        foreach (GameItems.Item item in saveFile.items)
+        {
+            if (item.ID == ID) { return item.value; }
         }
 
         return -1;
@@ -43,9 +47,11 @@ public class SaveManager
     /// </summary>
     /// <param name="ID">The variable's ID</param>
     /// <param name="value">The variable's new value</param>
-    public void SetVariable(string ID, int value){
-        foreach(GameItems.Item item in saveFile.items){
-            if(item.ID == ID){item.value = value; return;}
+    public void SetVariable(string ID, int value)
+    {
+        foreach (GameItems.Item item in saveFile.items)
+        {
+            if (item.ID == ID) { item.value = value; return; }
         }
     }
 
@@ -53,10 +59,12 @@ public class SaveManager
     /// <summary>
     /// Saves the game
     /// </summary>
-    public void SaveGame(){
+    public void SaveGame()
+    {
         saveFile.currentRoom = Player.instance.CurrentRoom;
         saveFile.playerPosition = Player.instance.position;
         saveFile.playerRotation = Player.instance.rotation;
+        saveFile.ambianceID = GameManager.instance.ambianceID;
         FileManager.SaveJSON(saveFilePath, saveFile);
     }
 
@@ -64,20 +72,24 @@ public class SaveManager
     /// Loads the game
     /// </summary>
     /// <param name="inMainMenu">True if in the main menu</param>
-    public void LoadGame(bool inMainMenu = false){
-        if(saveFileExists){
+    public void LoadGame(bool inMainMenu = false)
+    {
+        if (saveFileExists)
+        {
             saveFile = FileManager.LoadJSON<SaveFile>(saveFilePath);
 
             /// Add Missing variables
-            foreach(GameItems.Item item in items.items){
-                if(!saveFile.items.Contains(item)) saveFile.items.Add(new(){ID = item.ID, value = item.value});
+            foreach (GameItems.Item item in items.items)
+            {
+                if (!saveFile.items.Contains(item)) saveFile.items.Add(new() { ID = item.ID, value = item.value });
             }
 
             // Remove excess variables
 
             int i = 0;
-            while(i < saveFile.items.Count){
-                if(!items.items.Contains(saveFile.items[i])) saveFile.items.RemoveAt(i);
+            while (i < saveFile.items.Count)
+            {
+                if (!items.items.Contains(saveFile.items[i])) saveFile.items.RemoveAt(i);
                 else i++;
             }
 

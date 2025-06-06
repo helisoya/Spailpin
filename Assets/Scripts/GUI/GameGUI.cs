@@ -36,8 +36,7 @@ public class GameGUI : MonoBehaviour
 
     [Header("Audio Events")]
     [SerializeField] private UnityEvent onDialogStart;
-    [SerializeField] private UnityEvent onPauseOpen;
-    [SerializeField] private UnityEvent onPauseClose;
+    [SerializeField] private UnityEvent<int> onPause;
 
     [Header("Hints")]
     [SerializeField] private CanvasGroup hintMovement;
@@ -95,7 +94,7 @@ public class GameGUI : MonoBehaviour
         {
             ChoiceButton button = Instantiate(choiceButtonPrefab, choiceButtonsRoot);
             button.Init(i, keys[i]);
-            if(i == 0) EventSystem.current.SetSelectedGameObject(button.gameObject);
+            if (i == 0) EventSystem.current.SetSelectedGameObject(button.gameObject);
         }
 
         choiceRoot.SetActive(true);
@@ -156,9 +155,11 @@ public class GameGUI : MonoBehaviour
     /// Sets the dialog's font size
     /// </summary>
     /// <param name="sizeIndex">The font size index</param>
-    public void SetDialogSize(int sizeIndex){
+    public void SetDialogSize(int sizeIndex)
+    {
         int correctSize = 0;
-        switch (sizeIndex){
+        switch (sizeIndex)
+        {
             case 0:
                 correctSize = 18;
                 break;
@@ -177,9 +178,11 @@ public class GameGUI : MonoBehaviour
     /// Sets the dialog's spacing
     /// </summary>
     /// <param name="sizeIndex">The spacing index</param>
-    public void SetDialogSpacing(int sizeIndex){
+    public void SetDialogSpacing(int sizeIndex)
+    {
         int correctSize = 0;
-        switch (sizeIndex){
+        switch (sizeIndex)
+        {
             case 0:
                 correctSize = 0;
                 break;
@@ -229,7 +232,7 @@ public class GameGUI : MonoBehaviour
     {
         Time.timeScale = 0f;
         pauseMenu.Open();
-        onPauseOpen.Invoke();
+        onPause.Invoke(0);
     }
 
     /// <summary>
@@ -239,7 +242,7 @@ public class GameGUI : MonoBehaviour
     {
         Time.timeScale = 1f;
         pauseMenu.Close();
-        onPauseClose.Invoke();
+        onPause.Invoke(1);
     }
 
     /// <summary>

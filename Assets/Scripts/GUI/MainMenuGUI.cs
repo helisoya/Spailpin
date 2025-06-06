@@ -26,14 +26,15 @@ public class MainMenuGUI : MonoBehaviour
     [Header("Audio Event")]
     [SerializeField] private UnityEvent onButtonClick;
     [SerializeField] private UnityEvent<int> onPauseOpen;
+    [SerializeField] private UnityEvent onNewGame;
     public UnityEvent<string> onDeviceChange;
 
     public static MainMenuGUI instance;
-    public bool fading {get{ return fade.fading; }}
+    public bool fading { get { return fade.fading; } }
 
     void Awake()
     {
-        instance = this;   
+        instance = this;
     }
 
     void Start()
@@ -90,6 +91,7 @@ public class MainMenuGUI : MonoBehaviour
         GameManager.instance.loadingSave = false;
         GameManager.instance.ResetSave();
         onButtonClick.Invoke();
+        onNewGame.Invoke();
         GameManager.instance.ChangeScene(startScene, true);
     }
 

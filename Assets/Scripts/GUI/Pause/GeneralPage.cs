@@ -1,10 +1,15 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Represents the general page in the pause menu
 /// </summary>
 public class GeneralPage : PausePage
 {
+    [Header("Events")]
+    [SerializeField] private UnityEvent onReturnToTitle;
+
+
     protected override void OnClose()
     {
     }
@@ -20,15 +25,18 @@ public class GeneralPage : PausePage
     /// <summary>
     /// Callback for loading a save
     /// </summary>
-    public void Event_LoadGame(){
+    public void Event_LoadGame()
+    {
         menu.InvokeOnButtonPress();
+        Player.instance.EnableShaking(false);
         GameManager.instance.GetSaveManager().LoadGame();
     }
 
     /// <summary>
     /// Callback for saving the game
     /// </summary>
-    public void Event_SaveGame(){
+    public void Event_SaveGame()
+    {
         menu.InvokeOnButtonPress();
         if (!Player.instance.inPuzzle) GameManager.instance.GetSaveManager().SaveGame();
     }
@@ -36,15 +44,19 @@ public class GeneralPage : PausePage
     /// <summary>
     /// Callback for returning to the main menu
     /// </summary>
-    public void Event_ToMainMenu(){
+    public void Event_ToMainMenu()
+    {
         menu.InvokeOnButtonPress();
+        onReturnToTitle.Invoke();
+        Player.instance.EnableShaking(false);
         GameManager.instance.ChangeScene("MainMenu");
     }
 
     /// <summary>
     /// Callback for quitting the game
     /// </summary>
-    public void Event_QuitGame(){
+    public void Event_QuitGame()
+    {
         menu.InvokeOnButtonPress();
         Application.Quit();
     }

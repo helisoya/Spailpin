@@ -113,12 +113,13 @@ public class AccessPage : PausePage
         Locals.ChangeFontPrimary(value);
         Settings.instance.SetCurrentTypoIndexPrimary(value);
     }
-    
+
     /// <summary>
     /// Changes the current secondary typo
     /// </summary>
     /// <param name="value">The new typo's index</param>
-    public void Event_ChangeCurrentSecondaryTypo(Int32 value){
+    public void Event_ChangeCurrentSecondaryTypo(Int32 value)
+    {
         menu.InvokeOnButtonPress();
         Locals.ChangeFontSecondary(value);
         Settings.instance.SetCurrentTypoIndexSecondary(value);
