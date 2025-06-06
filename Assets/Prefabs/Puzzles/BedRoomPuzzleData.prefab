@@ -537,6 +537,7 @@ MonoBehaviour:
   action: {fileID: 2411907206095950430, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 0
   indexGamepad: 1
+  isOnMainMenu: 0
 --- !u!1 &1836296038390993513
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,6 +782,7 @@ MonoBehaviour:
   action: {fileID: 2411907206095950430, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 0
   indexGamepad: 1
+  isOnMainMenu: 0
 --- !u!1 &2093743282430136158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1191,7 @@ MonoBehaviour:
   action: {fileID: 1781555164194001046, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 0
   indexGamepad: 1
+  isOnMainMenu: 0
 --- !u!1 &3014092435514600898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1438,7 @@ MonoBehaviour:
   action: {fileID: 7275791124680103661, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 0
   indexGamepad: 1
+  isOnMainMenu: 0
 --- !u!1 &3876658247309738690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,7 +2084,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  actionCooldown: 0.25
+  actionCooldown: 0.75
   onMoveSelection:
     m_PersistentCalls:
       m_Calls: []
@@ -2284,6 +2288,7 @@ MonoBehaviour:
   action: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 4
   indexGamepad: 0
+  isOnMainMenu: 0
 --- !u!1 &5077302051362337730
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,6 +3246,7 @@ MonoBehaviour:
   action: {fileID: 2411907206095950430, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 0
   indexGamepad: 1
+  isOnMainMenu: 0
 --- !u!1 &7626358318722074289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,6 +3831,7 @@ MonoBehaviour:
   action: {fileID: 1781555164194001046, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 0
   indexGamepad: 1
+  isOnMainMenu: 0
 --- !u!1 &9047670710884003324
 GameObject:
   m_ObjectHideFlags: 0

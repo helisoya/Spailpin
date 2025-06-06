@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerController controller;
     [SerializeField] private PlayerInteraction interactions;
     [SerializeField] private GameObject playerModelRoot;
+    [SerializeField] private Renderer modelRenderer;
 
     [Header("Shaking")]
     [SerializeField] private bool activateShaking = false;
@@ -56,6 +57,32 @@ public class Player : MonoBehaviour
     private void Start()
     {
         onChangeTransform.Invoke(controller.transform);
+        SetOutlineActive(Settings.instance.GetPlayerOutlineActive());
+        SetOutlineColor(Settings.instance.GetOutlineColor());
+    }
+
+    /// <summary>
+    /// Changes if the player outline is active or not
+    /// </summary>
+    /// <param name="active">True if active</param>
+    public void SetOutlineActive(bool active) {
+        foreach (Material mat in modelRenderer.materials)
+        {
+            mat.SetFloat("_N_F_O", active ? 1 : 0);
+            mat.SetShaderPassEnabled("SRPDefaultUnlit", active);
+        }
+    }
+
+    /// <summary>
+    /// Changes the player outline's color
+    /// </summary>
+    /// <param name="color">The outline's color</param>
+    public void SetOutlineColor(Color color)
+    {
+        foreach (Material mat in modelRenderer.materials)
+        {
+            mat.SetColor("_OutlineColor", color);
+        }
     }
 
     void Oestroy()
@@ -283,7 +310,11 @@ public class Player : MonoBehaviour
     {
         if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.PAUSE, value);
         else if (inPuzzle && currentPuzzle.inHintMenu) return;
-        else if (GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
+        else if (GameGUI.instance.isPauseOpen) {
+            GameGUI.instance.ClosePause();
+            SetOutlineActive(Settings.instance.GetPlayerOutlineActive());
+            SetOutlineColor(Settings.instance.GetOutlineColor());
+        } 
         else
         {
             //controller.SetMovementVector(Vector2.zero);

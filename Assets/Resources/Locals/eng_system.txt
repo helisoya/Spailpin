@@ -31,10 +31,15 @@ options_controls_rebind_Previous = Previous
 options_controls_rebind_Hint = Hints
 options_controls_rebind_Error = !Error!
 
-
 options_access = Accessibility
 options_access_typo_primary = Menus font
 options_access_typo_secondary = Dialogs font
+options_access_playerOutline = Player Outline
+options_access_objectOutline = Object Outline
+options_access_color = Outline color
+options_access_red = Red
+options_access_green = Green
+options_access_blue = Blue
 
 
 options_small = Small

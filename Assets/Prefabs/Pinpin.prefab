@@ -1898,6 +1898,7 @@ MonoBehaviour:
   controller: {fileID: 3249055580036257644}
   interactions: {fileID: 5518070396854803634}
   playerModelRoot: {fileID: 5429146737840740227}
+  modelRenderer: {fileID: 5349207522653494418}
   activateShaking: 0
   shakingStrength: 0.1
   shakingLength: 0.5
