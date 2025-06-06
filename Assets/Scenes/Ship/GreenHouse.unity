@@ -735,6 +735,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 1428276917}
 --- !u!65 &569082524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -848,6 +849,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 1428276916}
 --- !u!65 &651734701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1751,6 +1753,16 @@ Animator:
 --- !u!95 &1428276915 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4583056001866886354, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+  m_PrefabInstance: {fileID: 1428276911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1428276916 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3360665712267787323, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+  m_PrefabInstance: {fileID: 1428276911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1428276917 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 9035775883226451704, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
   m_PrefabInstance: {fileID: 1428276911}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1458184565

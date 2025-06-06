@@ -96,7 +96,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Oestroy()
+    void OnDestroy()
     {
         if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
     }
@@ -326,6 +326,7 @@ public class Player : MonoBehaviour
             GameGUI.instance.ClosePause();
             SetOutlineActive(Settings.instance.GetPlayerOutlineActive());
             SetOutlineColor(Settings.instance.GetOutlineColor());
+            interactions.RefreshOutlineCurrent();
         }
         else
         {

@@ -6454,6 +6454,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 117893387533582810}
 --- !u!65 &651734701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49077,6 +49078,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f4a7eb968e66b49a19f7615614994d, type: 3}
+--- !u!23 &117893387533582810 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3600428758427124262, guid: d3f4a7eb968e66b49a19f7615614994d, type: 3}
+  m_PrefabInstance: {fileID: 117893387533582809}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
