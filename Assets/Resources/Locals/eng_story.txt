@@ -18,7 +18,7 @@ Outro_Cinematic_Start_1 = Thank you for playing Spailpin's demo. Don't hesitate 
 StoreRoom_Door_Skip_1 = I'm sure I can make my way back to the hall.
 
 GreenHouse_Puzzle_Finished_1 = The door is unlocked.
-
+GreenHouse_Table_1 = There are seeds on the table.
 
 
 choice_drop = Drop the journal

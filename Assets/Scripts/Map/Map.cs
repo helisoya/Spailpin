@@ -34,6 +34,20 @@ public class Map : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Gets a room
+    /// </summary>
+    /// <param name="ID">The room's ID</param>
+    /// <returns>The room</returns>
+    public Room GetRoom(int ID)
+    {
+        foreach (Room room in rooms)
+        {
+            if (room.GetID() == ID) return room;
+        }
+        return null;
+    }
+
     void Start()
     {
 
