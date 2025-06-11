@@ -9,11 +9,14 @@ public class SaveFile
     public Vector3 playerRotation;
     public int currentRoom;
     public List<GameItems.Item> items;
+    public int ambianceID;
 
-    public SaveFile(){
+    public SaveFile()
+    {
         mapName = "Test";
-        playerPosition = new Vector3(0,0,0);
-        playerRotation = new Vector3(0,0,0);
+        playerPosition = new Vector3(0, 0, 0);
+        playerRotation = new Vector3(0, 0, 0);
         currentRoom = 0;
+        ambianceID = 0;
     }
 }

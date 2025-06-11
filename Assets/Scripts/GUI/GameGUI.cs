@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 /// <summary>
@@ -15,6 +16,9 @@ public class GameGUI : MonoBehaviour
 
     [Header("Interaction Icon")]
     [SerializeField] private RectTransform interactionIcon;
+    [SerializeField] private RectTransform canvasRoot;
+    [SerializeField] private float sizeMax = 40f;
+    [SerializeField] private float sizeMin = 20f;
 
 
     [Header("Dialog")]
@@ -32,13 +36,19 @@ public class GameGUI : MonoBehaviour
 
     [Header("Audio Events")]
     [SerializeField] private UnityEvent onDialogStart;
-    [SerializeField] private UnityEvent onPauseOpen;
-    [SerializeField] private UnityEvent onPauseClose;
+    [SerializeField] private UnityEvent<int> onPause;
 
     [Header("Hints")]
     [SerializeField] private CanvasGroup hintMovement;
     [SerializeField] private float hintSpeed = 5;
     private float hintMovementAlphaTarget;
+
+    [Header("Choice")]
+    [SerializeField] private GameObject choiceRoot;
+    [SerializeField] private Transform choiceButtonsRoot;
+    [SerializeField] private ChoiceButton choiceButtonPrefab;
+    public int selectedChoiceIndex { get; private set; }
+
 
     public bool showingDialog { get { return routineDialog != null; } }
     public bool isPauseOpen { get { return pauseMenu.isOpen; } }
@@ -72,13 +82,54 @@ public class GameGUI : MonoBehaviour
     }
 
     /// <summary>
+    /// Opens the choice menu
+    /// </summary>
+    /// <param name="keys">The choice menu</param>
+    public void OpenChoiceMenu(string[] keys)
+    {
+        selectedChoiceIndex = -1;
+
+        foreach (Transform child in choiceButtonsRoot) Destroy(child.gameObject);
+        for (int i = 0; i < keys.Length; i++)
+        {
+            ChoiceButton button = Instantiate(choiceButtonPrefab, choiceButtonsRoot);
+            button.Init(i, keys[i]);
+            if (i == 0) EventSystem.current.SetSelectedGameObject(button.gameObject);
+        }
+
+        choiceRoot.SetActive(true);
+    }
+
+    /// <summary>
+    /// Selects a choice
+    /// </summary>
+    /// <param name="index">The choice's index</param>
+    public void SelectChoice(int index)
+    {
+        selectedChoiceIndex = index;
+        choiceRoot.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    /// <summary>
     /// Shows the interaction icon
     /// </summary>
     /// <param name="worldPosition">The target's world position</param>
     public void ShowInteractionIcon(Vector3 worldPosition)
     {
         interactionIcon.gameObject.SetActive(true);
-        interactionIcon.anchoredPosition = Camera.main.WorldToScreenPoint(worldPosition, Camera.main.stereoActiveEye);
+
+        Vector2 ViewportPosition = Camera.main.WorldToViewportPoint(worldPosition);
+        Vector2 WorldObjectScreenPosition = new Vector2(
+        ((ViewportPosition.x * canvasRoot.sizeDelta.x) - (canvasRoot.sizeDelta.x * 0.5f)),
+        ((ViewportPosition.y * canvasRoot.sizeDelta.y) - (canvasRoot.sizeDelta.y * 0.5f)));
+
+        interactionIcon.anchoredPosition = WorldObjectScreenPosition;
+
+
+        float distanceToCamera = Mathf.Clamp(Vector3.Distance(worldPosition, Camera.main.transform.position), 5f, 20f);
+        float size = sizeMax - (sizeMax - sizeMin) * ((distanceToCamera - 5f) / 15f);
+        interactionIcon.sizeDelta = new Vector2(size, size);
     }
 
     /// <summary>
@@ -104,9 +155,11 @@ public class GameGUI : MonoBehaviour
     /// Sets the dialog's font size
     /// </summary>
     /// <param name="sizeIndex">The font size index</param>
-    public void SetDialogSize(int sizeIndex){
+    public void SetDialogSize(int sizeIndex)
+    {
         int correctSize = 0;
-        switch (sizeIndex){
+        switch (sizeIndex)
+        {
             case 0:
                 correctSize = 18;
                 break;
@@ -125,9 +178,11 @@ public class GameGUI : MonoBehaviour
     /// Sets the dialog's spacing
     /// </summary>
     /// <param name="sizeIndex">The spacing index</param>
-    public void SetDialogSpacing(int sizeIndex){
+    public void SetDialogSpacing(int sizeIndex)
+    {
         int correctSize = 0;
-        switch (sizeIndex){
+        switch (sizeIndex)
+        {
             case 0:
                 correctSize = 0;
                 break;
@@ -177,7 +232,7 @@ public class GameGUI : MonoBehaviour
     {
         Time.timeScale = 0f;
         pauseMenu.Open();
-        onPauseOpen.Invoke();
+        onPause.Invoke(0);
     }
 
     /// <summary>
@@ -187,7 +242,7 @@ public class GameGUI : MonoBehaviour
     {
         Time.timeScale = 1f;
         pauseMenu.Close();
-        onPauseClose.Invoke();
+        onPause.Invoke(1);
     }
 
     /// <summary>

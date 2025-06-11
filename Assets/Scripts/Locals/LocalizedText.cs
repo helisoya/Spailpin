@@ -10,6 +10,7 @@ public class LocalizedText : MonoBehaviour
 {
     [SerializeField] protected TMP_Text text;
     [SerializeField] protected string localKey;
+    [SerializeField] protected bool usePrimaryFont = true;
 
     /// <summary>
     /// Changes the ID of the localized text
@@ -32,15 +33,26 @@ public class LocalizedText : MonoBehaviour
     void Start()
     {
         ReloadText();
-        SetFont(GameManager.instance.GetFonts()[Locals.fontIndex]);
         Locals.onChangeLocal.AddListener(ReloadText);
-        Locals.onChangeFont.AddListener(SetFont);
+
+        if (usePrimaryFont)
+        {
+            SetFont(GameManager.instance.GetFonts()[Locals.fontIndexPrimary]);
+            Locals.onChangeFontPrimary.AddListener(SetFont);
+        }
+        else
+        {
+            SetFont(GameManager.instance.GetFonts()[Locals.fontIndexSecondary]);
+            Locals.onChangeFontSecondary.AddListener(SetFont);
+        }
+        
     }
 
     protected void OnDestroy()
     {
         Locals.onChangeLocal.RemoveListener(ReloadText);
-        Locals.onChangeFont.RemoveListener(SetFont);
+        if (usePrimaryFont) Locals.onChangeFontPrimary.RemoveListener(SetFont);
+        else Locals.onChangeFontSecondary.RemoveListener(SetFont);
     }
 
     /// <summary>

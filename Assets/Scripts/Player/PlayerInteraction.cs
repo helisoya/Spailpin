@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Handles the player interactions
@@ -20,8 +21,10 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        if (GameGUI.instance.isPauseOpen || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle){
-            if(currentObject != null && ((CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle)){
+        if (GameGUI.instance.isPauseOpen || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle)
+        {
+            if (currentObject != null && ((CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle))
+            {
                 currentObject.SetActive(false);
                 currentObject = null;
             }
@@ -35,9 +38,11 @@ public class PlayerInteraction : MonoBehaviour
             float currentDist;
             InteractableObject newObj = null;
 
-            foreach(Collider collider in colliders){
-                currentDist = Vector3.Distance(transform.position,collider.bounds.center);
-                if(currentDist < minDist){
+            foreach (Collider collider in colliders)
+            {
+                currentDist = Vector3.Distance(transform.position, collider.bounds.center);
+                if (currentDist < minDist)
+                {
                     minDist = currentDist;
                     newObj = collider.transform.GetComponent<InteractableObject>();
                 }
@@ -67,7 +72,8 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (currentObject != null)
         {
-            if(currentObject.stopPlayerOnInterract){
+            if (currentObject.stopPlayerOnInterract)
+            {
                 Player.instance.SetMovementVector(Vector2.zero);
                 Player.instance.SetSprinting(false);
             }
@@ -78,6 +84,18 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.Interract();
 
             currentObject = null;
+        }
+    }
+
+    /// <summary>
+    /// Refreshs the current object's outline
+    /// </summary>
+    public void RefreshOutlineCurrent()
+    {
+        if (currentObject != null)
+        {
+            currentObject.SetOutlineColor(Settings.instance.GetOutlineColor());
+            currentObject.SetOutlineActive(Settings.instance.GetObjectOutlineActive());
         }
     }
 }

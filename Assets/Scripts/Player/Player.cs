@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerController controller;
     [SerializeField] private PlayerInteraction interactions;
     [SerializeField] private GameObject playerModelRoot;
+    [SerializeField] private Renderer modelRenderer;
 
     [Header("Shaking")]
     [SerializeField] private bool activateShaking = false;
@@ -48,7 +49,7 @@ public class Player : MonoBehaviour
     {
         instance = this;
         SetPlayerModelActive(true);
-        if(activateShaking) onCollision.AddListener(OnCollision);
+        if (activateShaking) onCollision.AddListener(OnCollision);
         if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
         currentShakingLength = 0;
     }
@@ -56,11 +57,48 @@ public class Player : MonoBehaviour
     private void Start()
     {
         onChangeTransform.Invoke(controller.transform);
+        SetOutlineActive(Settings.instance.GetPlayerOutlineActive());
+        SetOutlineColor(Settings.instance.GetOutlineColor());
     }
 
-    void Oestroy()
+    /// <summary>
+    /// Enables shaking for the controller
+    /// </summary>
+    /// <param name="active">True if shaking is active</param>
+    public void EnableShaking(bool active)
     {
-        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);    
+        activateShaking = active;
+        if (!activateShaking && Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
+    }
+
+    /// <summary>
+    /// Changes if the player outline is active or not
+    /// </summary>
+    /// <param name="active">True if active</param>
+    public void SetOutlineActive(bool active)
+    {
+        foreach (Material mat in modelRenderer.materials)
+        {
+            mat.SetFloat("_N_F_O", active ? 1 : 0);
+            mat.SetShaderPassEnabled("SRPDefaultUnlit", active);
+        }
+    }
+
+    /// <summary>
+    /// Changes the player outline's color
+    /// </summary>
+    /// <param name="color">The outline's color</param>
+    public void SetOutlineColor(Color color)
+    {
+        foreach (Material mat in modelRenderer.materials)
+        {
+            mat.SetColor("_OutlineColor", color);
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
     }
 
     void Update()
@@ -186,7 +224,7 @@ public class Player : MonoBehaviour
         {
             currentPuzzle.FowardInput(Puzzle.InputType.MOVEMENT, value);
         }
-        else if(!inPuzzle || !currentPuzzle.inHintMenu)
+        else if (!inPuzzle || !currentPuzzle.inHintMenu)
         {
             controller.SetMovementVector(value.Get<Vector2>());
         }
@@ -261,7 +299,7 @@ public class Player : MonoBehaviour
     void OnControlsChanged(PlayerInput input)
     {
         print(input.currentControlScheme);
-        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);    
+        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
         currentScheme = input.currentControlScheme;
         onDeviceChange.Invoke(currentScheme);
     }
@@ -283,7 +321,13 @@ public class Player : MonoBehaviour
     {
         if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.PAUSE, value);
         else if (inPuzzle && currentPuzzle.inHintMenu) return;
-        else if (GameGUI.instance.isPauseOpen) GameGUI.instance.ClosePause();
+        else if (GameGUI.instance.isPauseOpen)
+        {
+            GameGUI.instance.ClosePause();
+            SetOutlineActive(Settings.instance.GetPlayerOutlineActive());
+            SetOutlineColor(Settings.instance.GetOutlineColor());
+            interactions.RefreshOutlineCurrent();
+        }
         else
         {
             //controller.SetMovementVector(Vector2.zero);
@@ -319,7 +363,7 @@ public class Player : MonoBehaviour
     /// <param name="collision">The collision</param>
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall" && activateShaking)
         {
             onCollision.Invoke(true);
         }
@@ -331,7 +375,7 @@ public class Player : MonoBehaviour
     /// <param name="collision">The collision</param>
     void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall" && activateShaking)
         {
             onCollision.Invoke(false);
         }
