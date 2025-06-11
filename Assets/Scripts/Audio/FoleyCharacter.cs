@@ -15,9 +15,12 @@ public class FoleyCharacter : MonoBehaviour
 
     }
 
-    public void LeMur()
+    public void LeMur(bool bonk)
     {
-        AudioManager.instance.PlayOneShot(Bonk, this.transform.position);
+        if (bonk)
+        {
+            AudioManager.instance.PlayOneShot(Bonk, this.transform.position);
+        }
     }
 
 

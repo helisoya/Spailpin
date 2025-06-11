@@ -734,6 +734,7 @@ MonoBehaviour:
   action: {fileID: 1781555164194001046, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 0
   indexGamepad: 1
+  isOnMainMenu: 0
 --- !u!1 &6223724790966088674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,13 +1404,10 @@ MonoBehaviour:
   fade: {fileID: 1696614628359169663}
   onDialogStart:
     m_PersistentCalls:
-      m_Calls: []
-  onPauseOpen:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8472276798203187571}
         m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
-        m_MethodName: PlayMenuOpen
+        m_MethodName: Dialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1419,13 +1417,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onPauseClose:
+  onPause:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8472276798203187571}
         m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
-        m_MethodName: PlayMenuClosed
-        m_Mode: 1
+        m_MethodName: PlayMenu
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1543,6 +1541,7 @@ MonoBehaviour:
   action: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   indexKeyboard: 2
   indexGamepad: 0
+  isOnMainMenu: 0
 --- !u!1 &9153879608869302054
 GameObject:
   m_ObjectHideFlags: 0
