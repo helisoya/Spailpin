@@ -1406,10 +1406,34 @@ MonoBehaviour:
   fade: {fileID: 1696614628359169663}
   onDialogStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8472276798203187571}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: Dialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onPause:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8472276798203187571}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: PlayMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   hintMovement: {fileID: 5555665513384672913}
   hintSpeed: 2
   choiceRoot: {fileID: 1789006298483165104}
