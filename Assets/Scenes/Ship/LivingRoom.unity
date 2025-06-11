@@ -597,6 +597,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17ae3a0c308898c47800175855194d9e, type: 3}
+--- !u!23 &489870088 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8557841799269984777, guid: 17ae3a0c308898c47800175855194d9e, type: 3}
+  m_PrefabInstance: {fileID: 489870087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &489870089 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4267367545952656792, guid: 17ae3a0c308898c47800175855194d9e, type: 3}
+  m_PrefabInstance: {fileID: 489870087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &569082521
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +660,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 489870088}
 --- !u!65 &569082524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -763,6 +774,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 489870089}
 --- !u!65 &651734701
 BoxCollider:
   m_ObjectHideFlags: 0

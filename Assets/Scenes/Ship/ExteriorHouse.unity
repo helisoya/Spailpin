@@ -1296,6 +1296,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 710174734}
 --- !u!65 &569082524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1533,6 +1534,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
+--- !u!23 &710174732 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8112652730658592548, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
+  m_PrefabInstance: {fileID: 710174731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &710174733 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2500622115964403881, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
+  m_PrefabInstance: {fileID: 710174731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &710174734 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3694060934284398152, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
+  m_PrefabInstance: {fileID: 710174731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &710174735 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2317298827169252846, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
+  m_PrefabInstance: {fileID: 710174731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &724034327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,6 +1869,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 1455670793}
 --- !u!65 &1048102660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3648,6 +3670,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 710174735}
 --- !u!65 &1394592354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3730,6 +3753,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 710174732}
 --- !u!65 &1395208345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4319,6 +4343,11 @@ PrefabInstance:
 --- !u!4 &1455670792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7456903799524618034, guid: bf0eba70c6b2b0e4ebbca559ba7a1d34, type: 3}
+  m_PrefabInstance: {fileID: 1455670791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1455670793 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3473688234964941120, guid: bf0eba70c6b2b0e4ebbca559ba7a1d34, type: 3}
   m_PrefabInstance: {fileID: 1455670791}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1458184565
@@ -5804,6 +5833,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
+  modelRenderer: {fileID: 710174733}
 --- !u!65 &2028730667
 BoxCollider:
   m_ObjectHideFlags: 0

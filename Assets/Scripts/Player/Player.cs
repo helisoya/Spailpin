@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     {
         instance = this;
         SetPlayerModelActive(true);
-        if(activateShaking) onCollision.AddListener(OnCollision);
+        if (activateShaking) onCollision.AddListener(OnCollision);
         if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
         currentShakingLength = 0;
     }
@@ -62,10 +62,21 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
+    /// Enables shaking for the controller
+    /// </summary>
+    /// <param name="active">True if shaking is active</param>
+    public void EnableShaking(bool active)
+    {
+        activateShaking = active;
+        if (!activateShaking && Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
+    }
+
+    /// <summary>
     /// Changes if the player outline is active or not
     /// </summary>
     /// <param name="active">True if active</param>
-    public void SetOutlineActive(bool active) {
+    public void SetOutlineActive(bool active)
+    {
         foreach (Material mat in modelRenderer.materials)
         {
             mat.SetFloat("_N_F_O", active ? 1 : 0);
@@ -85,9 +96,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Oestroy()
+    void OnDestroy()
     {
-        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);    
+        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
     }
 
     void Update()
@@ -213,7 +224,7 @@ public class Player : MonoBehaviour
         {
             currentPuzzle.FowardInput(Puzzle.InputType.MOVEMENT, value);
         }
-        else if(!inPuzzle || !currentPuzzle.inHintMenu)
+        else if (!inPuzzle || !currentPuzzle.inHintMenu)
         {
             controller.SetMovementVector(value.Get<Vector2>());
         }
@@ -288,7 +299,7 @@ public class Player : MonoBehaviour
     void OnControlsChanged(PlayerInput input)
     {
         print(input.currentControlScheme);
-        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);    
+        if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
         currentScheme = input.currentControlScheme;
         onDeviceChange.Invoke(currentScheme);
     }
@@ -310,11 +321,13 @@ public class Player : MonoBehaviour
     {
         if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.PAUSE, value);
         else if (inPuzzle && currentPuzzle.inHintMenu) return;
-        else if (GameGUI.instance.isPauseOpen) {
+        else if (GameGUI.instance.isPauseOpen)
+        {
             GameGUI.instance.ClosePause();
             SetOutlineActive(Settings.instance.GetPlayerOutlineActive());
             SetOutlineColor(Settings.instance.GetOutlineColor());
-        } 
+            interactions.RefreshOutlineCurrent();
+        }
         else
         {
             //controller.SetMovementVector(Vector2.zero);

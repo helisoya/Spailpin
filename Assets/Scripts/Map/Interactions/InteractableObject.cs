@@ -11,7 +11,34 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] protected Transform interactionObject;
     [SerializeField] protected DialogGraph linkedGraph;
     [SerializeField] protected UnityEvent onInterract;
+    [SerializeField] private Renderer modelRenderer;
     private bool playerIsInside = false;
+
+
+    /// <summary>
+    /// Changes if the player outline is active or not
+    /// </summary>
+    /// <param name="active">True if active</param>
+    public void SetOutlineActive(bool active)
+    {
+        foreach (Material mat in modelRenderer.materials)
+        {
+            mat.SetFloat("_N_F_O", active ? 1 : 0);
+            mat.SetShaderPassEnabled("SRPDefaultUnlit", active);
+        }
+    }
+
+    /// <summary>
+    /// Changes the player outline's color
+    /// </summary>
+    /// <param name="color">The outline's color</param>
+    public void SetOutlineColor(Color color)
+    {
+        foreach (Material mat in modelRenderer.materials)
+        {
+            mat.SetColor("_OutlineColor", color);
+        }
+    }
 
     /// <summary>
     /// Changes if the interaction is "active" or not
@@ -20,8 +47,17 @@ public class InteractableObject : MonoBehaviour
     public void SetActive(bool value)
     {
         playerIsInside = value;
-        if (value) GameGUI.instance.ShowInteractionIcon(interactionObject.position);
-        else GameGUI.instance.HideInteractionIcon();
+        if (value)
+        {
+            SetOutlineActive(Settings.instance.GetObjectOutlineActive());
+            SetOutlineColor(Settings.instance.GetOutlineColor());
+            GameGUI.instance.ShowInteractionIcon(interactionObject.position);
+        }
+        else
+        {
+            SetOutlineActive(false);
+            GameGUI.instance.HideInteractionIcon();
+        }
     }
 
     /// <summary>
@@ -46,7 +82,7 @@ public class InteractableObject : MonoBehaviour
 
     void Update()
     {
-        if(playerIsInside) GameGUI.instance.ShowInteractionIcon(interactionObject.position);
+        if (playerIsInside) GameGUI.instance.ShowInteractionIcon(interactionObject.position);
         OnUpdate();
     }
 

@@ -2,13 +2,13 @@ using System.Collections;
 using UnityEngine;
 
 /// <summary>
-/// Node to set the ambiance
+/// Represents a node that can show / hide the player
 /// </summary>
-[CreateNodeMenu("Event/Set ambiance")]
-public class SetAmbianceNode : SpailpinNode
+[CreateNodeMenu("Event/Hide player")]
+public class HidePlayerNode : SpailpinNode
 {
     [Input(connectionType = ConnectionType.Multiple)] public bool entry;
-    [SerializeField] private int ambianceID;
+    [SerializeField] private bool playerVisible;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 
     // Use this for initialization
@@ -19,8 +19,7 @@ public class SetAmbianceNode : SpailpinNode
 
     public override IEnumerator Apply()
     {
-        GameManager.instance.ambianceID = ambianceID;
-        AudioManager.instance.SetAmbience(ambianceID);
+        Player.instance.SetPlayerModelActive(playerVisible);
         yield return 0;
     }
 }

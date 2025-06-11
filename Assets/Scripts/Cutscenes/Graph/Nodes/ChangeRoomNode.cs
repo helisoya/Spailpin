@@ -1,14 +1,16 @@
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 
 /// <summary>
-/// Node to set the ambiance
+/// Represents a node that can change the current room
 /// </summary>
-[CreateNodeMenu("Event/Set ambiance")]
-public class SetAmbianceNode : SpailpinNode
+[CreateNodeMenu("Event/Change room")]
+public class ChangeRoomNode : SpailpinNode
 {
     [Input(connectionType = ConnectionType.Multiple)] public bool entry;
-    [SerializeField] private int ambianceID;
+    [SerializeField] private int roomID;
+    [SerializeField] private CinemachineBlendDefinition blend;
     [Output(connectionType = ConnectionType.Override)] public bool exit;
 
     // Use this for initialization
@@ -19,8 +21,8 @@ public class SetAmbianceNode : SpailpinNode
 
     public override IEnumerator Apply()
     {
-        GameManager.instance.ambianceID = ambianceID;
-        AudioManager.instance.SetAmbience(ambianceID);
+        CinemachineBrain.GetActiveBrain(0).DefaultBlend = blend;
+        Map.instance.GetRoom(roomID).Apply();
         yield return 0;
     }
 }
