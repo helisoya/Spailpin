@@ -321,6 +321,7 @@ public class Player : MonoBehaviour
     {
         if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.PAUSE, value);
         else if (inPuzzle && currentPuzzle.inHintMenu) return;
+        else if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
         else if (GameGUI.instance.isPauseOpen)
         {
             GameGUI.instance.ClosePause();
