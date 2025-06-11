@@ -1478,7 +1478,7 @@ PrefabInstance:
       objectReference: {fileID: 2082911627}
     - target: {fileID: 2011049636841171600, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
       propertyPath: m_VersionIndex
-      value: 7854
+      value: 7860
       objectReference: {fileID: 0}
     - target: {fileID: 3449431553767904570, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
       propertyPath: m_Name
@@ -5414,6 +5414,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -12.814819
       objectReference: {fileID: 0}
+    - target: {fileID: 7576310857532663812, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576310857532663812, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7576310857532663812, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7789988549578535646, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: canvas
       value: 
@@ -5440,7 +5452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8664600812062654764, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
