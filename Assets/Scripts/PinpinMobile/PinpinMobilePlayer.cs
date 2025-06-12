@@ -151,6 +151,13 @@ public class PinpinMobilePlayer : MonoBehaviour
             playerTransform.position += playerTransform.right * 3f;
             onCarMove.Invoke(false);
             moving = false;
+
+            wheelFL.motorTorque = 0;
+            wheelFR.motorTorque = 0;
+            wheelBL.motorTorque = 0;
+            wheelBR.motorTorque = 0;
+            wheelFL.steerAngle = 0;
+            wheelFR.steerAngle = 0;
         }
         else
         {

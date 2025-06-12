@@ -3087,7 +3087,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   endGraph: {fileID: 11400000, guid: ddb13b5d0ead1964b892c904c9aa0610, type: 2}
-  sequence: 01000000000000000300000002000000
+  sequence: 01000000030000000000000002000000
   selectionObjs:
   - {fileID: 4426467928250081085}
   - {fileID: 4014181965763551771}
