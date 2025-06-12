@@ -64,7 +64,6 @@ public class SaveManager
         saveFile.currentRoom = Player.instance.CurrentRoom;
         saveFile.playerPosition = Player.instance.position;
         saveFile.playerRotation = Player.instance.rotation;
-        saveFile.ambianceID = GameManager.instance.ambianceID;
         FileManager.SaveJSON(saveFilePath, saveFile);
     }
 

@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cab69574fb0bf19408772b469095a1ca, type: 3}
-  m_Name: Landing_StartUp
+  m_Name: Maze_StartUp
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -165025555650158891}

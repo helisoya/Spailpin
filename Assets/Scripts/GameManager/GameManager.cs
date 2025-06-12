@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
 
     public bool changingScene { get { return routineChangeScene != null; } }
     public bool loadingSave { get; set; }
-    public int ambianceID { get; set; }
 
     void Awake()
     {

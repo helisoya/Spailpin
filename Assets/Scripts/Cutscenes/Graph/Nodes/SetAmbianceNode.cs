@@ -19,7 +19,6 @@ public class SetAmbianceNode : SpailpinNode
 
     public override IEnumerator Apply()
     {
-        GameManager.instance.ambianceID = ambianceID;
         AudioManager.instance.SetAmbience(ambianceID);
         yield return 0;
     }

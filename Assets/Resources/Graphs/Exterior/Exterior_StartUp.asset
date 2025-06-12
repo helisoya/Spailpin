@@ -275,6 +275,52 @@ MonoBehaviour:
   entry: 0
   dialogID: Intro_Cinematic_Start_3
   exit: 0
+--- !u!114 &-4064645962359544380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad5fc910f1040646b4730a38744d637, type: 3}
+  m_Name: Set Ambiance
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1720, y: -56}
+  ports:
+    keys:
+    - entry
+    - exit
+    values:
+    - _fieldName: entry
+      _node: {fileID: -4064645962359544380}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit
+        node: {fileID: -165025555650158891}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: -4064645962359544380}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: 5522908606574431888}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  entry: 0
+  ambianceID: 0
+  exit: 0
 --- !u!114 &-3251298726805313397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +411,7 @@ MonoBehaviour:
   m_Name: Start
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1704, y: -56}
+  position: {x: -2024, y: -40}
   ports:
     keys:
     - exit
@@ -376,7 +422,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 5522908606574431888}
+        node: {fileID: -4064645962359544380}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -412,6 +458,7 @@ MonoBehaviour:
   - {fileID: 9042668224628114615}
   - {fileID: -402140990885268750}
   - {fileID: -4862909114866741351}
+  - {fileID: -4064645962359544380}
   parrallelCutscene: 0
 --- !u!114 &1498758228165823446
 MonoBehaviour:
@@ -531,7 +578,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: exit
-        node: {fileID: -165025555650158891}
+        node: {fileID: -4064645962359544380}
         reroutePoints: []
       _direction: 0
       _connectionType: 0

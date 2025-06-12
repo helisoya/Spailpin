@@ -10140,7 +10140,7 @@ MonoBehaviour:
   - {fileID: 1632474939}
   puzzles:
   - {fileID: 1779857531}
-  startupGraph: {fileID: 0}
+  startupGraph: {fileID: 11400000, guid: b92b97bbde93d284587a86ad31157ae2, type: 2}
 --- !u!4 &1758051590
 Transform:
   m_ObjectHideFlags: 0
