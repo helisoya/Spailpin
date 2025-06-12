@@ -402,6 +402,7 @@ public class Settings
                 textSpacing = 0,
                 textOpacity = 0.8f,
                 outlinePlayer = false,
+                outlineObjects = true,
                 outlineColor = Color.white
             };
             Save();

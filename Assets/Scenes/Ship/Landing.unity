@@ -2068,19 +2068,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.82
+      value: -0.3786621
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.0519981
+      value: 2.088581
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.27
+      value: -12.955826
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.15561505
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2088,7 +2088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9878178
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -7644,9 +7644,25 @@ PrefabInstance:
       propertyPath: 'texts.Array.data[3]'
       value: 
       objectReference: {fileID: 177862700}
+    - target: {fileID: 2093743282430136158, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876658247309738690, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261246695680975929, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4285126301532180733, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
       propertyPath: m_Name
       value: BedRoomPuzzleData
+      objectReference: {fileID: 0}
+    - target: {fileID: 6014057975759410083, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8533522814445332132, guid: dba57ef1d6d909b44a894a8c2a82e978, type: 3}
       propertyPath: m_LocalPosition.x
