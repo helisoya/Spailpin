@@ -167,6 +167,13 @@ MonoBehaviour:
       Data3: 1883546793
       Data4: -1060449996
     Path: event:/SFX/PuzzleFailed
+  <Bonk>k__BackingField:
+    Guid:
+      Data1: -1813359657
+      Data2: 1196157396
+      Data3: -472238708
+      Data4: -300822094
+    Path: event:/SFX/Bonk
   SFX:
     _serializedList:
     - Key: DoorLocked
