@@ -1534,11 +1534,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
---- !u!23 &710174732 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8112652730658592548, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
-  m_PrefabInstance: {fileID: 710174731}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &710174733 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2500622115964403881, guid: 284f2b605f404aa46a0f7c525c51fe79, type: 3}
@@ -3753,7 +3748,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
-  modelRenderer: {fileID: 710174732}
+  modelRenderer: {fileID: 0}
 --- !u!65 &1395208345
 BoxCollider:
   m_ObjectHideFlags: 0

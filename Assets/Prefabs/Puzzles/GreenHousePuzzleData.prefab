@@ -195,7 +195,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5243522220779917222}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: OpenHintVisual
         m_Mode: 3
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5243522220779917222}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: OpenHintVisual
         m_Mode: 3
@@ -3018,9 +3018,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4647555898540728518}
-  - component: {fileID: 5243522220779917222}
   - component: {fileID: 1642557843847796519}
   - component: {fileID: 7880788290922925259}
+  - component: {fileID: 6983700403082048303}
   m_Layer: 3
   m_Name: GreenHousePuzzleData
   m_TagString: Untagged
@@ -3046,7 +3046,7 @@ Transform:
   - {fileID: 6502750235273121466}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5243522220779917222
+--- !u!114 &1642557843847796519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3055,7 +3055,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 7124021373417316395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fccbcdee4c5bea54396aa3b5602fbed7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c0fbb29db7d1294880734deb1d1f64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7880788290922925259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7124021373417316395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff110c2290b9ee4fab8b999c3119ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6983700403082048303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7124021373417316395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000e1544bea619a429a2aff6eeb4477e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 0
@@ -3087,17 +3111,25 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   endGraph: {fileID: 11400000, guid: ddb13b5d0ead1964b892c904c9aa0610, type: 2}
-  sequence: 01000000030000000000000002000000
-  selectionObjs:
-  - {fileID: 4426467928250081085}
-  - {fileID: 4014181965763551771}
-  - {fileID: 7855999991600453197}
-  - {fileID: 416409828347813760}
-  animators:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  actionCooldown: 0.75
+  sequence: 01000000020000000300000004000000
+  datas:
+    _serializedList:
+    - Key: 1
+      Value:
+        selectionObj: {fileID: 4014181965763551771}
+        animator: {fileID: 0}
+    - Key: 2
+      Value:
+        selectionObj: {fileID: 416409828347813760}
+        animator: {fileID: 0}
+    - Key: 3
+      Value:
+        selectionObj: {fileID: 4426467928250081085}
+        animator: {fileID: 0}
+    - Key: 4
+      Value:
+        selectionObj: {fileID: 7855999991600453197}
+        animator: {fileID: 0}
   onMoveSelection:
     m_PersistentCalls:
       m_Calls: []
@@ -3107,7 +3139,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1642557843847796519}
         m_TargetAssemblyTypeName: TutorialPuzzleSFX, Assembly-CSharp
         m_MethodName: PlayCarillon
-        m_Mode: 0
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3131,7 +3163,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onWrongNote:
+  onWrong:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7880788290922925259}
@@ -3149,30 +3181,6 @@ MonoBehaviour:
   onQuitPuzzle:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1642557843847796519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7124021373417316395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c0fbb29db7d1294880734deb1d1f64e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7880788290922925259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7124021373417316395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eff110c2290b9ee4fab8b999c3119ed3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7188223413477732611
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,7 +3785,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5243522220779917222}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
         m_MethodName: OpenHintVisual
         m_Mode: 3

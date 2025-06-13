@@ -79,3 +79,4 @@ menu_options = Options
 menu_quitGame = Quit Game
 menu_credits = Credits
 menu_back = Back
+menu_resume = Resume
