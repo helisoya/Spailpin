@@ -475,31 +475,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.129
+      value: 9.76236
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.73
+      value: 1.029583
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.71
+      value: -4.9548187
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.35844707
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.20694953
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7883627
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.45516142
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4174188336636448173, guid: 73d516e050d45c44aa48feb924f0fe5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1710,6 +1710,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 130
       objectReference: {fileID: 0}
+    - target: {fileID: 6983700403082048303, guid: aa26ab3917131024eb3df92c32e0b107, type: 3}
+      propertyPath: datas._serializedList.Array.data[0].Value.animator
+      value: 
+      objectReference: {fileID: 1428276912}
+    - target: {fileID: 6983700403082048303, guid: aa26ab3917131024eb3df92c32e0b107, type: 3}
+      propertyPath: datas._serializedList.Array.data[1].Value.animator
+      value: 
+      objectReference: {fileID: 1428276914}
+    - target: {fileID: 6983700403082048303, guid: aa26ab3917131024eb3df92c32e0b107, type: 3}
+      propertyPath: datas._serializedList.Array.data[2].Value.animator
+      value: 
+      objectReference: {fileID: 1428276913}
+    - target: {fileID: 6983700403082048303, guid: aa26ab3917131024eb3df92c32e0b107, type: 3}
+      propertyPath: datas._serializedList.Array.data[3].Value.animator
+      value: 
+      objectReference: {fileID: 1428276915}
     - target: {fileID: 7124021373417316395, guid: aa26ab3917131024eb3df92c32e0b107, type: 3}
       propertyPath: m_Name
       value: GreenHousePuzzleData
@@ -1762,13 +1778,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1196476360 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5243522220779917222, guid: aa26ab3917131024eb3df92c32e0b107, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6983700403082048303, guid: aa26ab3917131024eb3df92c32e0b107, type: 3}
   m_PrefabInstance: {fileID: 1196476358}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fccbcdee4c5bea54396aa3b5602fbed7, type: 3}
+  m_Script: {fileID: 11500000, guid: 000e1544bea619a429a2aff6eeb4477e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1232494430
