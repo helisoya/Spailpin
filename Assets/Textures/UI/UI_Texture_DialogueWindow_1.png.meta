@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,12 +101,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 171
-        width: 85
-        height: 85
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 333, y: 333, z: 333, w: 333}
       customData: 
       outline: []
       physicsShape: []
@@ -114,182 +114,6 @@ TextureImporter:
       bones: []
       spriteID: 2cc435ea583997f44af601dc3167525a
       internalID: -1595503080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Texture_DialogueWindow_1_1
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 171
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f649bfabc7cfb6439547787d616cc06
-      internalID: 948850903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Texture_DialogueWindow_1_2
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 171
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d8434db5f545fb4d961f84cc63a2c12
-      internalID: 658852070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Texture_DialogueWindow_1_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 86
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8858933be57e2c47bba2392a0817e11
-      internalID: -734700176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Texture_DialogueWindow_1_4
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 86
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5734e0ed4306f1d4cb7990ef2852c7b3
-      internalID: 143548571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Texture_DialogueWindow_1_5
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 86
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b46b8443bf34914da0fe6f070569f0d
-      internalID: -917122408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Texture_DialogueWindow_1_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00103dd8378d04241b716cb15b44b2c6
-      internalID: 861121563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Texture_DialogueWindow_1_7
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 1
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67b539496f4956347a3f20e8031691e6
-      internalID: 1960837683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Texture_DialogueWindow_1_8
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 1
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7eabc0f65dd07af478562094d0435946
-      internalID: 906227664
       vertices: []
       indices: 
       edges: []
