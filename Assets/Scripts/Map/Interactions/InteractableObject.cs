@@ -14,6 +14,18 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] private Renderer modelRenderer;
     private bool playerIsInside = false;
 
+    void Awake()
+    {
+        if (!modelRenderer) return;
+
+        foreach (Material mat in modelRenderer.materials)
+        {
+            mat.SetFloat("_OutlineWidth", 1.0f);
+            mat.SetFloat("_OutlineWidthAffectedByViewDistance", 1);
+            mat.SetFloat("_FarDistanceMaxWidth", 1);
+        }
+    }
+
 
     /// <summary>
     /// Changes if the player outline is active or not
@@ -21,6 +33,8 @@ public class InteractableObject : MonoBehaviour
     /// <param name="active">True if active</param>
     public void SetOutlineActive(bool active)
     {
+        if (!modelRenderer) return;
+
         foreach (Material mat in modelRenderer.materials)
         {
             mat.SetFloat("_N_F_O", active ? 1 : 0);
@@ -34,6 +48,8 @@ public class InteractableObject : MonoBehaviour
     /// <param name="color">The outline's color</param>
     public void SetOutlineColor(Color color)
     {
+        if (!modelRenderer) return;
+        
         foreach (Material mat in modelRenderer.materials)
         {
             mat.SetColor("_OutlineColor", color);

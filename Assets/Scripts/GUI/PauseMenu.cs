@@ -13,6 +13,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject root;
     [SerializeField] private PausePage[] pages;
     [SerializeField] private Button[] buttons;
+    [SerializeField] private Color[] colors;
+    [SerializeField] private Image backgroundImg;
 
     [Header("Audio Events")]
     [SerializeField] private UnityEvent onButtonPress;
@@ -27,6 +29,11 @@ public class PauseMenu : MonoBehaviour
         foreach (PausePage page in pages)
         {
             page.menu = this;
+        }
+
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].GetComponent<Image>().color = colors[i];
         }
     }
 
@@ -81,6 +88,7 @@ public class PauseMenu : MonoBehaviour
         pages[currentPage].Close();
         currentPage = page;
         pages[page].Open();
+        backgroundImg.color = colors[page];
 
         foreach (Button button in buttons)
         {

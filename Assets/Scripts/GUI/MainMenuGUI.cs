@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
@@ -80,6 +81,17 @@ public class MainMenuGUI : MonoBehaviour
         if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
         onDeviceChange.Invoke(input.currentControlScheme);
     }
+
+    /// <summary>
+    /// OnEasterEgg callback
+    /// </summary>
+    /// <param name="value">The movement value</param>
+    void OnEasterEgg(InputValue value)
+    {
+        if (GameManager.instance.changingScene) return;
+        SceneManager.LoadScene("PinpinMobile");
+    }
+
 
     /// <summary>
     /// Callback for starting a new game

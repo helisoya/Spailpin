@@ -27,7 +27,7 @@ public class InterfaceSFX : MonoBehaviour
         AudioManager.instance.PlayOneShot(FMODEvents.instance.PageTurn, this.transform.position);
     } 
     
-    public void PlayJunoDiary()
+    public void Dialogue()
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.JunoDiary, this.transform.position);
     }

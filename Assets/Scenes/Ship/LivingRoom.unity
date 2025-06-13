@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 569082524}
   - component: {fileID: 569082523}
   m_Layer: 3
-  m_Name: Door_ToGreenHouse
+  m_Name: Door_ToHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopPlayerOnInterract: 1
   interactionObject: {fileID: 74395278}
-  linkedGraph: {fileID: 11400000, guid: c7d61fb3465d6a64587f2b168a8e8dfc, type: 2}
+  linkedGraph: {fileID: 11400000, guid: ce9e631f8df1a9744bf4c7bf1f2acc88, type: 2}
   onInterract:
     m_PersistentCalls:
       m_Calls: []
@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 651734701}
   - component: {fileID: 651734700}
   m_Layer: 3
-  m_Name: Door_ToHall
+  m_Name: Door_ToGreenhouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,7 +770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopPlayerOnInterract: 1
   interactionObject: {fileID: 817506894}
-  linkedGraph: {fileID: 11400000, guid: ce9e631f8df1a9744bf4c7bf1f2acc88, type: 2}
+  linkedGraph: {fileID: 11400000, guid: c7d61fb3465d6a64587f2b168a8e8dfc, type: 2}
   onInterract:
     m_PersistentCalls:
       m_Calls: []
@@ -815,7 +815,7 @@ GameObject:
   - component: {fileID: 714651123}
   - component: {fileID: 714651124}
   m_Layer: 0
-  m_Name: Hall
+  m_Name: GreenHouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDefaultSpawnpoint: 0
-  linkedMap: Hall
+  linkedMap: GreenHouse
   linkedRoom: {fileID: 2123106903}
 --- !u!1 &724034327
 GameObject:
@@ -1737,7 +1737,7 @@ GameObject:
   - component: {fileID: 1920985996}
   - component: {fileID: 1920985995}
   m_Layer: 0
-  m_Name: GreenHouse
+  m_Name: Hall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDefaultSpawnpoint: 0
-  linkedMap: GreenHouse
+  linkedMap: Hall
   linkedRoom: {fileID: 2123106903}
 --- !u!4 &1920985996
 Transform:

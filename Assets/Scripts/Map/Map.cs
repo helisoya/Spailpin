@@ -54,7 +54,6 @@ public class Map : MonoBehaviour
         if (GameManager.instance.loadingSave)
         {
             SaveFile saveFile = GameManager.instance.GetSaveManager().saveFile;
-            AudioManager.instance.SetAmbience(saveFile.ambianceID);
             Player.instance.SetPosition(saveFile.playerPosition, Quaternion.Euler(saveFile.playerRotation));
 
             foreach (Room room in rooms)

@@ -362,7 +362,7 @@ public class Settings
         GameManager.instance.GetInputs().LoadBindingOverridesFromJson(data.remaping);
         GameManager.instance.UpdateVolume();
         Locals.ChangeFontPrimary(data.currentTypoIndexPrimary);
-        Locals.ChangeFontPrimary(data.currentTypoIndexSecondary);
+        Locals.ChangeFontSecondary(data.currentTypoIndexSecondary);
     }
 
     /// <summary>
@@ -398,10 +398,11 @@ public class Settings
                 bloom = true,
                 currentTypoIndexPrimary = 0,
                 currentTypoIndexSecondary = 1,
-                textSize = 1,
+                textSize = 0,
                 textSpacing = 0,
                 textOpacity = 0.8f,
                 outlinePlayer = false,
+                outlineObjects = true,
                 outlineColor = Color.white
             };
             Save();
