@@ -7772,6 +7772,63 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1001 &1010159271
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 490871300742035868, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_Name
+      value: ExteriorHouse_Prefab_Furniture_Bench_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.906
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00009930134
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.479
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071253
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70708835
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -89.997
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148621539082544798, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3dbf23347cfc4c440ad11593ba397636, type: 3}
 --- !u!43 &1021925729
 Mesh:
   m_ObjectHideFlags: 0
@@ -11869,7 +11926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8664600812062654764, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9214383916783867075, guid: 4851ba5f70072c84881227cbe8260df0, type: 3}
       propertyPath: m_text
@@ -49074,7 +49131,8 @@ PrefabInstance:
       value: Garden_DecorsPrefabs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8224647025048841629, guid: d3f4a7eb968e66b49a19f7615614994d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f4a7eb968e66b49a19f7615614994d, type: 3}
@@ -49099,3 +49157,4 @@ SceneRoots:
   - {fileID: 1935719243}
   - {fileID: 2097580065}
   - {fileID: 117893387533582809}
+  - {fileID: 1010159271}
