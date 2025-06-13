@@ -15,6 +15,10 @@ public class MainMenuGUI : MonoBehaviour
     [Header("Start Data")]
     [SerializeField] private string startScene = "ExteriorHouse";
 
+    [Header("Screens")]
+    [SerializeField] private GameObject defaultScreen;
+    [SerializeField] private GameObject creditsScreen;
+
     [Header("Components")]
     [SerializeField] private Button continueButton;
     [SerializeField] private PauseMenu pauseMenu;
@@ -23,11 +27,13 @@ public class MainMenuGUI : MonoBehaviour
     [Header("Selectable Objects")]
     [SerializeField] private GameObject defaultSelectable;
     [SerializeField] private GameObject optionsSelectable;
+    [SerializeField] private GameObject creditsSelectable;
 
     [Header("Audio Event")]
     [SerializeField] private UnityEvent onButtonClick;
     [SerializeField] private UnityEvent<int> onPauseOpen;
     [SerializeField] private UnityEvent onNewGame;
+    [SerializeField] private UnityEvent onContinue;
     public UnityEvent<string> onDeviceChange;
 
     public static MainMenuGUI instance;
@@ -40,6 +46,8 @@ public class MainMenuGUI : MonoBehaviour
 
     void Start()
     {
+        defaultScreen.SetActive(true);
+        creditsScreen.SetActive(false);
         continueButton.interactable = GameManager.instance.GetSaveManager().saveFileExists;
         EventSystem.current.SetSelectedGameObject(defaultSelectable);
     }
@@ -69,6 +77,12 @@ public class MainMenuGUI : MonoBehaviour
             onPauseOpen.Invoke(1);
             EventSystem.current.SetSelectedGameObject(optionsSelectable);
         }
+        else if (creditsScreen.activeInHierarchy)
+        {
+            defaultScreen.SetActive(true);
+            creditsScreen.SetActive(false);
+            EventSystem.current.SetSelectedGameObject(creditsSelectable);
+        }
     }
 
     /// <summary>
@@ -92,6 +106,16 @@ public class MainMenuGUI : MonoBehaviour
         SceneManager.LoadScene("PinpinMobile");
     }
 
+    /// <summary>
+    /// Callback for opening the credits
+    /// </summary>
+    public void Event_Credits()
+    {
+        onButtonClick.Invoke();
+        defaultScreen.SetActive(false);
+        creditsScreen.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+    }
 
     /// <summary>
     /// Callback for starting a new game
@@ -116,6 +140,7 @@ public class MainMenuGUI : MonoBehaviour
 
         GameManager.instance.loadingSave = true;
         onButtonClick.Invoke();
+        onContinue.Invoke();
         GameManager.instance.GetSaveManager().LoadGame(true);
     }
 
