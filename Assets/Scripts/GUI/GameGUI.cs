@@ -161,13 +161,13 @@ public class GameGUI : MonoBehaviour
         switch (sizeIndex)
         {
             case 0:
-                correctSize = 18;
+                correctSize = 14;
                 break;
             case 1:
-                correctSize = 28;
+                correctSize = 18;
                 break;
             case 2:
-                correctSize = 30;
+                correctSize = 22;
                 break;
         }
 
