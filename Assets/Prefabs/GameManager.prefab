@@ -134,6 +134,7 @@ MonoBehaviour:
     rightStick: {fileID: 21300000, guid: f261f110b82113f448b51cc525cc74ca, type: 3}
     leftStickPress: {fileID: 21300000, guid: 3968cd7002a0ec04cb1b0dd0b44ef4f7, type: 3}
     rightStickPress: {fileID: 21300000, guid: f261f110b82113f448b51cc525cc74ca, type: 3}
+    defaultIcon: {fileID: 21300000, guid: f261f110b82113f448b51cc525cc74ca, type: 3}
   ps4:
     buttonSouth: {fileID: 21300000, guid: 1df3b9f52b302934dbfb0f9083e50e8d, type: 3}
     buttonNorth: {fileID: 21300000, guid: 520427bef17a3d94cb5541209246168d, type: 3}
@@ -154,3 +155,167 @@ MonoBehaviour:
     rightStick: {fileID: 21300000, guid: b6cb840d7d72b1849b34226de479e4a7, type: 3}
     leftStickPress: {fileID: 21300000, guid: 0a7c7b5266ac998499752538938e3169, type: 3}
     rightStickPress: {fileID: 21300000, guid: b6cb840d7d72b1849b34226de479e4a7, type: 3}
+    defaultIcon: {fileID: 21300000, guid: b6cb840d7d72b1849b34226de479e4a7, type: 3}
+  keyboard:
+    _serializedList:
+    - Key: a
+      Value: {fileID: 1869965371, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: b
+      Value: {fileID: 48323559, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: c
+      Value: {fileID: -426567348, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: d
+      Value: {fileID: -611243054, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: e
+      Value: {fileID: 2104278636, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f
+      Value: {fileID: 195140190, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: g
+      Value: {fileID: -1842609716, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: h
+      Value: {fileID: 601313777, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: i
+      Value: {fileID: -2047921814, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: j
+      Value: {fileID: -1500628298, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: k
+      Value: {fileID: -908656629, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: l
+      Value: {fileID: 1983669348, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: m
+      Value: {fileID: -483818738, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: n
+      Value: {fileID: 678788296, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: o
+      Value: {fileID: 1674098902, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: p
+      Value: {fileID: 146401591, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: q
+      Value: {fileID: -479010190, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: r
+      Value: {fileID: -410039260, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: s
+      Value: {fileID: -367594363, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: t
+      Value: {fileID: 660562252, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: u
+      Value: {fileID: -127463555, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: v
+      Value: {fileID: 1919581753, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: w
+      Value: {fileID: 230518425, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: x
+      Value: {fileID: 74215895, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: y
+      Value: {fileID: -1160050356, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: z
+      Value: {fileID: -1837797343, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: upArrow
+      Value: {fileID: 1958651726, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: downArrow
+      Value: {fileID: -90336077, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: leftArrow
+      Value: {fileID: -596266421, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: rightArrow
+      Value: {fileID: 1623081611, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f1
+      Value: {fileID: -2091331837, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f2
+      Value: {fileID: -540890470, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f3
+      Value: {fileID: 873642994, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f4
+      Value: {fileID: -2091729113, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f5
+      Value: {fileID: 802931086, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f6
+      Value: {fileID: -1636626258, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f7
+      Value: {fileID: -955126989, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f8
+      Value: {fileID: 1433038008, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f9
+      Value: {fileID: 303840847, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f10
+      Value: {fileID: 1369844787, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f11
+      Value: {fileID: 1897880907, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: f12
+      Value: {fileID: -1201471726, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: period
+      Value: {fileID: 1279836356, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: comma
+      Value: {fileID: 1359519500, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: semicolon
+      Value: {fileID: 926298427, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: slash
+      Value: {fileID: 1132390149, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: backslash
+      Value: {fileID: -762651297, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: quote
+      Value: {fileID: 598950041, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: leftBracket
+      Value: {fileID: -2088070261, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: rightBracket
+      Value: {fileID: 1492069781, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: equals
+      Value: {fileID: 2067470138, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: minus
+      Value: {fileID: -365965757, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 1
+      Value: {fileID: -1839530662, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 2
+      Value: {fileID: 737934375, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 3
+      Value: {fileID: 92728400, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 4
+      Value: {fileID: 2077192396, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 5
+      Value: {fileID: 575246258, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 6
+      Value: {fileID: -1858091967, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 7
+      Value: {fileID: -1173444867, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 8
+      Value: {fileID: 1453862847, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 9
+      Value: {fileID: -941515754, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: 0
+      Value: {fileID: 356077082, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
+    - Key: tab
+      Value: {fileID: -1825326908, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: escape
+      Value: {fileID: -1061932460, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: printScreen
+      Value: {fileID: -1140198362, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: backspace
+      Value: {fileID: 1225648324, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: shift
+      Value: {fileID: 535217620, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: pageUp
+      Value: {fileID: -1996244151, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: pageDown
+      Value: {fileID: 181943660, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: enter
+      Value: {fileID: -1977481725, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: leftCtrl
+      Value: {fileID: -957289506, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: rightCtrl
+      Value: {fileID: -718445201, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: leftAlt
+      Value: {fileID: -1521612302, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: rightAlt
+      Value: {fileID: -1959072904, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: space
+      Value: {fileID: 1140453893, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: insert
+      Value: {fileID: 489452852, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: delete
+      Value: {fileID: -1513978085, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: end
+      Value: {fileID: 1068763609, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: home
+      Value: {fileID: 666887201, guid: 86f369578c624d6419f3e85530996824, type: 3}
+    - Key: pause
+      Value: {fileID: -1296412729, guid: 86f369578c624d6419f3e85530996824, type: 3}
+  defaultIcon: {fileID: -1142901494, guid: 62714d091995a834484190a58b1bd3b9, type: 3}
