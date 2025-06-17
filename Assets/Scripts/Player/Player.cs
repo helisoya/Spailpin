@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     private Puzzle currentPuzzle;
     public bool inPuzzle { get { return currentPuzzle != null; } }
 
-    private string currentScheme;
+    public string currentScheme { get; private set; }
     private float currentShakingLength;
     private float currentShakingStrength;
     private bool colliding;
@@ -218,7 +218,7 @@ public class Player : MonoBehaviour
     void OnMove(InputValue value)
     {
         if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
-        if (GameGUI.instance.isPauseOpen) return;
+        if (GameGUI.instance.isPauseOpen || GameManager.instance.changingScene) return;
 
         if (inPuzzle && currentPuzzle.absorbMovements)
         {
@@ -237,7 +237,7 @@ public class Player : MonoBehaviour
     void OnHint(InputValue value)
     {
         if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
-        if (GameGUI.instance.isPauseOpen) return;
+        if (GameGUI.instance.isPauseOpen || GameManager.instance.changingScene) return;
 
         if (inPuzzle && currentPuzzle.absorbHint)
         {
@@ -253,7 +253,7 @@ public class Player : MonoBehaviour
     void OnPrevious(InputValue value)
     {
         if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
-        if (GameGUI.instance.isPauseOpen) return;
+        if (GameGUI.instance.isPauseOpen || GameManager.instance.changingScene) return;
 
         if (inPuzzle && currentPuzzle.absorbPrevious)
         {
@@ -268,7 +268,7 @@ public class Player : MonoBehaviour
     void OnEasterEgg(InputValue value)
     {
         if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
-        if (GameGUI.instance.isPauseOpen) return;
+        if (GameGUI.instance.isPauseOpen || GameManager.instance.changingScene) return;
 
         if (!ourGloriousSaviourHasArrived)
         {
@@ -283,7 +283,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The sprinting value</param>
     void OnSprint(InputValue value)
     {
-        if (GameGUI.instance.isPauseOpen || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || inPuzzle)
+        if (GameGUI.instance.isPauseOpen || GameManager.instance.changingScene || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || inPuzzle)
         {
             controller.SetSprinting(false);
             return;
@@ -321,6 +321,7 @@ public class Player : MonoBehaviour
     {
         if (inPuzzle && currentPuzzle.absorbPause) currentPuzzle.FowardInput(Puzzle.InputType.PAUSE, value);
         else if (inPuzzle && currentPuzzle.inHintMenu) return;
+        else if (GameManager.instance.changingScene) return;
         else if (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) return;
         else if (GameGUI.instance.isPauseOpen)
         {
@@ -342,7 +343,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The interaction value (unused)</param>
     void OnInteract(InputValue value)
     {
-        if (GameGUI.instance.isPauseOpen) return;
+        if (GameGUI.instance.isPauseOpen  || GameManager.instance.changingScene) return;
         if (CutsceneManager.instance.inCutscene) CutsceneManager.instance.UserSubmit();
         else if (inPuzzle && currentPuzzle.absorbInteract) currentPuzzle.FowardInput(Puzzle.InputType.ACCEPT, value);
         else if (inPuzzle && currentPuzzle.inHintMenu) return;

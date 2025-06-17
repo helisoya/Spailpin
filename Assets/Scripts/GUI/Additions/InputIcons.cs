@@ -2,6 +2,7 @@ using System;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using AYellowpaper.SerializedCollections;
 
 /// <summary>
 /// Handles the game's input icons
@@ -11,6 +12,8 @@ public class InputIcons : MonoBehaviour
     public static InputIcons instance;
     public GamepadIcons xbox;
     public GamepadIcons ps4;
+    public SerializedDictionary<string, Sprite> keyboard;
+    public Sprite defaultIcon;
 
     void Awake()
     {
@@ -24,17 +27,14 @@ public class InputIcons : MonoBehaviour
     /// <param name="controlPath">The input's path</param>
     /// <returns>The sprite if it exists</returns>
     public Sprite GetIcon(string deviceLayoutName, string controlPath){
-        Sprite icon = null;
-
         //if (InputSystem.IsFirstLayoutBasedOnSecond(deviceLayoutName, "DualShockGamepad"))
         //    icon = ps4.GetSprite(controlPath);
         if (deviceLayoutName.Equals("Gamepad"))
-            icon = xbox.GetSprite(controlPath);
+            return xbox.GetSprite(controlPath);
         else
-            icon = null;
-            // Do for keyboard
+            if (keyboard.TryGetValue(controlPath, out Sprite icon)) return icon;
 
-        return icon;
+        return defaultIcon;
     }
 
     [Serializable]
@@ -59,6 +59,7 @@ public class InputIcons : MonoBehaviour
         public Sprite rightStick;
         public Sprite leftStickPress;
         public Sprite rightStickPress;
+        public Sprite defaultIcon;
 
         public Sprite GetSprite(string controlPath)
         {
@@ -86,7 +87,7 @@ public class InputIcons : MonoBehaviour
                 case "leftStickPress": return leftStickPress;
                 case "rightStickPress": return rightStickPress;
             }
-            return null;
+            return defaultIcon;
         }
     }
 }

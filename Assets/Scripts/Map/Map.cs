@@ -13,11 +13,13 @@ public class Map : MonoBehaviour
     [SerializeField] private Puzzle[] puzzles;
     [SerializeField] private DialogGraph startupGraph;
     private bool isUpdatingCamera;
+    public bool started { get; private set; }
 
     public static Map instance { get; private set; }
 
     void Awake()
     {
+        started = false;
         instance = this;
     }
 
@@ -50,7 +52,6 @@ public class Map : MonoBehaviour
 
     void Start()
     {
-
         if (GameManager.instance.loadingSave)
         {
             SaveFile saveFile = GameManager.instance.GetSaveManager().saveFile;
@@ -76,6 +77,7 @@ public class Map : MonoBehaviour
         CinemachineCore.UniformDeltaTimeOverride = 500;
 
         if (startupGraph != null) CutsceneManager.instance.ProcessCutscene(startupGraph);
+        started = true;
     }
 
     /// <summary>

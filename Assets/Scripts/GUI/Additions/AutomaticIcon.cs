@@ -15,9 +15,18 @@ public class AutomaticIcon : MonoBehaviour
 
     void Start()
     {
-        if (isOnMainMenu) MainMenuGUI.instance.onDeviceChange.AddListener(OnDeviceChange);
-        else Player.instance.onDeviceChange.AddListener(OnDeviceChange);
-        OnDeviceChange("Gamepad");
+        iconImg.preserveAspect = true;
+
+        if (isOnMainMenu) {
+            MainMenuGUI.instance.onDeviceChange.AddListener(OnDeviceChange);
+            OnDeviceChange(MainMenuGUI.instance.currentScheme);
+        } 
+        else
+        {
+            Player.instance.onDeviceChange.AddListener(OnDeviceChange);
+            OnDeviceChange(Player.instance.currentScheme);
+        }
+        
     }
 
     /// <summary>
