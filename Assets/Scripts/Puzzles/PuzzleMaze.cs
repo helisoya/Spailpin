@@ -14,7 +14,7 @@ public class PuzzleMaze : Puzzle
         if (type == InputType.PREVIOUS && inputValue.isPressed)
         {
             Player.instance.SetPosition(repawnPoint.position,repawnPoint.rotation);
-            EndPuzzle(true);
+            //EndPuzzle(true);
         }
     }
 

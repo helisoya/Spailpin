@@ -49589,7 +49589,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &117893387533582812 stripped
 MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 6791507653058497344, guid: d3f4a7eb968e66b49a19f7615614994d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8819324923750655435, guid: d3f4a7eb968e66b49a19f7615614994d, type: 3}
   m_PrefabInstance: {fileID: 117893387533582809}
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &117893387533582813 stripped

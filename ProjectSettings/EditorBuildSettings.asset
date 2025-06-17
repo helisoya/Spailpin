@@ -36,6 +36,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Ship/BedRoom.unity
     guid: 3713f83561fde754197cebfb4ddf0200
   - enabled: 1
+    path: Assets/Scenes/Ship/EndingLeave.unity
+    guid: 6e3a7773369b9a1479819833c806fda3
+  - enabled: 1
+    path: Assets/Scenes/Ship/EndingStay.unity
+    guid: 83d650b41a7fb7841916e9b10c7b1bf2
+  - enabled: 1
     path: Assets/Scenes/Ship/PinpinMobile.unity
     guid: c5f7939e556f8184f83f9f6b954653a7
   - enabled: 0

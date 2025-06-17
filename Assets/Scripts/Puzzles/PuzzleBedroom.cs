@@ -32,6 +32,18 @@ public class PuzzleBedroom : Puzzle
     private int[] selections;
     private int currentObjIdx;
 
+    void Start()
+    {
+        if (GameManager.instance.GetSaveManager().GetVariable("puzzle4Done") == 1)
+        {
+            for (int i = 0; i < texts.Length; i++)
+            {
+                texts[i].text = sequence[i].ToString();
+            }
+        }
+    }
+
+
     /// <summary>
     /// Refreshs the visual section for the puzzle
     /// </summary>
