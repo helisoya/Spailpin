@@ -77,7 +77,8 @@ choice_back = Keep exploring the house
 end_drop_1 = Drop the journal ending
 end_keep_1 = Keep the journal ending
 
-
+ending_leave = This is the end<br><br>Yay... (Leave version)
+ending_stay = This is the end<br><br>Yay... (Stay version)
 
 
 Caribou_Start_1 = Hello Pinpin.
