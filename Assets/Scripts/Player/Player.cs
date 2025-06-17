@@ -29,7 +29,8 @@ public class Player : MonoBehaviour
     public static Player instance { get; private set; }
     private Puzzle currentPuzzle;
     public bool inPuzzle { get { return currentPuzzle != null; } }
-
+    public bool currentPuzzleAbsorbsInteractions {get{ return inPuzzle && currentPuzzle.absorbInteract; }}
+    public bool currentPuzzleInHintMenu {get{ return inPuzzle && currentPuzzle.inHintMenu; }}
     public string currentScheme { get; private set; }
     private float currentShakingLength;
     private float currentShakingStrength;
@@ -345,8 +346,7 @@ public class Player : MonoBehaviour
     {
         if (GameGUI.instance.isPauseOpen  || GameManager.instance.changingScene) return;
         if (CutsceneManager.instance.inCutscene) CutsceneManager.instance.UserSubmit();
-        else if (inPuzzle && currentPuzzle.absorbInteract) currentPuzzle.FowardInput(Puzzle.InputType.ACCEPT, value);
-        else if (inPuzzle && currentPuzzle.inHintMenu) return;
+        else if (inPuzzle && (currentPuzzle.absorbInteract || currentPuzzle.inHintMenu)) currentPuzzle.FowardInput(Puzzle.InputType.ACCEPT, value);
         else interactions.TryInterract();
     }
 
