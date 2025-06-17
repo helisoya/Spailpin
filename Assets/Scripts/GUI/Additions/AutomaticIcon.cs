@@ -17,9 +17,16 @@ public class AutomaticIcon : MonoBehaviour
     {
         iconImg.preserveAspect = true;
 
-        if (isOnMainMenu) MainMenuGUI.instance.onDeviceChange.AddListener(OnDeviceChange);
-        else Player.instance.onDeviceChange.AddListener(OnDeviceChange);
-        OnDeviceChange(Player.instance.currentScheme);
+        if (isOnMainMenu) {
+            MainMenuGUI.instance.onDeviceChange.AddListener(OnDeviceChange);
+            OnDeviceChange(MainMenuGUI.instance.currentScheme);
+        } 
+        else
+        {
+            Player.instance.onDeviceChange.AddListener(OnDeviceChange);
+            OnDeviceChange(Player.instance.currentScheme);
+        }
+        
     }
 
     /// <summary>
