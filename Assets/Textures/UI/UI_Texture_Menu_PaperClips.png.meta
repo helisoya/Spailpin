@@ -162,6 +162,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI_Texture_Menu_PaperClips_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 681
+        width: 1023
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1da25f5edc9beb469d600bfaa4d6426
+      internalID: -856961624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -179,6 +201,7 @@ TextureImporter:
       UI_Texture_Menu_PaperClips_0: -1502156398
       UI_Texture_Menu_PaperClips_1: -25782639
       UI_Texture_Menu_PaperClips_2: -633256296
+      UI_Texture_Menu_PaperClips_3: -856961624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

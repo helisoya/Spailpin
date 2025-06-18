@@ -1,24 +1,75 @@
 Test_1 = Hello, Mr.Caribou
 Test_2 = Hello, Pinpin.
 
-Intro_Cinematic_Start_1 = Welcome to the Spailpin demo.
-Intro_Cinematic_Start_2 = I finally found it. Her house is still intact.
-Intro_Cinematic_Start_3 = Her journal might make more sense now that I'm here.
+Intro_Cinematic_Start_1 = I've been wandering around the Belt for too long, I'm glad that I finally made it. Her house... It's still standing despite everything.
+Intro_Cinematic_Start_2 = Life's rougher than expected here, can't believe she survived for decades all alone.
+Intro_Cinematic_Start_3 = Somehow she- Is that light coming from the <i>window</i> ? Is she there..! I have to check inside just in case.
 
-Exterior_Door_PuzzleNoDone_1 = The door is locked.
-Exterior_Door_PuzzleNoDone_2 = There must be a way in.
+Exterior_Door_PuzzleNoDone_1 = Closed...
+Exterior_Door_PuzzleNoDone_2 = There must be a way to open the door.
 
-Exterior_Windows_Dust_1 = I can't see anything with all this dust...
+Exterior_Leaving_1 = I can't chicken out now, not after finding her notebook, and wandering around for weeks !
+Exterior_Window_1 = That's dirty, I can't see anything
+Exterior_Bike_1 = Seems like she helped repair some Spailpin's bike... Can't believe the anemones got the best of mine... 
 
 Exterior_Puzzle_Finished_1 = The door is unlocked.
 Exterior_Puzzle_Done_1 = I don't need to do this anymore.
 
-Outro_Cinematic_Start_1 = Thank you for playing Spailpin's demo. Don't hesitate to give feedbacks.
+Maze_Entering_1 = The light doesn't seem to work... I need to find my way around.
 
 StoreRoom_Door_Skip_1 = I'm sure I can make my way back to the hall.
 
+LivingRoom_Fireplace_1 = Mom told me about Audrey's cooking skills but this looks like a pot of mold...
+LivingRoom_Fireplace_2 = It's fascinating to see how she adapted to this life, she really was something.
+LivingRoom_Fireplace_3 = Most people left when it all began, leaving behind so much of their life. She stayed.
+
+LivingRoom_Furniture_1 = <i>"Roadside Picnic"</i>...<i>"The Left Hand of Darkness"...</i>
+LivingRoom_Furniture_2 = There are annotations and tabs on each page...<i>"Estraven’s diaries help Ai feel close to him even in death"</i>... 
+
+LivingRoom_CoffeeTable_1 = <i>"Meteorological observation"</i>, she didn't just live here, she was really trying to understand the Belt... 
+LivingRoom_CoffeeTable_2 = Out of boredom maybe, but she seemed rigorous with it.
+
 GreenHouse_Puzzle_Finished_1 = The door is unlocked.
+
 GreenHouse_Table_1 = There are seeds on the table.
+
+Greenhouse_Flowers_1 = A field of anemones but she still planted some of them. 
+Greenhouse_Flowers_2 = There are careful instructions about all those incredible plants, it's fascinating ! 
+
+Greenhouse_Tree_1 = This old branch got to knew the life before all this ! Yet, without her it withers.
+
+Garden_Swing_1 = An old swing. I bet Mom and Uncle would fight for it.. <i>like they still do. </i>
+
+Garden_Bike_1 = Wish I hadn't broken my bike on my way to here. This one looks... rusty
+Garden_Bike_2 = Did she ever leave the house and wander around in the Belt ? 
+Garden_Bike_3 = Her days must have been filled with routine and solitude...
+
+Garden_Painting_1 = Is that ? Looks like me...What the-
+Garden_Painting_2 = THAT'S MOM ! She did say I look like her when she was young ! 
+
+Garden_Ball_1 = No one to play, yet the garden remains untouched. Did she hope we would ever come back ?
+Garden_Ball_2 = Guess she wasn't totally wrong although I'm a tad too old for this.
+
+Storeroom_Mess_1 = It feels a bit personal, maybe I shouldn't snoop around... Oh ! What's this ?
+Storeroom_Mess_2 = Letters, faded photographs and scrap papers from way before the Belt was a thing.
+Storeroom_Mess_3 = I don't know who any of those people are, but they seemed close.
+Storeroom_Mess_4 = She kept this away for all those years... And tidied up in binders and books...
+
+Storeroom_Ball_1 = Children toys... and clothes. She reused so much stuff, but those look untouched, neatly preserved even.
+Storeroom_Ball_2 = I shouldn't unfold them, but there are name tags on those ! <i>Zelie</i>, that was mom's ! <i>Zachary</i> ! Uncle's dungarees !
+Storeroom_Ball_3 = Did she miss them ? I know they missed her.
+
+Hall_Bench_1 = An old newspaper from when it all happened ! 
+Hall_Bench_2 = <i>"Our Wolrd is Collapsing", "-unprecedent chaos causes millions to be displaced" -damage exceeds the government's projections..."</i>
+
+Hall_Furniture_1 = She kept a lot of things documenting the Belt, seems like it was as important for her as it is to me. I should note all of this down.
+
+Hall_Painting_1 = I wonder what she saw in this abstract painting... The sun ?
+
+Bedroom_Plants_1 = The air is purer here, if it wasn't for those beautiful anemones I would remove my mask.
+Bedroom_Plants_2 = Audrey called them Zelies... It's like they are slowly taking over.
+
+Bedroom_Desk_Exploring_1 = I'll come back here when I've made up my mind.
 
 
 choice_drop = Drop the journal
@@ -28,7 +79,8 @@ choice_back = Keep exploring the house
 end_drop_1 = Drop the journal ending
 end_keep_1 = Keep the journal ending
 
-
+ending_leave = Dear Audrey, thank you for taking care of me on the very first years of my life, I wish the world had not separated us.<br>However, I feel like you will always be with me by giving me your creativity and your determination that inspired me.<br>I wish I could hear one of your stories again.<br><br>I needed to come here to know what my origins are, to better understand the persons who raised me and made me who I am.<br><br>Now I need to leave, I need to come back home, to take care of people who are still here, in the memory of the ones who already left.<br><br>Naively, I hope I see you again someday.<br><br>Juno
+ending_stay = Dear Audrey, you've been here for me, for us, when I was younger and that's something I will always be grateful about.<br>You were with me back then, and now through this notebook I see myself in you, and get everything you transmitted to me through mom and uncle. That's something I would like to cherish.<br><br>I need to stay, to get to know you more, to understand you more, and to keep up that place connecting us as we share the same fascination for the Belt.<br><br>One day maybe I will come back home, leave this place behind me, but it's too early to let you go, you and your story, you and your memories.<br><br>This house was what you cared the most, that's why i would like to keep caring about it and keep it living, to keep your memory alive.<br><br>Naively i hope to see you here again,<br><br>Juno
 
 
 Caribou_Start_1 = Hello Pinpin.

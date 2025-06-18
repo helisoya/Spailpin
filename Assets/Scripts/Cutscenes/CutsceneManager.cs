@@ -81,8 +81,12 @@ public class CutsceneManager : MonoBehaviour
     /// Start processing a cutscene
     /// </summary>
     /// <param name="graph">The cutscene's graph</param>
-    public void ProcessCutscene(DialogGraph graph){
-        if(processingCutscene != null){
+    /// <param name="overridePreviousCutscene">True if the previous cutscene should be overriden</param>
+    public void ProcessCutscene(DialogGraph graph, bool overridePreviousCutscene = true){
+        if (processingCutscene != null && !overridePreviousCutscene) return;
+
+        if (processingCutscene != null)
+        {
             StopCoroutine(processingCutscene);
         }
         processingCutscene = StartCoroutine(Routine_ProcessingCutscene(graph));

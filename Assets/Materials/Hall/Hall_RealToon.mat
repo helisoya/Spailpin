@@ -213,7 +213,7 @@ Material:
     - _DynamicNoisyOutline: 0
     - _EnvironmentReflections: 1
     - _EnvironmentalLightingIntensity: 1
-    - _FarDistanceMaxWidth: 10
+    - _FarDistanceMaxWidth: 12.95
     - _GIFlatShade: 0
     - _GIShadeThreshold: 0
     - _GlossColorPower: 10
@@ -375,7 +375,7 @@ Material:
     - _ObjPosi: {r: 0, g: 0, b: 0, a: 0}
     - _ObjectForward: {r: 0, g: 0, b: 0, a: 0}
     - _ObjectRight: {r: 0, g: 0, b: 0, a: 0}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0.13181043, g: 1, b: 0, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 1}
     - _OverallShadowColor: {r: 0.29, g: 0.29, b: 0.29, a: 1}
     - _PTCol: {r: 0, g: 0, b: 0, a: 1}

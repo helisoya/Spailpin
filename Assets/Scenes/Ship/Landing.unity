@@ -7732,10 +7732,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing_DecorsPrefabs
       objectReference: {fileID: 0}
-    - target: {fileID: 3437540617557179813, guid: 9d8333b7240cfd246a8320cbe60e5da3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.671
-      objectReference: {fileID: 0}
     - target: {fileID: 5452044014819466975, guid: 9d8333b7240cfd246a8320cbe60e5da3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

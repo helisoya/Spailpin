@@ -21,9 +21,9 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        if (GameGUI.instance.isPauseOpen || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle)
+        if (GameGUI.instance.isPauseOpen || (CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || (Player.instance.inPuzzle && (Player.instance.currentPuzzleAbsorbsInteractions || Player.instance.currentPuzzleInHintMenu)))
         {
-            if (currentObject != null && ((CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || Player.instance.inPuzzle))
+            if (currentObject != null && ((CutsceneManager.instance.inCutscene && !CutsceneManager.instance.inParrallelCutscene) || (Player.instance.inPuzzle && (Player.instance.currentPuzzleAbsorbsInteractions  || Player.instance.currentPuzzleInHintMenu))))
             {
                 currentObject.SetActive(false);
                 currentObject = null;

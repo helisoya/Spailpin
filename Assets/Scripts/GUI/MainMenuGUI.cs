@@ -38,6 +38,7 @@ public class MainMenuGUI : MonoBehaviour
 
     public static MainMenuGUI instance;
     public bool fading { get { return fade.fading; } }
+    public string currentScheme { get; private set; }
 
     void Awake()
     {
@@ -93,6 +94,7 @@ public class MainMenuGUI : MonoBehaviour
     {
         print(input.currentControlScheme);
         if (Gamepad.current != null) Gamepad.current.SetMotorSpeeds(0.0f, 0.0f);
+        currentScheme = input.currentControlScheme;
         onDeviceChange.Invoke(input.currentControlScheme);
     }
 
