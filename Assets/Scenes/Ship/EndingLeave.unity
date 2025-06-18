@@ -219,8 +219,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   textID: ending_leave
   speed: 5
   endWaitTime: 5
-  showImagesAtCharacter: 050000000a0000000f000000
+  showImagesAtCharacter: 64000000c800000090010000
   fade: {fileID: 464623385}
   text: {fileID: 147225012}
   images:

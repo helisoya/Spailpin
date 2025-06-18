@@ -79,8 +79,8 @@ choice_back = Keep exploring the house
 end_drop_1 = Drop the journal ending
 end_keep_1 = Keep the journal ending
 
-ending_leave = This is the end<br><br>Yay... (Leave version)
-ending_stay = This is the end<br><br>Yay... (Stay version)
+ending_leave = Dear Audrey, thank you for taking care of me on the very first years of my life, I wish the world had not separated us.<br>However, I feel like you will always be with me by giving me your creativity and your determination that inspired me.<br>I wish I could hear one of your stories again.<br><br>I needed to come here to know what my origins are, to better understand the persons who raised me and made me who I am.<br><br>Now I need to leave, I need to come back home, to take care of people who are still here, in the memory of the ones who already left.<br><br>Naively, I hope I see you again someday.<br><br>Juno
+ending_stay = Dear Audrey, you've been here for me, for us, when I was younger and that's something I will always be grateful about.<br>You were with me back then, and now through this notebook I see myself in you, and get everything you transmitted to me through mom and uncle. That's something I would like to cherish.<br><br>I need to stay, to get to know you more, to understand you more, and to keep up that place connecting us as we share the same fascination for the Belt.<br><br>One day maybe I will come back home, leave this place behind me, but it's too early to let you go, you and your story, you and your memories.<br><br>This house was what you cared the most, that's why i would like to keep caring about it and keep it living, to keep your memory alive.<br><br>Naively i hope to see you here again,<br><br>Juno
 
 
 Caribou_Start_1 = Hello Pinpin.
