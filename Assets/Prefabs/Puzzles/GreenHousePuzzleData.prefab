@@ -3270,19 +3270,7 @@ MonoBehaviour:
         m_CallState: 2
   onWrong:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7880788290922925259}
-        m_TargetAssemblyTypeName: PuzzleSFX, Assembly-CSharp
-        m_MethodName: PlayPuzzleFailed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onQuitPuzzle:
     m_PersistentCalls:
       m_Calls: []
