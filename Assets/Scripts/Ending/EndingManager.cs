@@ -13,11 +13,13 @@ public class EndingManager : MonoBehaviour
     [SerializeField] private string textID;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float endWaitTime = 5f;
+    [SerializeField] private int[] showImagesAtCharacter;
 
 
     [Header("Components")]
     [SerializeField] private Fade fade;
     [SerializeField] private LocalizedText text;
+    [SerializeField] private Animator[] images;
     
 
     void Awake()
@@ -43,6 +45,7 @@ public class EndingManager : MonoBehaviour
         TMP_Text txt = text.GetText();
 
         int runsThisFrame = 0;
+        int currentImage = 0;
 
         txt.ForceMeshUpdate(false);
         TMP_TextInfo inf = txt.textInfo;
@@ -61,6 +64,12 @@ public class EndingManager : MonoBehaviour
                 vis++;
                 txt.maxVisibleCharacters = vis;
                 runsThisFrame++;
+
+                if (currentImage < showImagesAtCharacter.Length && showImagesAtCharacter[currentImage] <= vis)
+                {
+                    images[currentImage].SetTrigger("Show");
+                    currentImage++;
+                }
             }
 
             speed = punctuation.Contains(inf.characterInfo[vis - 1].character) ? 25 : 5;
