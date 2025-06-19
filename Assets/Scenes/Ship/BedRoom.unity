@@ -8524,7 +8524,7 @@ PrefabInstance:
       objectReference: {fileID: 77173870}
     - target: {fileID: 3074228357440147958, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
       propertyPath: m_VersionIndex
-      value: 1797
+      value: 1854
       objectReference: {fileID: 0}
     - target: {fileID: 5152938315685832897, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8564,6 +8564,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5152938315685832897, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608153398185872711, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
+      propertyPath: EventReference.Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608153398185872711, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608153398185872711, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608153398185872711, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608153398185872711, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
+      propertyPath: EventReference.Guid.Data4
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9016871127006279106, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}

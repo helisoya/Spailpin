@@ -102,13 +102,19 @@ public class AudioManager : MonoBehaviour
 
     public void PlayRoomTheme(string ID)
     {
-        PlayOneShot(FMODEvents.instance.RoomTheme[ID], this.transform.position);
+        if(FMODEvents.instance.RoomTheme.TryGetValue(ID, out EventReference value)){
+            PlayOneShot(value, this.transform.position);
+        }
+        
     }
 
 
     public void PlaySFX(string ID)
     {
-        PlayOneShot(FMODEvents.instance.SFX[ID], this.transform.position);
+        if (FMODEvents.instance.SFX.TryGetValue(ID, out EventReference value))
+        {
+            PlayOneShot(value, this.transform.position);
+        }
     }
 
 

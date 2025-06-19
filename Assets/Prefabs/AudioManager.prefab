@@ -174,6 +174,20 @@ MonoBehaviour:
       Data3: -472238708
       Data4: -300822094
     Path: event:/SFX/Bonk
+  <PuzzleGreenHouse>k__BackingField:
+    Guid:
+      Data1: 343441189
+      Data2: 1212991121
+      Data3: -1230524499
+      Data4: -1439923733
+    Path: event:/SFX/PuzzleGreenHouse
+  <AudreyPuzzle>k__BackingField:
+    Guid:
+      Data1: -766097059
+      Data2: 1208161505
+      Data3: 1373143211
+      Data4: 2019455869
+    Path: event:/SFX/AudreyPuzzle
   SFX:
     _serializedList:
     - Key: DoorLocked
@@ -192,6 +206,48 @@ MonoBehaviour:
           Data3: -675940723
           Data4: -660168426
         Path: event:/SFX/DoorOpening
+    - Key: StairUp
+      Value:
+        Guid:
+          Data1: 1915858632
+          Data2: 1145494981
+          Data3: 726622386
+          Data4: 773759233
+        Path: event:/SFX/StairUp
+    - Key: StairDown
+      Value:
+        Guid:
+          Data1: 1596400552
+          Data2: 1218879756
+          Data3: -2134873724
+          Data4: 1873778110
+        Path: event:/SFX/StairDown
+  EmitterSFX:
+    _serializedList:
+    - Key: ARoomPlant
+      Value:
+        Guid:
+          Data1: -174811770
+          Data2: 1083343517
+          Data3: 1072358552
+          Data4: 435922249
+        Path: event:/AMB/ARoomPlant
+    - Key: Garden
+      Value:
+        Guid:
+          Data1: -337888484
+          Data2: 1132352495
+          Data3: -1721802356
+          Data4: 908039237
+        Path: event:/AMB/Garden
+    - Key: GreenHouse
+      Value:
+        Guid:
+          Data1: 77523214
+          Data2: 1146665220
+          Data3: -1796821060
+          Data4: -390964935
+        Path: event:/AMB/GreenHouse
   <Ambience>k__BackingField:
     Guid:
       Data1: 1051383464
@@ -199,13 +255,6 @@ MonoBehaviour:
       Data3: -880655228
       Data4: -68966615
     Path: event:/AMB/AMBience
-  <HouseWind>k__BackingField:
-    Guid:
-      Data1: -1831918671
-      Data2: 1099189262
-      Data3: -1645473382
-      Data4: -1770792305
-    Path: event:/AMB/HouseWind
   <MusicMenu>k__BackingField:
     Guid:
       Data1: 1822820387
@@ -213,72 +262,62 @@ MonoBehaviour:
       Data3: 834900670
       Data4: -264362871
     Path: event:/MUSIC/MUSIC_Main_Menu
+  <EndStay>k__BackingField:
+    Guid:
+      Data1: -2037167660
+      Data2: 1288878207
+      Data3: 1966319784
+      Data4: 624335947
+    Path: event:/MUSIC/EndStay
+  <EndLeave>k__BackingField:
+    Guid:
+      Data1: 1496417629
+      Data2: 1303733812
+      Data3: 86295168
+      Data4: 156423331
+    Path: event:/MUSIC/EndLeave
   RoomTheme:
     _serializedList:
-    - Key: Audrey
+    - Key: AudreyRoom
       Value:
         Guid:
           Data1: -636227077
           Data2: 1324478489
           Data3: 1540894364
           Data4: 1056269784
-        Path: event:/MUSIC/AudreyTheme
-    - Key: Bathroom
-      Value:
-        Guid:
-          Data1: 1480611695
-          Data2: 1170120324
-          Data3: 1763067052
-          Data4: 132516238
-        Path: event:/MUSIC/BathroomTheme
-    - Key: Cave
-      Value:
-        Guid:
-          Data1: -982175719
-          Data2: 1256533395
-          Data3: 896695199
-          Data4: 687165710
-        Path: event:/MUSIC/CaveTheme
-    - Key: Entry
+        Path: event:/MUSIC/AudreyRoom
+    - Key: Hallway
       Value:
         Guid:
           Data1: 734386546
           Data2: 1265002323
           Data3: 412510643
           Data4: 134794787
-        Path: event:/MUSIC/EntryTheme
+        Path: event:/MUSIC/Hallway
     - Key: Garden
+      Value:
+        Guid:
+          Data1: -982175719
+          Data2: 1256533395
+          Data3: 896695199
+          Data4: 687165710
+        Path: event:/MUSIC/Garden
+    - Key: StoreRoom
+      Value:
+        Guid:
+          Data1: 1480611695
+          Data2: 1170120324
+          Data3: 1763067052
+          Data4: 132516238
+        Path: event:/MUSIC/StoreRoom
+    - Key: LivingRoom
       Value:
         Guid:
           Data1: 1356596382
           Data2: 1111932595
           Data3: 957522589
           Data4: -1802632661
-        Path: event:/MUSIC/GardenTheme
-    - Key: GreenHouse
-      Value:
-        Guid:
-          Data1: -1918512584
-          Data2: 1219693663
-          Data3: 746397353
-          Data4: 1525585260
-        Path: event:/MUSIC/GreenHouseTheme
-    - Key: Kitchen
-      Value:
-        Guid:
-          Data1: 1720911101
-          Data2: 1247669325
-          Data3: 2017481891
-          Data4: -358937108
-        Path: event:/MUSIC/KitchenTheme
-    - Key: LivingRoom
-      Value:
-        Guid:
-          Data1: -972992689
-          Data2: 1342080424
-          Data3: 1043213961
-          Data4: -489696504
-        Path: event:/MUSIC/LivingRoomTheme
+        Path: event:/MUSIC/LivingRoom
   <MenuOpen>k__BackingField:
     Guid:
       Data1: -257896857

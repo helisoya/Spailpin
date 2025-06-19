@@ -18,15 +18,19 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference PuzzleSuccess { get; private set; }
     [field: SerializeField] public EventReference PuzzleFailed { get; private set; }
     [field: SerializeField] public EventReference Bonk { get; private set; }
+    [field: SerializeField] public EventReference PuzzleGreenHouse { get; private set; }
+    [field: SerializeField] public EventReference AudreyPuzzle { get; private set; }
 
     [SerializeField] public SerializedDictionary<string, EventReference> SFX;
+    [SerializeField] public SerializedDictionary<string, EventReference> EmitterSFX;
 
     [field: Header("AMB")]
     [field: SerializeField] public EventReference Ambience { get; private set; }
-    [field: SerializeField] public EventReference HouseWind { get; private set; }
 
     [field: Header("MUSIC")]
     [field: SerializeField] public EventReference MusicMenu { get; private set; }
+    [field: SerializeField] public EventReference EndStay { get; private set; }
+    [field: SerializeField] public EventReference EndLeave { get; private set; }
    
     [SerializeField] public SerializedDictionary<string, EventReference> RoomTheme;
     

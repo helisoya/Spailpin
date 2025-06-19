@@ -11,4 +11,14 @@ public class PuzzleSFX : MonoBehaviour
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.PuzzleFailed, this.transform.position);
     }
+
+    public void PlayAudreyPuzzle()
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.AudreyPuzzle, this.transform.position);
+    }
+
+    public void PlayGreenHousePuzzle()
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.PuzzleGreenHouse, this.transform.position);
+    }
 }
