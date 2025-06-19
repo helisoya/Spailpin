@@ -23885,6 +23885,30 @@ PrefabInstance:
       propertyPath: repawnPoint
       value: 
       objectReference: {fileID: 1232494431}
+    - target: {fileID: 2694536688103606527, guid: 53be3e39331d07a48a8d4a149b42c24e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 209.983
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694536688103606527, guid: 53be3e39331d07a48a8d4a149b42c24e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 64.669
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694536688103606527, guid: 53be3e39331d07a48a8d4a149b42c24e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -71.357
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694536688103606527, guid: 53be3e39331d07a48a8d4a149b42c24e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694536688103606527, guid: 53be3e39331d07a48a8d4a149b42c24e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694536688103606527, guid: 53be3e39331d07a48a8d4a149b42c24e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 3148676155753515594, guid: 53be3e39331d07a48a8d4a149b42c24e, type: 3}
       propertyPath: m_Name
       value: Puzzle

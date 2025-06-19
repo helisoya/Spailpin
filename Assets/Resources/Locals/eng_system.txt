@@ -76,6 +76,7 @@ hint_puzzle3_0 = The bags of seeds should be the key, but they are missing infor
 hint_puzzle3_1 = I remember seeing a “flower guide” in the notebook, maybe this could help fill in the missing information on the seed bags, especially regarding the seasons ?
 hint_puzzle3_2 = I saw a “flower guide” at the page [?], and I think I’m pretty sure the order is related to the season, maybe in chronological order ?...
 
+hint_puzzle4_confirm = Confirm
 hint_puzzle4_0 = Four letters… I think I saw letters hidden in the canvas around the house, maybe I should check it ?
 hint_puzzle4_1 = I know the letters are in the canvas, but in what order should I put them ? There may be a hint inside the notebook…
 hint_puzzle4_2 = There are letters hidden in the canvas around the house, and I’m pretty sure I have to put the letters in the chronological order of creation of the paintings… I should look for it in the notebook.

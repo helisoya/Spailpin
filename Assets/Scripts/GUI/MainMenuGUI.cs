@@ -70,7 +70,7 @@ public class MainMenuGUI : MonoBehaviour
     /// <param name="value">The input value</param>
     public void OnPrevious(InputValue value)
     {
-        if (GameManager.instance.changingScene) return;
+        if (GameManager.instance.changingScene || !value.isPressed) return;
 
         if (pauseMenu.isOpen)
         {
