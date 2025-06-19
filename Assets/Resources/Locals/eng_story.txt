@@ -64,9 +64,11 @@ Hall_Bench_2 = <i>"Our Wolrd is Collapsing", "-unprecedent chaos causes millions
 
 Hall_Furniture_1 = She kept a lot of things documenting the Belt, seems like it was as important for her as it is to me. I should note all of this down.
 
-Hall_Painting_1 = I wonder what she saw in this abstract painting... The sun ?
+Hall_Painting_1 = I wonder what's the meaning hiding behind those paintings... What did she saw in them ? Time passing ?
 
 Hall_MazeDoor_Skip_1 = I'm sure I can make my way back to the storeroom.
+
+Landing_Door_PuzzleDone_1 = The door is open... finally.
 
 Bedroom_Plants_1 = The air is purer here, if it wasn't for those beautiful anemones I would remove my mask.
 Bedroom_Plants_2 = Audrey called them Zelies... It's like they are slowly taking over.

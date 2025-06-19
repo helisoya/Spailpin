@@ -10,7 +10,7 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class PuzzleBedroom : Puzzle
 {
-    [Header("Tutorial MiniGame")]
+    [Header("Bedroom MiniGame")]
     [SerializeField] private CinemachineCamera miniGameCamera;
     [SerializeField] private CinemachineBlendDefinition cameraBlend;
     [SerializeField] private DialogGraph endGraph;
