@@ -66,6 +66,8 @@ Hall_Furniture_1 = She kept a lot of things documenting the Belt, seems like it 
 
 Hall_Painting_1 = I wonder what she saw in this abstract painting... The sun ?
 
+Hall_MazeDoor_Skip_1 = I'm sure I can make my way back to the storeroom.
+
 Bedroom_Plants_1 = The air is purer here, if it wasn't for those beautiful anemones I would remove my mask.
 Bedroom_Plants_2 = Audrey called them Zelies... It's like they are slowly taking over.
 

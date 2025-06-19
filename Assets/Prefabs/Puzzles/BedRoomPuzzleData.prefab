@@ -1826,7 +1826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2994776453180839002}
-  localKey: hint_puzzle1_select
+  localKey: hint_puzzle4_confirm
   usePrimaryFont: 1
 --- !u!1 &4084030110774900329
 GameObject:
