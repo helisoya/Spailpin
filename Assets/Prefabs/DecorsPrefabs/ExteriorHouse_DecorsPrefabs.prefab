@@ -349,6 +349,8 @@ GameObject:
   - component: {fileID: 4995451269594016518}
   - component: {fileID: 1291287560965571656}
   - component: {fileID: 2915256269953984754}
+  - component: {fileID: 200287821842798571}
+  - component: {fileID: 1418428586930447922}
   m_Layer: 0
   m_Name: ExteriorHouse_ModelFBX_Trail
   m_TagString: Untagged
@@ -424,6 +426,40 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &200287821842798571
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6874674715129434662}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5605977, y: 0, z: 12.124249}
+  m_Center: {x: 0.1406846, y: 0.008813757, z: 5.0621214}
+--- !u!114 &1418428586930447922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6874674715129434662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84cdf794a50990a44a9990a7e48637e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
 --- !u!1 &7867864598928374049
 GameObject:
   m_ObjectHideFlags: 0

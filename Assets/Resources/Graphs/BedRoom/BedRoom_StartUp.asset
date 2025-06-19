@@ -72,7 +72,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
-  roomID: Audrey
+  roomID: AudreyRoom
   exit: 0
 --- !u!114 &-165025555650158891
 MonoBehaviour:
@@ -233,7 +233,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
-  ambianceID: 1
+  ambianceID: 6
   exit: 0
 --- !u!114 &9042668224628114615
 MonoBehaviour:

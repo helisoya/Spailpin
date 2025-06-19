@@ -12,7 +12,8 @@ public class Floor : MonoBehaviour
         NONE,
         WOOD,
         GRASS,
-        GRAVEL
+        GRAVEL,
+        STONE
     }
 
     public Type type;

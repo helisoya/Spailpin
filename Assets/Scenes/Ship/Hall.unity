@@ -978,11 +978,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!23 &185841708 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3724284071322032117, guid: 4f014090b8249a64d917410e8b838c70, type: 3}
-  m_PrefabInstance: {fileID: 1767066185}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &194380669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6532,7 +6527,7 @@ MonoBehaviour:
   onInterract:
     m_PersistentCalls:
       m_Calls: []
-  modelRenderer: {fileID: 185841708}
+  modelRenderer: {fileID: 1605875896}
 --- !u!65 &1255727308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8087,6 +8082,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6382966, y: 2.5425804, z: 0.6041037}
   m_Center: {x: -0.0000030992574, y: 1.2723798, z: -0.02230811}
+--- !u!23 &1605875896 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6872019605484237915, guid: 4f014090b8249a64d917410e8b838c70, type: 3}
+  m_PrefabInstance: {fileID: 1767066185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1653121415
 GameObject:
   m_ObjectHideFlags: 0

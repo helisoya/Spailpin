@@ -1334,6 +1334,7 @@ GameObject:
   - component: {fileID: 2652905366203223821}
   - component: {fileID: 5749881152045319635}
   - component: {fileID: 4325469380137138897}
+  - component: {fileID: 1200869689270891151}
   m_Layer: 0
   m_Name: Sol Serre
   m_TagString: Untagged
@@ -1568,7 +1569,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9089
+  m_VersionIndex: 9092
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1672,6 +1673,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1200869689270891151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5260543391616482191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84cdf794a50990a44a9990a7e48637e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 4
 --- !u!1 &5835002692855770440
 GameObject:
   m_ObjectHideFlags: 0

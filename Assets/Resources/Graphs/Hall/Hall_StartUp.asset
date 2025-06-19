@@ -72,7 +72,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   entry: 0
-  roomID: Entry
+  roomID: Hallway
   exit: 0
 --- !u!114 &-165025555650158891
 MonoBehaviour:
