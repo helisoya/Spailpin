@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,17 +13,21 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] protected DialogGraph linkedGraph;
     [SerializeField] protected UnityEvent onInterract;
     [SerializeField] private Renderer modelRenderer;
+    private List<bool> materialsShaderPass;
     private bool playerIsInside = false;
 
     void Awake()
     {
         if (!modelRenderer) return;
 
+        materialsShaderPass = new List<bool>();
+
         foreach (Material mat in modelRenderer.materials)
         {
             mat.SetFloat("_OutlineWidth", 1.0f);
             mat.SetFloat("_OutlineWidthAffectedByViewDistance", 1);
             mat.SetFloat("_FarDistanceMaxWidth", 1);
+            materialsShaderPass.Add(mat.GetShaderPassEnabled("SRPDefaultUnlit"));
         }
     }
 
@@ -35,10 +40,10 @@ public class InteractableObject : MonoBehaviour
     {
         if (!modelRenderer) return;
 
-        foreach (Material mat in modelRenderer.materials)
+        for(int i = 0; i < modelRenderer.materials.Length; i++)
         {
-            mat.SetFloat("_N_F_O", active ? 1 : 0);
-            mat.SetShaderPassEnabled("SRPDefaultUnlit", active);
+            modelRenderer.materials[i].SetFloat("_N_F_O", active ? 1 : 0);
+            modelRenderer.materials[i].SetShaderPassEnabled("SRPDefaultUnlit", active ? true : materialsShaderPass[i]);
         }
     }
 
