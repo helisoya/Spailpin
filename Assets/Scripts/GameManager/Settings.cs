@@ -130,7 +130,7 @@ public class Settings
     public void SetBindings(string bindings)
     {
         data.remaping = bindings;
-        Player.instance.RefreshBindings();
+        if(!GameManager.instance.inMainMenu) Player.instance.RefreshBindings();
         Save();
     }
 
@@ -141,7 +141,7 @@ public class Settings
     public void SetCurrentGamePadProfileIdx(int newIdx)
     {
         data.currentGamepadProfileIdx = newIdx;
-        Player.instance.RefreshBindings();
+        if(!GameManager.instance.inMainMenu) Player.instance.RefreshBindings();
         Save();
     }
 
@@ -235,7 +235,7 @@ public class Settings
     /// <param name="size">The size index</param>
     public void SetTextSize(int size){
         data.textSize = size;
-        GameGUI.instance.SetDialogSize(size);
+        if(!GameManager.instance.inMainMenu) GameGUI.instance.SetDialogSize(size);
         Save();
     }
 
@@ -253,7 +253,7 @@ public class Settings
     /// <param name="spacing">The spacing index</param>
     public void SetTextSpacing(int spacing){
         data.textSpacing = spacing;
-        GameGUI.instance.SetDialogSpacing(spacing);
+        if(!GameManager.instance.inMainMenu) GameGUI.instance.SetDialogSpacing(spacing);
         Save();
     }
 
@@ -271,7 +271,7 @@ public class Settings
     /// <param name="opacity">The opacity index</param>
     public void SetTextOpacity(float opacity){
         data.textOpacity = opacity;
-        GameGUI.instance.SetDialogBackgroundAlpha(opacity);
+        if(!GameManager.instance.inMainMenu) GameGUI.instance.SetDialogBackgroundAlpha(opacity);
         Save();
     }
 
