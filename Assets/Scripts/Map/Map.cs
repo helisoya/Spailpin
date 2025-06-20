@@ -52,6 +52,7 @@ public class Map : MonoBehaviour
 
     void Start()
     {
+        GameManager.instance.inMainMenu = false;
         if (GameManager.instance.loadingSave)
         {
             SaveFile saveFile = GameManager.instance.GetSaveManager().saveFile;

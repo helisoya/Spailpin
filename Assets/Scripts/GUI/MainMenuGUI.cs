@@ -47,6 +47,7 @@ public class MainMenuGUI : MonoBehaviour
 
     void Start()
     {
+        GameManager.instance.inMainMenu = true;
         defaultScreen.SetActive(true);
         creditsScreen.SetActive(false);
         continueButton.interactable = GameManager.instance.GetSaveManager().saveFileExists;
