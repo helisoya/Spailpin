@@ -222,6 +222,14 @@ MonoBehaviour:
           Data3: -2134873724
           Data4: 1873778110
         Path: event:/SFX/StairDown
+    - Key: Bike
+      Value:
+        Guid:
+          Data1: 2055545129
+          Data2: 1295764905
+          Data3: -47913326
+          Data4: 1569682319
+        Path: event:/SFX/Bike
   EmitterSFX:
     _serializedList:
     - Key: ARoomPlant
