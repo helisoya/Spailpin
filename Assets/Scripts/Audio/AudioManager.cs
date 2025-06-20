@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         if (instance == null)
-        { 
+        {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
@@ -34,6 +34,7 @@ public class AudioManager : MonoBehaviour
         {
             //Debug.LogError("Found more than one Audio Manager in the scene");
             Destroy(gameObject);
+            return;
         }
         
 
