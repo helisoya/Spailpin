@@ -17,14 +17,17 @@ public class AudioManager : MonoBehaviour
     private EventReference eventReferences;
 
     private EventInstance ambienceEventInstance;
-    private EventInstance musicEventInstance;  
-
+    private EventInstance musicEventInstance;
+    private EventInstance roomThemeEventInstance;
 
 
     public static AudioManager instance { get; private set; }
 
     private void Awake()
     {
+        eventInstances = new List<EventInstance>();
+        eventEmitters = new List<StudioEventEmitter>();
+
         if (instance == null)
         {
             instance = this;
@@ -38,10 +41,7 @@ public class AudioManager : MonoBehaviour
         }
         
 
-        eventInstances = new List<EventInstance>();
-        print(eventInstances);
 
-        eventEmitters = new List<StudioEventEmitter>();
 
         InitializeAmbience(FMODEvents.Ambience);
     }
@@ -93,9 +93,13 @@ public class AudioManager : MonoBehaviour
     }
 
     // Cr�ation de la fonction permettant de jouer un son
-    public void PlayOneShot(EventReference sound, Vector3 worldPos)
+    public EventInstance PlayOneShot(EventReference sound, Vector3 worldPos)
     {
-        RuntimeManager.PlayOneShot(sound, worldPos);  
+        EventInstance instance = CreateInstance(sound);
+        instance.set3DAttributes(RuntimeUtils.To3DAttributes(worldPos));
+        instance.start();
+        instance.release();
+        return instance;
     }
 
 
@@ -104,9 +108,17 @@ public class AudioManager : MonoBehaviour
     public void PlayRoomTheme(string ID)
     {
         if(FMODEvents.instance.RoomTheme.TryGetValue(ID, out EventReference value)){
-            PlayOneShot(value, this.transform.position);
+            roomThemeEventInstance = PlayOneShot(value, this.transform.position);
+        }   
+    }
+
+    public void StopRoomTheme()
+    {
+        if (roomThemeEventInstance.isValid())
+        {
+            roomThemeEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            roomThemeEventInstance.release();
         }
-        
     }
 
 

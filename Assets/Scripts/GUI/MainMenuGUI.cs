@@ -34,6 +34,7 @@ public class MainMenuGUI : MonoBehaviour
     [SerializeField] private UnityEvent<int> onPauseOpen;
     [SerializeField] private UnityEvent onNewGame;
     [SerializeField] private UnityEvent onContinue;
+    [SerializeField] private UnityEvent onStartScene;
     public UnityEvent<string> onDeviceChange;
 
     public static MainMenuGUI instance;
@@ -47,6 +48,7 @@ public class MainMenuGUI : MonoBehaviour
 
     void Start()
     {
+        onStartScene.Invoke();
         GameManager.instance.inMainMenu = true;
         defaultScreen.SetActive(true);
         creditsScreen.SetActive(false);

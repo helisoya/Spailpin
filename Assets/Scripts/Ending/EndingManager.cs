@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 /// <summary>
 /// Handles the game's ending
@@ -20,7 +21,11 @@ public class EndingManager : MonoBehaviour
     [SerializeField] private Fade fade;
     [SerializeField] private LocalizedText text;
     [SerializeField] private Animator[] images;
-    
+
+    [Header("Audio Events")]
+    [SerializeField] private UnityEvent onStart;
+    [SerializeField] private UnityEvent onEnd;
+
 
     void Awake()
     {
@@ -30,6 +35,7 @@ public class EndingManager : MonoBehaviour
 
     void Start()
     {
+        onStart.Invoke();
         StartCoroutine(Routine_Ending());
     }
 
@@ -84,6 +90,7 @@ public class EndingManager : MonoBehaviour
         yield return new WaitForEndOfFrame();
         while (fade.fading) yield return new WaitForEndOfFrame();
 
+        onEnd.Invoke();
         SceneManager.LoadScene("MainMenu");
     }
 }
