@@ -8522,6 +8522,18 @@ PrefabInstance:
       propertyPath: EventStopTrigger
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2259233868640615501, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259233868640615501, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 9.138788
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259233868640615501, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1.7751126
+      objectReference: {fileID: 0}
     - target: {fileID: 3074228357440147958, guid: 7901f52ff4a3ecd46b7c9e8ae8039a8f, type: 3}
       propertyPath: m_Mesh
       value: 

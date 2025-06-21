@@ -2172,6 +2172,42 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 9275
       objectReference: {fileID: 0}
+    - target: {fileID: 2985310118329198438, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985310118329198438, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/AMB/GreenHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985310118329198438, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985310118329198438, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 8.346892
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985310118329198438, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 3.8059926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985310118329198438, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 77523214
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985310118329198438, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1146665220
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985310118329198438, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1796821060
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985310118329198438, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -390964935
+      objectReference: {fileID: 0}
     - target: {fileID: 3188279713493950598, guid: 201c9a0bf4823f649891727d0b22872a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.047
