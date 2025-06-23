@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -30,6 +31,12 @@ public abstract class Puzzle : MonoBehaviour
     [SerializeField] protected GameObject hintMenuHint;
     [SerializeField] protected LocalizedText hintMenuHintText;
     [SerializeField] protected string hintPrefix;
+
+    [Header("Hint Audio Events")]
+    [SerializeField] private UnityEvent onOpenHint;
+    [SerializeField] private UnityEvent onPreviousHint;
+    [SerializeField] private UnityEvent onClickHint;
+
     protected bool[] hintDones;
     protected bool waitingToOpenHintMenu = false;
     protected bool lookingAtHint = false;
@@ -89,6 +96,7 @@ public abstract class Puzzle : MonoBehaviour
     /// <param name="hintIndex">The hint index</param>
     public void OpenHintVisual(int hintIndex)
     {
+        onClickHint.Invoke();
         hintMenuRoot.SetActive(true);
         hintMenuSelection.SetActive(false);
         hintMenuHint.SetActive(true);
@@ -124,6 +132,7 @@ public abstract class Puzzle : MonoBehaviour
                     waitingToOpenHintMenu = false;
                     hintFill.fillAmount = 0.0f;
                     OpenHintSelection(0);
+                    onOpenHint.Invoke();
                 }
             }
             else if(!inHintMenu)
@@ -147,6 +156,7 @@ public abstract class Puzzle : MonoBehaviour
         }
         else if (type == InputType.PREVIOUS && (inHintMenu || lookingAtHint))
         {
+            onPreviousHint.Invoke();
             if (lookingAtHint) OpenHintSelection(lastHintIndex);
             else CloseHint();
         }

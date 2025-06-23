@@ -37,6 +37,8 @@ public class GameGUI : MonoBehaviour
     [Header("Audio Events")]
     [SerializeField] private UnityEvent onDialogStart;
     [SerializeField] private UnityEvent<int> onPause;
+    [SerializeField] private UnityEvent onCloseDialog;
+    [SerializeField] private UnityEvent onChoice;
 
     [Header("Hints")]
     [SerializeField] private CanvasGroup hintMovement;
@@ -106,6 +108,7 @@ public class GameGUI : MonoBehaviour
     /// <param name="index">The choice's index</param>
     public void SelectChoice(int index)
     {
+        onChoice.Invoke();
         selectedChoiceIndex = index;
         choiceRoot.SetActive(false);
         EventSystem.current.SetSelectedGameObject(null);
@@ -252,6 +255,7 @@ public class GameGUI : MonoBehaviour
     public void SetDialogOpen(bool value)
     {
         dialogRoot.SetActive(value);
+        if (!value) onCloseDialog.Invoke();
     }
 
     /// <summary>

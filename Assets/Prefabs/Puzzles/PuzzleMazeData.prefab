@@ -1077,6 +1077,15 @@ MonoBehaviour:
   hintMenuHint: {fileID: 4326376114255912373}
   hintMenuHintText: {fileID: 4587486939536272963}
   hintPrefix: hint_puzzle2
+  onOpenHint:
+    m_PersistentCalls:
+      m_Calls: []
+  onPreviousHint:
+    m_PersistentCalls:
+      m_Calls: []
+  onClickHint:
+    m_PersistentCalls:
+      m_Calls: []
   repawnPoint: {fileID: 0}
   respawnFill: {fileID: 5081399509690966873}
   respawnFillSpeed: 0.5
@@ -2015,6 +2024,7 @@ GameObject:
   - component: {fileID: 1212793191905947929}
   - component: {fileID: 1462621073196770682}
   - component: {fileID: 5846488642167557493}
+  - component: {fileID: 7256407334202997935}
   m_Layer: 3
   m_Name: Heavy
   m_TagString: Untagged
@@ -2158,6 +2168,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7256407334202997935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160004895586110683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e195ca3e0d59a4ca924b62f731df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSelection:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7586392150623887055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2171,6 +2196,7 @@ GameObject:
   - component: {fileID: 4079049975377580796}
   - component: {fileID: 6328610168156167572}
   - component: {fileID: 518901949245412666}
+  - component: {fileID: 7937325923896862109}
   m_Layer: 3
   m_Name: Medium
   m_TagString: Untagged
@@ -2314,6 +2340,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7937325923896862109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7586392150623887055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e195ca3e0d59a4ca924b62f731df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSelection:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7699097314661402106
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,6 +2520,7 @@ GameObject:
   - component: {fileID: 8768995881273332025}
   - component: {fileID: 5187421218553646775}
   - component: {fileID: 5524017996671820140}
+  - component: {fileID: 118410348749244017}
   m_Layer: 3
   m_Name: Light
   m_TagString: Untagged
@@ -2622,6 +2664,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &118410348749244017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7918032327570829200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e195ca3e0d59a4ca924b62f731df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSelection:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8013442635546468833
 GameObject:
   m_ObjectHideFlags: 0

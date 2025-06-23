@@ -2134,6 +2134,15 @@ MonoBehaviour:
   hintMenuHint: {fileID: 6279397581686966151}
   hintMenuHintText: {fileID: 1287754271128025865}
   hintPrefix: hint_puzzle4
+  onOpenHint:
+    m_PersistentCalls:
+      m_Calls: []
+  onPreviousHint:
+    m_PersistentCalls:
+      m_Calls: []
+  onClickHint:
+    m_PersistentCalls:
+      m_Calls: []
   miniGameCamera: {fileID: 8789304063030437718}
   cameraBlend:
     Style: 0
@@ -2813,6 +2822,7 @@ GameObject:
   - component: {fileID: 8122647920087632587}
   - component: {fileID: 2926677868743641358}
   - component: {fileID: 5295651480361767104}
+  - component: {fileID: 4868449005118308380}
   m_Layer: 3
   m_Name: Light
   m_TagString: Untagged
@@ -2956,6 +2966,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4868449005118308380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246343481018320026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e195ca3e0d59a4ca924b62f731df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSelection:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5380987485270370145
 GameObject:
   m_ObjectHideFlags: 0
@@ -3517,6 +3542,7 @@ GameObject:
   - component: {fileID: 8606277900616218065}
   - component: {fileID: 5062706458143190988}
   - component: {fileID: 5618158627651987795}
+  - component: {fileID: 9202540629301423291}
   m_Layer: 3
   m_Name: Heavy
   m_TagString: Untagged
@@ -3660,6 +3686,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9202540629301423291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7775184470072217712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e195ca3e0d59a4ca924b62f731df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSelection:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7804251896334123291
 GameObject:
   m_ObjectHideFlags: 0
@@ -4248,6 +4289,7 @@ GameObject:
   - component: {fileID: 1107461320246443326}
   - component: {fileID: 9162461588960282698}
   - component: {fileID: 5364067965327967449}
+  - component: {fileID: 4916208883753775734}
   m_Layer: 3
   m_Name: Medium
   m_TagString: Untagged
@@ -4391,6 +4433,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4916208883753775734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752945709471116168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e195ca3e0d59a4ca924b62f731df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSelection:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8918397604396547474
 GameObject:
   m_ObjectHideFlags: 0

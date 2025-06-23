@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 7881225804797684915}
   - component: {fileID: 4568214484640190695}
   - component: {fileID: 6837066210155749925}
+  - component: {fileID: 3334317046862734562}
   m_Layer: 3
   m_Name: Medium
   m_TagString: Untagged
@@ -193,6 +194,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3334317046862734562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157156841142257846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e195ca3e0d59a4ca924b62f731df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSelection:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &726967286254314032
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +222,7 @@ GameObject:
   - component: {fileID: 3526395363697488692}
   - component: {fileID: 9131025685762992054}
   - component: {fileID: 1203403925043958799}
+  - component: {fileID: 3633030628690198214}
   m_Layer: 3
   m_Name: Light
   m_TagString: Untagged
@@ -349,6 +366,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3633030628690198214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726967286254314032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e195ca3e0d59a4ca924b62f731df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSelection:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &848496225463747672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3313,6 +3345,15 @@ MonoBehaviour:
   hintMenuHint: {fileID: 3892964682289874944}
   hintMenuHintText: {fileID: 8466831525077832517}
   hintPrefix: hint_puzzle1
+  onOpenHint:
+    m_PersistentCalls:
+      m_Calls: []
+  onPreviousHint:
+    m_PersistentCalls:
+      m_Calls: []
+  onClickHint:
+    m_PersistentCalls:
+      m_Calls: []
   miniGameCamera: {fileID: 7368936980488680660}
   cameraBlend:
     Style: 0
@@ -3410,6 +3451,7 @@ GameObject:
   - component: {fileID: 8586391654012696003}
   - component: {fileID: 5553341980795591326}
   - component: {fileID: 7016678995790270876}
+  - component: {fileID: 4627796502943940073}
   m_Layer: 3
   m_Name: Heavy
   m_TagString: Untagged
@@ -3553,6 +3595,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4627796502943940073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7318743758021594210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e195ca3e0d59a4ca924b62f731df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSelection:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7521185014233888318
 GameObject:
   m_ObjectHideFlags: 0
