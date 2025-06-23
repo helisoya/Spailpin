@@ -208,7 +208,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6082657037357312230}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &726967286254314032
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,7 +392,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6082657037357312230}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &848496225463747672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,6 +3314,7 @@ GameObject:
   - component: {fileID: 5243522220779917222}
   - component: {fileID: 1642557843847796519}
   - component: {fileID: 7880788290922925259}
+  - component: {fileID: 6082657037357312230}
   m_Layer: 3
   m_Name: TutorialPuzzleData
   m_TagString: Untagged
@@ -3347,13 +3372,49 @@ MonoBehaviour:
   hintPrefix: hint_puzzle1
   onOpenHint:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6082657037357312230}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: OpenHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onPreviousHint:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6082657037357312230}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: CloseHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onClickHint:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6082657037357312230}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   miniGameCamera: {fileID: 7368936980488680660}
   cameraBlend:
     Style: 0
@@ -3413,7 +3474,19 @@ MonoBehaviour:
       m_Calls: []
   onQuitPuzzle:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7880788290922925259}
+        m_TargetAssemblyTypeName: PuzzleSFX, Assembly-CSharp
+        m_MethodName: PlayPuzzleQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1642557843847796519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3436,6 +3509,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eff110c2290b9ee4fab8b999c3119ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6082657037357312230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7124021373417316395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c64105cf9456934bbcf1f2cbc9b5519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7318743758021594210
@@ -3609,7 +3694,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6082657037357312230}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7521185014233888318
 GameObject:
   m_ObjectHideFlags: 0

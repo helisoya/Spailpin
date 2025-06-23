@@ -1023,6 +1023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8446499235756817652}
   - component: {fileID: 1706232558840444381}
+  - component: {fileID: 3569686092524837229}
   m_Layer: 0
   m_Name: PuzzleMazeData
   m_TagString: Untagged
@@ -1079,16 +1080,64 @@ MonoBehaviour:
   hintPrefix: hint_puzzle2
   onOpenHint:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3569686092524837229}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: OpenHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onPreviousHint:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3569686092524837229}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: CloseHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onClickHint:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3569686092524837229}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   repawnPoint: {fileID: 0}
   respawnFill: {fileID: 5081399509690966873}
   respawnFillSpeed: 0.5
+--- !u!114 &3569686092524837229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3148676155753515594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c64105cf9456934bbcf1f2cbc9b5519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3453340325071069359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,7 +2231,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3569686092524837229}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7586392150623887055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,7 +2415,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3569686092524837229}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7699097314661402106
 GameObject:
   m_ObjectHideFlags: 0
@@ -2678,7 +2751,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3569686092524837229}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8013442635546468833
 GameObject:
   m_ObjectHideFlags: 0

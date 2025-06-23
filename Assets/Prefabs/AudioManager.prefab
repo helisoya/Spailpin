@@ -104,13 +104,6 @@ MonoBehaviour:
       Data3: -585935184
       Data4: -1660932196
     Path: event:/SFX/Carillon
-  <Bike>k__BackingField:
-    Guid:
-      Data1: 2055545129
-      Data2: 1295764905
-      Data3: -47913326
-      Data4: 1569682319
-    Path: event:/SFX/Bike
   <Character>k__BackingField:
     Guid:
       Data1: -1988176635
@@ -167,6 +160,13 @@ MonoBehaviour:
       Data3: 1883546793
       Data4: -1060449996
     Path: event:/SFX/PuzzleFailed
+  <PuzzleQuit>k__BackingField:
+    Guid:
+      Data1: -643100777
+      Data2: 1124529148
+      Data3: 1527567277
+      Data4: 1515661340
+    Path: event:/SFX/PuzzleQuit
   <Bonk>k__BackingField:
     Guid:
       Data1: -1813359657
@@ -368,3 +368,10 @@ MonoBehaviour:
       Data3: 1138096292
       Data4: 802828334
     Path: event:/UI/Juno_Book
+  <JunoEndDiary>k__BackingField:
+    Guid:
+      Data1: -2044739374
+      Data2: 1241516869
+      Data3: -1675489384
+      Data4: -368699198
+    Path: event:/UI/JunoEndWritting

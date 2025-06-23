@@ -1032,7 +1032,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4894318353706847342}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3305185307823440469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,7 +1477,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4894318353706847342}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4014181965763551771
 GameObject:
   m_ObjectHideFlags: 0
@@ -3161,7 +3185,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4894318353706847342}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7124021373417316395
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,6 +3209,7 @@ GameObject:
   - component: {fileID: 4647555898540728518}
   - component: {fileID: 7880788290922925259}
   - component: {fileID: 6983700403082048303}
+  - component: {fileID: -4894318353706847342}
   m_Layer: 3
   m_Name: GreenHousePuzzleData
   m_TagString: Untagged
@@ -3242,13 +3279,49 @@ MonoBehaviour:
   hintPrefix: hint_puzzle3
   onOpenHint:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4894318353706847342}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: OpenHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onPreviousHint:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4894318353706847342}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: CloseHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onClickHint:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4894318353706847342}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   miniGameCamera: {fileID: 7368936980488680660}
   cameraBlend:
     Style: 0
@@ -3329,7 +3402,31 @@ MonoBehaviour:
       m_Calls: []
   onQuitPuzzle:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7880788290922925259}
+        m_TargetAssemblyTypeName: PuzzleSFX, Assembly-CSharp
+        m_MethodName: PlayPuzzleQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-4894318353706847342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7124021373417316395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c64105cf9456934bbcf1f2cbc9b5519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7443749586189541212
 GameObject:
   m_ObjectHideFlags: 0

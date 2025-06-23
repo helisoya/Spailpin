@@ -582,7 +582,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &212228358592489396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1832,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &585523921536857592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,7 +2354,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &766292827179538622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,7 +2974,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &884185677598285738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6375,7 +6423,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2020167184399566163
 GameObject:
   m_ObjectHideFlags: 0
@@ -6489,7 +6549,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2030603415422489722
 GameObject:
   m_ObjectHideFlags: 0
@@ -6608,7 +6680,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2051627327994677348
 GameObject:
   m_ObjectHideFlags: 0
@@ -6802,7 +6886,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2137253832723540524
 GameObject:
   m_ObjectHideFlags: 0
@@ -7904,7 +8000,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2563619519879583469
 GameObject:
   m_ObjectHideFlags: 0
@@ -8327,7 +8435,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2645694422827036089
 GameObject:
   m_ObjectHideFlags: 0
@@ -8730,7 +8850,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2833471853835146230
 GameObject:
   m_ObjectHideFlags: 0
@@ -9336,7 +9468,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3038724309147890625
 GameObject:
   m_ObjectHideFlags: 0
@@ -10893,7 +11037,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3392693829607066328
 GameObject:
   m_ObjectHideFlags: 0
@@ -12221,7 +12377,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3813203883896108147
 GameObject:
   m_ObjectHideFlags: 0
@@ -12335,7 +12503,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3838162489078816060
 GameObject:
   m_ObjectHideFlags: 0
@@ -13039,7 +13219,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4143540633530391924
 GameObject:
   m_ObjectHideFlags: 0
@@ -15941,7 +16133,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5136927012167114111
 GameObject:
   m_ObjectHideFlags: 0
@@ -17107,7 +17311,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5534195055770347376
 GameObject:
   m_ObjectHideFlags: 0
@@ -17492,7 +17708,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5738667339591142294
 GameObject:
   m_ObjectHideFlags: 0
@@ -17664,7 +17892,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5757385990033601627
 GameObject:
   m_ObjectHideFlags: 0
@@ -18107,7 +18347,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5919368885150376852
 GameObject:
   m_ObjectHideFlags: 0
@@ -19123,7 +19375,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6178138131506790520
 GameObject:
   m_ObjectHideFlags: 0
@@ -20353,7 +20617,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6777605837746605172
 GameObject:
   m_ObjectHideFlags: 0
@@ -21342,7 +21618,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7017760602406907498
 GameObject:
   m_ObjectHideFlags: 0
@@ -21456,7 +21744,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7038682336786474730
 GameObject:
   m_ObjectHideFlags: 0
@@ -21698,7 +21998,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7106253294006025095
 GameObject:
   m_ObjectHideFlags: 0
@@ -21939,7 +22251,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7128581514377206276
 GameObject:
   m_ObjectHideFlags: 0
@@ -22655,7 +22979,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7321402873622114028
 GameObject:
   m_ObjectHideFlags: 0
@@ -22849,7 +23185,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7341844702254188624
 GameObject:
   m_ObjectHideFlags: 0
@@ -24646,7 +24994,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8192579286607318677
 GameObject:
   m_ObjectHideFlags: 0
@@ -25115,7 +25475,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8394899939808419256
 GameObject:
   m_ObjectHideFlags: 0
@@ -26010,7 +26382,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8844275652691629780
 GameObject:
   m_ObjectHideFlags: 0
@@ -26253,7 +26637,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8996026285378566983
 GameObject:
   m_ObjectHideFlags: 0
@@ -26632,4 +27028,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2710974075939113360}
+        m_TargetAssemblyTypeName: InterfaceSFX, Assembly-CSharp
+        m_MethodName: MenuSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

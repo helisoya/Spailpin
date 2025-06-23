@@ -16,6 +16,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference CaribouInteract { get; private set; }
     [field: SerializeField] public EventReference PuzzleSuccess { get; private set; }
     [field: SerializeField] public EventReference PuzzleFailed { get; private set; }
+    [field: SerializeField] public EventReference PuzzleQuit { get; private set; }
     [field: SerializeField] public EventReference Bonk { get; private set; }
     [field: SerializeField] public EventReference PuzzleGreenHouse { get; private set; }
     [field: SerializeField] public EventReference AudreyPuzzle { get; private set; }
@@ -43,6 +44,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference Button { get; private set; }
     [field: SerializeField] public EventReference PageTurn { get; private set; }
     [field: SerializeField] public EventReference JunoDiary { get; private set; }
+    [field: SerializeField] public EventReference JunoEndDiary { get; private set; }
 
 
     public static FMODEvents instance {  get; private set; }

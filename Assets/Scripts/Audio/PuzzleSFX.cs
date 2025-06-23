@@ -21,4 +21,9 @@ public class PuzzleSFX : MonoBehaviour
     {
         AudioManager.instance.PlayOneShot(FMODEvents.instance.PuzzleGreenHouse, this.transform.position);
     }
+
+    public void PlayPuzzleQuit()
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.PuzzleQuit, this.transform.position);
+    }
 }
