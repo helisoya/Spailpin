@@ -3267,7 +3267,7 @@ MonoBehaviour:
   absorbPrevious: 1
   puzzleCanvas: {fileID: 5715646052182270002}
   hintFill: {fileID: 6508899352279587218}
-  hintFillSpeed: 0.25
+  hintFillSpeed: 0.75
   hintMenuRoot: {fileID: 4430610833891800698}
   hintMenuSelection: {fileID: 1611514938221585216}
   hintButtons:
