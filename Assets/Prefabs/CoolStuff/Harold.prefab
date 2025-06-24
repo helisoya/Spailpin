@@ -62,6 +62,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7606fdb95c6f5a4409a673f1aa53c606, type: 3}
       insertIndex: -1
       addedObject: {fileID: 149746964337290284}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7606fdb95c6f5a4409a673f1aa53c606, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5651990071665639865}
     - targetCorrespondingSourceObject: {fileID: 5323162407277330719, guid: 7606fdb95c6f5a4409a673f1aa53c606, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1898656569523807204}
@@ -142,3 +145,21 @@ MonoBehaviour:
   onDamage:
     m_PersistentCalls:
       m_Calls: []
+--- !u!205 &5651990071665639865
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103117510352705449}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.009243151
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
