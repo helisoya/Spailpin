@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9061577272114106691}
   - component: {fileID: 6470714303360819569}
   - component: {fileID: 5939456530475250809}
+  - component: {fileID: 8481253961697633049}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Untagged
@@ -155,3 +156,21 @@ MonoBehaviour:
   onDamage:
     m_PersistentCalls:
       m_Calls: []
+--- !u!205 &8481253961697633049
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8872766820124071905}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.009243151
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

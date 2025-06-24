@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3426702827947392652}
   - component: {fileID: 5480260137222451927}
   - component: {fileID: 9003091661796224038}
+  - component: {fileID: 6398022682635411512}
   m_Layer: 0
   m_Name: Caribou
   m_TagString: Untagged
@@ -156,3 +157,21 @@ MonoBehaviour:
   onDamage:
     m_PersistentCalls:
       m_Calls: []
+--- !u!205 &6398022682635411512
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9059984904857588650}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.009243151
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

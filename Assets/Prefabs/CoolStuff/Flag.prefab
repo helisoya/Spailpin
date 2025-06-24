@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 8473649543249000211}
   - component: {fileID: 7978618567757312595}
   - component: {fileID: 3401968851460582207}
+  - component: {fileID: 5526445802509813387}
   m_Layer: 0
   m_Name: Flag
   m_TagString: Untagged
@@ -698,7 +699,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 642
+  m_VersionIndex: 645
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -846,3 +847,21 @@ MonoBehaviour:
   onDamage:
     m_PersistentCalls:
       m_Calls: []
+--- !u!205 &5526445802509813387
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7716818254282560528}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.009243151
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
