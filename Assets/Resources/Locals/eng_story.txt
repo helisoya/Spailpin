@@ -8,7 +8,7 @@ Intro_Cinematic_Start_3 = Somehow she- Is that light coming from the window ? Is
 Exterior_Door_PuzzleNoDone_1 = Closed...
 Exterior_Door_PuzzleNoDone_2 = There must be a way to open the door.
 
-Exterior_Leaving_1 = I can't chicken out now, not after finding her notebook, and wandering around for weeks !
+Exterior_Leaving_1 = I can't chicken out now, not after finding her notebook, and searching around for weeks !
 Exterior_Window_1 = That's dirty, I can't see anything...
 Exterior_Bike_1 = Seems like she helped repair some Spailpin's bike... Can't believe the anemones got the best of mine... 
 
@@ -60,8 +60,8 @@ Storeroom_Ball_2 = I shouldn't unfold them, but there are name tags on those ! <
 Storeroom_Ball_3 = Did she miss them ? I know they missed her.
 
 Hall_Bench_1 = An old newspaper from when it all happened !
-Hall_Bench_2 = <i>"Our World is Collapsing", "-unprecedent chaos causes millions to be displacedd" -damage exceeds the government's projections..."</i>
-Hall_Bench_3 = Scientists warned us but the Belt took everyone by suprised when the atmosphere collapsed...
+Hall_Bench_2 = <i>"Our World is Collapsing", "-unprecedent chaos causes millions to be displaced" -damage exceeds the government's projections..."</i>
+Hall_Bench_3 = Scientists warned us but the Belt took everyone by surprise when the atmosphere collapsed...
 
 Hall_Furniture_1 = She kept a lot of things documenting the Belt, seems like it was as important to her as it is to me. I should note all of this down...
 
