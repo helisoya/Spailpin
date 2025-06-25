@@ -154,7 +154,7 @@ public abstract class Puzzle : MonoBehaviour
             waitingToOpenHintMenu = inputValue.isPressed;
             hintFill.fillAmount = 0.0f;
         }
-        else if (type == InputType.PREVIOUS && (inHintMenu || lookingAtHint))
+        else if (type == InputType.PREVIOUS && (inHintMenu || lookingAtHint) && inputValue.isPressed)
         {
             onPreviousHint.Invoke();
             if (lookingAtHint) OpenHintSelection(lastHintIndex);
