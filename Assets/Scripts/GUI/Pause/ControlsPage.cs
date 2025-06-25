@@ -11,6 +11,8 @@ public class ControlsPage : PausePage
     [SerializeField] private RebindActionUI[] keyboardRebinds;
     [SerializeField] private GamepadProfile[] gamepadProfiles;
     [SerializeField] private Toggle[] togglesGamepadProfiles;
+    [SerializeField] private Image gamepadImage;
+    [SerializeField] private Sprite[] gamepadImages;
 
     void Start()
     {
@@ -27,7 +29,9 @@ public class ControlsPage : PausePage
 
     protected override void OnOpen()
     {
-        togglesGamepadProfiles[Settings.instance.GetCurrentGamePadProfileIdx()].SetIsOnWithoutNotify(true);
+        int currentIdx = Settings.instance.GetCurrentGamePadProfileIdx();
+        togglesGamepadProfiles[currentIdx].SetIsOnWithoutNotify(true);
+        gamepadImage.sprite = gamepadImages[currentIdx];
     }
 
 
@@ -44,6 +48,7 @@ public class ControlsPage : PausePage
             {
                 Settings.instance.SetCurrentGamePadProfileIdx(i);
                 gamepadProfiles[i].Apply();
+                gamepadImage.sprite = gamepadImages[i];
                 break;
             }
         }
