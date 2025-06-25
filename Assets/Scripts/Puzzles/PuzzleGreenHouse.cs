@@ -75,6 +75,9 @@ public class PuzzleGreenHouse : Puzzle
                 // Wrong
                 onWrong.Invoke();
                 currentSequenceIdx = 0;
+
+                // If you get wrong but you got the first right, start from the second
+                if (sequence[currentSequenceIdx] == currentPlacement) currentSequenceIdx++;
             }
         }
         else if (type == InputType.MOVEMENT)
