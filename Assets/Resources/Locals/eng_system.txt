@@ -63,23 +63,23 @@ hint_hintSystem_back = Go back
 hint_puzzle1_move = Change selection
 hint_puzzle1_select = Select
 hint_puzzle1_quit = Quit
-hint_puzzle1_0 = The chime’s shape reminds me of something… I should check the notebook.
+hint_puzzle1_0 = The carillon’s shape reminds me of something… I should check the notebook.
 hint_puzzle1_1 = Hmm it reminds me of a rhyme, and I remember seeing one in the notebook…
-hint_puzzle1_2 = Strangely this chime makes me think of a rhyme I saw at the page [?], I’m sure the answer is in it.
+hint_puzzle1_2 = I saw the same carillon drawn on page 4, I’m sure the answer is on it.
 
 hint_puzzle2_restart = Restart
-hint_puzzle2_0 = I can’t see anything in here and I can’t light this room, but there must be some sort of help in the notebook.
-hint_puzzle2_1 = I won’t make it through here without a map, but I think I saw one inside the notebook.
-hint_puzzle2_2 = If I remember correctly the map of this room is at the page [?], I should look at it while navigating here.
+hint_puzzle2_0 = I can’t see anything in here and I can’t light this room, but I think this room is mentioned in the notebook.
+hint_puzzle2_1 = Damn, I won’t make it through here without a map...
+hint_puzzle2_2 = If I remember correctly the map of this room is on page 6, I should look at it while navigating here.
 
-hint_puzzle3_0 = The bags of seeds should be the key, but they are missing information… Maybe I could find more inside of the notebook ?
-hint_puzzle3_1 = I remember seeing a “flower guide” in the notebook, maybe this could help fill in the missing information on the seed bags, especially regarding the seasons ?
-hint_puzzle3_2 = I saw a “flower guide” at the page [?], and I think I’m pretty sure the order is related to the season, maybe in chronological order ?...
+hint_puzzle3_0 = The packets of seeds should be the key, but some information is missing…
+hint_puzzle3_1 = Maybe the notebook could help fill in the missing information on the seed packets, especially regarding the seasons?
+hint_puzzle3_2 = I saw a “flower guide” on page 11, and I’m pretty sure the order is related to the seasons, maybe in chronological order?...
 
 hint_puzzle4_confirm = Confirm
-hint_puzzle4_0 = Four letters… I think I saw letters hidden in the canvas around the house, maybe I should check it ?
-hint_puzzle4_1 = I know the letters are in the canvas, but in what order should I put them ? There may be a hint inside the notebook…
-hint_puzzle4_2 = There are letters hidden in the canvas around the house, and I’m pretty sure I have to put the letters in the chronological order of creation of the paintings… I should look for it in the notebook.
+hint_puzzle4_0 = I think I saw a page in the notebook mentioning a padlock just like this one, and there was a note about the paintings, strange…
+hint_puzzle4_1 = Four letters… I think I saw letters hidden in the paintings around the house, maybe I should check them?
+hint_puzzle4_2 = I’m pretty sure I have to put the letters in the chronological order of creation of the paintings… Page 16 should help me out.
 
 
 menu_newGame = New Game
